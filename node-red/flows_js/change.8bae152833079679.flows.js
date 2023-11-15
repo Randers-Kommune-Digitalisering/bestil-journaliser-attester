@@ -1,15 +1,15 @@
 const Node = {
-  "id": "fed891ea3703430c",
+  "id": "8bae152833079679",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Opdel mail body",
+  "name": "Get stored token",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "token",
       "pt": "msg",
-      "to": "payload ~> $split(\"\\n\")",
-      "tot": "jsonata"
+      "to": "token",
+      "tot": "global"
     }
   ],
   "action": "",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 200,
-  "y": 400,
+  "x": 510,
+  "y": 680,
   "wires": [
     [
-      "1a2aa96596f99911"
+      "319750e882858649"
     ]
   ],
-  "_order": 12
+  "_order": 23
 }
 
 module.exports = Node;

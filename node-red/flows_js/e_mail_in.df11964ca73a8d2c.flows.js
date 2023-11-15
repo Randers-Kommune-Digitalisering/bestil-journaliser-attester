@@ -17,15 +17,15 @@ const Node = {
   "repeat": "300",
   "fetch": "auto",
   "inputs": 0,
-  "x": 190,
-  "y": 260,
+  "x": 170,
+  "y": 100,
   "wires": [
     [
       "b8926a0fe507d19a",
       "d4a9d98f17c1a2c9"
     ]
   ],
-  "_order": 4
+  "_order": 9
 }
 
 module.exports = Node;

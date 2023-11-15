@@ -1,14 +1,14 @@
 const Node = {
-  "id": "5dd8dcc0c8987f55",
+  "id": "ad3c0a4bdf6840b1",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Find ny medarbejder",
+  "name": "Search paramteres",
   "rules": [
     {
       "t": "set",
-      "p": "medarbejder",
+      "p": "payload",
       "pt": "msg",
-      "to": "( payload[$ ~> $contains(\"CPR\")]\t\t~> $split(\":\") )[1]\t~> $trim()",
+      "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": medarbejder\t    }\t}",
       "tot": "jsonata"
     }
   ],
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 640,
-  "y": 400,
+  "x": 490,
+  "y": 900,
   "wires": [
     [
-      "8c9ab9cb40cc6c28"
+      "97014fb5606be30b"
     ]
   ],
-  "_order": 15
+  "_order": 34
 }
 
 module.exports = Node;

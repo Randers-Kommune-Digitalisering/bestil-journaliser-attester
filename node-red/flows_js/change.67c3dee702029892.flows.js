@@ -1,15 +1,15 @@
 const Node = {
-  "id": "5dd8dcc0c8987f55",
+  "id": "67c3dee702029892",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Find ny medarbejder",
+  "name": "",
   "rules": [
     {
       "t": "set",
       "p": "medarbejder",
       "pt": "msg",
-      "to": "( payload[$ ~> $contains(\"CPR\")]\t\t~> $split(\":\") )[1]\t~> $trim()",
-      "tot": "jsonata"
+      "to": "123456-7890",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 640,
-  "y": 400,
+  "x": 240,
+  "y": 940,
   "wires": [
     [
-      "8c9ab9cb40cc6c28"
+      "ad3c0a4bdf6840b1"
     ]
   ],
-  "_order": 15
+  "_order": 33
 }
 
 module.exports = Node;
