@@ -53,7 +53,16 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, re
           throw new Error(error);
   
       msg.statusCode = response.statusCode;
-      msg.payload = JSON.parse(body);
+  
+      try
+      {
+          msg.payload = JSON.parse(body);
+      }
+      catch
+      {
+          msg.payload = body;
+      }
+      
       node.send(msg);
   });
   

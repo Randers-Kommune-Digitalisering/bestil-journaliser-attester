@@ -21,7 +21,8 @@ const Node = {
 
 Node.template = `
 {
-    "SagID": {{sagsId}}
+    "SagID": {{sagsId}},
+    "DokumentNavn": "Straffeattest"
 }
 `
 
