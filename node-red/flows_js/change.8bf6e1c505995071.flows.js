@@ -1,5 +1,5 @@
 const Node = {
-  "id": "adb75faec2f4ad39",
+  "id": "8bf6e1c505995071",
   "type": "change",
   "z": "971a7ae6df987a48",
   "name": "Headers",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "headers",
       "pt": "msg",
-      "to": "{\t    \"accept\": \"application/json\",\t    \"authorization\": \"Bearer \" & token.access_token,\t    \"content-type\": \"application/json\"\t}",
+      "to": "{\t    \"accept\": \"application/json\",\t    \"authorization\": \"Bearer \" & token.access_token,\t    \"content-type\": \"multipart/form-data\"\t}",
       "tot": "jsonata"
     }
   ],
@@ -20,9 +20,11 @@ const Node = {
   "x": 260,
   "y": 1120,
   "wires": [
-    []
+    [
+      "594e820fabb49d4e"
+    ]
   ],
-  "_order": 37
+  "_order": 40
 }
 
 module.exports = Node;

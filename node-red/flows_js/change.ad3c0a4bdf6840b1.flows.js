@@ -2,7 +2,7 @@ const Node = {
   "id": "ad3c0a4bdf6840b1",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Search paramteres",
+  "name": "Request body: \\n Search paramteres",
   "rules": [
     {
       "t": "set",
@@ -18,7 +18,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 490,
-  "y": 900,
+  "y": 920,
   "wires": [
     [
       "97014fb5606be30b"
