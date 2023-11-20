@@ -14,7 +14,7 @@ const Node = {
       "module": "request"
     }
   ],
-  "x": 900,
+  "x": 920,
   "y": 1120,
   "wires": [
     [
@@ -52,6 +52,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, re
       if (error)
           throw new Error(error);
   
+      msg.statusCode = response.statusCode;
       msg.payload = JSON.parse(body);
       node.send(msg);
   });

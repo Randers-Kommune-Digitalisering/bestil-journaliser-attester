@@ -4,7 +4,7 @@ const Node = {
   "z": "971a7ae6df987a48",
   "name": "Upload attest til sag",
   "info": "",
-  "x": 290,
+  "x": 310,
   "y": 1080,
   "wires": [],
   "_order": 36

@@ -2,19 +2,18 @@ const Node = {
   "id": "f40b650532f332af",
   "type": "function",
   "z": "971a7ae6df987a48",
-  "name": "function 1",
+  "name": "set msg",
   "func": "",
   "outputs": 1,
   "noerr": 0,
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 360,
+  "x": 380,
   "y": 320,
   "wires": [
     [
-      "fed891ea3703430c",
-      "bf2d6fc9e24ccb51"
+      "fed891ea3703430c"
     ]
   ],
   "_order": 37

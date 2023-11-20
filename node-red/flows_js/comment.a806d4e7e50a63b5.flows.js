@@ -4,7 +4,7 @@ const Node = {
   "z": "971a7ae6df987a48",
   "name": "Find personalesag",
   "info": "",
-  "x": 290,
+  "x": 310,
   "y": 860,
   "wires": [],
   "_order": 28
