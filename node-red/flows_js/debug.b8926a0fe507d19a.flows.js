@@ -5,7 +5,7 @@ const Node = {
   "name": "Ny mail",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
