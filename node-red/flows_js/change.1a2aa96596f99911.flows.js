@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "sagsbehandler",
       "pt": "msg",
-      "to": "(( payload[$ ~> $contains(\"Att\")]\t\t~> $split(\",\") )[1]\t~> $split(\"<\") )[0]\t~> $trim()",
+      "to": "(\t    /* Find randers mail, og opdel tekstfelt før @randers.dk */\t    $textField := payload[$ ~> $contains(\"@randers.dk\")]\t    ~> $substringBefore(\"@randers.dk\")\t    ~> $split(\" \");\t\t    /* Find længde på opdelt tekstfelt */\t    $arrayLength := $textField ~> $count();\t\t    /* Find mail-adresse (sidst i array) og tilføj domæne */\t    $textField [ $arrayLength-1 ] & \"@randers.dk\"\t)\t",
       "tot": "jsonata"
     }
   ],
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 430,
-  "y": 560,
+  "x": 410,
+  "y": 400,
   "wires": [
     [
       "5dd8dcc0c8987f55"
     ]
   ],
-  "_order": 9
+  "_order": 14
 }
 
 module.exports = Node;

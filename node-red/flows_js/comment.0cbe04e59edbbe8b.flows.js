@@ -4,10 +4,10 @@ const Node = {
   "z": "971a7ae6df987a48",
   "name": "Kontrollér om mail er vedr. straffeatt.",
   "info": "",
-  "x": 500,
-  "y": 300,
+  "x": 480,
+  "y": 140,
   "wires": [],
-  "_order": 13
+  "_order": 18
 }
 
 module.exports = Node;

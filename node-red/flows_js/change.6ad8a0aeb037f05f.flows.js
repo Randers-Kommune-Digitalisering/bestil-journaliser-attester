@@ -1,15 +1,15 @@
 const Node = {
-  "id": "fed891ea3703430c",
+  "id": "6ad8a0aeb037f05f",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Opdel mail body",
+  "name": "Get file",
   "rules": [
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> $split(\"\\n\")",
-      "tot": "jsonata"
+      "to": "attachments[0].content",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 200,
-  "y": 400,
+  "x": 700,
+  "y": 1120,
   "wires": [
     [
-      "1a2aa96596f99911"
+      "f7bcbe671cbfeffd"
     ]
   ],
-  "_order": 12
+  "_order": 43
 }
 
 module.exports = Node;

@@ -1,13 +1,13 @@
 const Node = {
-  "id": "013cab8d59f75d48",
+  "id": "a806d4e7e50a63b5",
   "type": "comment",
   "z": "971a7ae6df987a48",
-  "name": "Modtag mail vedr. attest",
+  "name": "Find personalesag",
   "info": "",
-  "x": 220,
-  "y": 60,
+  "x": 310,
+  "y": 860,
   "wires": [],
-  "_order": 8
+  "_order": 28
 }
 
 module.exports = Node;
