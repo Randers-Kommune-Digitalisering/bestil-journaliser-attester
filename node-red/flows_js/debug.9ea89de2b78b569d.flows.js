@@ -1,20 +1,20 @@
 const Node = {
-  "id": "8c9ab9cb40cc6c28",
+  "id": "9ea89de2b78b569d",
   "type": "debug",
   "z": "971a7ae6df987a48",
-  "name": "Sagsbehandler",
+  "name": "Token",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "sagsbehandler",
+  "complete": "token",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 960,
-  "y": 380,
+  "x": 1510,
+  "y": 840,
   "wires": [],
-  "_order": 14
+  "_order": 37
 }
 
 module.exports = Node;

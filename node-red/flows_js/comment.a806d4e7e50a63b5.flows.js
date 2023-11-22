@@ -4,10 +4,10 @@ const Node = {
   "z": "971a7ae6df987a48",
   "name": "Find personalesag",
   "info": "",
-  "x": 310,
-  "y": 860,
+  "x": 330,
+  "y": 920,
   "wires": [],
-  "_order": 28
+  "_order": 34
 }
 
 module.exports = Node;

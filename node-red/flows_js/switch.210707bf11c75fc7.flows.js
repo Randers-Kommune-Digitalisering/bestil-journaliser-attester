@@ -1,15 +1,15 @@
 const Node = {
-  "id": "d4a9d98f17c1a2c9",
+  "id": "210707bf11c75fc7",
   "type": "switch",
   "z": "971a7ae6df987a48",
-  "name": "Straffeattest?",
-  "property": "topic",
+  "name": "Request OK?",
+  "property": "statusCode",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "cont",
-      "v": "Digitalpost (29189668): Straffeatt.",
-      "vt": "str"
+      "t": "neq",
+      "v": "200",
+      "vt": "num"
     },
     {
       "t": "else"
@@ -18,17 +18,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 410,
-  "y": 180,
+  "x": 1020,
+  "y": 960,
   "wires": [
     [
-      "a55b26bb4bd9c7df"
+      "4afdec063a9e27c1"
     ],
     [
-      "667a303bf6db80db"
+      "196f5245ad1b22f4"
     ]
   ],
-  "_order": 18
+  "_order": 48
 }
 
 module.exports = Node;

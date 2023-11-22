@@ -2,7 +2,7 @@ const Node = {
   "id": "67c3dee702029892",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "",
+  "name": "test cpr",
   "rules": [
     {
       "t": "set",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 260,
-  "y": 940,
+  "x": 300,
+  "y": 1000,
   "wires": [
     [
       "ad3c0a4bdf6840b1"
     ]
   ],
-  "_order": 33
+  "_order": 42
 }
 
 module.exports = Node;

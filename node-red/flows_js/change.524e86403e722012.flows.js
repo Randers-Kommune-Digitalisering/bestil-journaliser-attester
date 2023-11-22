@@ -1,15 +1,15 @@
 const Node = {
-  "id": "ad3c0a4bdf6840b1",
+  "id": "524e86403e722012",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Search paramteres",
+  "name": "Get stored token",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "token",
       "pt": "msg",
-      "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": medarbejder\t    }\t}",
-      "tot": "jsonata"
+      "to": "token",
+      "tot": "global"
     }
   ],
   "action": "",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 550,
-  "y": 960,
+  "x": 510,
+  "y": 680,
   "wires": [
     [
-      "97014fb5606be30b"
+      "3c4099c5dbd9c39a"
     ]
   ],
-  "_order": 43
+  "_order": 36
 }
 
 module.exports = Node;

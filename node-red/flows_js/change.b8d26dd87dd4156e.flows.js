@@ -1,15 +1,15 @@
 const Node = {
-  "id": "8bae152833079679",
+  "id": "b8d26dd87dd4156e",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Get stored token",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "token",
+      "p": "sagsId",
       "pt": "msg",
-      "to": "token",
-      "tot": "global"
+      "to": "payload.Id",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 510,
-  "y": 680,
+  "x": 940,
+  "y": 1200,
   "wires": [
     [
-      "319750e882858649"
+      "405385627af2ddb0"
     ]
   ],
-  "_order": 23
+  "_order": 47
 }
 
 module.exports = Node;

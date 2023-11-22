@@ -1,5 +1,5 @@
 const Node = {
-  "id": "72ebddae5d339f3a",
+  "id": "a43a2098379a4b0d",
   "type": "change",
   "z": "971a7ae6df987a48",
   "name": "Set global token",
@@ -39,14 +39,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1120,
-  "y": 720,
+  "x": 1180,
+  "y": 760,
   "wires": [
     [
-      "24fdf91f0599cc5f"
+      "efe052efd2efa6a0"
     ]
   ],
-  "_order": 22
+  "_order": 35
 }
 
 module.exports = Node;

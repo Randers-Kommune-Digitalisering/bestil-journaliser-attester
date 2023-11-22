@@ -9,20 +9,18 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 500,
-  "y": 1120,
+  "x": 504.1999816894531,
+  "y": 1741.4000244140625,
   "wires": [
-    [
-      "6ad8a0aeb037f05f"
-    ]
+    []
   ],
-  "_order": 38
+  "_order": 54
 }
 
 Node.template = `
 {
     "SagID": {{sagsId}},
-    "DokumentNavn": "Straffeattest"
+    "DokumentNavn": "Straffeattest " & ( \$millis ~> \$fromMillis
 }
 `
 
