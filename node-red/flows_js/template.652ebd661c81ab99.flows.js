@@ -2,6 +2,7 @@ const Node = {
   "id": "652ebd661c81ab99",
   "type": "template",
   "z": "971a7ae6df987a48",
+  "d": true,
   "name": "File details",
   "field": "payload",
   "fieldType": "msg",
@@ -9,12 +10,12 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 490,
-  "y": 1660,
+  "x": 430,
+  "y": 1240,
   "wires": [
     []
   ],
-  "_order": 29
+  "_order": 32
 }
 
 Node.template = `

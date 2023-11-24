@@ -2,12 +2,12 @@ const Node = {
   "id": "c1861e4f34cea89f",
   "type": "comment",
   "z": "971a7ae6df987a48",
-  "name": "Træk keycloak token",
+  "name": "Træk token fra SBSIP",
   "info": "",
-  "x": 250,
-  "y": 660,
+  "x": 260,
+  "y": 500,
   "wires": [],
-  "_order": 33
+  "_order": 36
 }
 
 module.exports = Node;

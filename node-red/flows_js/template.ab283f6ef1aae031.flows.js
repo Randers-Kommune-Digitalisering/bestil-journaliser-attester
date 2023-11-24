@@ -2,6 +2,7 @@ const Node = {
   "id": "ab283f6ef1aae031",
   "type": "template",
   "z": "971a7ae6df987a48",
+  "d": true,
   "name": "Search parameters",
   "field": "payload",
   "fieldType": "msg",
@@ -9,12 +10,12 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "json",
-  "x": 550,
-  "y": 1000,
+  "x": 470,
+  "y": 800,
   "wires": [
     []
   ],
-  "_order": 41
+  "_order": 44
 }
 
 Node.template = `
