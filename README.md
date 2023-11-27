@@ -1,5 +1,5 @@
 # Auto-forward-uddannelsesstatistik
-|  [**Beskrivelse**](#beskrivelse)  |  [**Afhængigheder**](#afh%C3%A6ngigheder)  |  [**Ressourcer**](#Ressourcer)   |
+|  [**Beskrivelse**](#beskrivelse)  |  [**Afhængigheder**](#afh%C3%A6ngigheder)  |
 
 ## Beskrivelse
 Formålet med applikationen er at automatisk journalisere attester som fra Politiet modtages på Randers Kommunes hovedpostkasse. 
