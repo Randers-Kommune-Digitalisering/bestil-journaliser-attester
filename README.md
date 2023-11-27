@@ -1,32 +1,30 @@
-# <img src="https://user-images.githubusercontent.com/80261692/226564602-21d9c099-7c27-4ab0-80cb-295844e318de.png" width="54"> Node-RED template-projekt
-Template til nye Node-RED projekter.
-Projekt indeholder en tom Node-RED og paletterne
-* node-red-contrib-mysql-config
-* node-red-contrib-prometheus-exporter
+# Auto-forward-uddannelsesstatistik
+|  [**Beskrivelse**](#beskrivelse)  |  [**Afhængigheder**](#afh%C3%A6ngigheder)  |  [**Ressourcer**](#Ressourcer)   |
 
-# Brug af node-red-template
-1. Gå til https://github.com/Randers-Kommune-Digitalisering/node-red-template
-2. ![image](https://user-images.githubusercontent.com/80261692/226566679-e7785e2b-1d03-4b43-a01f-47ecb709d3a2.png) Klik på "use this template" og vælg "create a new repository"
+## Beskrivelse
+Formålet med applikationen er at automatisk journalisere attester som fra Politiet modtages på Randers Kommunes hovedpostkasse. 
 
-3. Udfyld skærmbillede med information om den nye service
-4. Åbn dit nye git projekt
+### Processbeskrivelse
+Applikationens process følger Figur 1. Processen kan overordnet opdeles i følgende trin:
+![Figur 1 - Flowdiagram](https://github.com/Randers-Kommune-Digitalisering/auto-journaliser-attester/assets/115066094/106c0bce-1508-4c6d-a58a-6aa7d8076668)
 
-# Nyt Node-RED projekt
-Nedenstående relaterer sig til et nyt Node-RED projekt der er baseret på denne template.
+#### 1) Attest modtages
+Kommunen modtager attester på hovedpostkassen. Herfra er opsat et filter, således at attester videresendes til en attest-postkasse, hvorfra applikationen læser modtagne mails.
 
-## Udvikling i et Codespace:
-1. Gå til det nyoprettede repository i github.
-2. Klik på den grønne <>Code knap og vælg "create codespace on master"
-![Start_Codespace](https://user-images.githubusercontent.com/80261692/226568105-5b9680e4-f1bb-465a-9f10-dcd305b534a8.gif)
+#### 2) Mail kontrolleres
+Applikationen kontrollerer afsender, titel og indhold af mailen for at sikre, at der er tale om en attest der er videresendt hovedpostkassen. Herunder kontrolleres det at mailen indeholder en mailadresse på en sagsbehandler, samt CPR på den medarbejder attesten omhandler. Såfremt der ikke findes de nødvendige oplysninger, sendes attesten tilbage til hovedpostkassen til manuel behandling
 
+#### Personalesag fremsøges
+Der søges i SBSYS efter aktive personalesager på medarbejderen. Findes der 0 eller flere end 1 sag, sendes attesten tilbage til hovedpostkassen til manuel behandling.
 
+#### Attest journaliseres
+Attesten journaliseres den aktive personalesag som foreligger i SBSYS. Ligeledes notificeres sagsbehandler på mail om at attesten er modtaget og journaliseret.
 
-> docker-compose up --build
+## Afhængigheder
+Løsningen er afhængig af en række ⚙️ software komponenter og en række ☁️ netværksadgange til eksterne ressourcer for at fungere.
 
-Starter et lokalt docker-compose miljø, der bygger og starter Node-RED og en mariadb.
+⚙️ |  [Node.js 18](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)  |  [Node-RED 3.0.2](https://nodered.org/docs/getting-started/windows)  |  [node-red-node-email](https://flows.nodered.org/node/node-red-node-email)  |
 
-Ved byg af Node-RED kopieres følgende filer ind i containeren:
-* [node-red/package.json](node-red/package.json)
-* [node-red/settings.js](node-red/settings.js)
-* [node-red/flows_cred.json](node-red/flows_cred.json)
-* [node-red/flows.json](node-red/flows.json)
+☁️ |  [https://cdn.jsdelivr.net/npm](https://cdn.jsdelivr.net/npm) 
+
+☁️  |  https://randers.dk 
