@@ -2,7 +2,7 @@ const Node = {
   "id": "6ad8a0aeb037f05f",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Get file",
+  "name": "Sæt attest",
   "rules": [
     {
       "t": "set",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 760,
-  "y": 1180,
+  "x": 770,
+  "y": 1360,
   "wires": [
     [
       "f7bcbe671cbfeffd"
     ]
   ],
-  "_order": 33
+  "_order": 35
 }
 
 module.exports = Node;

@@ -1,22 +1,22 @@
 const Node = {
-  "id": "f45cc40b46da15fe",
+  "id": "3add1b775cbd9ecb",
   "type": "template",
   "z": "971a7ae6df987a48",
-  "name": "",
+  "name": "Tekst",
   "field": "payload",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 620,
-  "y": 1520,
+  "x": 610,
+  "y": 1820,
   "wires": [
     [
       "894558ccd508489d"
     ]
   ],
-  "_order": 65
+  "_order": 79
 }
 
 Node.template = `

@@ -2,21 +2,23 @@ const Node = {
   "id": "323c55ddba1903d5",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "",
+  "name": "Sæt modtager \\n og filnavn",
   "rules": [
     {
       "t": "set",
       "p": "to",
       "pt": "msg",
-      "to": "",
-      "tot": "str"
+      "to": "from",
+      "tot": "msg",
+      "dc": true
     },
     {
       "t": "set",
-      "p": "topic",
+      "p": "filename",
       "pt": "msg",
-      "to": "Test-overskrift",
-      "tot": "str"
+      "to": "Attest.pdf",
+      "tot": "str",
+      "dc": true
     }
   ],
   "action": "",
@@ -24,11 +26,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 440,
-  "y": 1520,
+  "x": 360,
+  "y": 1660,
   "wires": [
     [
-      "f45cc40b46da15fe"
+      "54a496bee2f51a3c"
     ]
   ],
   "_order": 63

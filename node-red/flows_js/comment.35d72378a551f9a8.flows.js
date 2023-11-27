@@ -5,7 +5,7 @@ const Node = {
   "name": "Find aktive sager",
   "info": "",
   "x": 240,
-  "y": 960,
+  "y": 1140,
   "wires": [],
   "_order": 60
 }

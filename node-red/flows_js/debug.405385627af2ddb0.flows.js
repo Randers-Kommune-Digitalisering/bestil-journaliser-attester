@@ -12,9 +12,9 @@ const Node = {
   "statusVal": "",
   "statusType": "auto",
   "x": 1040,
-  "y": 1020,
+  "y": 1200,
   "wires": [],
-  "_order": 48
+  "_order": 50
 }
 
 module.exports = Node;

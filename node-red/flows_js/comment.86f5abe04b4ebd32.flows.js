@@ -2,10 +2,10 @@ const Node = {
   "id": "86f5abe04b4ebd32",
   "type": "comment",
   "z": "971a7ae6df987a48",
-  "name": "Send mail",
+  "name": "Send attest til manuel behandling",
   "info": "",
-  "x": 220,
-  "y": 1480,
+  "x": 290,
+  "y": 1600,
   "wires": [],
   "_order": 64
 }

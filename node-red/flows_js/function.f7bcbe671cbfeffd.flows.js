@@ -14,14 +14,15 @@ const Node = {
       "module": "request"
     }
   ],
-  "x": 940,
-  "y": 1180,
+  "x": 960,
+  "y": 1360,
   "wires": [
     [
-      "6b4ee32d8471f348"
+      "6b4ee32d8471f348",
+      "e62246bc7846a299"
     ]
   ],
-  "_order": 30
+  "_order": 32
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, request) {

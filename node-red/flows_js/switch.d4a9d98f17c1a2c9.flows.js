@@ -2,13 +2,13 @@ const Node = {
   "id": "d4a9d98f17c1a2c9",
   "type": "switch",
   "z": "971a7ae6df987a48",
-  "name": "Straffeattest?",
-  "property": "topic",
+  "name": "Fra hovedpostkasse?",
+  "property": "from",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "cont",
-      "v": "Digitalpost (29189668): Straffeatt.",
+      "t": "eq",
+      "v": "randers@randers.dk",
       "vt": "str"
     },
     {
@@ -18,17 +18,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 410,
-  "y": 180,
+  "x": 440,
+  "y": 100,
   "wires": [
     [
-      "56d5b9c13aa749d0"
+      "34440912b7cbdbf0"
     ],
     [
-      "667a303bf6db80db"
+      "231d5d7fa465545f"
     ]
   ],
-  "_order": 22
+  "_order": 24
 }
 
 module.exports = Node;

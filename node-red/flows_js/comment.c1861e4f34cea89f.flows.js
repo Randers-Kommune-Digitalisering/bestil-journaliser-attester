@@ -5,9 +5,9 @@ const Node = {
   "name": "Træk token fra SBSIP",
   "info": "",
   "x": 260,
-  "y": 500,
+  "y": 680,
   "wires": [],
-  "_order": 36
+  "_order": 38
 }
 
 module.exports = Node;

@@ -5,9 +5,9 @@ const Node = {
   "name": "Kontrollér om mail er vedr. straffeatt.",
   "info": "",
   "x": 480,
-  "y": 140,
+  "y": 60,
   "wires": [],
-  "_order": 23
+  "_order": 25
 }
 
 module.exports = Node;

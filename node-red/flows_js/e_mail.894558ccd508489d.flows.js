@@ -10,9 +10,9 @@ const Node = {
   "secure": false,
   "tls": true,
   "name": "",
-  "dname": "",
-  "x": 810,
-  "y": 1520,
+  "dname": "Send mail",
+  "x": 840,
+  "y": 1740,
   "wires": [],
   "_order": 61
 }

@@ -5,9 +5,9 @@ const Node = {
   "name": "Upload attest til sag",
   "info": "",
   "x": 250,
-  "y": 1140,
+  "y": 1320,
   "wires": [],
-  "_order": 28
+  "_order": 30
 }
 
 module.exports = Node;

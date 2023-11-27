@@ -5,9 +5,9 @@ const Node = {
   "name": "Find personalesager",
   "info": "",
   "x": 250,
-  "y": 720,
+  "y": 900,
   "wires": [],
-  "_order": 37
+  "_order": 39
 }
 
 module.exports = Node;
