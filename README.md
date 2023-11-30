@@ -12,9 +12,8 @@ flowchart LR
     B{Findes CPR & \n sagsbehandler \n i mail?}
     C(Find relaterede \n personalesager)
     D{Hvor mange aktive \n  personalesager \n findes på CPR?}
-    E[Journaliser attest \n i personalesag]
-    F[Adviser sagsbehandler \n om journalisering]
-    
+    E(Journaliser attest \n i personalesag)
+    F(Adviser sagsbehandler \n om journalisering)
     G[Manuel behandling]
 
     A --> B
