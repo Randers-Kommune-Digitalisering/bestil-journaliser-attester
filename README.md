@@ -6,7 +6,25 @@ Formålet med applikationen er at automatisk journalisere attester som fra Polit
 
 ### Processbeskrivelse
 Applikationens process følger Figur 1. Processen kan overordnet opdeles i følgende trin:
-![Figur 1 - Flowdiagram](https://github.com/Randers-Kommune-Digitalisering/auto-journaliser-attester/assets/115066094/106c0bce-1508-4c6d-a58a-6aa7d8076668)
+```mermaid
+flowchart LR
+    A[Attest modtages \n i mailboks]
+    B{Findes CPR & \n sagsbehandler \n i mail?}
+    C(Find relaterede \n personalesager)
+    D{Hvor mange aktive \n  personalesager \n findes på CPR?}
+    E[Journaliser attest \n i personalesag]
+    F[Adviser sagsbehandler \n om journalisering]
+    
+    G[Manuel behandling]
+
+    A --> B
+    B --> |Ja|C
+    B --> |Nej|G
+    C --> D
+    D --> |1|E
+    D --> |0, eller 2+|G
+    E --> F
+```
 
 #### 1) Attest modtages
 Kommunen modtager attester på hovedpostkassen. Herfra er opsat et filter, således at attester videresendes til en attest-postkasse, hvorfra applikationen læser modtagne mails.
