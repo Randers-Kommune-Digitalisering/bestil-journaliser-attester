@@ -1,13 +1,13 @@
 const Node = {
-  "id": "6d1cb282d7465772",
+  "id": "76f56bf04af132ba",
   "type": "comment",
   "z": "971a7ae6df987a48",
-  "name": "Træk keycloak token",
+  "name": "Send advisering for journalisering",
   "info": "",
-  "x": 250,
-  "y": 660,
+  "x": 290,
+  "y": 1760,
   "wires": [],
-  "_order": 20
+  "_order": 67
 }
 
 module.exports = Node;

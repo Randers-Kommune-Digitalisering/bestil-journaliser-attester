@@ -4,10 +4,10 @@ const Node = {
   "z": "971a7ae6df987a48",
   "name": "Upload attest til sag",
   "info": "",
-  "x": 310,
-  "y": 1080,
+  "x": 250,
+  "y": 1320,
   "wires": [],
-  "_order": 36
+  "_order": 30
 }
 
 module.exports = Node;

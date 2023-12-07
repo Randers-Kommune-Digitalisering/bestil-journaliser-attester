@@ -2,7 +2,7 @@ const Node = {
   "id": "ad3c0a4bdf6840b1",
   "type": "change",
   "z": "971a7ae6df987a48",
-  "name": "Request body: \\n Search paramteres",
+  "name": "Search paramteres",
   "rules": [
     {
       "t": "set",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 510,
-  "y": 920,
+  "x": 470,
+  "y": 940,
   "wires": [
     [
       "97014fb5606be30b"
     ]
   ],
-  "_order": 34
+  "_order": 48
 }
 
 module.exports = Node;

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "8bae152833079679",
+  "id": "524e86403e722012",
   "type": "change",
   "z": "971a7ae6df987a48",
   "name": "Get stored token",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 510,
-  "y": 680,
+  "x": 470,
+  "y": 700,
   "wires": [
     [
-      "319750e882858649"
+      "3c4099c5dbd9c39a"
     ]
   ],
-  "_order": 23
+  "_order": 41
 }
 
 module.exports = Node;
