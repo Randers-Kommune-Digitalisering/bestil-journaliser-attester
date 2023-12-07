@@ -1,20 +1,20 @@
 const Node = {
-  "id": "9868b761cd9c9812",
+  "id": "7b260d32a1f60814",
   "type": "debug",
-  "z": "971a7ae6df987a48",
-  "name": "Mail afsendt",
+  "z": "c715449c21b1a61f",
+  "name": "Incoming POST request",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 450,
-  "y": 1960,
+  "x": 480,
+  "y": 80,
   "wires": [],
-  "_order": 71
+  "_order": 19
 }
 
 module.exports = Node;

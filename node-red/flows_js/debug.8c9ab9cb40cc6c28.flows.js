@@ -5,16 +5,16 @@ const Node = {
   "name": "Sagsbehandler",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "sagsbehandler",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1000,
+  "x": 1010,
   "y": 340,
   "wires": [],
-  "_order": 20
+  "_order": 25
 }
 
 module.exports = Node;

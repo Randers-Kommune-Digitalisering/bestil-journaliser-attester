@@ -5,7 +5,7 @@ const Node = {
   "name": "Medarbejder (attest)",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "medarbejder",
   "targetType": "msg",
@@ -14,7 +14,7 @@ const Node = {
   "x": 1020,
   "y": 380,
   "wires": [],
-  "_order": 36
+  "_order": 41
 }
 
 module.exports = Node;
