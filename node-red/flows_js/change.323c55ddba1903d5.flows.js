@@ -19,6 +19,11 @@ const Node = {
       "to": "Attest.pdf",
       "tot": "str",
       "dc": true
+    },
+    {
+      "t": "delete",
+      "p": "from",
+      "pt": "msg"
     }
   ],
   "action": "",

@@ -8,8 +8,8 @@ const Node = {
       "t": "set",
       "p": "to",
       "pt": "msg",
-      "to": "sagsbehandler",
-      "tot": "msg"
+      "to": "Soren.Langbo.Sloto.Thomassen@randers.dk",
+      "tot": "str"
     },
     {
       "t": "set",
@@ -17,6 +17,11 @@ const Node = {
       "pt": "msg",
       "to": "Attest journaliseret på personalesag",
       "tot": "str"
+    },
+    {
+      "t": "delete",
+      "p": "from",
+      "pt": "msg"
     }
   ],
   "action": "",

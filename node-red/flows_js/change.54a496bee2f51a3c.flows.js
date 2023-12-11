@@ -5,6 +5,13 @@ const Node = {
   "name": "Vedhæft attest",
   "rules": [
     {
+      "t": "move",
+      "p": "payload",
+      "pt": "msg",
+      "to": "plaintext",
+      "tot": "msg"
+    },
+    {
       "t": "set",
       "p": "payload",
       "pt": "msg",
