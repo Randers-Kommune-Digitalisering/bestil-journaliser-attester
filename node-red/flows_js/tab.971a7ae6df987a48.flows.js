@@ -1,11 +1,11 @@
 const Node = {
   "id": "971a7ae6df987a48",
   "type": "tab",
-  "label": "Main",
+  "label": "Journaliser",
   "disabled": false,
   "info": "",
   "env": [],
-  "_order": 0
+  "_order": 1
 }
 
 module.exports = Node;

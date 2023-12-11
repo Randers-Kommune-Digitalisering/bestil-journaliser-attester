@@ -1,7 +1,7 @@
 const Node = {
   "id": "3add1b775cbd9ecb",
   "type": "template",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Tekst",
   "field": "payload",
   "fieldType": "msg",
@@ -9,14 +9,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 610,
-  "y": 1820,
+  "x": 650,
+  "y": 380,
   "wires": [
     [
       "894558ccd508489d"
     ]
   ],
-  "_order": 79
+  "_order": 148
 }
 
 Node.template = `

@@ -2,6 +2,7 @@ const Node = {
   "id": "1a2aa96596f99911",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "9e73796625eb7a3f",
   "name": "Find sagsbehandler",
   "rules": [
     {
@@ -18,13 +19,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 450,
-  "y": 360,
+  "y": 380,
   "wires": [
     [
       "5dd8dcc0c8987f55"
     ]
   ],
-  "_order": 21
+  "_order": 85
 }
 
 module.exports = Node;

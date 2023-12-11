@@ -2,6 +2,7 @@ const Node = {
   "id": "a43a2098379a4b0d",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "2d0458ee6b467f9b",
   "name": "Set global token",
   "rules": [
     {
@@ -40,13 +41,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1140,
-  "y": 780,
+  "y": 940,
   "wires": [
     [
       "efe052efd2efa6a0"
     ]
   ],
-  "_order": 40
+  "_order": 104
 }
 
 module.exports = Node;

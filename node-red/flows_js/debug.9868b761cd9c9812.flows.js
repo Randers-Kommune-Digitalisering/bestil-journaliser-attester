@@ -1,20 +1,20 @@
 const Node = {
   "id": "9868b761cd9c9812",
   "type": "debug",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Mail afsendt",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "true",
-  "targetType": "full",
+  "complete": "{\t    \"mail\": topic,\t    \"modtager\": to,\t    \"afsendt\": error ~> $exists() ? false : true\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 450,
-  "y": 1960,
+  "x": 500,
+  "y": 600,
   "wires": [],
-  "_order": 66
+  "_order": 141
 }
 
 module.exports = Node;

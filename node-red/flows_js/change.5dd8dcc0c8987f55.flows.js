@@ -2,6 +2,7 @@ const Node = {
   "id": "5dd8dcc0c8987f55",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "9e73796625eb7a3f",
   "name": "Find ny medarbejder",
   "rules": [
     {
@@ -18,7 +19,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 680,
-  "y": 360,
+  "y": 380,
   "wires": [
     [
       "8c9ab9cb40cc6c28",
@@ -26,7 +27,7 @@ const Node = {
       "8459f927e0b6c84c"
     ]
   ],
-  "_order": 22
+  "_order": 86
 }
 
 module.exports = Node;
