@@ -5,7 +5,9 @@ const Node = {
   "name": "Test",
   "props": [
     {
-      "p": "payload"
+      "p": "bestilling",
+      "v": "{\"sagsbehandler\":\"Søren Langbo Slotø Thomassen - DQA8932\",\"medarbejderCPR\":\"240194-1111\",\"attestType\":\"Straffeattest\",\"samtykke\":true,\"underskrift\":\"2023-12-07T15:40:00\"}",
+      "vt": "json"
     }
   ],
   "repeat": "",
@@ -13,14 +15,14 @@ const Node = {
   "once": false,
   "onceDelay": 0.1,
   "topic": "",
-  "payload": "{\"sagsbehandler\":\"@@Sagsbehandler\",\"medarbejderCPR\":\"@@MedarbejderCPR\",\"attestType\":\"@@AttestType\",\"samtykke\":\"@@Samtykke\",\"underskrift\":\"@@Underskrift\"}",
-  "payloadType": "json",
   "x": 210,
-  "y": 160,
+  "y": 340,
   "wires": [
-    []
+    [
+      "a725715bc3cf2453"
+    ]
   ],
-  "_order": 20
+  "_order": 57
 }
 
 module.exports = Node;
