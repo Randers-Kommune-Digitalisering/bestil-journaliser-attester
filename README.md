@@ -1,4 +1,4 @@
-# Auto-forward-uddannelsesstatistik
+# Bestil-journaliser-attester
 |  [**Beskrivelse**](#beskrivelse)  |  [**Afhængigheder**](#afh%C3%A6ngigheder)  |
 
 ## Beskrivelse
