@@ -13,6 +13,13 @@ const Node = {
     },
     {
       "t": "set",
+      "p": "description",
+      "pt": "msg",
+      "to": "description ~> $replace(\"<mailto:\", \" <\")",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
       "p": "payload",
       "pt": "msg",
       "to": "attachments[0].content",
@@ -31,7 +38,7 @@ const Node = {
       "894558ccd508489d"
     ]
   ],
-  "_order": 151
+  "_order": 150
 }
 
 module.exports = Node;
