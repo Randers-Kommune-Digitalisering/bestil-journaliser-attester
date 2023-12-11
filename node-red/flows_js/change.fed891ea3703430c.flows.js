@@ -2,6 +2,7 @@ const Node = {
   "id": "fed891ea3703430c",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "9e73796625eb7a3f",
   "name": "Opdel mail body",
   "rules": [
     {
@@ -18,13 +19,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 240,
-  "y": 360,
+  "y": 380,
   "wires": [
     [
       "1a2aa96596f99911"
     ]
   ],
-  "_order": 74
+  "_order": 83
 }
 
 module.exports = Node;

@@ -1,7 +1,7 @@
 const Node = {
   "id": "894558ccd508489d",
   "type": "e-mail",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "server": "outlook.office365.com",
   "port": "587",
   "authtype": "BASIC",
@@ -11,10 +11,10 @@ const Node = {
   "tls": true,
   "name": "",
   "dname": "Send mail",
-  "x": 840,
-  "y": 1740,
+  "x": 880,
+  "y": 280,
   "wires": [],
-  "_order": 116
+  "_order": 137
 }
 
 module.exports = Node;

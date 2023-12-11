@@ -1,20 +1,21 @@
 const Node = {
   "id": "ecdc0f3612d04bd4",
   "type": "link in",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Mail IN: Manuel behandling",
   "links": [
     "16245bab475b9515",
-    "4984df54dc362ad8"
+    "4984df54dc362ad8",
+    "461970279c8fa295"
   ],
-  "x": 175,
-  "y": 1640,
+  "x": 215,
+  "y": 140,
   "wires": [
     [
       "323c55ddba1903d5"
     ]
   ],
-  "_order": 124
+  "_order": 145
 }
 
 module.exports = Node;

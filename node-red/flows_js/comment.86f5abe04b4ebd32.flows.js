@@ -1,13 +1,13 @@
 const Node = {
   "id": "86f5abe04b4ebd32",
   "type": "comment",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Send attest til manuel behandling",
   "info": "",
-  "x": 290,
-  "y": 1600,
+  "x": 330,
+  "y": 100,
   "wires": [],
-  "_order": 119
+  "_order": 140
 }
 
 module.exports = Node;

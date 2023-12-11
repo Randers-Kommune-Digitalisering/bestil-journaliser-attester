@@ -2,6 +2,7 @@ const Node = {
   "id": "26fb135c4c7f1336",
   "type": "change",
   "z": "971a7ae6df987a48",
+  "g": "2d0458ee6b467f9b",
   "name": "Opsæt globale værdier",
   "rules": [
     {
@@ -66,13 +67,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 480,
-  "y": 740,
+  "y": 900,
   "wires": [
     [
       "320fbf9e34e778b9"
     ]
   ],
-  "_order": 84
+  "_order": 93
 }
 
 module.exports = Node;

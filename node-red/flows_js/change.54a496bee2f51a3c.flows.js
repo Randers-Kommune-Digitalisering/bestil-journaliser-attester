@@ -1,14 +1,14 @@
 const Node = {
   "id": "54a496bee2f51a3c",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Vedhæft attest",
   "rules": [
     {
       "t": "move",
       "p": "payload",
       "pt": "msg",
-      "to": "plaintext",
+      "to": "description",
       "tot": "msg"
     },
     {
@@ -24,14 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 580,
-  "y": 1660,
+  "x": 620,
+  "y": 160,
   "wires": [
     [
       "894558ccd508489d"
     ]
   ],
-  "_order": 136
+  "_order": 151
 }
 
 module.exports = Node;

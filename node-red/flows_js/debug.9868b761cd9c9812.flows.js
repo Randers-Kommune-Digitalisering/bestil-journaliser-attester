@@ -1,7 +1,7 @@
 const Node = {
   "id": "9868b761cd9c9812",
   "type": "debug",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Mail afsendt",
   "active": true,
   "tosidebar": true,
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 460,
-  "y": 1960,
+  "x": 500,
+  "y": 600,
   "wires": [],
-  "_order": 121
+  "_order": 142
 }
 
 module.exports = Node;

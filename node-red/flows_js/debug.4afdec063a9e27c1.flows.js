@@ -2,6 +2,7 @@ const Node = {
   "id": "4afdec063a9e27c1",
   "type": "debug",
   "z": "971a7ae6df987a48",
+  "g": "2d0458ee6b467f9b",
   "name": "RETRY",
   "active": true,
   "tosidebar": true,
@@ -12,9 +13,9 @@ const Node = {
   "statusVal": "",
   "statusType": "auto",
   "x": 1120,
-  "y": 920,
+  "y": 1080,
   "wires": [],
-  "_order": 110
+  "_order": 119
 }
 
 module.exports = Node;

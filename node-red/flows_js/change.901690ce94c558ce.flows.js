@@ -1,7 +1,7 @@
 const Node = {
   "id": "901690ce94c558ce",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "812b69015d6703b6",
   "name": "Sæt modtager \\n og overskrift",
   "rules": [
     {
@@ -29,14 +29,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 360,
-  "y": 1820,
+  "x": 400,
+  "y": 380,
   "wires": [
     [
       "3add1b775cbd9ecb"
     ]
   ],
-  "_order": 126
+  "_order": 147
 }
 
 module.exports = Node;
