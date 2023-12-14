@@ -1,21 +1,20 @@
 const Node = {
-  "id": "405385627af2ddb0",
+  "id": "666238a49a5ae1d8",
   "type": "debug",
-  "z": "971a7ae6df987a48",
-  "g": "2d0458ee6b467f9b",
-  "name": "SagsID",
+  "z": "c715449c21b1a61f",
+  "name": "Token",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "sagsId",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1040,
-  "y": 1360,
+  "x": 920,
+  "y": 740,
   "wires": [],
-  "_order": 121
+  "_order": 83
 }
 
 module.exports = Node;

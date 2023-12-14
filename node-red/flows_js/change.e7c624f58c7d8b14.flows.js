@@ -1,15 +1,14 @@
 const Node = {
-  "id": "fed891ea3703430c",
+  "id": "e7c624f58c7d8b14",
   "type": "change",
-  "z": "971a7ae6df987a48",
-  "g": "9e73796625eb7a3f",
-  "name": "Opdel mail body",
+  "z": "c715449c21b1a61f",
+  "name": "URL",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "url",
       "pt": "msg",
-      "to": "payload ~> $split(\"\\n\")",
+      "to": "\"https://login.microsoftonline.com/\" &\tad.tenantId &\t\"/oauth2/v2.0/token\"",
       "tot": "jsonata"
     }
   ],
@@ -18,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 240,
-  "y": 380,
+  "x": 610,
+  "y": 740,
   "wires": [
     [
-      "1a2aa96596f99911"
+      "fba37667a3c2d9bf"
     ]
   ],
-  "_order": 90
+  "_order": 82
 }
 
 module.exports = Node;

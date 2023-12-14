@@ -1,28 +1,27 @@
 const Node = {
-  "id": "97014fb5606be30b",
+  "id": "fba37667a3c2d9bf",
   "type": "http request",
-  "z": "971a7ae6df987a48",
-  "g": "2d0458ee6b467f9b",
+  "z": "c715449c21b1a61f",
   "name": "",
   "method": "POST",
   "ret": "obj",
   "paytoqs": "ignore",
-  "url": "https://sbsysapitest.randers.dk/api/sag/search",
+  "url": "",
   "tls": "",
   "persist": false,
   "proxy": "",
-  "insecureHTTPParser": true,
+  "insecureHTTPParser": false,
   "authType": "",
   "senderr": false,
   "headers": [],
-  "x": 710,
-  "y": 1100,
+  "x": 760,
+  "y": 740,
   "wires": [
     [
-      "210707bf11c75fc7"
+      "666238a49a5ae1d8"
     ]
   ],
-  "_order": 114
+  "_order": 84
 }
 
 module.exports = Node;

@@ -13,8 +13,9 @@ services:
       DB_PORT: 3306
       DB_DATABASE: demo
 
-      # Sætter miljøvariablen TEST_API_KEY til værdien af CodeSpace secret TEST_API_KEY, (hvis den er sat).
-      TEST_API_KEY: ${TEST_API_KEY}
+      AZURE_CLIENTID: ${AZURE_CLIENTID}
+      AZURE_TENANTID: ${AZURE_TENANTID}
+      AZURE_CLIENTSECRET: ${AZURE_CLIENTSECRET}
             
       # Miljøvariablen FLOWS fortæller Node-RED IDEet hvilket flow.json den skal åbne og gemme ændringer i ved deploy.
       FLOWS: "/data/flows.json"
