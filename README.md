@@ -8,7 +8,7 @@ Formålet med applikationen er at automatisk journalisere attester som fra Polit
 Applikationens process følger Figur 1. Processen kan overordnet opdeles i følgende trin:
 ```mermaid
 flowchart LR
-    A1("Kyndig leder eller sekretær \n (sagsansvarlig)\n udfylder formular vedr. hentning \n af attest på medarbejder")
+    A1("Kyndig leder eller sekretær \n (sagsansvarlig)\n udfylder formular vedr. bestilling \n af attest på medarbejder")
     A2[Formular modtages og \n gemmes i database]
     
     B1(Bestillingsansvarlig tilgår \n liste over formularer som \n afventer bestilling)
