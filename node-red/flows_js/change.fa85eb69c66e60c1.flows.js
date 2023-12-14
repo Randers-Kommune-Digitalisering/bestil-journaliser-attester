@@ -2,7 +2,7 @@ const Node = {
   "id": "fa85eb69c66e60c1",
   "type": "change",
   "z": "c715449c21b1a61f",
-  "name": "Header / Body",
+  "name": "Headers / Body",
   "rules": [
     {
       "t": "set",
@@ -24,14 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 460,
-  "y": 740,
+  "x": 380,
+  "y": 820,
   "wires": [
     [
       "e7c624f58c7d8b14"
     ]
   ],
-  "_order": 85
+  "_order": 87
 }
 
 module.exports = Node;

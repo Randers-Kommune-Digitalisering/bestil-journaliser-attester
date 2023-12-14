@@ -4,10 +4,10 @@ const Node = {
   "z": "c715449c21b1a61f",
   "name": "Hent Azure token",
   "info": "",
-  "x": 140,
+  "x": 180,
   "y": 700,
   "wires": [],
-  "_order": 86
+  "_order": 88
 }
 
 module.exports = Node;
