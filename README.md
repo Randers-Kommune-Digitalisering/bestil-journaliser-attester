@@ -8,33 +8,49 @@ Formålet med applikationen er at automatisk journalisere attester som fra Polit
 Applikationens process følger Figur 1. Processen kan overordnet opdeles i følgende trin:
 ```mermaid
 flowchart LR
+    A1("Kyndig leder eller sekretær \n (sagsansvarlig)\n udfylder formular vedr. hentning \n af attest på medarbejder")
+    A2[Formular modtages og \n gemmes i database]
+    
+    B1(Bestillingsansvarlig tilgår \n liste over formularer som \n afventer bestilling)
+    B2[Liste over CPR-numre for \n hver attest-type udstilles]
+    B3(Bestillingsansvarlig tilgår \n Politiets hjemmeside og bestiller \n attester for hver attest-type)
+    B4(Bestillingsansvarlig bekræfter \n bestilling af attester)
+    B5[Formularer markeres \n som `bestilt` i database]
+
+    A1 --> A2
+
+    B1 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+
     A[Attest modtages \n i mailboks]
-    B{Findes CPR & \n sagsbehandler \n i mail?}
+    B{Findes CPR & \n sagsansvarlig \n i mail?}
     C(Find relaterede \n personalesager)
-    D{Hvor mange aktive \n  personalesager \n findes på CPR?}
+    D{Kan én personalesag  \n tilknyttes ansættelsen??}
     E(Journaliser attest \n i personalesag)
-    F(Adviser sagsbehandler \n om journalisering)
-    G[Manuel behandling]
+    F(Adviser sagsansvarlig \n om journalisering)
+    G[Attest sendes \n til manuel behandling]
 
     A --> B
     B --> |Ja|C
     B --> |Nej|G
     C --> D
-    D --> |1|E
-    D --> |0, eller 2+|G
+    D --> |Ja|E
+    D --> |Nej|G
     E --> F
 ```
-
-#### 1) Attest modtages
+#### Ved modtagelse af attest:
+##### 1) Attest modtages
 Kommunen modtager attester på hovedpostkassen. Herfra er opsat et filter, således at attester videresendes til en attest-postkasse, hvorfra applikationen læser modtagne mails.
 
-#### 2) Mail kontrolleres
+##### 2) Mail kontrolleres
 Applikationen kontrollerer afsender, titel og indhold af mailen for at sikre, at der er tale om en attest der er videresendt hovedpostkassen. Herunder kontrolleres det at mailen indeholder en mailadresse på en sagsbehandler, samt CPR på den medarbejder attesten omhandler. Såfremt der ikke findes de nødvendige oplysninger, sendes attesten tilbage til hovedpostkassen til manuel behandling
 
-#### 3) Personalesag fremsøges
+##### 3) Personalesag fremsøges
 Der søges i SBSYS efter aktive personalesager på medarbejderen. Findes der 0 eller flere end 1 sag, sendes attesten tilbage til hovedpostkassen til manuel behandling.
 
-#### 4) Attest journaliseres
+##### 4) Attest journaliseres
 Attesten journaliseres den aktive personalesag som foreligger i SBSYS. Ligeledes notificeres sagsbehandler på mail om at attesten er modtaget og journaliseret.
 
 ## Afhængigheder
