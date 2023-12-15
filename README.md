@@ -40,11 +40,11 @@ flowchart LR
     D --> |Nej|G
     E --> F
 ```
-### A. Anmodning om attest på medarbejder
-#### 1) Bestillingsformular udfyldes af kyndig medarbejder
+#### A. Anmodning om attest på medarbejder
+##### 1) Bestillingsformular udfyldes af kyndig medarbejder
 Formularen udstilles til Kommunens medarbejdere i XFlow, hvorfra attestanmodningen sendes til applikationen.
 
-#### 2) Formular modtages 
+##### 2) Formular modtages 
 Attestanmodningen modtages i applikationen hvorfra den lagres i database.
 
 #### B. Bestilling af anmodne attester
