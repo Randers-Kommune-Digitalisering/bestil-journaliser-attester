@@ -1,5 +1,5 @@
 const Node = {
-  "id": "d07b12b1b6cca287",
+  "id": "3ec94056ebeb179c",
   "type": "change",
   "z": "c715449c21b1a61f",
   "name": "URL",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "\"https://graph.microsoft.com/v1.0/users/?$filter=onPremisesSamAccountName eq '\" & dqUser & \"'&$count=true&$select=mail\"",
+      "to": "\"https://graph.microsoft.com/v1.0/users?$select=onPremisesSamAccountName\"/* &\t\"('\" & dqUser &\"')\"*/",
       "tot": "jsonata"
     }
   ],
@@ -18,13 +18,11 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 550,
-  "y": 1000,
+  "y": 1080,
   "wires": [
-    [
-      "ebf6d264b651d3e0"
-    ]
+    []
   ],
-  "_order": 95
+  "_order": 99
 }
 
 module.exports = Node;

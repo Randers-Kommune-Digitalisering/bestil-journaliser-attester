@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "headers",
       "pt": "msg",
-      "to": "{\t    \"accept\": \"application/json\",\t    \"authorization\": \"Bearer \" & payload.access_token,\t    \"content-type\": \"application/json\"\t}",
+      "to": "{\t    \"accept\": \"application/json\",\t    \"authorization\": \"Bearer \" & payload.access_token,\t    \"content-type\": \"application/json\",\t    \"ConsistencyLevel\": \"eventual\"\t}",
       "tot": "jsonata"
     }
   ],
