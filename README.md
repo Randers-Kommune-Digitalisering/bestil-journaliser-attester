@@ -40,7 +40,25 @@ flowchart LR
     D --> |Nej|G
     E --> F
 ```
-#### Ved modtagelse af attest:
+### A. Anmodning om attest på medarbejder
+#### 1) Bestillingsformular udfyldes af kyndig medarbejder
+Formularen udstilles til Kommunens medarbejdere i XFlow, hvorfra attestanmodningen sendes til applikationen.
+
+#### 2) Formular modtages 
+Attestanmodningen modtages i applikationen hvorfra den lagres i database.
+
+#### B. Bestilling af anmodne attester
+##### 1) En udvalgt bestillingsansvarlig fra Kommunen tilgår liste over attestanmodninger.
+
+#### 2) Lister for hhv. straffe- og børneattestanomodninger udstilles separat til hurtig bestilling.
+
+#### 3) Bestillingsansvarlig foretager manuel bestilling af attesterne på Politiets hjemmeside.
+
+#### 4) Bestillingsansvarlig bekræfter bestilling af de udstilte anmodninger.
+
+#### 5) Formularer / attestanmodningerne markeres som bestilt, og afventer modtagelse.
+
+#### C. Ved modtagelse af attest:
 ##### 1) Attest modtages
 Kommunen modtager attester på hovedpostkassen. Herfra er opsat et filter, således at attester videresendes til en attest-postkasse, hvorfra applikationen læser modtagne mails.
 
