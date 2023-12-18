@@ -2,6 +2,7 @@ const Node = {
   "id": "fe032d4971ec1df9",
   "type": "change",
   "z": "c715449c21b1a61f",
+  "g": "f111898069b32afc",
   "name": "Formatér bestilling \\n inden lagring",
   "rules": [
     {
@@ -17,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 190,
-  "y": 480,
+  "x": 430,
+  "y": 360,
   "wires": [
     [
-      "bd3191f24c7a2057"
+      "95ab33f2dec2f897"
     ]
   ],
-  "_order": 77
+  "_order": 90
 }
 
 module.exports = Node;

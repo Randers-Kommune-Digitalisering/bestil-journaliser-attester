@@ -2,7 +2,8 @@ const Node = {
   "id": "7b260d32a1f60814",
   "type": "debug",
   "z": "c715449c21b1a61f",
-  "name": "Incoming POST request",
+  "g": "0477132fb9f28020",
+  "name": "Ny XFlow formular",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -11,10 +12,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 480,
+  "x": 440,
   "y": 80,
   "wires": [],
-  "_order": 64
+  "_order": 77
 }
 
 module.exports = Node;
