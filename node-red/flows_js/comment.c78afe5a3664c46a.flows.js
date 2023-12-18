@@ -2,12 +2,13 @@ const Node = {
   "id": "c78afe5a3664c46a",
   "type": "comment",
   "z": "c715449c21b1a61f",
-  "name": "Hent AD oplysninger",
+  "g": "3c5129bfe50adfad",
+  "name": "Hent mail fra AD",
   "info": "",
-  "x": 230,
-  "y": 960,
+  "x": 260,
+  "y": 740,
   "wires": [],
-  "_order": 92
+  "_order": 101
 }
 
 module.exports = Node;

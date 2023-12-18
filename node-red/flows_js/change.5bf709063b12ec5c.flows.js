@@ -2,6 +2,7 @@ const Node = {
   "id": "5bf709063b12ec5c",
   "type": "change",
   "z": "c715449c21b1a61f",
+  "g": "3c5129bfe50adfad",
   "name": "Set token",
   "rules": [
     {
@@ -25,14 +26,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 820,
+  "x": 920,
+  "y": 640,
   "wires": [
     [
       "9a4c52659edf4634"
     ]
   ],
-  "_order": 89
+  "_order": 98
 }
 
 module.exports = Node;

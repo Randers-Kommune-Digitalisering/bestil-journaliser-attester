@@ -2,14 +2,15 @@ const Node = {
   "id": "782d04f9cb20f22a",
   "type": "change",
   "z": "c715449c21b1a61f",
+  "g": "3c5129bfe50adfad",
   "name": "",
   "rules": [
     {
       "t": "set",
       "p": "dqUser",
       "pt": "msg",
-      "to": "",
-      "tot": "str"
+      "to": "bestilling.sagsbehandlerDQ",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -17,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
-  "y": 1000,
+  "x": 260,
+  "y": 780,
   "wires": [
     [
       "0ca10e0ebd731f53"
     ]
   ],
-  "_order": 98
+  "_order": 106
 }
 
 module.exports = Node;

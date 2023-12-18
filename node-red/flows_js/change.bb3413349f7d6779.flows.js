@@ -2,6 +2,7 @@ const Node = {
   "id": "bb3413349f7d6779",
   "type": "change",
   "z": "c715449c21b1a61f",
+  "g": "3c5129bfe50adfad",
   "name": "AD oplysninger",
   "rules": [
     {
@@ -38,14 +39,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 180,
-  "y": 820,
+  "x": 200,
+  "y": 640,
   "wires": [
     [
       "fa85eb69c66e60c1"
     ]
   ],
-  "_order": 84
+  "_order": 93
 }
 
 module.exports = Node;
