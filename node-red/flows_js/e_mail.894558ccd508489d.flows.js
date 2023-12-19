@@ -13,8 +13,7 @@ const Node = {
   "dname": "Send mail",
   "x": 880,
   "y": 280,
-  "wires": [],
-  "_order": 165
+  "wires": []
 }
 
 module.exports = Node;

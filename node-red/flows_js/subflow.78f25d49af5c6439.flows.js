@@ -39,8 +39,7 @@ const Node = {
   ],
   "env": [],
   "meta": {},
-  "color": "#DDAA99",
-  "_order": 3
+  "color": "#DDAA99"
 }
 
 module.exports = Node;
