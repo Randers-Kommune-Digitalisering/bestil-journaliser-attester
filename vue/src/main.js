@@ -10,6 +10,7 @@ import App from './App.vue'
 import Start from '@/views/Start.vue'
 import Vue from '@/views/Vue.vue'
 import Templates from '@/views/Templates.vue'
+import Orders from '@/views/Orders.vue'
 
 // Opsætning af URL routing
 
@@ -30,6 +31,11 @@ const router = createRouter({
             path: '/templates', 
             name: "Templates",
             component: Templates
+        },
+        {
+            path: '/orders', 
+            name: "Bestillinger",
+            component: Orders
         }
     ]
 })

@@ -7,11 +7,14 @@
         {
             "title": "Start",
             "url": "/"
+        },        
+        {
+            "title": "Bestillinger",
+            "url": "/orders"
         },
         {
             "title": "UI Templates",
-            "url": "/templates",
-            "alert": "12"
+            "url": "/templates"
         },
         {
             "title": "Vue Info",
@@ -31,6 +34,14 @@
         menuItems.value.forEach(x => x.selected = false)
         item.selected = true
     }
+
+    // Get order count
+
+    fetch('/api/data/orders/count')
+    .then(response => response = response.json())
+    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Bestillinger") ].alert = value)
+    
+
 
     // Dark mode
 
