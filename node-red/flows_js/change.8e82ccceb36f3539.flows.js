@@ -1,7 +1,7 @@
 const Node = {
   "id": "8e82ccceb36f3539",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "7d7cd8fb8a9dbe4e",
   "name": "Success = true",
   "rules": [
     {
@@ -17,8 +17,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 360,
-  "y": 120,
+  "x": 380,
+  "y": 300,
   "wires": [
     [
       "2e6b0606eab4568c"
