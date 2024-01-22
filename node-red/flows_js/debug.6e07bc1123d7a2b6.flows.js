@@ -6,13 +6,13 @@ const Node = {
   "name": "Response",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 940,
+  "x": 950,
   "y": 740,
   "wires": []
 }
