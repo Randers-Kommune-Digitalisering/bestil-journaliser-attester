@@ -1,5 +1,5 @@
 const Node = {
-  "id": "0b4922a5eb0d85cd",
+  "id": "4da4cd9f2de1e21c",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\"success\":\"great\"}",
+      "to": "{}",
       "tot": "json"
     }
   ],
@@ -17,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 380,
-  "y": 100,
+  "x": 900,
+  "y": 400,
   "wires": [
     [
-      "4a325a3ad9f4fb75"
+      "c6aba25f391b2339"
     ]
   ]
 }
