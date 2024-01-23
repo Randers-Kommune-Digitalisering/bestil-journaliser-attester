@@ -1,7 +1,7 @@
 const Node = {
   "id": "652ebd661c81ab99",
   "type": "template",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "d": true,
   "g": "2d0458ee6b467f9b",
   "name": "File details",
@@ -12,7 +12,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 430,
-  "y": 1580,
+  "y": 1540,
   "wires": [
     []
   ]

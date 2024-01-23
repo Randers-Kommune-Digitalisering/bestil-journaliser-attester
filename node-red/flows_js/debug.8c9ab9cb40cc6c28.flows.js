@@ -1,7 +1,7 @@
 const Node = {
   "id": "8c9ab9cb40cc6c28",
   "type": "debug",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
   "name": "Sagsbehandler",
   "active": true,
@@ -12,7 +12,7 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1010,
+  "x": 1030,
   "y": 360,
   "wires": []
 }

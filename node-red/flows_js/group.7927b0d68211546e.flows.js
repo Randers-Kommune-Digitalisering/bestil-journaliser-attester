@@ -1,7 +1,7 @@
 const Node = {
   "id": "7927b0d68211546e",
   "type": "group",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "name": "Mail modtages",
   "style": {
     "stroke": "none",
@@ -24,7 +24,7 @@ const Node = {
     "9a48fc900c237148",
     "02177dc55164cbcb"
   ],
-  "x": 94,
+  "x": 74,
   "y": 59,
   "w": 992,
   "h": 162

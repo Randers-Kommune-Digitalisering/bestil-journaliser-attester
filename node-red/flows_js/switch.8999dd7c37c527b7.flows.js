@@ -1,7 +1,7 @@
 const Node = {
   "id": "8999dd7c37c527b7",
   "type": "switch",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
   "name": "Sagsbehandler findes?",
   "property": "sagsbehandler",
@@ -17,7 +17,7 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 260,
+  "x": 280,
   "y": 560,
   "wires": [
     [

@@ -1,7 +1,7 @@
 const Node = {
   "id": "df11964ca73a8d2c",
   "type": "e-mail in",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
   "name": "",
   "protocol": "IMAP",
@@ -18,7 +18,7 @@ const Node = {
   "repeat": "300",
   "fetch": "auto",
   "inputs": 0,
-  "x": 170,
+  "x": 150,
   "y": 140,
   "wires": [
     [

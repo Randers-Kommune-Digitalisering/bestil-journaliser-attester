@@ -1,7 +1,7 @@
 const Node = {
   "id": "3c7e217712e1123a",
   "type": "debug",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "2d0458ee6b467f9b",
   "name": "RETRY",
   "active": true,
@@ -13,7 +13,7 @@ const Node = {
   "statusVal": "",
   "statusType": "auto",
   "x": 1120,
-  "y": 900,
+  "y": 860,
   "wires": []
 }
 

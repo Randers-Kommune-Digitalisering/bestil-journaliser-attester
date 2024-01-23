@@ -1,7 +1,7 @@
 const Node = {
   "id": "2d0458ee6b467f9b",
   "type": "group",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "name": "Journalisering i SBSYS",
   "style": {
     "stroke": "none",
@@ -53,7 +53,7 @@ const Node = {
     "e62246bc7846a299"
   ],
   "x": 114,
-  "y": 799,
+  "y": 759,
   "w": 1232,
   "h": 822
 }
