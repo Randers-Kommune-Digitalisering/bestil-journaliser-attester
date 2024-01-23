@@ -1,7 +1,7 @@
 const Node = {
   "id": "8e82ccceb36f3539",
   "type": "change",
-  "z": "7d7cd8fb8a9dbe4e",
+  "z": "VueExample",
   "name": "Success = true",
   "rules": [
     {
