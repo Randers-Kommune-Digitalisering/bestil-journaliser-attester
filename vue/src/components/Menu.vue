@@ -9,16 +9,12 @@
             "url": "/"
         },        
         {
-            "title": "Bestillinger",
-            "url": "/orders"
-        },
+            "title": "Straffeattester",
+            "url": "/orders/straffeattest"
+        },        
         {
-            "title": "UI Templates",
-            "url": "/templates"
-        },
-        {
-            "title": "Vue Info",
-            "url": "/vue"
+            "title": "Børneattester",
+            "url": "/orders/borneattest"
         }
     ])
 
@@ -35,11 +31,17 @@
         item.selected = true
     }
 
-    // Get order count
+    // Get order count (straffeattest)
 
-    fetch('/api/data/orders/count')
+    fetch('/api/data/orders/count/straffeattest')
     .then(response => response = response.json())
-    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Bestillinger") ].alert = value)
+    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Straffeattester") ].alert = value)
+    
+    // Get order count (Børneattest)
+
+    fetch('/api/data/orders/count/borneattest')
+    .then(response => response = response.json())
+    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Børneattester") ].alert = value)
     
 
 

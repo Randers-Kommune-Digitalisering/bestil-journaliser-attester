@@ -33,8 +33,13 @@ const router = createRouter({
             component: Templates
         },
         {
-            path: '/orders', 
-            name: "Bestillinger",
+            path: '/orders/borneattest', 
+            name: "Børneattester",
+            component: Orders
+        },
+        {
+            path: '/orders/straffeattest', 
+            name: "Straffeattester",
             component: Orders
         }
     ]

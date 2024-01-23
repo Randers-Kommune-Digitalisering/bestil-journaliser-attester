@@ -1,15 +1,16 @@
 const Node = {
-  "id": "35620e5ea31eb5b2",
+  "id": "ec052f39070f0210",
   "type": "change",
-  "z": "7d7cd8fb8a9dbe4e",
+  "z": "c715449c21b1a61f",
+  "g": "d8880c2ab63ce3cd",
   "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "bestilling.erBorneattest",
       "pt": "msg",
-      "to": "{}",
-      "tot": "json"
+      "to": "0",
+      "tot": "num"
     }
   ],
   "action": "",
@@ -17,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 600,
+  "x": 450,
+  "y": 1160,
   "wires": [
     [
-      "1e1fa3ddf7ef1c0c"
+      "8af784daa6359b34"
     ]
   ]
 }
