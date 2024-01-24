@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Send attest til manuel behandling",
   "info": "",
-  "x": 330,
+  "x": 270,
   "y": 100,
   "wires": []
 }
