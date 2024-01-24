@@ -11,6 +11,7 @@ import Start from '@/views/Start.vue'
 import Vue from '@/views/Vue.vue'
 import Templates from '@/views/Templates.vue'
 import Straffeattest from '@/views/Straffeattest.vue'
+import Borneattest from '@/views/Borneattest.vue'
 
 // Opsætning af URL routing
 
@@ -35,7 +36,7 @@ const router = createRouter({
         {
             path: '/orders/borneattest', 
             name: "Børneattester",
-            component: Straffeattest
+            component: Borneattest
         },
         {
             path: '/orders/straffeattest', 

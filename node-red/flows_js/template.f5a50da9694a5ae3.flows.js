@@ -19,7 +19,9 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger SET erBestilt = 1 AND bestiltHosPoliti = {{date}} WHERE er{{type}} = true AND erBestilt = false
+UPDATE bestillinger
+SET erBestilt = 1, bestiltHosPoliti = NOW()
+WHERE er{{type}} = true AND erBestilt = false
 `
 
 module.exports = Node;

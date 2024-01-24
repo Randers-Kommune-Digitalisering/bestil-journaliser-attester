@@ -5,7 +5,7 @@
     import Content from '@/components/Content.vue'
     import IconTable from '@/components/icons/IconTable.vue'
 
-    const attestType = ref("Straffeattest")
+    const attestType = ref("Børneattest")
     const _attestType = attestType.value == "Straffeattest" ? "Straffeattest" : "Borneattest"
 
 
