@@ -19,7 +19,9 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger WHERE erBestilt = false
+SELECT * FROM bestillinger
+WHERE erBestilt = false
+AND erAfvist = false
 `
 
 module.exports = Node;

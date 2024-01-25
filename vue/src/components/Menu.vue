@@ -15,6 +15,10 @@
         {
             "title": "Børneattester",
             "url": "/orders/borneattest"
+        },        
+        {
+            "title": "Historik",
+            "url": "/orders/history"
         }
     ])
 

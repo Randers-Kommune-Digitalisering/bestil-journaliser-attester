@@ -12,6 +12,7 @@ import Vue from '@/views/Vue.vue'
 import Templates from '@/views/Templates.vue'
 import Straffeattest from '@/views/Straffeattest.vue'
 import Borneattest from '@/views/Borneattest.vue'
+import Historik from '@/views/Historik.vue'
 
 // Opsætning af URL routing
 
@@ -42,6 +43,11 @@ const router = createRouter({
             path: '/orders/straffeattest', 
             name: "Straffeattester",
             component: Straffeattest
+        },
+        {
+            path: '/orders/history', 
+            name: "Historik",
+            component: Historik
         }
     ]
 })

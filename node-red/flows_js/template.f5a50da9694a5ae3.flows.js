@@ -10,7 +10,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 670,
-  "y": 1120,
+  "y": 1400,
   "wires": [
     [
       "2c1fe8bbce1be889"
@@ -21,7 +21,9 @@ const Node = {
 Node.template = `
 UPDATE bestillinger
 SET erBestilt = 1, bestiltHosPoliti = NOW()
-WHERE er{{type}} = true AND erBestilt = false
+WHERE er{{type}} = true
+AND erBestilt = false
+AND erAfvist = false
 `
 
 module.exports = Node;

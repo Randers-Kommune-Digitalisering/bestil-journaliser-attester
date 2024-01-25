@@ -5,7 +5,7 @@ const Node = {
   "name": "Marker som bestilt (type)",
   "info": "",
   "x": 190,
-  "y": 1080,
+  "y": 1360,
   "wires": []
 }
 

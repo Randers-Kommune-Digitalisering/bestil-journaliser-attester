@@ -10,7 +10,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 400,
-  "y": 680,
+  "y": 1020,
   "wires": [
     [
       "ed3a1fcc265871e6"
@@ -19,7 +19,10 @@ const Node = {
 }
 
 Node.template = `
-SELECT COUNT(*) FROM bestillinger WHERE erBestilt = false AND erStraffeattest = true
+SELECT COUNT(*) FROM bestillinger
+WHERE erBestilt = false
+AND erStraffeattest = true
+AND erAfvist = false
 `
 
 module.exports = Node;

@@ -16,7 +16,7 @@
 
     const orders = ref([])
 
-    fetch('/api/data/orders/' + _attestType)
+    fetch('/api/data/orders/type/' + _attestType)
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => orders.value = value)
