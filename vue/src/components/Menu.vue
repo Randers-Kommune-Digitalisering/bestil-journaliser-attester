@@ -37,16 +37,18 @@
 
     // Get order count (straffeattest)
 
-    fetch('/api/data/orders/count/straffeattest')
+    fetch('/api/data/orders/count')
     .then(response => response = response.json())
-    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Straffeattester") ].alert = value)
+    .then(response => {
+        setAlert("Straffeattester", response.staffeattestCount)
+        setAlert("Børneattester", response.borneattestCount)
+    })
     
-    // Get order count (Børneattest)
 
-    fetch('/api/data/orders/count/borneattest')
-    .then(response => response = response.json())
-    .then(value => menuItems.value[ menuItems.value.findIndex(x => x.title == "Børneattester") ].alert = value)
-    
+    function setAlert(itemTitle, alert)
+    {
+        menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
+    }
 
 
     // Dark mode

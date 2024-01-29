@@ -46,6 +46,7 @@
                         <th>Bestillingsansvarlig</th>
                         <th>Attest CPR</th>
                         <th>Type</th>
+                        <th>Bestilt</th>
                     </tr>
                 </thead>
                 
@@ -54,9 +55,10 @@
                     <td>{{ order.sagsbehandlerNavn }} <div class="text-small">{{ order.sagsbehandlerEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
                     <td>{{ order.erStraffeattest ? "Straffeattest" : "Børneattest" }}</td>
+                    <td>{{ dayjs(order.bestiltHosPoliti).format("DD-MM-YYYY") }}</td>
                 </tr>
                 <tr v-else>
-                    <td colspan="4">Der er ingen bestillinger at vise.</td>
+                    <td colspan="5">Der er ingen bestillinger at vise.</td>
                 </tr>
             </table>
         </div>

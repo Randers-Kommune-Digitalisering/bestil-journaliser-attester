@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload[0][\"COUNT(*)\"]",
+      "to": "payload[0]",
       "tot": "msg"
     }
   ],
@@ -17,8 +17,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 1000,
+  "x": 920,
+  "y": 920,
   "wires": [
     [
       "147c40f2221f9b60"

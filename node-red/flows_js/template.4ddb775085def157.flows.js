@@ -9,7 +9,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 420,
+  "x": 460,
   "y": 940,
   "wires": [
     [
@@ -19,9 +19,10 @@ const Node = {
 }
 
 Node.template = `
-SELECT COUNT(*) FROM bestillinger
-WHERE erBestilt = false
-AND erAfvist = false
+SELECT 
+    (SELECT COUNT(*) FROM bestillinger WHERE erBestilt = false AND erAfvist = false AND erStraffeattest = true) AS staffeattestCount,
+    (SELECT COUNT(*) FROM bestillinger WHERE erBestilt = false AND erAfvist = false AND erBorneattest = true) AS borneattestCount
+
 `
 
 module.exports = Node;
