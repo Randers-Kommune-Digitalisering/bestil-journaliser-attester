@@ -12,8 +12,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1120,
-  "y": 1040,
+  "x": 1080,
+  "y": 1260,
   "wires": []
 }
 

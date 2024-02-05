@@ -12,8 +12,8 @@ const Node = {
   "tls": true,
   "name": "",
   "dname": "Send mail",
-  "x": 820,
-  "y": 280,
+  "x": 900,
+  "y": 300,
   "wires": []
 }
 
