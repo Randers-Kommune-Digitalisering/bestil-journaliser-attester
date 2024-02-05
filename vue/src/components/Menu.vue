@@ -1,5 +1,7 @@
 <script setup>
-    import { ref } from 'vue'
+    defineExpose( { getOrderCount } )
+
+    import { ref, useCssModule } from 'vue'
 
     // Set menu items
 
@@ -37,18 +39,27 @@
 
     // Get order count (straffeattest)
 
-    fetch('/api/data/orders/count')
-    .then(response => response = response.json())
-    .then(response => {
-        setAlert("Straffeattester", response.staffeattestCount)
-        setAlert("Børneattester", response.borneattestCount)
-    })
+    function getOrderCount()
+    {
+        fetch('/api/data/orders/count')
+            .then(response => response = response.json())
+            .then(response => {
+                setAlert("Straffeattester", response.staffeattestCount)
+                setAlert("Børneattester", response.borneattestCount)
+        })
+    }
+
+    // Get orders when starting
+    getOrderCount();
     
 
     function setAlert(itemTitle, alert)
     {
         menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
     }
+
+    import straffeattest from '@/views/Straffeattest.vue'
+    import borneattest from '@/views/Borneattest.vue'
 
 
     // Dark mode

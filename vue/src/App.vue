@@ -1,19 +1,31 @@
 <script setup>
+import { ref } from 'vue'
 import Header from './components/Menu.vue'
+
+const headerComponent = ref(null)
+const currentComponent = ref(null)
+
+// Function to call from currentComponent
+const updateOrderCount = (obj) => {
+    console.log(`Received update request`)    
+    console.log(obj)
+    headerComponent.value.getOrderCount()
+};
+
 </script>
 
 <template>
 
   <header>
 
-      <Header />
+      <Header ref="headerComponent" />
 
   </header>
   
   <main>
 
       <div class="content">
-          <router-view></router-view>
+          <router-view ref="currentComponent" @updateOrderCount="updateOrderCount"></router-view>
       </div>
 
   </main>

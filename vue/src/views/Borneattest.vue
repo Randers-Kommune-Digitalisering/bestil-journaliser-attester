@@ -12,6 +12,12 @@
     const h2 = attestType.value == "Straffeattest" ? "Straffeattester" : "Børneattester"
 
 
+    const emit = defineEmits(['updateOrderCount'])
+ 
+    const callUpdate = () => {
+        emit('updateOrderCount', true)
+    }
+
     // Get orders
 
     const orders = ref([])
@@ -22,19 +28,6 @@
     .then(value => orders.value = value)
 
     // Functions
-
-    /*
-    function filterByType(orderList)
-    {
-        if(attestType.value != "Straffeattest" && attestType.value != "Børneattest")
-            return orderList;
-
-        else if(attestType.value == "Straffeattest")
-            return orderList.filter(x => x.erStraffeattest == 1)
-
-        else if(attestType.value == "Børneattest")
-            return orderList.filter(x => x.erBorneattest == 1)
-    }*/
 
     function copyOrderList()
     {
@@ -80,6 +73,7 @@
 
         // Set orders = []
         orders.value = []
+        callUpdate()
     }
 
     function reject(item)
@@ -93,6 +87,7 @@
         // Set orders = []
         //let del = delete orders.value [ orders.value.findIndex[x => x.uid = uid] ]
         orders.value = orders.value.filter(x => x !== item)
+        callUpdate()
     }
 
 </script>
