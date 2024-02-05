@@ -1,10 +1,10 @@
 const Node = {
   "id": "6968a02c8462d7b2",
   "type": "junction",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "2d0458ee6b467f9b",
   "x": 980,
-  "y": 1420,
+  "y": 1380,
   "wires": [
     [
       "abbd54f5c425282c"

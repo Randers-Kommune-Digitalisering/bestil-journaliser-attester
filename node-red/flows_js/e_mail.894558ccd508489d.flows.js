@@ -2,6 +2,7 @@ const Node = {
   "id": "894558ccd508489d",
   "type": "e-mail",
   "z": "812b69015d6703b6",
+  "d": true,
   "server": "outlook.office365.com",
   "port": "587",
   "authtype": "BASIC",
@@ -11,7 +12,7 @@ const Node = {
   "tls": true,
   "name": "",
   "dname": "Send mail",
-  "x": 880,
+  "x": 820,
   "y": 280,
   "wires": []
 }

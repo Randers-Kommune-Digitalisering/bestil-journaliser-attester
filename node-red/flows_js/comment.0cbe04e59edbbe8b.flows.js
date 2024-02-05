@@ -1,11 +1,11 @@
 const Node = {
   "id": "0cbe04e59edbbe8b",
   "type": "comment",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
   "name": "Kontrollér om mail er vedr. straffeatt.",
   "info": "",
-  "x": 480,
+  "x": 460,
   "y": 100,
   "wires": []
 }

@@ -9,7 +9,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 650,
+  "x": 590,
   "y": 380,
   "wires": [
     [
@@ -19,11 +19,10 @@ const Node = {
 }
 
 Node.template = `
-Her er en test mail 
-
+Den attest som du har bestilt er netop blevet journaliseret
+på SBSYS sag med sagsnr. 1.
 <br /><br />
-
-Html linjeskift
+Opret en supportsag hvis attesten ikke kan ses i sagen.
 `
 
 module.exports = Node;

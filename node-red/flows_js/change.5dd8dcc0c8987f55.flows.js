@@ -1,7 +1,7 @@
 const Node = {
   "id": "5dd8dcc0c8987f55",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
   "name": "Find ny medarbejder",
   "rules": [
@@ -18,7 +18,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 680,
+  "x": 700,
   "y": 380,
   "wires": [
     [

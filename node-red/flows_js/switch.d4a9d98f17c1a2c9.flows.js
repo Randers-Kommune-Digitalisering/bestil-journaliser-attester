@@ -1,7 +1,7 @@
 const Node = {
   "id": "d4a9d98f17c1a2c9",
   "type": "switch",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
   "name": "Fra hovedpostkasse?",
   "property": "from",
@@ -19,7 +19,7 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 440,
+  "x": 420,
   "y": 140,
   "wires": [
     [

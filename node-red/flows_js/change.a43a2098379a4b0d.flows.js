@@ -1,7 +1,7 @@
 const Node = {
   "id": "a43a2098379a4b0d",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "2d0458ee6b467f9b",
   "name": "Set global token",
   "rules": [
@@ -41,7 +41,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1140,
-  "y": 940,
+  "y": 900,
   "wires": [
     [
       "efe052efd2efa6a0"

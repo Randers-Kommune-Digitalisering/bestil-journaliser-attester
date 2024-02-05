@@ -1,7 +1,7 @@
 const Node = {
   "id": "6ad8a0aeb037f05f",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "2d0458ee6b467f9b",
   "name": "Sæt attest",
   "rules": [
@@ -19,7 +19,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 770,
-  "y": 1520,
+  "y": 1480,
   "wires": [
     [
       "f7bcbe671cbfeffd"

@@ -5,13 +5,13 @@ const Node = {
   "name": "Token",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1210,
+  "x": 1220,
   "y": 680,
   "wires": []
 }

@@ -1,7 +1,7 @@
 const Node = {
   "id": "ad3c0a4bdf6840b1",
   "type": "change",
-  "z": "971a7ae6df987a48",
+  "z": "90c6b0b502e346fa",
   "g": "2d0458ee6b467f9b",
   "name": "Search paramteres",
   "rules": [
@@ -19,7 +19,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 470,
-  "y": 1100,
+  "y": 1060,
   "wires": [
     [
       "97014fb5606be30b"
