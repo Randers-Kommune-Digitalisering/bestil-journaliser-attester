@@ -1,7 +1,7 @@
 const Node = {
   "id": "7459f772194dcf44",
   "type": "subflow",
-  "name": "Update DB",
+  "name": "DB Try Connect",
   "info": "",
   "category": "",
   "in": [

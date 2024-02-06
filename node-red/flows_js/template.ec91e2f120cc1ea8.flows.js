@@ -19,7 +19,9 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger SET erAfvist = 1 WHERE uid = {{id}}
+UPDATE bestillinger
+SET erAfvist = 1, afvist = NOW()
+WHERE uid = {{id}}
 `
 
 module.exports = Node;

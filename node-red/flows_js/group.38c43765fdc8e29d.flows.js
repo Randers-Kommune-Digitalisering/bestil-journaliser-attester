@@ -2,7 +2,7 @@ const Node = {
   "id": "38c43765fdc8e29d",
   "type": "group",
   "z": "90c6b0b502e346fa",
-  "name": "",
+  "name": "Kontrollér attest",
   "style": {
     "label": true,
     "stroke": "none",
@@ -19,7 +19,7 @@ const Node = {
     "6aa225f2de7cb9d4"
   ],
   "x": 154,
-  "y": 739,
+  "y": 939,
   "w": 892,
   "h": 162
 }

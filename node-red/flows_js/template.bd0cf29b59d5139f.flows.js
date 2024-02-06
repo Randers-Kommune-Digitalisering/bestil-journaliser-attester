@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS bestillinger (
     erBorneattest BOOL,
 
     erAfvist BOOL DEFAULT False,
+    afvist TIMESTAMP,
 
     erBestilt BOOL DEFAULT False,
     bestiltHosPoliti TIMESTAMP,

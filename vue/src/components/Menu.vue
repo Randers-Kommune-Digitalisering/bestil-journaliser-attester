@@ -58,9 +58,6 @@
         menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
     }
 
-    import straffeattest from '@/views/Straffeattest.vue'
-    import borneattest from '@/views/Borneattest.vue'
-
 
     // Dark mode
 
