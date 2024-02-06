@@ -1,19 +1,18 @@
 const Node = {
-  "id": "c91620cb6ea990e0",
+  "id": "1bc301b2666dea69",
   "type": "debug",
-  "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "PDF-error",
+  "z": "812b69015d6703b6",
+  "name": "FEJL",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "error",
-  "targetType": "msg",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 460,
-  "y": 860,
+  "x": 530,
+  "y": 880,
   "wires": []
 }
 

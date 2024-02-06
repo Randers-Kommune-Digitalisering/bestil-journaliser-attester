@@ -9,17 +9,18 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 590,
+  "x": 530,
   "y": 640,
   "wires": [
     [
-      "894558ccd508489d"
+      "894558ccd508489d",
+      "a756faa2e4149fca"
     ]
   ]
 }
 
 Node.template = `
-Din bestilling af en straffe- eller børneattest er blevet afvist af sikkerhedsmoderatoren.
+Din bestilling af en straffe- eller børneattest er blevet afvist af sikkerhedsmoderatoren.<br />
 Opret en support-sag hvis du mener der er tale om en fejl.
 `
 

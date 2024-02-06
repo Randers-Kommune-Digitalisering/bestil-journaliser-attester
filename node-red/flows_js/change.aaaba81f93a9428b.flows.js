@@ -1,16 +1,17 @@
 const Node = {
-  "id": "5dd8dcc0c8987f55",
+  "id": "aaaba81f93a9428b",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Find CPR",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "medarbejder",
+      "p": "sagsbehandler",
       "pt": "msg",
-      "to": "( payload[$ ~> $contains(\"CPR\")]\t\t~> $split(\":\") )[1]\t~> $trim()",
-      "tot": "jsonata"
+      "to": "payload[0].sagsbehandlerEmail",
+      "tot": "msg",
+      "dc": true
     }
   ],
   "action": "",
@@ -18,13 +19,16 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 480,
+  "x": 1025,
   "y": 380,
   "wires": [
     [
-      "50ef0cb1a829a484"
+      "8459f927e0b6c84c",
+      "da59f72840f77396",
+      "8c9ab9cb40cc6c28"
     ]
-  ]
+  ],
+  "l": false
 }
 
 module.exports = Node;

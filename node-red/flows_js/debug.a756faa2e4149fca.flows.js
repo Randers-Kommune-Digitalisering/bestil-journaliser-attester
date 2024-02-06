@@ -1,19 +1,18 @@
 const Node = {
-  "id": "c91620cb6ea990e0",
+  "id": "a756faa2e4149fca",
   "type": "debug",
-  "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "PDF-error",
+  "z": "812b69015d6703b6",
+  "name": "Afvisning",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "error",
-  "targetType": "msg",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 460,
-  "y": 860,
+  "x": 860,
+  "y": 640,
   "wires": []
 }
 

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "3add1b775cbd9ecb",
+  "id": "3ee1f33c7c4955f2",
   "type": "template",
   "z": "812b69015d6703b6",
   "name": "Tekst",
@@ -10,11 +10,10 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 690,
-  "y": 360,
+  "y": 140,
   "wires": [
     [
-      "894558ccd508489d",
-      "ff384e8aa04019b9"
+      "54a496bee2f51a3c"
     ]
   ]
 }
@@ -23,8 +22,8 @@ Node.template = `
 Attest på CPR XXXXXX-XXXX er modtaget fra Politiet.<br />
 Attesten er uden registrerede forhold.<br /><br />
 
-Attesten er journaliseret i personalesag med sagsnummer YYYYYY.<br />
-Opret en supportsag hvis attesten ikke kan ses i sagen.
+Attesten er <b>IKKE</b> journaliseret, da der ikke blev fundet en identificerbar personalesag.<br />
+Vær opmærksom på at attesten derfor skal journaliseres manuelt.
 `
 
 module.exports = Node;

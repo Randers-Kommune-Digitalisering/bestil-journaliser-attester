@@ -1,11 +1,11 @@
 const Node = {
-  "id": "42c787d43b526523",
+  "id": "7d67164b056080c3",
   "type": "comment",
   "z": "812b69015d6703b6",
-  "name": "OBS: Opdater til \\n sagsnummer dynamisk",
+  "name": "Er attest ren?",
   "info": "",
-  "x": 600,
-  "y": 460,
+  "x": 550,
+  "y": 120,
   "wires": []
 }
 

@@ -6,10 +6,10 @@ const Node = {
   "name": "Mail OUT: Ikke en straffeattest",
   "mode": "link",
   "links": [
-    "ecdc0f3612d04bd4"
+    "d5c94fde9dd94804"
   ],
-  "x": 745,
-  "y": 640,
+  "x": 545,
+  "y": 580,
   "wires": []
 }
 

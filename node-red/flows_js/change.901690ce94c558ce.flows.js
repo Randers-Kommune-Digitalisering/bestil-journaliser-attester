@@ -8,6 +8,13 @@ const Node = {
       "t": "set",
       "p": "to",
       "pt": "msg",
+      "to": "sagsbehandler",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "to",
+      "pt": "msg",
       "to": "Soren.Langbo.Sloto.Thomassen@randers.dk",
       "tot": "str"
     },
@@ -29,7 +36,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 340,
+  "x": 320,
   "y": 380,
   "wires": [
     [

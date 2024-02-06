@@ -3,9 +3,9 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Kontroller sagsbehandler mailadresse samt medarbejder CPR",
+  "name": "Kontroller sagsbehandler mailadresse",
   "info": "",
-  "x": 400,
+  "x": 330,
   "y": 520,
   "wires": []
 }

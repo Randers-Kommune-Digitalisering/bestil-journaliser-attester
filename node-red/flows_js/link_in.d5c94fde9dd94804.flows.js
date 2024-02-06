@@ -1,16 +1,16 @@
 const Node = {
-  "id": "89d0aa99d64e7c29",
+  "id": "d5c94fde9dd94804",
   "type": "link in",
   "z": "812b69015d6703b6",
-  "name": "Mail IN: Afvis",
+  "name": "Mail IN: Fejl",
   "links": [
-    "0a543725b05530a5"
+    "461970279c8fa295"
   ],
   "x": 165,
-  "y": 640,
+  "y": 880,
   "wires": [
     [
-      "a0808b9ddfdd3d55"
+      "1bc301b2666dea69"
     ]
   ]
 }

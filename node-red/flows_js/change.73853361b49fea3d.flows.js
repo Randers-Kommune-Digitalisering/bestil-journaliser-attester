@@ -1,5 +1,5 @@
 const Node = {
-  "id": "4057d676a4c0c7e3",
+  "id": "73853361b49fea3d",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "38c43765fdc8e29d",
@@ -7,10 +7,10 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "attestErRen",
+      "p": "payload",
       "pt": "msg",
-      "to": "true\tin\tpayload.t @ $text . (\t    $text ~> $contains(\"er ikke registreret med afgørelser\")\t)",
-      "tot": "jsonata"
+      "to": "attachments[0].content",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -18,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 700,
+  "x": 260,
   "y": 820,
   "wires": [
     [
-      "6aa225f2de7cb9d4"
+      "8aba1f65ca56980f"
     ]
   ]
 }
