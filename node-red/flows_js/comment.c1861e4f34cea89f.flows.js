@@ -5,8 +5,8 @@ const Node = {
   "g": "2d0458ee6b467f9b",
   "name": "Træk token fra SBSIP",
   "info": "",
-  "x": 260,
-  "y": 800,
+  "x": 220,
+  "y": 1020,
   "wires": []
 }
 

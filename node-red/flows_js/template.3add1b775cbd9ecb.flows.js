@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 590,
-  "y": 380,
+  "x": 690,
+  "y": 360,
   "wires": [
     [
       "894558ccd508489d"
@@ -19,9 +19,10 @@ const Node = {
 }
 
 Node.template = `
-Den attest som du har bestilt er netop blevet journaliseret
-på SBSYS sag med sagsnr. 1.
-<br /><br />
+Attest på CPR XXXXXX-XXXX er modtaget fra Politiet.<br />
+Attesten er uden registrerede forhold.<br /><br />
+
+Attesten er journaliseret i personalesag med sagsnummer YYYYYY.<br />
 Opret en supportsag hvis attesten ikke kan ses i sagen.
 `
 

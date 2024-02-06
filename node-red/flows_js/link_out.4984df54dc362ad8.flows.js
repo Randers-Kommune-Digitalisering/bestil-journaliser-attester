@@ -8,8 +8,8 @@ const Node = {
   "links": [
     "ecdc0f3612d04bd4"
   ],
-  "x": 735,
-  "y": 1280,
+  "x": 695,
+  "y": 1500,
   "wires": []
 }
 
