@@ -26,6 +26,8 @@
 
     // Get orders
 
+    callUpdate()
+
     const orders = ref([])
 
     fetch('/api/data/orders/type/' + _attestType)
