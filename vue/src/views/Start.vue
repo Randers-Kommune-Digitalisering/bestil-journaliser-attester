@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <h2>Attester</h2>
+    <h2>Attestrekvirering</h2>
 
     <Content>
         <template #icon>
