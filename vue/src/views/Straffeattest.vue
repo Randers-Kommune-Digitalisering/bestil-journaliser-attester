@@ -10,7 +10,7 @@
     const _attestHeaderTitle = attestType.value + 'er';
 
 
-    const h2 = attestType.value == "Straffeattest" ? "Straffeattester" : "Børneattester"
+    const h2 = _attestHeaderTitle
 
     // Events
 
@@ -75,8 +75,19 @@
 
     function setAsOrdered()
     {
+        // Obtain all ids from list
+        var ids = []
+        orders.value.forEach(element => {
+            console.log("Found id:" + element.uid)
+            ids.push( element.uid )
+        });
+        
+        var idList = ids.join();
+
+        console.log("idList: '" + idList + "'")
+
         // Perform POST request to backend
-        fetch('/api/data/orders/accept/' + _attestType)
+        fetch('/api/data/orders/accept/' + idList)
         .then(response => console.log(response.json()))
 
         // Set orders = []

@@ -50,11 +50,11 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Dato <div class="text-small">Bestilt</div></th>
+                        <th>Dato <div class="text-small">Anmodet</div></th>
                         <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
                         <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
                         <th>Attest <div class="text-small">Type</div></th>
-                        <th>Bestilt</th>
+                        <th>Dato <div class="text-small">Bestilt</div></th>
                     </tr>
                 </thead>
                 
