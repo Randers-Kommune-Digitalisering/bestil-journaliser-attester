@@ -95,6 +95,11 @@ button, input[type='submit']
     border: 0rem;
 }
 
+button:disabled, input[type='submit']:disabled
+{
+    background-color: var(--color-text)!important;
+}
+
 input, input[type='text']
 {
     border-color: var(--color-border-dark);
