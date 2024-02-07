@@ -7,15 +7,21 @@
 
     const attestType = ref("Straffeattest")
     const _attestType = attestType.value == "Straffeattest" ? "Straffeattest" : "Borneattest"
+    const _attestHeaderTitle = attestType.value + 'er';
 
 
     const h2 = attestType.value == "Straffeattest" ? "Straffeattester" : "Børneattester"
 
+    // Events
 
-    const emit = defineEmits(['updateOrderCount'])
- 
+    const emit = defineEmits(['updateOrderCount', 'setOrderCount'])
+
     const callUpdate = () => {
-        emit('updateOrderCount', true)
+        emit('updateOrderCount')
+    }
+
+    const callSetCount = (count) => {
+        emit('setOrderCount', _attestHeaderTitle, count)
     }
 
     // Get orders
@@ -73,21 +79,19 @@
 
         // Set orders = []
         orders.value = []
-        callUpdate()
+        callSetCount(0)
     }
 
-    function reject(item)
+    async function reject(item)
     {
-        console.log("uid: "+  item)
-
         // Perform POST request to backend
         fetch('/api/data/orders/reject/' + item.uid)
         .then(response => console.log(response.json()))
+        //.then(callUpdate())
 
-        // Set orders = []
-        //let del = delete orders.value [ orders.value.findIndex[x => x.uid = uid] ]
+        // Remove order
         orders.value = orders.value.filter(x => x !== item)
-        callUpdate()
+        callSetCount(-1)
     }
 
 </script>
@@ -108,9 +112,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Dato</th>
-                        <th>Bestillingsansvarlig</th>
-                        <th>Attest CPR</th>
+                        <th>Dato <div class="text-small">Anmodet</div></th>
+                        <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
+                        <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
                         <th></th>
                     </tr>
                 </thead>

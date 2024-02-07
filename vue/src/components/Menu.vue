@@ -1,5 +1,5 @@
 <script setup>
-    defineExpose( { getOrderCount } )
+    defineExpose( { updateOrderCount, setOrderCount } )
 
     import { ref, useCssModule } from 'vue'
 
@@ -39,7 +39,7 @@
 
     // Get order count (straffeattest)
 
-    function getOrderCount()
+    function updateOrderCount()
     {
         fetch('/api/data/orders/count')
             .then(response => response = response.json())
@@ -50,12 +50,30 @@
     }
 
     // Get orders when starting
-    getOrderCount();
-    
+    updateOrderCount();
 
+    function setOrderCount(itemTitle, countAdjustment = 0)
+    {
+        var currentValue = menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert
+
+        // Set 0
+        if(countAdjustment == 0)
+            setAlert(itemTitle, "")
+
+        // Set relative
+        else if(parseInt(currentValue))
+            setAlert(itemTitle, (currentValue+countAdjustment))
+    }
+    
     function setAlert(itemTitle, alert)
     {
-        menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
+        // Delete alert
+        if(alert === "" || alert === null || alert === undefined)
+            delete menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert
+
+        // Set alert
+        else
+            menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
     }
 
 
