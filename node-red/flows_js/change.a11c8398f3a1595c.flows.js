@@ -2,7 +2,7 @@ const Node = {
   "id": "a11c8398f3a1595c",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "set msg.type \\n & date \\n & whereClause",
+  "name": "set msg.type \\n & whereClause",
   "rules": [
     {
       "t": "set",
@@ -10,13 +10,6 @@ const Node = {
       "pt": "msg",
       "to": "req.params.type",
       "tot": "msg"
-    },
-    {
-      "t": "set",
-      "p": "date",
-      "pt": "msg",
-      "to": "$now()",
-      "tot": "jsonata"
     },
     {
       "t": "set",

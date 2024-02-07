@@ -6,7 +6,7 @@ const Node = {
   "name": "Kontroller afgørelser",
   "info": "",
   "x": 690,
-  "y": 980,
+  "y": 940,
   "wires": []
 }
 

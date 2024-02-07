@@ -1,27 +1,27 @@
 const Node = {
-  "id": "08b29e20d21cff10",
+  "id": "d683aa9db557c595",
   "type": "template",
-  "z": "7d7cd8fb8a9dbe4e",
-  "name": "Forespørgsel ↓\\n Sæt erBestilt = true",
+  "z": "c715449c21b1a61f",
+  "name": "",
   "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 670,
-  "y": 1420,
+  "x": 480,
+  "y": 1540,
   "wires": [
     [
-      "47f3a96b98097add"
+      "d5cefe62486a783a"
     ]
   ]
 }
 
 Node.template = `
 UPDATE bestillinger
-SET erBestilt = 1, bestiltHosPoliti = NOW()
-{{{whereClause}}}
+SET erAfvist = 1, afvist = NOW()
+WHERE uid = 3
 `
 
 module.exports = Node;

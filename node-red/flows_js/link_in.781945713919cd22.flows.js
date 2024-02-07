@@ -5,7 +5,7 @@ const Node = {
   "g": "e05f4fc731fc4c56",
   "name": "Opdater DB Advisering IN",
   "links": [],
-  "x": 1155,
+  "x": 1145,
   "y": 620,
   "wires": [
     [

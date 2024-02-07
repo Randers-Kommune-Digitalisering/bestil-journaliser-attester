@@ -28,6 +28,13 @@ const Node = {
     },
     {
       "t": "set",
+      "p": "affectedRows",
+      "pt": "msg",
+      "to": "payload.affectedRows",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
       "p": "stdout.succes",
       "pt": "msg",
       "to": "error ~> $exists() ? false : true",
@@ -49,7 +56,9 @@ const Node = {
   "x": 460,
   "y": 220,
   "wires": [
-    []
+    [
+      "42f951554af59bd7"
+    ]
   ]
 }
 
