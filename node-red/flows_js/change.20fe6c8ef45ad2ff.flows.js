@@ -28,6 +28,13 @@ const Node = {
     },
     {
       "t": "set",
+      "p": "affectedRows",
+      "pt": "msg",
+      "to": "payload.affectedRows",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
       "p": "stdout.succes",
       "pt": "msg",
       "to": "error ~> $exists() ? false : true",

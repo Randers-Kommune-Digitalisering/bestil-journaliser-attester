@@ -4,7 +4,7 @@ const Node = {
   "z": "c715449c21b1a61f",
   "g": "d8880c2ab63ce3cd",
   "name": "stdout",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
@@ -12,8 +12,8 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 580,
-  "y": 1180,
+  "x": 800,
+  "y": 1140,
   "wires": []
 }
 

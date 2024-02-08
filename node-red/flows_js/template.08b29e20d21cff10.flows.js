@@ -1,5 +1,5 @@
 const Node = {
-  "id": "f5a50da9694a5ae3",
+  "id": "08b29e20d21cff10",
   "type": "template",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "Forespørgsel ↓\\n Sæt erBestilt = true",
@@ -10,10 +10,10 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 670,
-  "y": 1400,
+  "y": 1420,
   "wires": [
     [
-      "2c1fe8bbce1be889"
+      "47f3a96b98097add"
     ]
   ]
 }
@@ -21,9 +21,7 @@ const Node = {
 Node.template = `
 UPDATE bestillinger
 SET erBestilt = 1, bestiltHosPoliti = NOW()
-WHERE er{{type}} = true
-AND erBestilt = false
-AND erAfvist = false
+{{{whereClause}}}
 `
 
 module.exports = Node;

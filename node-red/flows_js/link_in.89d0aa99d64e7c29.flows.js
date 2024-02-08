@@ -4,11 +4,10 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Mail IN: Afvis",
   "links": [
-    "e62246bc7846a299",
     "0a543725b05530a5"
   ],
   "x": 165,
-  "y": 620,
+  "y": 640,
   "wires": [
     [
       "a0808b9ddfdd3d55"

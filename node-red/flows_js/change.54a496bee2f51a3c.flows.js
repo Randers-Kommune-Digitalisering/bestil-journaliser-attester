@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "description",
       "pt": "msg",
-      "to": "description ~> $replace(\"<mailto:\", \" <\")",
+      "to": "description/* ~> $replace(\"<mailto:\", \" <\")*/",
       "tot": "jsonata"
     },
     {
@@ -31,11 +31,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 560,
+  "x": 900,
   "y": 160,
   "wires": [
     [
-      "894558ccd508489d"
+      "9d37b0df94536643",
+      "894558ccd508489d",
+      "eccc1ab7d7943a97"
     ]
   ]
 }

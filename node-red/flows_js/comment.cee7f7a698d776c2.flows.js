@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "OBS: Skal ændres til \\n sagsbehandler mail-adresse",
   "info": "",
-  "x": 380,
+  "x": 360,
   "y": 440,
   "wires": []
 }

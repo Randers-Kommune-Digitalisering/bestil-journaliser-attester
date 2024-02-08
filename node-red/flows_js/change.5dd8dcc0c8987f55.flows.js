@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Find ny medarbejder",
+  "name": "Find CPR",
   "rules": [
     {
       "t": "set",
@@ -18,13 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 700,
+  "x": 480,
   "y": 380,
   "wires": [
     [
-      "8c9ab9cb40cc6c28",
-      "da59f72840f77396",
-      "8459f927e0b6c84c"
+      "50ef0cb1a829a484"
     ]
   ]
 }

@@ -5,8 +5,7 @@ const Node = {
   "name": "Mail IN: Manuel behandling",
   "links": [
     "16245bab475b9515",
-    "4984df54dc362ad8",
-    "461970279c8fa295"
+    "4984df54dc362ad8"
   ],
   "x": 155,
   "y": 160,

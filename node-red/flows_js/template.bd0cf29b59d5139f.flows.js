@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 1050,
-  "y": 100,
+  "x": 890,
+  "y": 140,
   "wires": [
     [
       "f55bc66f6a43e55d"
@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS bestillinger (
     erBorneattest BOOL,
 
     erAfvist BOOL DEFAULT False,
+    afvist TIMESTAMP,
 
     erBestilt BOOL DEFAULT False,
     bestiltHosPoliti TIMESTAMP,

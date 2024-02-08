@@ -6,10 +6,14 @@ const headerComponent = ref(null)
 const currentComponent = ref(null)
 
 // Function to call from currentComponent
-const updateOrderCount = (obj) => {
-    console.log(`Received update request`)    
-    console.log(obj)
-    headerComponent.value.getOrderCount()
+const updateOrderCount = () => {
+    console.log(`Received update request`)
+    headerComponent.value.updateOrderCount()
+};
+
+const setOrderCount = (item, count) => {
+    console.log(`Received set order count request`)
+    headerComponent.value.setOrderCount(item, count)
 };
 
 </script>
@@ -25,7 +29,7 @@ const updateOrderCount = (obj) => {
   <main>
 
       <div class="content">
-          <router-view ref="currentComponent" @updateOrderCount="updateOrderCount"></router-view>
+          <router-view ref="currentComponent" @updateOrderCount="updateOrderCount" @setOrderCount="setOrderCount"></router-view>
       </div>
 
   </main>

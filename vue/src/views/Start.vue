@@ -2,29 +2,33 @@
     import Content from '@/components/Content.vue'
     import Status from '@/components/Status.vue'
 
-    import IconOK from '@/components/icons/IconOK.vue'
+    import IconTable from '@/components/icons/IconTable.vue'
     import IconRSS from '@/components/icons/IconRSS.vue'
+
+    
+    // Events
+
+    const emit = defineEmits(['updateOrderCount'])
+
+    const callUpdate = () => {
+        emit('updateOrderCount')
+    }
+
+    callUpdate()
+
+    
 </script>
 
 <template>
-    <h2>Node-RED + Vue Template</h2>
+    <h2>Attestrekvisition</h2>
 
     <Content>
         <template #icon>
-            <IconOK />
+            <IconTable />
         </template>
-        <template #heading>Sådan, det ser ud til at køre!</template>
+        <template #heading>Overblik</template>
         
-        Du har nu succesfuldt startet et nyt projekt med <a href="https://github.com/Randers-Kommune-Digitalisering/node-red-vue-template" target="_blank" rel="noopener">Randers Kommune's Node-RED + Vue template</a>.
-    </Content>
-
-    <Content>
-        <template #icon>
-            <IconRSS />
-        </template>
-        <template #heading>Status på opsætning</template>
-        
-        <Status />
+        Kontrollér om der er modtaget nye attestanmodninger i menubjælken under hhv. "Straffeattester", og "Børneattester".
     </Content>
 
 </template>

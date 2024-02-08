@@ -22,6 +22,7 @@ Node.template = `
 SELECT * FROM bestillinger
 WHERE erAfvist = true
 OR erAttestModtaget = true
+LIMIT 10
 `
 
 module.exports = Node;

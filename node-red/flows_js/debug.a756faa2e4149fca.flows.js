@@ -1,18 +1,18 @@
 const Node = {
-  "id": "9ea89de2b78b569d",
+  "id": "a756faa2e4149fca",
   "type": "debug",
-  "z": "c715449c21b1a61f",
-  "name": "Token",
+  "z": "812b69015d6703b6",
+  "name": "Afvisning",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "token",
-  "targetType": "msg",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1430,
-  "y": 1000,
+  "x": 740,
+  "y": 640,
   "wires": []
 }
 

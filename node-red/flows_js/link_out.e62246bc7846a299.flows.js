@@ -6,11 +6,10 @@ const Node = {
   "name": "Mail OUT: Attest journaliseret",
   "mode": "link",
   "links": [
-    "717001ae537e5dd1",
-    "89d0aa99d64e7c29"
+    "717001ae537e5dd1"
   ],
   "x": 1095,
-  "y": 1740,
+  "y": 1940,
   "wires": []
 }
 

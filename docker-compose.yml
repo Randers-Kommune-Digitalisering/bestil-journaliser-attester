@@ -43,6 +43,11 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: pass
       MARIADB_DATABASE: demo
+    command: [
+        '--wait_timeout=90',
+        '--connect_timeout=60',
+        '--max_connections=1000'
+    ]
     healthcheck:
       test: mysqladmin ping -h 127.0.0.1 -u root --password=pass
       start_period: 5s
