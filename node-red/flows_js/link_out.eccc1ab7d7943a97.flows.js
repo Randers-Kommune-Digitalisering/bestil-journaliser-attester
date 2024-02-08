@@ -4,8 +4,10 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Opdater DB Adv. OUT",
   "mode": "link",
-  "links": [],
-  "x": 1095,
+  "links": [
+    "781945713919cd22"
+  ],
+  "x": 1155,
   "y": 200,
   "wires": []
 }

@@ -4,7 +4,9 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Opdater DB Adv. OUT",
   "mode": "link",
-  "links": [],
+  "links": [
+    "781945713919cd22"
+  ],
   "x": 695,
   "y": 680,
   "wires": []
