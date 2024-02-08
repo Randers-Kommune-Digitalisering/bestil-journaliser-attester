@@ -1,7 +1,7 @@
 const Node = {
   "id": "d683aa9db557c595",
   "type": "template",
-  "z": "c715449c21b1a61f",
+  "z": "d8101c60e986806b",
   "name": "",
   "field": "sql",
   "fieldType": "msg",
@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 480,
-  "y": 1540,
+  "x": 370,
+  "y": 280,
   "wires": [
     [
       "d5cefe62486a783a"

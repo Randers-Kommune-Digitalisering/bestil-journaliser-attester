@@ -2,6 +2,7 @@ const Node = {
   "id": "d4a9d98f17c1a2c9",
   "type": "switch",
   "z": "90c6b0b502e346fa",
+  "d": true,
   "g": "7927b0d68211546e",
   "name": "Fra hovedpostkasse?",
   "property": "from",
