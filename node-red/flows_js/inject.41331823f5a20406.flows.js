@@ -1,7 +1,7 @@
 const Node = {
   "id": "41331823f5a20406",
   "type": "inject",
-  "z": "c715449c21b1a61f",
+  "z": "d8101c60e986806b",
   "name": "",
   "props": [
     {
@@ -19,8 +19,8 @@ const Node = {
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 290,
-  "y": 1440,
+  "x": 180,
+  "y": 180,
   "wires": [
     [
       "91120893d2030ec2"

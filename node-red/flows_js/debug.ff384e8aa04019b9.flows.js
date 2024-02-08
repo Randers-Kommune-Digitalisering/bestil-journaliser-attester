@@ -5,7 +5,7 @@ const Node = {
   "name": "Advisering",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",

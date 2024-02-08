@@ -13,13 +13,6 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "to",
-      "pt": "msg",
-      "to": "Soren.Langbo.Sloto.Thomassen@randers.dk",
-      "tot": "str"
-    },
-    {
-      "t": "set",
       "p": "topic",
       "pt": "msg",
       "to": "Din bestilling af attest er blevet afvist",

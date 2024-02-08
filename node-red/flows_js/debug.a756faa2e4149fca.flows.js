@@ -5,13 +5,13 @@ const Node = {
   "name": "Afvisning",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 740,
+  "x": 750,
   "y": 640,
   "wires": []
 }

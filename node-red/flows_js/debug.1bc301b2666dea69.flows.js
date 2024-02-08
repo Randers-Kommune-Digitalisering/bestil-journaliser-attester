@@ -5,13 +5,13 @@ const Node = {
   "name": "FEJL",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 530,
+  "x": 540,
   "y": 880,
   "wires": []
 }

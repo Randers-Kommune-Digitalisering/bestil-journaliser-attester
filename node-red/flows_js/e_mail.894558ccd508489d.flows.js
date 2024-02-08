@@ -2,7 +2,6 @@ const Node = {
   "id": "894558ccd508489d",
   "type": "e-mail",
   "z": "812b69015d6703b6",
-  "d": true,
   "server": "outlook.office365.com",
   "port": "587",
   "authtype": "BASIC",

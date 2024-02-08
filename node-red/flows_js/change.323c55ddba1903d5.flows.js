@@ -13,14 +13,6 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "to",
-      "pt": "msg",
-      "to": "Soren.Langbo.Sloto.Thomassen@randers.dk",
-      "tot": "str",
-      "dc": true
-    },
-    {
-      "t": "set",
       "p": "filename",
       "pt": "msg",
       "to": "Attest.pdf",

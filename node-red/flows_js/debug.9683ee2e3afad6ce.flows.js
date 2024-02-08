@@ -5,13 +5,13 @@ const Node = {
   "name": "Finish P1",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1200,
+  "x": 1230,
   "y": 1120,
   "wires": []
 }

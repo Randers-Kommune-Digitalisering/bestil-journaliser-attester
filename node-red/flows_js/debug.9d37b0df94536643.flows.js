@@ -5,13 +5,13 @@ const Node = {
   "name": "Manuel behandling",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1150,
+  "x": 1160,
   "y": 160,
   "wires": []
 }
