@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"SagID\": sagsId,\t    \"DokumentNavn\": \"Straffeattest \" & ( $millis ~> $fromMillis[\"[D01]/[M01]-[Y0001]\"] ),\t    \"Beskrivelse\": \"Automatisk journaliseret af robot\"\t}",
+      "to": "{\t    \"SagID\": sagsId,\t    \"DokumentNavn\": \"[TEST] Straffeattest \" & ( $millis ~> $fromMillis[\"[D01]/[M01]-[Y0001]\"] ),\t    \"Beskrivelse\": \"Automatisk journaliseret af robot\"\t}",
       "tot": "jsonata"
     }
   ],

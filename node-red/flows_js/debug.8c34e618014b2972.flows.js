@@ -6,7 +6,7 @@ const Node = {
   "name": "Sager?",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",
