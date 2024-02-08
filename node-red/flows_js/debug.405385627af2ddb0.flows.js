@@ -6,7 +6,7 @@ const Node = {
   "name": "SagsID",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "sagsId",
   "targetType": "msg",

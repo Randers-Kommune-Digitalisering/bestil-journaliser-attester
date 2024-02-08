@@ -1,15 +1,14 @@
 const Node = {
-  "id": "67c3dee702029892",
+  "id": "8121e59bc37c8fd2",
   "type": "change",
-  "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
+  "z": "c715449c21b1a61f",
   "name": "test cpr",
   "rules": [
     {
       "t": "set",
-      "p": "medarbejder",
+      "p": "cpr",
       "pt": "msg",
-      "to": "123456-7890",
+      "to": "080310-0000",
       "tot": "str"
     }
   ],
@@ -18,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 180,
-  "y": 1580,
+  "x": 140,
+  "y": 1260,
   "wires": [
     [
-      "ad3c0a4bdf6840b1"
+      "bd3191f24c7a2057"
     ]
   ]
 }
