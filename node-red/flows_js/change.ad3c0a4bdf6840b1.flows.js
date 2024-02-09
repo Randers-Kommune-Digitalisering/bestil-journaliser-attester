@@ -2,7 +2,7 @@ const Node = {
   "id": "ad3c0a4bdf6840b1",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Search parameters",
+  "name": "Request body: \\n Search parameters",
   "rules": [
     {
       "t": "set",

@@ -2,7 +2,7 @@ const Node = {
   "id": "f7b68cf2929715a0",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Set GET URL",
+  "name": "Request URL",
   "rules": [
     {
       "t": "set",

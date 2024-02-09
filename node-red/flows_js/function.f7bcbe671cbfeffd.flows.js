@@ -14,7 +14,7 @@ const Node = {
       "module": "request"
     }
   ],
-  "x": 820,
+  "x": 1040,
   "y": 2200,
   "wires": [
     [
@@ -42,7 +42,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, re
   
   const options = {
       method: 'POST',
-      url: 'https://sbsysapitest.randers.dk/api/dokument/journaliser',
+      url: msg.url,
       headers: msg.headers,
       formData: formData
   };

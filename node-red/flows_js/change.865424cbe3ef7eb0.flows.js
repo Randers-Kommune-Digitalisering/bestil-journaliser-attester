@@ -1,15 +1,15 @@
 const Node = {
-  "id": "6ad8a0aeb037f05f",
+  "id": "865424cbe3ef7eb0",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Sæt attest",
+  "name": "Request URL",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "url",
       "pt": "msg",
-      "to": "attachments[0].content",
-      "tot": "msg"
+      "to": "'https://sbsysapitest.randers.dk/api/dokument/journaliser'\t& ( delforloebId != null ? '/' & delforloebId )",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 610,
+  "x": 820,
   "y": 2200,
   "wires": [
     [
-      "865424cbe3ef7eb0"
+      "f7bcbe671cbfeffd"
     ]
   ]
 }

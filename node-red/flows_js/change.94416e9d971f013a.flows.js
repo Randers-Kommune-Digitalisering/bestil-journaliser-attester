@@ -1,15 +1,15 @@
 const Node = {
-  "id": "6ad8a0aeb037f05f",
+  "id": "94416e9d971f013a",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Sæt attest",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "delforloebId",
       "pt": "msg",
-      "to": "attachments[0].content",
-      "tot": "msg"
+      "to": "null",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 610,
-  "y": 2200,
+  "x": 840,
+  "y": 1980,
   "wires": [
     [
-      "865424cbe3ef7eb0"
+      "e98b4b7589618d6d"
     ]
   ]
 }

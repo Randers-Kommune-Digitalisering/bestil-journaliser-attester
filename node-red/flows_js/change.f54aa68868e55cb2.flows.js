@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "json",
       "pt": "msg",
-      "to": "{\t    \"SagID\": sagsId,\t    \"DokumentNavn\": \"Straffeattest \" & ( $millis() ~> $fromMillis(\"[D01]/[M01]-[Y0001]\") ),\t    \"Beskrivelse\": \"Automatisk journaliseret af robot\",\t    \"OmfattetAfAktindsigt\": true\t}",
+      "to": "{\t    \"SagID\": sagsId,\t    \"DokumentNavn\": \"Straffeattest \" & ( $millis() ~> $fromMillis(\"[D01]-[M01]-[Y0001]\") ),\t    \"Beskrivelse\": \"Automatisk journaliseret af robot\",\t    \"OmfattetAfAktindsigt\": true\t}",
       "tot": "jsonata"
     }
   ],
