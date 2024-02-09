@@ -2,7 +2,6 @@ const Node = {
   "id": "a43a2098379a4b0d",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
   "name": "Set global token",
   "rules": [
     {
@@ -24,7 +23,7 @@ const Node = {
       "t": "set",
       "p": "token.expires_at",
       "pt": "global",
-      "to": "$millis() + payload.expires_in",
+      "to": "$millis() + (payload.expires_in * 1000)",
       "tot": "jsonata"
     },
     {

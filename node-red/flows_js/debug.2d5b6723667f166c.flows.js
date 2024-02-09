@@ -1,18 +1,18 @@
 const Node = {
-  "id": "405385627af2ddb0",
+  "id": "2d5b6723667f166c",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "name": "SagsID",
+  "name": "DelforloebID",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
-  "complete": "sagsId",
+  "complete": "delforloebId",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1000,
-  "y": 1660,
+  "x": 1090,
+  "y": 2020,
   "wires": []
 }
 

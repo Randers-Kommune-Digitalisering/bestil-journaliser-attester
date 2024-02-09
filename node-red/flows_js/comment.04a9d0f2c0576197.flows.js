@@ -1,11 +1,11 @@
 const Node = {
-  "id": "a806d4e7e50a63b5",
+  "id": "04a9d0f2c0576197",
   "type": "comment",
   "z": "90c6b0b502e346fa",
-  "name": "Find alle personalesager",
+  "name": "Find delforløb til attester",
   "info": "",
-  "x": 230,
-  "y": 1440,
+  "x": 220,
+  "y": 1960,
   "wires": []
 }
 

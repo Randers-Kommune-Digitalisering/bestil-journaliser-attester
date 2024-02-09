@@ -2,7 +2,6 @@ const Node = {
   "id": "4f1b701b8a5d08b4",
   "type": "switch",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
   "name": "",
   "property": "token.expires_at",
   "propertyType": "global",

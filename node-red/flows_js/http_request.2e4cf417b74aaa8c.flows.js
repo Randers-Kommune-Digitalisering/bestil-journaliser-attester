@@ -1,12 +1,12 @@
 const Node = {
-  "id": "97014fb5606be30b",
+  "id": "2e4cf417b74aaa8c",
   "type": "http request",
   "z": "90c6b0b502e346fa",
   "name": "",
-  "method": "POST",
+  "method": "GET",
   "ret": "obj",
   "paytoqs": "ignore",
-  "url": "https://sbsysapitest.randers.dk/api/sag/search",
+  "url": "",
   "tls": "",
   "persist": false,
   "proxy": "",
@@ -14,11 +14,11 @@ const Node = {
   "authType": "",
   "senderr": false,
   "headers": [],
-  "x": 670,
-  "y": 1480,
+  "x": 650,
+  "y": 1840,
   "wires": [
     [
-      "210707bf11c75fc7"
+      "787d1e02ca06da8e"
     ]
   ]
 }

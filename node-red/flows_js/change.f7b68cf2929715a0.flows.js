@@ -1,16 +1,15 @@
 const Node = {
-  "id": "f67416d6fdb772ca",
+  "id": "f7b68cf2929715a0",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
-  "name": "test cpr",
+  "name": "Set GET URL",
   "rules": [
     {
       "t": "set",
-      "p": "medarbejder",
+      "p": "url",
       "pt": "msg",
-      "to": "080310-0000",
-      "tot": "str"
+      "to": "'https://sbsysapitest.randers.dk/api/sag/'\t& sagsId & '/delforloeb'",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 180,
-  "y": 1540,
+  "x": 420,
+  "y": 1840,
   "wires": [
     [
-      "ad3c0a4bdf6840b1"
+      "2e4cf417b74aaa8c"
     ]
   ]
 }

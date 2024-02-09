@@ -3,7 +3,6 @@ const Node = {
   "type": "template",
   "z": "90c6b0b502e346fa",
   "d": true,
-  "g": "2d0458ee6b467f9b",
   "name": "File details",
   "field": "payload",
   "fieldType": "msg",
@@ -12,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 390,
-  "y": 1960,
+  "y": 2260,
   "wires": [
     []
   ]

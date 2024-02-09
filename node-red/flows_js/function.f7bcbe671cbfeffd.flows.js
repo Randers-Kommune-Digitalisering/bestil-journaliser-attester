@@ -2,7 +2,6 @@ const Node = {
   "id": "f7bcbe671cbfeffd",
   "type": "function",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
   "name": "HTTP Request",
   "func": "",
   "outputs": 1,
@@ -15,8 +14,8 @@ const Node = {
       "module": "request"
     }
   ],
-  "x": 920,
-  "y": 1900,
+  "x": 820,
+  "y": 2200,
   "wires": [
     [
       "6b4ee32d8471f348",
@@ -27,7 +26,7 @@ const Node = {
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, request) {
   const fileData = msg.payload;
-  const formBody = msg.body;
+  const formBody = JSON.stringify(msg.json);
   
   var formData = {};
   
@@ -48,7 +47,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, re
       formData: formData
   };
   
-  request(options, function (error, response, body)
+  await request(options, function (error, response, body)
   {
       if (error)
           throw new Error(error);

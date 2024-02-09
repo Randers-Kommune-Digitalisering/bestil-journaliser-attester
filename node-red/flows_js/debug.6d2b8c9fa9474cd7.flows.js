@@ -1,18 +1,18 @@
 const Node = {
-  "id": "405385627af2ddb0",
+  "id": "6d2b8c9fa9474cd7",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "name": "SagsID",
+  "name": "Delforløb?",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
-  "complete": "sagsId",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1000,
-  "y": 1660,
+  "x": 1110,
+  "y": 1840,
   "wires": []
 }
 

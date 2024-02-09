@@ -3,7 +3,6 @@ const Node = {
   "type": "template",
   "z": "90c6b0b502e346fa",
   "d": true,
-  "g": "2d0458ee6b467f9b",
   "name": "Search parameters",
   "field": "payload",
   "fieldType": "msg",

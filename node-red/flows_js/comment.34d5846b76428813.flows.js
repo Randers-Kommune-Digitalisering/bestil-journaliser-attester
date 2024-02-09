@@ -2,11 +2,10 @@ const Node = {
   "id": "34d5846b76428813",
   "type": "comment",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
   "name": "Advisering",
   "info": "",
-  "x": 1180,
-  "y": 1940,
+  "x": 1080,
+  "y": 2240,
   "wires": []
 }
 

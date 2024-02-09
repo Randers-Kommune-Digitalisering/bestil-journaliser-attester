@@ -1,8 +1,8 @@
 const Node = {
-  "id": "e9fb405205fa3be3",
+  "id": "25352d7d7e445c40",
   "type": "switch",
   "z": "90c6b0b502e346fa",
-  "name": "Antal sager?",
+  "name": "Flere eller ingen delforløb?",
   "property": "count = 0 or count > 1",
   "propertyType": "jsonata",
   "rules": [
@@ -16,14 +16,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 490,
-  "y": 1640,
+  "x": 520,
+  "y": 2000,
   "wires": [
     [
-      "4984df54dc362ad8"
+      "2d21752abc3cfc1c"
     ],
     [
-      "b8d26dd87dd4156e"
+      "701d73520c05ba6a"
     ]
   ]
 }

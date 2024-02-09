@@ -1,14 +1,14 @@
 const Node = {
-  "id": "e62246bc7846a299",
+  "id": "2d21752abc3cfc1c",
   "type": "link out",
   "z": "90c6b0b502e346fa",
-  "name": "Mail OUT: Attest journaliseret",
+  "name": "Mail OUT: Ingen gyldig sag fundet",
   "mode": "link",
   "links": [
-    "717001ae537e5dd1"
+    "ecdc0f3612d04bd4"
   ],
-  "x": 995,
-  "y": 2240,
+  "x": 755,
+  "y": 1980,
   "wires": []
 }
 

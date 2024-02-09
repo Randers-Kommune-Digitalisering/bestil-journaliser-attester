@@ -1,14 +1,21 @@
 const Node = {
-  "id": "ad3c0a4bdf6840b1",
+  "id": "b432e808d08e9484",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Search parameters",
+  "name": "Find 08 Straffeattester",
   "rules": [
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": medarbejder\t    },\t    \"SagsTyper\": [\t        {\t            \"Navn\": \"PersonaleSag\"\t        }\t    ]\t}",
+      "to": "payload [ Titel = \"08 Straffeattester\" ]",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "count",
+      "pt": "msg",
+      "to": "payload ~> $count()",
       "tot": "jsonata"
     }
   ],
@@ -17,11 +24,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 430,
-  "y": 1480,
+  "x": 220,
+  "y": 2000,
   "wires": [
     [
-      "97014fb5606be30b"
+      "25352d7d7e445c40"
     ]
   ]
 }

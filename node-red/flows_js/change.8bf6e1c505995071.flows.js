@@ -2,7 +2,6 @@ const Node = {
   "id": "8bf6e1c505995071",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "2d0458ee6b467f9b",
   "name": "Headers",
   "rules": [
     {
@@ -19,7 +18,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 180,
-  "y": 1900,
+  "y": 2200,
   "wires": [
     [
       "f54aa68868e55cb2"
