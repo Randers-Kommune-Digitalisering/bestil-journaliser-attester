@@ -1,16 +1,15 @@
 const Node = {
-  "id": "5dd8dcc0c8987f55",
+  "id": "fcab7f00482b77db",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
-  "name": "Find CPR",
+  "name": "test cpr",
   "rules": [
     {
       "t": "set",
       "p": "medarbejder",
       "pt": "msg",
-      "to": "( payload[$ ~> $contains(\"CPR\")]\t\t~> $split(\":\") )[1]\t~> $trim()",
-      "tot": "jsonata"
+      "to": "080310-0000",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -18,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 480,
-  "y": 380,
+  "x": 580,
+  "y": 260,
   "wires": [
     [
-      "fcab7f00482b77db"
+      "50ef0cb1a829a484"
     ]
   ]
 }
