@@ -1,6 +1,6 @@
 <script setup>
     import { ref } from 'vue'
-    import * as dayjs from 'dayjs'
+    import dayjs from 'dayjs'
 
     import Content from '@/components/Content.vue'
     import IconTable from '@/components/icons/IconTable.vue'
@@ -30,11 +30,14 @@
 
     const orders = ref([])
 
-    fetch('/api/data/orders/type/' + _attestType)
+    fetch('/api/data/orders/type/' + _attestType.toLocaleLowerCase())
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => orders.value = value)
-    .then(console.log(JSON.stringify(orders.value)))
+    .then(value => {
+        console.log(JSON.stringify(value))
+        console.log(dayjs(value[0].bestillingModtaget).format("DD-MM-YYYY"))
+    })
 
     // Functions
 
@@ -96,7 +99,7 @@
         callSetCount(0)
     }
 
-    async function reject(item)
+    function reject(item)
     {
         // Perform POST request to backend
         fetch('/api/data/orders/reject/' + item.uid)
@@ -142,6 +145,7 @@
                 <tr v-else>
                     <td colspan="4">Der er ingen bestillinger at vise.</td>
                 </tr>
+
             </table>
         </div>
     </Content>
