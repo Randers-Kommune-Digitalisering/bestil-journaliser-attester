@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-SELECT sagsbehandlerEmail from bestillinger WHERE cpr = {{medarbejder}}
+SELECT sagsbehandlerEmail from bestillinger WHERE cpr = '{{medarbejder}}'
 `
 
 module.exports = Node;
