@@ -1,6 +1,6 @@
 <script setup>
     import { ref } from 'vue'
-    import * as dayjs from 'dayjs'
+    import dayjs from 'dayjs'
 
     import Content from '@/components/Content.vue'
     import IconTable from '@/components/icons/IconTable.vue'
