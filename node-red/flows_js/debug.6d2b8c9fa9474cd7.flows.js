@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "90c6b0b502e346fa",
   "name": "Delforløb?",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
