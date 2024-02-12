@@ -34,7 +34,6 @@
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => orders.value = value)
-    .then(value => console.log(JSON.stringify(value)))
     .then(value => {
         console.log(JSON.stringify(value))
         console.log(dayjs(value[0].bestillingModtaget).format("DD-MM-YYYY"))

@@ -5,11 +5,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import App from './App.vue'
 
-
-import * as dayjs from 'dayjs'
-//import * as dayjs from 'dayjs'
-//Object.defineProperty(Vue.prototype, '$dayjs', { value: dayjs });
-
 // Import af views til routing
 
 import Start from '@/views/Start.vue'
