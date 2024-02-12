@@ -5,7 +5,7 @@ const Node = {
   "name": "Delforløb?",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",

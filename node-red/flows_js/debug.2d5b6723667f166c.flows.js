@@ -5,13 +5,13 @@ const Node = {
   "name": "DelforloebID",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "delforloebId",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1150,
+  "x": 1160,
   "y": 2020,
   "wires": []
 }
