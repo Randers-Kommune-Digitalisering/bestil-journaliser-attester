@@ -34,6 +34,7 @@
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => orders.value = value)
+    .then(console.log(JSON.stringify(orders.value)))
 
     // Functions
 
