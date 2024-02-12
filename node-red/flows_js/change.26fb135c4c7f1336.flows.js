@@ -58,6 +58,13 @@ const Node = {
       "to": "SBSIP_GRANTTYPE",
       "tot": "env",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "{\t    \"username\": sbsip.username,\t    \"password\": sbsip.pass,\t    \"grant_type\": sbsip.granttype,\t    \"client_id\": sbsip.client,\t    \"client_secret\": sbsip.secret\t}",
+      "tot": "jsonata"
     }
   ],
   "action": "",
