@@ -20,8 +20,8 @@ const Node = {
 
 Node.template = `
 SELECT * FROM bestillinger
-WHERE erBestilt = false
-AND erAfvist = false
+WHERE erBestilt = 0
+AND erAfvist = 0
 `
 
 module.exports = Node;

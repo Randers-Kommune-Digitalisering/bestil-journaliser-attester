@@ -23,6 +23,9 @@ Node.template = `
 UPDATE bestillinger
 SET erAttestModtaget = 1, attestModtaget = NOW()
 WHERE cpr = '{{medarbejder}}'
+AND erBestilt = 1
+AND erAttestModtaget = 0
+AND erAfvist = 0
 `
 
 module.exports = Node;

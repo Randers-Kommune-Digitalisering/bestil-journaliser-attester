@@ -28,10 +28,10 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "affectedRows",
+      "p": "stdout.affectedRows",
       "pt": "msg",
-      "to": "payload.affectedRows",
-      "tot": "msg"
+      "to": "payload.affectedRows ? payload.affectedRows : 0",
+      "tot": "jsonata"
     },
     {
       "t": "set",

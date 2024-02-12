@@ -20,9 +20,9 @@ const Node = {
 
 Node.template = `
 SELECT * FROM bestillinger
-WHERE erBestilt = false
-AND erAfvist = false
-AND er{{type}} = true
+WHERE erBestilt = 0
+AND erAfvist = 0
+AND er{{type}} = 1
 `
 
 module.exports = Node;

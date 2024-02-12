@@ -20,8 +20,8 @@ const Node = {
 
 Node.template = `
 SELECT * FROM bestillinger
-WHERE erAfvist = true
-OR erAttestModtaget = true
+WHERE erAfvist = 1
+OR erAttestModtaget = 1
 LIMIT 10
 `
 
