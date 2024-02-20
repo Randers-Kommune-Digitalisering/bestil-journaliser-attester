@@ -19,10 +19,10 @@ const Node = {
 }
 
 Node.template = `
-Attest på CPR XXXXXX-XXXX er modtaget fra Politiet.<br />
+Attest er modtaget fra Politiet.<br />
 <b>Attesten har registrerede forhold!</b><br /><br />
 
-Attesten er journaliseret i personalesag med sagsnummer {{sagsId}}.<br />
+Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.<br />
 Opret en supportsag hvis attesten ikke kan ses i sagen.
 `
 
