@@ -5,7 +5,7 @@ const Node = {
   "g": "7927b0d68211546e",
   "name": "Kontrollér om mail er vedr. straffeatt.",
   "info": "",
-  "x": 460,
+  "x": 620,
   "y": 100,
   "wires": []
 }

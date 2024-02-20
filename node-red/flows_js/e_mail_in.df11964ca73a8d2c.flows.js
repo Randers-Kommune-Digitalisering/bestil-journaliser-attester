@@ -16,9 +16,9 @@ const Node = {
   "disposition": "Read",
   "criteria": "UNSEEN",
   "repeat": "300",
-  "fetch": "auto",
-  "inputs": 0,
-  "x": 150,
+  "fetch": "trigger",
+  "inputs": 1,
+  "x": 310,
   "y": 140,
   "wires": [
     [

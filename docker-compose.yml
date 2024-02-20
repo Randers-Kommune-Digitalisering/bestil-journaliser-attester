@@ -21,6 +21,8 @@ services:
       AZURE_CLIENTID: ${AZURE_CLIENTID}
       AZURE_TENANTID: ${AZURE_TENANTID}
       AZURE_CLIENTSECRET: ${AZURE_CLIENTSECRET}
+
+      DEV_ENV: "true"
             
       # Miljøvariablen FLOWS fortæller Node-RED IDEet hvilket flow.json den skal åbne og gemme ændringer i ved deploy.
       FLOWS: "/data/flows.json"

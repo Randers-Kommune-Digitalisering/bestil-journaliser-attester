@@ -2,7 +2,7 @@ const Node = {
   "id": "8c9ab9cb40cc6c28",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "name": "Sagsbehandler",
+  "name": "Rekvirent",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -11,7 +11,7 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1270,
+  "x": 1250,
   "y": 380,
   "wires": []
 }
