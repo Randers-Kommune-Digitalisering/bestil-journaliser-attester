@@ -1,8 +1,8 @@
 const Node = {
-  "id": "f8703f660f4d51e5",
+  "id": "ecdb83b6a3c96a1f",
   "type": "switch",
-  "z": "7459f772194dcf44",
-  "g": "a3f24782e0a49572",
+  "z": "d8101c60e986806b",
+  "g": "9a4f435ac5f5f6fa",
   "name": "Is SELECT?",
   "property": "sql",
   "propertyType": "msg",
@@ -20,12 +20,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 470,
-  "y": 220,
+  "x": 640,
+  "y": 540,
   "wires": [
-    [],
     [
-      "20fe6c8ef45ad2ff"
+      "e108c65921ff392e"
+    ],
+    [
+      "b875469db116a4ec"
     ]
   ]
 }
