@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "medarbejder",
+  "complete": "rekvisitus",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",

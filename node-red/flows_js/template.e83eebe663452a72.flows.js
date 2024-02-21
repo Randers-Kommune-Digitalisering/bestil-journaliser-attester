@@ -2,7 +2,7 @@ const Node = {
   "id": "e83eebe663452a72",
   "type": "template",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "Forespørgsel ↓\\n Hent sagsbehandlerEmail",
+  "name": "Forespørgsel ↓\\n Hent rekvirentEmail",
   "field": "sql",
   "fieldType": "msg",
   "format": "sql",
@@ -19,7 +19,7 @@ const Node = {
 }
 
 Node.template = `
-SELECT sagsbehandlerEmail FROM bestillinger
+SELECT rekvirentEmail FROM bestillinger
 WHERE uid = {{id}}
 `
 

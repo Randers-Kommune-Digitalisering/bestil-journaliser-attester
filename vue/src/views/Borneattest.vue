@@ -134,7 +134,7 @@
                 
                 <tr v-if="orders.length > 0" v-for="order in orders">
                     <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
-                    <td>{{ order.sagsbehandlerNavn }} <div class="text-small">{{ order.sagsbehandlerEmail }}</div></td>
+                    <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
                     <td><button class="red" @click="reject(order)">Afvis</button></td>
                 </tr>

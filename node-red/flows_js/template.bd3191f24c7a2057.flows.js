@@ -21,19 +21,19 @@ const Node = {
 
 Node.template = `
 INSERT INTO bestillinger (
-    sagsbehandlerNavn,
-    sagsbehandlerDQ,
-    sagsbehandlerEmail,
+    rekvirentNavn,
+    rekvirentDQ,
+    rekvirentEmail,
     cpr,
     erStraffeattest,
     erBorneattest
 )
 VALUES
 (
-    "{{bestilling.sagsbehandlerNavn}}",
-    "{{bestilling.sagsbehandlerDQ}}",
-    "{{bestilling.sagsbehandlerEmail}}",
-    "{{bestilling.cpr}}",
+    "{{bestilling.rekvirentNavn}}",
+    "{{bestilling.rekvirentDQ}}",
+    "{{bestilling.rekvirentEmail}}",
+    "{{bestilling.rekvisitus}}",
     {{bestilling.erStraffeattest}},
     {{bestilling.erBorneattest}}
 )

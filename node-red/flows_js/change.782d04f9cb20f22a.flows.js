@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "dqUser",
       "pt": "msg",
-      "to": "bestilling.sagsbehandlerDQ",
+      "to": "bestilling.rekvirentDQ",
       "tot": "msg"
     }
   ],

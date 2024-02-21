@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "sagsbehandler",
+  "complete": "rekvirent",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",

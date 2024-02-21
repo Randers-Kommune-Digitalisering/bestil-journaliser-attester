@@ -3,8 +3,8 @@ const Node = {
   "type": "switch",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Sagsbehandler findes?",
-  "property": "sagsbehandler",
+  "name": "Rekvirent findes?",
+  "property": "rekvirent",
   "propertyType": "msg",
   "rules": [
     {
@@ -17,7 +17,7 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 280,
+  "x": 270,
   "y": 560,
   "wires": [
     [

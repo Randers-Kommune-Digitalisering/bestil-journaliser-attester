@@ -22,7 +22,7 @@ const Node = {
 Node.template = `
 UPDATE bestillinger
 SET erAttestModtaget = 1, attestModtaget = NOW()
-WHERE cpr = '{{medarbejder}}'
+WHERE cpr = '{{rekvisitus}}'
 AND erBestilt = 1
 AND erAttestModtaget = 0
 AND erAfvist = 0

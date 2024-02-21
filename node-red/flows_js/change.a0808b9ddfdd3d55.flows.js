@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "to",
       "pt": "msg",
-      "to": "sagsbehandler",
+      "to": "rekvirent",
       "tot": "msg"
     },
     {

@@ -4,11 +4,11 @@ const Node = {
   "z": "90c6b0b502e346fa",
   "d": true,
   "g": "9e73796625eb7a3f",
-  "name": "Find sagsbehandler",
+  "name": "Find rekvirent",
   "rules": [
     {
       "t": "set",
-      "p": "sagsbehandler",
+      "p": "rekvirent",
       "pt": "msg",
       "to": "(\t    /* Find randers mail, og opdel tekstfelt før @randers.dk */\t    $textField := payload[$ ~> $contains(\"@randers.dk\")]\t    ~> $substringBefore(\"@randers.dk\")\t    ~> $split(\" \");\t\t    /* Find længde på opdelt tekstfelt */\t    $arrayLength := $textField ~> $count();\t\t    /* Find mail-adresse (sidst i array) og tilføj domæne */\t    $textField [ $arrayLength-1 ] & \"@randers.dk\"\t)\t",
       "tot": "jsonata"

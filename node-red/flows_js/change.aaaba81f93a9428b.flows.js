@@ -7,9 +7,9 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "sagsbehandler",
+      "p": "rekvirent",
       "pt": "msg",
-      "to": "payload[0].sagsbehandlerEmail",
+      "to": "payload[0].rekvirentEmail",
       "tot": "msg",
       "dc": true
     }
