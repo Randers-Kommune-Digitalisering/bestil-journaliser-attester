@@ -1,19 +1,18 @@
 const Node = {
-  "id": "c91620cb6ea990e0",
+  "id": "e73c2d2609958896",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "PDF-error",
+  "name": "Sager?",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "error",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 470,
-  "y": 1020,
+  "x": 1080,
+  "y": 1500,
   "wires": []
 }
 

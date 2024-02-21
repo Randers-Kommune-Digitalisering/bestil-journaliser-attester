@@ -2,7 +2,7 @@ const Node = {
   "id": "8c34e618014b2972",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "name": "Sager?",
+  "name": "Aktive sager?",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -11,7 +11,7 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 480,
+  "x": 500,
   "y": 1600,
   "wires": []
 }
