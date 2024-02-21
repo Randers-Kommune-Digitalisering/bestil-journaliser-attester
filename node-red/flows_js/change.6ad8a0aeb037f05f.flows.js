@@ -5,10 +5,10 @@ const Node = {
   "name": "Sæt attest",
   "rules": [
     {
-      "t": "set",
-      "p": "payload",
+      "t": "move",
+      "p": "attachments[0].content",
       "pt": "msg",
-      "to": "attachments[0].content",
+      "to": "payload",
       "tot": "msg"
     }
   ],
@@ -21,7 +21,8 @@ const Node = {
   "y": 2200,
   "wires": [
     [
-      "865424cbe3ef7eb0"
+      "865424cbe3ef7eb0",
+      "5fc42651aa4c76e4"
     ]
   ]
 }

@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"sager\": payload @ $sag .  {\t        \"id\": $sag.Id,\t        \"titel\": $sag.SagsTitel,\t        \"status\": $sag.SagsStatus.Navn\t    }\t}",
+  "complete": "{\t    \"sager\": payload.Results @ $sag .  {\t        \"id\": $sag.Id,\t        \"titel\": $sag.SagsTitel,\t        \"status\": $sag.SagsStatus.Navn\t    }\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",

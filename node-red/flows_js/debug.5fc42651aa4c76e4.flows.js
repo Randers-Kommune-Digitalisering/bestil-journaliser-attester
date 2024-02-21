@@ -1,18 +1,18 @@
 const Node = {
-  "id": "6b4ee32d8471f348",
+  "id": "5fc42651aa4c76e4",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "name": "Response",
+  "name": "PDF BUFFER",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"statusCode\": statusCode,\t    \"response\": payload,\t    \"error\": error\t}",
-  "targetType": "jsonata",
+  "complete": "payload",
+  "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1290,
-  "y": 2200,
+  "x": 620,
+  "y": 2240,
   "wires": []
 }
 
