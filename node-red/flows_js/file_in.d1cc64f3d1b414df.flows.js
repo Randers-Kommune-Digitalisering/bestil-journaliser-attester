@@ -5,7 +5,7 @@ const Node = {
   "name": "",
   "filename": "filename",
   "filenameType": "msg",
-  "format": "utf8",
+  "format": "",
   "chunk": false,
   "sendError": false,
   "encoding": "none",
