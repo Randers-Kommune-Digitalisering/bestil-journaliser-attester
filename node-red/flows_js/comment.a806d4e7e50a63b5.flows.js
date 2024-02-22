@@ -5,7 +5,7 @@ const Node = {
   "name": "Find alle personalesager",
   "info": "",
   "x": 230,
-  "y": 1440,
+  "y": 1580,
   "wires": []
 }
 

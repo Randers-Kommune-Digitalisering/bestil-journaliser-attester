@@ -1,16 +1,16 @@
 const Node = {
-  "id": "73853361b49fea3d",
+  "id": "59e14b9f69d2fec6",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "",
+  "g": "9e73796625eb7a3f",
+  "name": "Generér filnavn",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "filename",
       "pt": "msg",
-      "to": "attachments[0].content",
-      "tot": "msg"
+      "to": "$millis() & \".pdf\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 260,
-  "y": 980,
+  "x": 520,
+  "y": 700,
   "wires": [
     [
-      "8aba1f65ca56980f"
+      "1e7ebc746cf38773"
     ]
   ]
 }
