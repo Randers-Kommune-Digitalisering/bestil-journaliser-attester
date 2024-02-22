@@ -1,14 +1,14 @@
 const Node = {
-  "id": "4404188875b6ef12",
+  "id": "bae8b6bf0acb8431",
   "type": "link out",
   "z": "812b69015d6703b6",
-  "name": "Opdater DB Adv. OUT",
+  "name": "MAIL SEND OUT #1",
   "mode": "link",
   "links": [
-    "781945713919cd22"
+    "ce2c0ede9f3daf06"
   ],
-  "x": 935,
-  "y": 720,
+  "x": 1055,
+  "y": 500,
   "wires": []
 }
 

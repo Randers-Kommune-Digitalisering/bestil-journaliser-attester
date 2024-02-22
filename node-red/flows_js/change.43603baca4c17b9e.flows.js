@@ -1,24 +1,28 @@
 const Node = {
-  "id": "fed891ea3703430c",
+  "id": "43603baca4c17b9e",
   "type": "change",
-  "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
-  "name": "Opdel mail body",
+  "z": "812b69015d6703b6",
+  "name": "Sæt modtager \\n og mail-krop",
   "rules": [
     {
       "t": "set",
-      "p": "mailbody",
+      "p": "to",
       "pt": "msg",
-      "to": "payload",
+      "to": "from",
       "tot": "msg",
       "dc": true
+    },
+    {
+      "t": "delete",
+      "p": "from",
+      "pt": "msg"
     },
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> $split(\"\\n\")",
-      "tot": "jsonata"
+      "to": "mailbody",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -26,11 +30,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 260,
-  "y": 380,
+  "x": 320,
+  "y": 1060,
   "wires": [
     [
-      "5dd8dcc0c8987f55"
+      "1bc301b2666dea69",
+      "5dec140724fb745d"
     ]
   ]
 }

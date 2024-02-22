@@ -11,8 +11,8 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1160,
-  "y": 160,
+  "x": 1140,
+  "y": 460,
   "wires": []
 }
 

@@ -4,13 +4,10 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Mail IN: Manuel behandling",
   "links": [
-    "16245bab475b9515",
-    "4984df54dc362ad8",
-    "2d21752abc3cfc1c",
-    "672de38459b2677d"
+    "4984df54dc362ad8"
   ],
   "x": 155,
-  "y": 160,
+  "y": 500,
   "wires": [
     [
       "323c55ddba1903d5"
