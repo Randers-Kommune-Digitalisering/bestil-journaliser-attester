@@ -6,14 +6,14 @@ const Node = {
   "name": "PDF-error",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "error",
-  "targetType": "msg",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 460,
-  "y": 1020,
+  "x": 470,
+  "y": 1160,
   "wires": []
 }
 

@@ -3,11 +3,11 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Find CPR",
+  "name": "Find rekvisitus",
   "rules": [
     {
       "t": "set",
-      "p": "medarbejder",
+      "p": "rekvisitus",
       "pt": "msg",
       "to": "( payload[$ ~> $contains(\"CPR\")]\t\t~> $split(\":\") )[1]\t~> $trim()",
       "tot": "jsonata"
@@ -18,7 +18,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 480,
+  "x": 460,
   "y": 380,
   "wires": [
     [

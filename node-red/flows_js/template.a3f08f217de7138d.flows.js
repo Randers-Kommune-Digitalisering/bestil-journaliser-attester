@@ -3,7 +3,7 @@ const Node = {
   "type": "template",
   "z": "812b69015d6703b6",
   "name": "Tekst",
-  "field": "payload",
+  "field": "description",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
@@ -13,7 +13,7 @@ const Node = {
   "y": 180,
   "wires": [
     [
-      "54a496bee2f51a3c"
+      "bc4f2a2fc08bf24c"
     ]
   ]
 }

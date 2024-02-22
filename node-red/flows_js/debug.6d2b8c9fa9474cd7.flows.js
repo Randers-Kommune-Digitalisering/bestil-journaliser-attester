@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "{\t    \"delforlob\": payload.Titel\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1110,
-  "y": 1840,
+  "y": 1980,
   "wires": []
 }
 

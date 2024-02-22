@@ -10,7 +10,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 1310,
+  "x": 1190,
   "y": 620,
   "wires": [
     [
@@ -22,7 +22,7 @@ const Node = {
 Node.template = `
 UPDATE bestillinger
 SET erAdviseringAfsendt = 1, adviseringAfsendt = NOW()
-WHERE cpr = '{{medarbejder}}'
+WHERE cpr = '{{rekvisitus}}'
 `
 
 module.exports = Node;

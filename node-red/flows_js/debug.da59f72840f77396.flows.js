@@ -7,11 +7,11 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "medarbejder",
+  "complete": "rekvisitus",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1250,
+  "x": 1430,
   "y": 420,
   "wires": []
 }

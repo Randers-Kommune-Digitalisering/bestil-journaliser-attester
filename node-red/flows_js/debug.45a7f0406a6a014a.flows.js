@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"bestillinger\": payload.warningCount > 0 ? \"Tabel eksisterer\" : \"Bestilling indsat i tabel\",\t    \"success\": error ~> $exists() ? false : true,\t    \"data\": bestilling\t}",
+  "complete": "{\t    \"bestillinger\": payload.warningCount > 0 ? \"\" : \"Bestilling indsat i tabel\",\t    \"success\": error ~> $exists() ? false : true,\t    \"data\": bestilling\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",

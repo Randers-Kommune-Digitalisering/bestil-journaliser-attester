@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": medarbejder\t    },\t    \"SagsTyper\": [\t        {\t            \"Navn\": \"PersonaleSag\"\t        }\t    ]\t}",
+      "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": rekvisitus\t    },\t    \"SagsTyper\": [\t        {\t            \"Navn\": \"PersonaleSag\"\t        }\t    ]\t}",
       "tot": "jsonata"
     }
   ],
@@ -18,7 +18,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 430,
-  "y": 1480,
+  "y": 1620,
   "wires": [
     [
       "97014fb5606be30b"

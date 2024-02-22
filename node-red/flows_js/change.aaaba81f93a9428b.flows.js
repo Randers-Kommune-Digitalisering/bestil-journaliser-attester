@@ -7,9 +7,9 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "sagsbehandler",
+      "p": "rekvirent",
       "pt": "msg",
-      "to": "payload[0].sagsbehandlerEmail",
+      "to": "payload[0].rekvirentEmail",
       "tot": "msg",
       "dc": true
     }
@@ -19,7 +19,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1025,
+  "x": 1130,
   "y": 380,
   "wires": [
     [
@@ -27,8 +27,7 @@ const Node = {
       "da59f72840f77396",
       "8c9ab9cb40cc6c28"
     ]
-  ],
-  "l": false
+  ]
 }
 
 module.exports = Node;

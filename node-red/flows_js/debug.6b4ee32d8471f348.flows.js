@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "{\t    \"statusCode\": statusCode,\t    \"response\": payload,\t    \"error\": error\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1290,
-  "y": 2200,
+  "y": 2300,
   "wires": []
 }
 

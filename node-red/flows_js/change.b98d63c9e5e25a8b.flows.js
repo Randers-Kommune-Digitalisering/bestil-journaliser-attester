@@ -1,15 +1,16 @@
 const Node = {
-  "id": "6ad8a0aeb037f05f",
+  "id": "b98d63c9e5e25a8b",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Sæt attest",
+  "g": "9e73796625eb7a3f",
+  "name": "",
   "rules": [
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "attachments[0].content",
-      "tot": "msg"
+      "to": "{}",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -17,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 610,
-  "y": 2200,
+  "x": 960,
+  "y": 700,
   "wires": [
     [
-      "865424cbe3ef7eb0"
+      "ea4d57dbe04a4680"
     ]
   ]
 }

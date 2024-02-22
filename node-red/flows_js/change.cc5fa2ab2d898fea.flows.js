@@ -7,7 +7,7 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "bestilling.sagsbehandlerEmail",
+      "p": "bestilling.rekvirentEmail",
       "pt": "msg",
       "to": "payload.value[0].mail",
       "tot": "msg"

@@ -24,9 +24,9 @@ CREATE TABLE IF NOT EXISTS bestillinger (
 
     uid int NOT NULL AUTO_INCREMENT,
     bestillingModtaget TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    sagsbehandlerNavn VARCHAR(255),
-    sagsbehandlerDQ VARCHAR(255),
-    sagsbehandlerEmail VARCHAR(255),
+    rekvirentNavn VARCHAR(255),
+    rekvirentDQ VARCHAR(255),
+    rekvirentEmail VARCHAR(255),
 
     cpr VARCHAR (255),
     erStraffeattest BOOL,

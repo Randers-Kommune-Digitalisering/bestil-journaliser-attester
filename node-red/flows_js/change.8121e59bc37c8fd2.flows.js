@@ -6,7 +6,7 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "bestilling.cpr",
+      "p": "bestilling.rekvisitus",
       "pt": "msg",
       "to": "080310-0000",
       "tot": "str"

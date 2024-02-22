@@ -3,9 +3,9 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Læs sagsbehandler samt ny medarbejder fra mail",
+  "name": "Læs rekvirent samt rekvisitus fra mail",
   "info": "",
-  "x": 360,
+  "x": 330,
   "y": 340,
   "wires": []
 }

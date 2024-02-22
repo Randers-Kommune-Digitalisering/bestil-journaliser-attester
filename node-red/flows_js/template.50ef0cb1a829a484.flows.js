@@ -3,7 +3,7 @@ const Node = {
   "type": "template",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Forespørgsel ↓\\n Find sagsbehandlerEmail",
+  "name": "Forespørgsel ↓\\n Find rekvirentEmail",
   "field": "sql",
   "fieldType": "msg",
   "format": "handlebars",
@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-SELECT sagsbehandlerEmail from bestillinger WHERE cpr = '{{medarbejder}}'
+SELECT rekvirentEmail from bestillinger WHERE cpr = '{{rekvisitus}}'
 `
 
 module.exports = Node;

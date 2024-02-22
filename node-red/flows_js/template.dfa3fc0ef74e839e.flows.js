@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 280,
-  "y": 780,
+  "y": 920,
   "wires": [
     [
       "df7f1dd69541f5f0"
@@ -22,7 +22,7 @@ const Node = {
 Node.template = `
 UPDATE bestillinger
 SET erAttestModtaget = 1, attestModtaget = NOW()
-WHERE cpr = '{{medarbejder}}'
+WHERE cpr = '{{rekvisitus}}'
 AND erBestilt = 1
 AND erAttestModtaget = 0
 AND erAfvist = 0
