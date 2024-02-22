@@ -6,7 +6,7 @@ const Node = {
   "rules": [
     {
       "t": "delete",
-      "p": "attachment",
+      "p": "attachments",
       "pt": "msg"
     }
   ],
@@ -15,7 +15,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1260,
+  "x": 1270,
   "y": 380,
   "wires": [
     [
