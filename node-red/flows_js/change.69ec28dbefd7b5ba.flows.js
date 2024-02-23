@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "payload[0].rekvirentEmail",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "attestType",
+      "pt": "msg",
+      "to": "payload[0].erStraffeattest = 1 ?\t    \"straffeattest\"\t:\tpayload[0].erBorneattest = 1 ?\t    \"børneattest\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,7 +24,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1130,
+  "x": 1120,
   "y": 1200,
   "wires": [
     [

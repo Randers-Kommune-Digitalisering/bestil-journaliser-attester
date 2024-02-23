@@ -19,7 +19,7 @@ const Node = {
 }
 
 Node.template = `
-Attest er modtaget fra Politiet.
+Ny {{attestType}} er modtaget fra Politiet.
 OBS: Attesten har registrerede forhold!
 
 Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.
