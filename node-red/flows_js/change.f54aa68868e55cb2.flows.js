@@ -2,6 +2,7 @@ const Node = {
   "id": "f54aa68868e55cb2",
   "type": "change",
   "z": "90c6b0b502e346fa",
+  "g": "d774a29ec2b63a5e",
   "name": "Request body: \\n File details",
   "rules": [
     {
@@ -18,7 +19,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 400,
-  "y": 2340,
+  "y": 2280,
   "wires": [
     [
       "d1cc64f3d1b414df"

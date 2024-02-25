@@ -2,6 +2,7 @@ const Node = {
   "id": "2d5b6723667f166c",
   "type": "debug",
   "z": "90c6b0b502e346fa",
+  "g": "70f0dd8ceb56e8a4",
   "name": "DelforloebID",
   "active": true,
   "tosidebar": true,
@@ -12,7 +13,7 @@ const Node = {
   "statusVal": "",
   "statusType": "auto",
   "x": 1160,
-  "y": 2160,
+  "y": 2080,
   "wires": []
 }
 

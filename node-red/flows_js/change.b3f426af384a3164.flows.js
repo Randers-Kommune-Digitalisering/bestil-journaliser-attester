@@ -2,6 +2,7 @@ const Node = {
   "id": "b3f426af384a3164",
   "type": "change",
   "z": "90c6b0b502e346fa",
+  "g": "70f0dd8ceb56e8a4",
   "name": "Frasorter inaktive sager",
   "rules": [
     {
@@ -25,7 +26,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 230,
-  "y": 1780,
+  "y": 1740,
   "wires": [
     [
       "8c34e618014b2972",
