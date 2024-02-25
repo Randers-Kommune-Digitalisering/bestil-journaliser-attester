@@ -6,10 +6,6 @@ const Node = {
   "props": [
     {
       "p": "payload"
-    },
-    {
-      "p": "topic",
-      "vt": "str"
     }
   ],
   "repeat": "300",
