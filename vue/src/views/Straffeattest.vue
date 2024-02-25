@@ -82,6 +82,7 @@
             ids.push( element.uid )
         });
         
+        var idCount = ids.length;
         var idList = ids.join();
 
         console.log("idList: '" + idList + "'")
@@ -90,9 +91,9 @@
         fetch('/api/data/orders/accept/' + idList)
         .then(response => console.log(response.json()))
 
-        // Set orders = []
         orders.value = []
         callSetCount(0)
+        notification.value = ordersProcessedNotification(idCount)
     }
 
     function reject(item)
@@ -107,9 +108,32 @@
         callSetCount(-1)
     }
 
+    // Notification
+
+    const notification = ref(null)
+
+    function ordersProcessedNotification( count )
+    {
+        var attesterne = count > 1 ? "Attesterne" : "Attesten"
+        var attester = count > 1 ? "attester" : "attest"
+
+        return {
+            "message": attesterne + " er blevet markeret som bestilt i systemet. Vær opmærksom på, at det er dit ansvar at " + attesterne.toLowerCase() + " er blevet bestilt korrekt. Status på igangværende bestillinger kan findes under Historik.",
+            "title": count + " " + attester + " markeret som bestilt"
+        }
+    }
+
 </script>
 
 <template>
+
+    <div v-if="notification" class="message" id="msg" style="margin-bottom: 2rem;">
+        <div class="header">
+            {{ notification.title }}
+            <span class="float-right close" @click="notification = null">x</span>
+        </div>
+        {{ notification.message }}
+    </div>
 
     <h2>{{ h2 }}</h2>
 
