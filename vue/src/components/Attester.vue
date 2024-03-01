@@ -15,7 +15,7 @@
     import IconTable from '@/components/icons/IconTable.vue'
 
     const attestType = props.attestType
-    const _attestType = attestType == "Straffeattest" ? "Straffeattest" : "Borneattest"
+    const _attestType = attestType == "Børneattest" ? "Borneattest" : attestType
     const _attestHeaderTitle = attestType + 'er'
 
 
