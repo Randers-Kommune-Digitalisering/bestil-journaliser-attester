@@ -23,7 +23,6 @@ Ny {{attestType}} er modtaget fra Politiet.
 OBS: Attesten har registrerede forhold!
 
 Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.
-Opret en supportsag hvis attesten ikke kan ses i sagen.
 `
 
 module.exports = Node;

@@ -8,7 +8,7 @@ const Node = {
       "p": "payload"
     }
   ],
-  "repeat": "300",
+  "repeat": "1200",
   "crontab": "",
   "once": true,
   "onceDelay": "10",

@@ -1,11 +1,11 @@
 const Node = {
-  "id": "1feb11de2dec7800",
+  "id": "e464b4d807113a92",
   "type": "comment",
   "z": "812b69015d6703b6",
-  "name": "Send til hovedpostkasse - Ved fejl",
+  "name": "Send til HR - Ved modtagelse uren attest",
   "info": "",
-  "x": 270,
-  "y": 1000,
+  "x": 300,
+  "y": 1180,
   "wires": []
 }
 

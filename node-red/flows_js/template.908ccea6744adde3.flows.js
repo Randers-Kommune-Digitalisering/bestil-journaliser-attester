@@ -21,8 +21,8 @@ const Node = {
 }
 
 Node.template = `
-Din bestilling af en {{{attestType}}} er blevet afvist af sikkerhedsmoderatoren.
-Opret en support-sag hvis du mener der er tale om en fejl.
+Din bestilling af en {{attestType}} er blevet afvist af sikkerhedsmoderatoren.
+Opret HR hvis du mener der er tale om en fejl.
 `
 
 module.exports = Node;
