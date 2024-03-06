@@ -2,7 +2,7 @@ const Node = {
   "id": "07f61b45165e495d",
   "type": "template",
   "z": "812b69015d6703b6",
-  "name": "Tekst",
+  "name": "Nej",
   "field": "payload",
   "fieldType": "msg",
   "format": "handlebars",
@@ -10,7 +10,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 690,
-  "y": 400,
+  "y": 700,
   "wires": [
     [
       "b8eae3b4cf749d45"
@@ -19,11 +19,10 @@ const Node = {
 }
 
 Node.template = `
-Attest er modtaget fra Politiet.<br />
-<b>Attesten har registrerede forhold!</b><br /><br />
+Ny {{attestType}} er modtaget fra Politiet.
+OBS: Attesten har registrerede forhold!
 
-Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.<br />
-Opret en supportsag hvis attesten ikke kan ses i sagen.
+Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.
 `
 
 module.exports = Node;

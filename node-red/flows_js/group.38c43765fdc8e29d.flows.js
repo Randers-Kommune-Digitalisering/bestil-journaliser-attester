@@ -6,7 +6,7 @@ const Node = {
   "style": {
     "label": true,
     "stroke": "none",
-    "fill": "#ffffbf",
+    "fill": "#e3f3d3",
     "fill-opacity": "0.6"
   },
   "nodes": [

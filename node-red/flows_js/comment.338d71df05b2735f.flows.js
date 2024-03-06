@@ -5,7 +5,7 @@ const Node = {
   "name": "Godtager kommaseparerede ids",
   "info": "",
   "x": 490,
-  "y": 1360,
+  "y": 1220,
   "wires": []
 }
 

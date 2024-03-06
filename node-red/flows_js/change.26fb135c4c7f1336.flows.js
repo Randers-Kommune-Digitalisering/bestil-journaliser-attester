@@ -2,6 +2,7 @@ const Node = {
   "id": "26fb135c4c7f1336",
   "type": "change",
   "z": "90c6b0b502e346fa",
+  "g": "70f0dd8ceb56e8a4",
   "name": "Opsæt globale værdier",
   "rules": [
     {
@@ -73,7 +74,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 440,
-  "y": 1420,
+  "y": 1380,
   "wires": [
     [
       "ae912a127c91dbf0",

@@ -7,6 +7,14 @@ const Node = {
   "rules": [
     {
       "t": "set",
+      "p": "mailbody",
+      "pt": "msg",
+      "to": "payload",
+      "tot": "msg",
+      "dc": true
+    },
+    {
+      "t": "set",
       "p": "payload",
       "pt": "msg",
       "to": "payload ~> $split(\"\\n\")",

@@ -2,10 +2,10 @@ const Node = {
   "id": "1635974763abe85c",
   "type": "comment",
   "z": "812b69015d6703b6",
-  "name": "Afvis bestilling af attest",
+  "name": "Advisering - Rekvisition afvist",
   "info": "",
-  "x": 250,
-  "y": 580,
+  "x": 260,
+  "y": 800,
   "wires": []
 }
 

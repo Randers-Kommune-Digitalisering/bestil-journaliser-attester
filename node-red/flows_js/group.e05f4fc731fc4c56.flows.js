@@ -2,14 +2,13 @@ const Node = {
   "id": "e05f4fc731fc4c56",
   "type": "group",
   "z": "812b69015d6703b6",
+  "name": "",
   "style": {
-    "stroke": "#999999",
-    "stroke-opacity": "1",
-    "fill": "none",
-    "fill-opacity": "1",
+    "stroke": "none",
+    "stroke-opacity": "0.6",
     "label": true,
-    "label-position": "nw",
-    "color": "#a4a4a4"
+    "fill": "#ffefbf",
+    "fill-opacity": "0.6"
   },
   "nodes": [
     "02bb6e2381bd70ba",
@@ -19,8 +18,8 @@ const Node = {
     "f1441d8cd105810b",
     "31046e88265e8729"
   ],
-  "x": 984,
-  "y": 519,
+  "x": 624,
+  "y": 59,
   "w": 542,
   "h": 246
 }

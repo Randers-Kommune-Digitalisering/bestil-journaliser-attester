@@ -1,14 +1,15 @@
 const Node = {
-  "id": "8121e59bc37c8fd2",
+  "id": "736368e5f40caef3",
   "type": "change",
-  "z": "c715449c21b1a61f",
-  "name": "test cpr",
+  "z": "90c6b0b502e346fa",
+  "g": "7927b0d68211546e",
+  "name": "Børneattest",
   "rules": [
     {
       "t": "set",
-      "p": "bestilling.rekvisitus",
+      "p": "attestType",
       "pt": "msg",
-      "to": "080310-0000",
+      "to": "børneattest",
       "tot": "str"
     }
   ],
@@ -17,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 140,
-  "y": 1260,
+  "x": 1050,
+  "y": 140,
   "wires": [
     [
-      "bd3191f24c7a2057"
+      "a55b26bb4bd9c7df"
     ]
   ]
 }

@@ -2,6 +2,7 @@ const Node = {
   "id": "787d1e02ca06da8e",
   "type": "switch",
   "z": "90c6b0b502e346fa",
+  "g": "70f0dd8ceb56e8a4",
   "name": "Request OK?",
   "property": "statusCode",
   "propertyType": "msg",
@@ -19,7 +20,7 @@ const Node = {
   "repair": false,
   "outputs": 2,
   "x": 880,
-  "y": 1980,
+  "y": 1900,
   "wires": [
     [
       "d05fc2222aed6f96"

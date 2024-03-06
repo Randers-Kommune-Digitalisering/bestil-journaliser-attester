@@ -10,19 +10,19 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 530,
-  "y": 640,
+  "y": 860,
   "wires": [
     [
       "a756faa2e4149fca",
       "9c644f8443abd95d",
-      "1b8ee7c4e4099555"
+      "c67d83041b426bb9"
     ]
   ]
 }
 
 Node.template = `
-Din bestilling af en straffe- eller børneattest er blevet afvist af sikkerhedsmoderatoren.<br />
-Opret en support-sag hvis du mener der er tale om en fejl.
+Din bestilling af en {{attestType}} er blevet afvist af sikkerhedsmoderatoren.
+Opret HR hvis du mener der er tale om en fejl.
 `
 
 module.exports = Node;

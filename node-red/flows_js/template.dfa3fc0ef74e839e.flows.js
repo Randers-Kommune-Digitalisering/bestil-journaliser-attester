@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 280,
-  "y": 920,
+  "x": 540,
+  "y": 900,
   "wires": [
     [
       "df7f1dd69541f5f0"
@@ -26,6 +26,7 @@ WHERE cpr = '{{rekvisitus}}'
 AND erBestilt = 1
 AND erAttestModtaget = 0
 AND erAfvist = 0
+{{{attestTypeClause}}}
 `
 
 module.exports = Node;

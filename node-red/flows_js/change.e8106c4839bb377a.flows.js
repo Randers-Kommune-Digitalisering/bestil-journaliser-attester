@@ -1,14 +1,15 @@
 const Node = {
-  "id": "fcab7f00482b77db",
+  "id": "e8106c4839bb377a",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "test cpr",
+  "g": "7927b0d68211546e",
+  "name": "Straffeattest",
   "rules": [
     {
       "t": "set",
-      "p": "rekvisitus",
+      "p": "attestType",
       "pt": "msg",
-      "to": "080310-0000",
+      "to": "straffeattest",
       "tot": "str"
     }
   ],
@@ -17,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 560,
-  "y": 260,
+  "x": 1050,
+  "y": 100,
   "wires": [
     [
-      "50ef0cb1a829a484"
+      "a55b26bb4bd9c7df"
     ]
   ]
 }

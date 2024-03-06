@@ -3,6 +3,7 @@ const Node = {
   "type": "template",
   "z": "90c6b0b502e346fa",
   "d": true,
+  "g": "70f0dd8ceb56e8a4",
   "name": "Search parameters",
   "field": "payload",
   "fieldType": "msg",
@@ -11,7 +12,7 @@ const Node = {
   "template": "",
   "output": "json",
   "x": 430,
-  "y": 1660,
+  "y": 1620,
   "wires": [
     []
   ]

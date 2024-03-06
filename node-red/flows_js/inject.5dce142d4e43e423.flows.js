@@ -6,13 +6,9 @@ const Node = {
   "props": [
     {
       "p": "payload"
-    },
-    {
-      "p": "topic",
-      "vt": "str"
     }
   ],
-  "repeat": "300",
+  "repeat": "1200",
   "crontab": "",
   "once": true,
   "onceDelay": "10",
