@@ -9,8 +9,8 @@ const Node = {
   "sortByX": false,
   "combineColumn": false,
   "combineRow": false,
-  "x": 450,
-  "y": 1120,
+  "x": 630,
+  "y": 1260,
   "wires": [
     [
       "4057d676a4c0c7e3"

@@ -5,8 +5,8 @@ const Node = {
   "g": "38c43765fdc8e29d",
   "name": "Læs PDF",
   "info": "",
-  "x": 240,
-  "y": 1080,
+  "x": 420,
+  "y": 1220,
   "wires": []
 }
 

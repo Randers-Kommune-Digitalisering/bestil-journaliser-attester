@@ -3,7 +3,7 @@ const Node = {
   "type": "link out",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Mail OUT: Ikke en straffeattest",
+  "name": "Mail OUT: Ikke en attest",
   "mode": "link",
   "links": [
     "d5c94fde9dd94804"

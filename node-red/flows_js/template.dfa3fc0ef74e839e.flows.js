@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 540,
-  "y": 900,
+  "y": 1040,
   "wires": [
     [
       "df7f1dd69541f5f0"
@@ -20,13 +20,18 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger
-SET erAttestModtaget = 1, attestModtaget = NOW()
-WHERE cpr = '{{rekvisitus}}'
-AND erBestilt = 1
-AND erAttestModtaget = 0
-AND erAfvist = 0
-{{{attestTypeClause}}}
+UPDATE
+    bestillinger
+SET
+    erAttestModtaget = 1,
+    attestModtaget = NOW(),
+    erAfvist = {{erAfvistValue}}
+WHERE
+    cpr = '{{rekvisitus}}'
+    AND erBestilt = 1
+    AND erAttestModtaget = 0
+    AND erAfvist = 0
+    {{{attestTypeClause}}}
 `
 
 module.exports = Node;

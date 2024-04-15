@@ -9,12 +9,12 @@ const Node = {
   "rules": [
     {
       "t": "cont",
-      "v": "Digitalpost (29189668): Straffeatt.",
+      "v": "Straffeatt.",
       "vt": "str"
     },
     {
       "t": "cont",
-      "v": "Digitalpost (29189668): Børneatt.",
+      "v": "Børneatt.",
       "vt": "str"
     },
     {
