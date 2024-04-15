@@ -23,6 +23,7 @@ Node.template = `
 UPDATE
     bestillinger
 SET
+    {{{afvistAt}}}
     erAttestModtaget = 1,
     attestModtaget = NOW(),
     erAfvist = {{erAfvistValue}}

@@ -1,18 +1,18 @@
 const Node = {
-  "id": "c8e2d365985ec390",
+  "id": "8d477a18f8d49160",
   "type": "debug",
-  "z": "d4c4c4565d1e740c",
-  "name": "DATABASE ERROR",
+  "z": "90c6b0b502e346fa",
+  "name": "debug 3",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "error",
+  "complete": "filename",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 480,
-  "y": 180,
+  "x": 580,
+  "y": 880,
   "wires": []
 }
 

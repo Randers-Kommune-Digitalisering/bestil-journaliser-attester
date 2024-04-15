@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Opdel mail body",
+  "name": "Opdel mail",
   "rules": [
     {
       "t": "set",
@@ -26,7 +26,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 260,
+  "x": 250,
   "y": 380,
   "wires": [
     [

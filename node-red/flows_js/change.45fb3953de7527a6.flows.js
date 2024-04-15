@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "erAfvist ? 1 : 0",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "afvistAt",
+      "pt": "msg",
+      "to": "erAfvist? \"afvist = NOW(),\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",

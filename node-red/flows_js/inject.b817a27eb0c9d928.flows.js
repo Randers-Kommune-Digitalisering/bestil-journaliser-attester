@@ -1,26 +1,29 @@
 const Node = {
-  "id": "5dce142d4e43e423",
+  "id": "b817a27eb0c9d928",
   "type": "inject",
-  "z": "90c6b0b502e346fa",
+  "z": "c8e22be6d882c9b6",
   "name": "",
   "props": [
     {
       "p": "payload"
+    },
+    {
+      "p": "topic",
+      "vt": "str"
     }
   ],
-  "repeat": "1200",
+  "repeat": "",
   "crontab": "",
-  "once": true,
-  "onceDelay": "10",
+  "once": false,
+  "onceDelay": 0.1,
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 130,
-  "y": 100,
+  "x": 220,
+  "y": 360,
   "wires": [
     [
-      "04c731adf7b2ba40",
-      "df11964ca73a8d2c"
+      "eb3d56c834fca843"
     ]
   ]
 }

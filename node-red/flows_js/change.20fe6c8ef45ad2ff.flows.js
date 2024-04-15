@@ -21,7 +21,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "stdout.action",
+      "p": "stdout.sql",
       "pt": "msg",
       "to": "sql",
       "tot": "msg"

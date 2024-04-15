@@ -20,6 +20,7 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
+  const payload = msg.payload;
   const _msg = JSON.parse( JSON.stringify( msg ) );
   
   msg = {};
@@ -27,7 +28,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   msg.to = _msg.to;
   msg.topic = _msg.topic;
   
-  msg.payload = _msg.payload;
+  msg.payload = payload;
   msg.plaintext = _msg.plaintext;
   msg.description = _msg.description;
   

@@ -1,18 +1,17 @@
 const Node = {
-  "id": "1bc301b2666dea69",
+  "id": "9f5f89e88a87cf1c",
   "type": "debug",
-  "z": "812b69015d6703b6",
-  "name": "FEJL",
+  "z": "c8e22be6d882c9b6",
+  "name": "debug 2",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
-  "complete": "error",
-  "targetType": "msg",
+  "complete": "false",
   "statusVal": "",
   "statusType": "auto",
-  "x": 560,
-  "y": 1020,
+  "x": 970,
+  "y": 360,
   "wires": []
 }
 

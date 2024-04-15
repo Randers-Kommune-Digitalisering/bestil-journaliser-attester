@@ -1,5 +1,5 @@
 const Node = {
-  "id": "910bd6ef449aee1e",
+  "id": "904e649993f93d6e",
   "type": "debug",
   "z": "d4c4c4565d1e740c",
   "name": "DATABASE ERROR",
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1220,
-  "y": 200,
+  "x": 480,
+  "y": 180,
   "wires": []
 }
 
