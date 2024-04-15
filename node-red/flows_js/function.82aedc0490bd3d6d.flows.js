@@ -20,7 +20,21 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  const payload = msg.payload;
+  const newMsg = {
+  
+      "payload": msg.payload,
+      "filename": msg.filename,
+      "to": msg.to,
+      "topic": msg.topic,
+      "plaintext": msg.plaintext,
+      "description": msg.description
+  
+  }
+  
+  msg = newMsg;
+  return msg;
+  
+  /*
   const _msg = JSON.parse( JSON.stringify( msg ) );
   
   msg = {};
@@ -33,9 +47,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   msg.description = _msg.description;
   
   msg.filename = _msg.filename;
-  
-  
-  return msg;
+  */
 }
 
 module.exports = Node;

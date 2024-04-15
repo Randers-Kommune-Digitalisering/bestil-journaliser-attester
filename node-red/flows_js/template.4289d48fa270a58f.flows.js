@@ -20,6 +20,7 @@ const Node = {
 
 Node.template = `
 Rekvisition af {{attestType}} er blevet afvist af rekvisitus.
+Der er sandsynligvis ikke givet samtykke til indhentningen.
 
 Afvisningen er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
 Vær opmærksom på at afvisningen derfor er vedhæftet denne mail, og skal journaliseres manuelt.
