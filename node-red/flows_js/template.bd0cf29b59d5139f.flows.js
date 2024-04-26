@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 810,
-  "y": 140,
+  "y": 280,
   "wires": [
     [
       "f55bc66f6a43e55d"
@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS bestillinger (
     erAdviseringAfsendt BOOL DEFAULT False,
     adviseringAfsendt TIMESTAMP,
     
+    UNIQUE (rekvirentDQ, cpr, attestType, attestSubType),
     PRIMARY KEY (uid)
 );
 `

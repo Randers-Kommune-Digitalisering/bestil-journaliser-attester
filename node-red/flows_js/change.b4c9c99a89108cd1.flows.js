@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "bestilling.attestType @ $attestType . (\t\t    /* Get var into scope */\t    $attestType := $attestType;\t\t    /* Set attest type and sub type */\t    $$.bestilling ~> | $ | {\t        \"attestType\": $attestType,\t        \"attestSubType\": attestSubType[attestType = $attestType].subType\t    },\t    \t    /* Delete sub type for attest type 1 (has no subtypes) */\t    [\t        attestType = 1 ? \"attestSubType\"\t    ] | \t\t)",
+      "to": "bestilling.attestType @ $attestType . (\t\t    /* Get var into scope */\t    $attestType := $attestType;\t\t    /* Set attest type and sub type */\t    $$.bestilling ~> | $ | {\t        \"attestType\": $attestType,\t        \"attestSubType\": $attestType = 1 ? -1 : /* Set -1 for attestType 1 */\t                         attestSubType[attestType = $attestType].subType\t    } | \t\t)",
       "tot": "jsonata"
     }
   ],
@@ -18,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
-  "y": 1000,
+  "x": 260,
+  "y": 1040,
   "wires": [
     [
       "6b31538eabfc45bc"
