@@ -1,12 +1,12 @@
 const Node = {
-  "id": "2773931fe35389c1",
+  "id": "7bc4f5e24a394906",
   "type": "comment",
   "z": "c715449c21b1a61f",
   "g": "d8880c2ab63ce3cd",
-  "name": "Opbevar data i SQL",
+  "name": "Opdel attesttyper til separate bestillinger",
   "info": "",
-  "x": 230,
-  "y": 1100,
+  "x": 290,
+  "y": 960,
   "wires": []
 }
 
