@@ -2,7 +2,7 @@ const Node = {
   "id": "a3f24782e0a49572",
   "type": "group",
   "z": "7459f772194dcf44",
-  "name": "stdout - Database status",
+  "name": "stdout - Database error",
   "style": {
     "stroke": "#ffcf3f",
     "fill": "#ffefbf",

@@ -30,12 +30,12 @@ INSERT INTO bestillinger (
 )
 VALUES
 (
-    "{{payload.rekvirentNavn}}",
-    "{{payload.rekvirentDQ}}",
-    "{{payload.rekvirentEmail}}",
-    "{{payload.rekvisitus}}",
-     {{payload.attestType}},
-     {{payload.attestSubType}}
+    "{{bestilling.rekvirentNavn}}",
+    "{{bestilling.rekvirentDQ}}",
+    "{{bestilling.rekvirentEmail}}",
+    "{{bestilling.rekvisitus}}",
+     {{bestilling.attestType}},
+     {{bestilling.attestSubType}}
 )
 `
 
