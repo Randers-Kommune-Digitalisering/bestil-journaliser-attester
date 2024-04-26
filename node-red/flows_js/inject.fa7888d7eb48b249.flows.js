@@ -14,7 +14,7 @@ const Node = {
   "once": false,
   "onceDelay": 0.1,
   "topic": "",
-  "payload": "{\"sagsbehandler\":\"Søren Testersen - DQA8932\",\"medarbejderCPR\":\"000000-0000\",\"attestType\":\"\",\"samtykke\":\"true\",\"underskrift\":\"2023-12-11T09: 58: 50\"}",
+  "payload": "{\"sagsbehandler\":\"Søren Testersen - DQA8932\",\"medarbejderCPR\":\"000000-0000\",\"attestType\":\"0, 2\",\"straffeattestType\":\"3\",\"borneattestType\":\"1\",\"samtykke\":\"true\"}",
   "payloadType": "json",
   "x": 140,
   "y": 160,

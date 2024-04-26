@@ -4,14 +4,17 @@ const Node = {
   "z": "c715449c21b1a61f",
   "name": "Initialiser database",
   "style": {
-    "label": true
+    "label": true,
+    "stroke": "none",
+    "fill": "#bfdbef",
+    "fill-opacity": "0.6"
   },
   "nodes": [
     "d9e956cb0f7cba66",
     "bd0cf29b59d5139f",
     "f55bc66f6a43e55d"
   ],
-  "x": 714,
+  "x": 634,
   "y": 39,
   "w": 332,
   "h": 202
