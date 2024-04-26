@@ -4,12 +4,11 @@ const Node = {
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
   "name": "",
-  "x": 900,
+  "x": 1140,
   "y": 380,
   "wires": [
     [
-      "4faf5655bb0ae83e",
-      "aaaba81f93a9428b"
+      "4faf5655bb0ae83e"
     ],
     []
   ]

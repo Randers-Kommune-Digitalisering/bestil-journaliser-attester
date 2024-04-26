@@ -22,7 +22,6 @@ const Node = {
     "50ef0cb1a829a484",
     "2579a996a62d5d99",
     "5dd8dcc0c8987f55",
-    "aaaba81f93a9428b",
     "c6f8a509f9ba132c",
     "a4f8c8bcfc105b7b",
     "6e68c68528e30169",
@@ -35,10 +34,16 @@ const Node = {
     "2adb49165a458380",
     "74b14bc578558a86",
     "b7915cf9c5722c0d",
-    "3625d8d202a43344"
+    "3625d8d202a43344",
+    "aaaba81f93a9428b",
+    "4faf5655bb0ae83e",
+    "a6cec01f2ab13499",
+    "56abe7910cdc0b1a"
   ],
   "x": 154,
-  "y": 299
+  "y": 299,
+  "w": 1172,
+  "h": 562
 }
 
 module.exports = Node;

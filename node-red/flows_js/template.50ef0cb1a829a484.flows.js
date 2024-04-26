@@ -3,24 +3,31 @@ const Node = {
   "type": "template",
   "z": "90c6b0b502e346fa",
   "g": "9e73796625eb7a3f",
-  "name": "Forespørgsel ↓\\n Find rekvirentEmail",
+  "name": "Forespørgsel ↓\\n Find bestilling",
   "field": "sql",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 690,
+  "x": 920,
   "y": 380,
   "wires": [
     [
-      "2579a996a62d5d99"
+      "2579a996a62d5d99",
+      "56abe7910cdc0b1a"
     ]
   ]
 }
 
 Node.template = `
-SELECT rekvirentEmail from bestillinger WHERE cpr = '{{rekvisitus}}'
+SELECT
+    *
+FROM
+    bestillinger
+WHERE
+    cpr = '{{rekvisitus}}'
+AND ({{{attestTypeClause}}})
 `
 
 module.exports = Node;
