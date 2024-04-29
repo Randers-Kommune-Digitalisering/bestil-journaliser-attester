@@ -1,25 +1,41 @@
 <script setup>
-    const props = defineProps({
-        attestType: {
-            type: String,
-            required: true
-    }
-    })
-    
-    console.log("Attest-type: " + props.attestType)
-
-    import { ref } from 'vue'
+    import { ref, watch } from 'vue'
     import dayjs from 'dayjs'
 
     import Content from '@/components/Content.vue'
     import IconTable from '@/components/icons/IconTable.vue'
 
-    const attestType = props.attestType
-    const _attestType = attestType == "Børneattest" ? "Borneattest" : attestType
-    const _attestHeaderTitle = attestType + 'er'
+    const props = defineProps({
+        attestType: {
+            type: Number,
+            required: true
+        },
+        attestSubType: {
+            type: Number,
+            required: false,
+            default: -1
+        },
+        header: {
+            type: String,
+            required: false
+        }
+    })
 
+    const attestType = ref(props.attestType)
+    const attestSubType = ref(props.attestSubType)
+    const typesChanged = ref([false, false])
 
-    const h2 = _attestHeaderTitle
+    watch( () => props.attestType, (current, previous) => {
+        typesChanged.value[0] = true
+        attestType.value = current
+        fetchOrders()
+    })
+
+    watch( () => props.attestSubType, (current, previous) => {
+        typesChanged.value[1] = true
+        attestSubType.value = current
+        fetchOrders()
+    })
 
     // Events
 
@@ -28,96 +44,34 @@
     const callUpdate = () => {
         emit('updateOrderCount')
     }
-
     const callSetCount = (count) => {
-        emit('setOrderCount', _attestHeaderTitle, count)
+        emit('setOrderCount', "Bestillinger", count)
     }
 
-    // Get orders
-
-    callUpdate()
+    // Fetch orders
 
     const orders = ref([])
 
-    fetch('/api/data/orders/type/' + _attestType)
-    .then(response => response = response.json())
-    //.then(value => value = filterByType(value))
-    .then(value => orders.value = value)
+    function fetchOrders(force = false)
+    {
+        if(!force)
+        {
+            if(!(typesChanged.value[0] && typesChanged.value[1]))
+                return
+
+            else
+            {
+                typesChanged.value = [false, false]
+            }
+        }
+
+        fetch('/api/orders/' + attestType.value + '/' + attestSubType.value)
+            .then(response => response = response.json())
+            .then(value => orders.value = value)
+            .then(value => callSetCount(value.length))
+    }
 
     // Functions
-
-    function copyOrderList()
-    {
-        // Join CPR to string
-        var text = ""
-        orders.value.forEach(element => {
-            text += element.cpr + "\n"
-        })
-
-        // Copy string to clipboard
-        navigator.clipboard.writeText(text)
-    }
-
-    function unlockButton(buttonId)
-    {
-        document.getElementById(buttonId).disabled = false
-    }
-
-    function setButtonGreen(buttonId)
-    {
-        document.getElementById(buttonId).classList.add("green")
-    }
-
-    function hide(id)
-    {
-        document.getElementById(id).classList.add("displaynone")
-    }
-    function display(id)
-    {
-        document.getElementById(id).classList.remove("displaynone")
-    }
-
-    function openPolitiWebsite()
-    {
-        window.open("https://dsa.politi.dk/RequestPublic?style=PolitiDK", "_blank")
-    }
-
-    function setAsOrdered()
-    {
-        // Obtain all ids from list
-        var ids = []
-        orders.value.forEach(element => {
-            console.log("Found id:" + element.uid)
-            ids.push( element.uid )
-        })
-        
-        var idCount = ids.length
-        var idList = ids.join()
-
-        console.log("idList: '" + idList + "'")
-
-        // Perform POST request to backend
-        fetch('/api/data/orders/accept/' + idList)
-        .then(response => console.log(response.json()))
-
-        // Set orders = []
-        orders.value = []
-        callSetCount(0)
-        notification.value = ordersProcessedNotification(idCount)
-    }
-
-    function reject(item)
-    {
-        // Perform POST request to backend
-        fetch('/api/data/orders/reject/' + item.uid)
-        .then(response => console.log(response.json()))
-        //.then(callUpdate())
-
-        // Remove order
-        orders.value = orders.value.filter(x => x !== item)
-        callSetCount(-1)
-    }
-
     // Notification
 
     const notification = ref(null)
@@ -133,6 +87,73 @@
         }
     }
 
+    // Flow
+
+    var flowStep = ref(0)
+
+    function copyOrderList()
+    {
+        // Set flow step
+        flowStep.value = 1
+
+        // Join CPR to string
+        var text = ""
+        orders.value.forEach(element => {
+            text += element.cpr + "\n"
+        })
+        
+        // Then copy string to clipboard
+        navigator.clipboard.writeText(text)
+    }
+
+    function openPolitiWebsite(skip = false)
+    {
+        // Set flow step
+        flowStep.value = 2
+
+        if(!skip)
+            window.open("https://dsa.politi.dk/RequestPublic?style=PolitiDK", "_blank")
+    }
+
+    // Back-end interactions 
+
+    function setAsOrdered()
+    {
+        // Reset flow step
+        flowStep.value = 0
+
+        // Obtain all ids from list
+        var ids = []
+        orders.value.forEach(element => {
+            ids.push( element.uid )
+        })
+        
+        var idCount = ids.length
+        var idList = ids.join()
+
+        // Perform POST request to backend
+        fetch('/api/data/orders/accept/' + idList)
+        .then(response => console.log(response.json()))
+
+        // Set orders = []
+        orders.value = []
+        callUpdate()
+
+        // Set notification
+        notification.value = ordersProcessedNotification(idCount)
+    }
+
+    function reject(item)
+    {
+        // Perform POST request to backend
+        fetch('/api/data/orders/reject/' + item.uid)
+        .then(response => console.log(response.json()))
+
+        // Remove order from list
+        orders.value = orders.value.filter(x => x !== item)
+        callSetCount(-1)
+    }
+
 </script>
 
 <template>
@@ -145,15 +166,13 @@
         {{ notification.message }}
     </div>
 
-    <h2>{{ h2 }}</h2>
-
     <Content>
         <template #icon>
             <IconTable />
         </template>
-        <template #heading>Afventer behandling</template>
+        <template #heading>{{ props.header }} {{ attestType }} ({{ attestSubType }})</template>
 
-        <span class="paragraph">Herunder kan du se bestillinger som afventer din behandling.</span>
+        <span class="paragraph">Personer der søger ansættelse eller er ansat til at yde indsats i hendhold til §§ 83 og 85 i lov om social service, samt for personer der søger ansættelse eller er ansat ved tilbud, hvor der ydes en sådan indsats.</span>
 
         <div class="paragraph">
             <table>
@@ -178,36 +197,36 @@
 
             </table>
         </div>
+
     </Content>
 
     <Content v-if="orders.length > 0">
         <template #icon>
 
         </template>
-        <template #heading>Bestil {{attestType.toLowerCase()}}attester</template>
+        <template #heading>Bestil attester</template>
 
-        <span class="paragraph">Følg nedenstående trin for at gennemføre bestilling af {{attestType.toLowerCase()}}attesterne:</span>
+        <span class="paragraph">Følg nedenstående trin for at gennemføre bestilling af attesterne:</span>
 
         <div class="paragraph buttons">
 
-            <button id="buttonAttest_1"
-            @click="copyOrderList();unlockButton('buttonAttest_2');setButtonGreen('buttonAttest_1');display('aAttest_2')">
+            <button @click="copyOrderList()" :class="flowStep > 0 ? 'green' : ''">
                 1) Kopier CPR-numre
             </button>
 
             <div>
-                <button id="buttonAttest_2" 
-                @click="openPolitiWebsite();unlockButton('buttonAttest_3');setButtonGreen('buttonAttest_2');hide('aAttest_2')" disabled>
+                <button @click="openPolitiWebsite()"  :class="flowStep > 1 ? 'green' : ''" :disabled="flowStep < 1">
                     2) Bestil på Politiets hjemmeside
                 </button>
 
-                <div id="aAttest_2" class="center text-small displaynone">
-                    <a @click="unlockButton('buttonAttest_3');setButtonGreen('buttonAttest_2');hide('aAttest_2')">Spring over</a>
+                <div id="flow_2" :class="'center text-small' +  (flowStep != 1 ? ' displaynone' : '')">
+                    <a @click="openPolitiWebsite(true)">Spring over</a>
                 </div>
             </div>
             
-            <button id="buttonAttest_3" 
-            @click="setAsOrdered();setButtonGreen('buttonAttest_3')" disabled>3) Markér attester som bestilt</button>
+            <button @click="setAsOrdered()" :disabled="flowStep < 2">
+                3) Markér attester som bestilt
+            </button>
 
         </div>
     </Content>
@@ -237,5 +256,19 @@
     .displaynone
     {
         display: none;
+    }
+
+    .anim
+    {
+        transition: 300ms;
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .hidden
+    {
+        max-height: 0rem;
+        transform: scaleY(0) translateY(-60%);
+        opacity: 0;
+        overflow: hidden;
     }
 </style>

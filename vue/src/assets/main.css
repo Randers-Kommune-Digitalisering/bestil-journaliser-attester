@@ -11,20 +11,24 @@
 
 :root
 {
-    --color-bg: #faf9f8;
+    --color-bg: #f0f5f3;
     --color-bg-light: #fbfbfb;
 
-    --color-text: #4a535a;
-    --color-text-dark: #3c4349;
+    --color-text: #444d54;
+    --color-text-dark: #373d43;
 
     --color-green: rgb(35, 176, 106);
+    --color-green-light: rgb(99, 181, 140);
     --color-red: rgb(179, 38, 38);
+    --color-red-light: rgb(187, 73, 73);
     --color-blue: rgb(27, 153, 207);
+    --color-blue-light: rgb(84, 170, 206);
     --color-orange: rgb(208, 140, 21);
+    --color-orange-light: rgb(215, 160, 65);
     --color-white: rgb(248, 248, 248);
 
-    --color-border: #e1e1e1;
-    --color-border-dark: #d1d1d1;
+    --color-border: #dddddd;
+    --color-border-dark: #c5c5c5;
 }
 
 *
@@ -35,6 +39,7 @@
 html
 {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 body
@@ -65,6 +70,11 @@ input, a, button
     transition: 120ms ease-in-out;
 }
 
+button + button
+{
+    margin-left: 0.5rem;
+}
+
 h2 {
     border-bottom: 0.1rem solid var(--color-border); /* Old: rgb(235, 235, 235); */
     color:var(--color-text-dark);
@@ -93,23 +103,36 @@ table, form
 button, input[type='submit']
 {
     border: 0rem;
+    
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: unset;
+    line-height: normal;
 }
-
-button:disabled, input[type='submit']:disabled
-{
-    background-color: var(--color-text)!important;
-}
+    button:disabled, input[type='submit']:disabled
+    {
+        background-color: var(--color-text)!important;
+    }
 
 input, input[type='text']
 {
     border-color: var(--color-border-dark);
 }
 
+select
+{
+    border-color: var(--color-border-dark);
+}
+select:focus
+{
+    border-color: var(--color-blue);
+}
+
 input:not([type='submit']):focus
 {
     border-color: var(--color-blue);
 }
-input:not([type='submit']):required:invalid:focus
+input:not([type='submit']):required:invalid:focus, select:required:invalid:focus
 {
     border-color: var(--color-orange);
 }
@@ -171,6 +194,28 @@ input[type='checkbox'] + label, input[type='radio'] + label
     margin-left: 1rem;
 }
 
+select
+{
+    color: var(--color-text);
+}
+
+option
+{
+    color: #373d43;
+}
+option[disabled]
+{
+    color: #c5c5c5;
+}
+
+code {
+    background-color: var(--color-border);
+}
+
+hr {
+    border-color: var(--color-border);
+}
+
 
 
 /* Custom components */
@@ -186,7 +231,7 @@ input[type='checkbox'] + label, input[type='radio'] + label
     justify-content: flex-start;
     align-items: start;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0rem 1rem;
 }
 .flexbox.grow > *
 {
@@ -229,6 +274,7 @@ input[type='checkbox'] + label, input[type='radio'] + label
 
     .card table
     {
+        display: table;
         margin-top: -1rem;
         margin-bottom: -1rem;
     }
@@ -344,40 +390,55 @@ input[type='checkbox'] + label, input[type='radio'] + label
 
 /* Custom colored elements */
 
-span.red
+span.red, label.red
 { color: var(--color-red); }
 .card.red, .tag.red
 { border-color: var(--color-red); }
 button.red, input[type='submit'].red, .message.red
 { background-color: var(--color-red); }
 
-span.green
+button.red:hover, input[type='submit'].red:hover
+{ background-color: var(--color-red-light); }
+
+span.green, label.green
 { color: var(--color-green); }
 .card.green, .tag.green
 { border-color: var(--color-green); }
 button.green, input[type='submit'].green, .message.green
 { background-color: var(--color-green); }
 
-span.blue
+button.green:hover, input[type='submit'].green:hover
+{ background-color: var(--color-green-light); }
+
+span.blue, label.blue
 { color: var(--color-blue); }
 .card.blue, .tag.blue
 { border-color: var(--color-blue); }
 button.blue, input[type='submit'].blue, .message.blue
 { background-color: var(--color-blue); }
 
-span.orange
+button.blue:hover, input[type='submit'].blue:hover
+{ background-color: var(--color-blue-light); }
+
+span.orange, label.orange
 { color: var(--color-orange); }
 .card.orange, .tag.orange
 { border-color: var(--color-orange); }
 button.orange, input[type='submit'].orange, .message.orange
 { background-color: var(--color-orange); }
 
-span.randers
+button.orange:hover, input[type='submit'].orange:hover
+{ background-color: var(--color-orange-light); }
+
+span.randers, label.randers
 { color: var(--randers-color-); }
 .card.randers, .tag.randers
 { border-color: var(--randers-color-); }
 button.randers, input[type='submit'].randers, .message.randers
 { background-color: var(--randers-color-); }
+
+button.randers:hover, input[type='submit'].randers:hover
+{ background-color: var(--color-randers-semilight); }
 
 .message.red, .message.green, .message.blue, .message.orange, .message.randers
 { color: var(--color-white); }
@@ -389,19 +450,19 @@ button.randers, input[type='submit'].randers, .message.randers
 
 .darkmode, .darkmode *
 {
-    --color-bg: #1c1c1c;
-    --color-bg-light: #212121;
+    --color-bg: #1a1a1a;
+    --color-bg-light: #1e1e1e;
 
     --color-text: #bababa;
-    --color-text-dark: #c8c8c8;
+    --color-text-dark: #f8f8f8;
 
-    --color-border: #2f2f2f;
-    --color-border-dark: #474747;
+    --color-border: #2b2b2b;
+    --color-border-dark: #4e4e4e;
 }
 .darkmode input, .darkmode code, .darkmode table, .darkmode table * {
     border-color: var(--color-border-dark);
     color: var(--color-text);
 }
 .darkmode code, .darkmode .tag {
-    background-color: var(--color-border-dark);
+    background-color: var(--color-border);
 }

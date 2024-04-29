@@ -10,8 +10,7 @@ import App from './App.vue'
 import Start from '@/views/Start.vue'
 import Vue from '@/views/Vue.vue'
 import Templates from '@/views/Templates.vue'
-import Straffeattest from '@/views/Straffeattest.vue'
-import Borneattest from '@/views/Borneattest.vue'
+import Bestillinger from '@/views/Bestillinger.vue'
 import Historik from '@/views/Historik.vue'
 
 // Opsætning af URL routing
@@ -35,17 +34,12 @@ const router = createRouter({
             component: Templates
         },
         {
-            path: '/orders/borneattest', 
-            name: "Børneattester",
-            component: Borneattest
+            path: '/orders', 
+            name: "Bestillinger",
+            component: Bestillinger
         },
         {
-            path: '/orders/straffeattest', 
-            name: "Straffeattester",
-            component: Straffeattest
-        },
-        {
-            path: '/orders/history', 
+            path: '/history', 
             name: "Historik",
             component: Historik
         }

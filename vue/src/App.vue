@@ -12,7 +12,7 @@ const updateOrderCount = () => {
 };
 
 const setOrderCount = (item, count) => {
-    console.log(`Received set order count request`)
+    console.log(`Received set order count request for item ` + item + ` with value ` + count)
     headerComponent.value.setOrderCount(item, count)
 };
 

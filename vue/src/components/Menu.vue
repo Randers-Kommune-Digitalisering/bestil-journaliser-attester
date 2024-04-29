@@ -9,24 +9,24 @@
         {
             "title": "Start",
             "url": "/"
-        },        
+        }, 
         {
-            "title": "Straffeattester",
-            "url": "/orders/straffeattest"
-        },        
-        {
-            "title": "Børneattester",
-            "url": "/orders/borneattest"
+            "title": "Bestillinger",
+            "url": "/orders"
         },        
         {
             "title": "Historik",
-            "url": "/orders/history"
+            "url": "/history"
         }
     ])
 
     // Set selected = true for landing page
 
-    menuItems.value[ menuItems.value.findIndex(x => x.url == new URL(location.href).pathname) ].selected = true
+    const landingPageIndex = menuItems.value.findIndex(x => x.url == new URL(location.href).pathname)
+
+    if(landingPageIndex !== -1)
+        menuItems.value[ landingPageIndex ].selected = true
+
 
 
     // Function to visually update selected item
@@ -41,28 +41,32 @@
 
     function updateOrderCount()
     {
-        fetch('/api/data/orders/count')
+        /*fetch('/api/data/orders/count')
             .then(response => response = response.json())
             .then(response => {
                 setAlert("Straffeattester", response.staffeattestCount)
                 setAlert("Børneattester", response.borneattestCount)
-        })
+        })*/
     }
 
     // Get orders when starting
-    updateOrderCount();
+    //updateOrderCount();
 
     function setOrderCount(itemTitle, countAdjustment = 0)
     {
         var currentValue = menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert
+            currentValue = currentValue == undefined ? 0 : currentValue
 
         // Set 0
         if(countAdjustment == 0)
             setAlert(itemTitle, "")
 
         // Set relative
-        else if(parseInt(currentValue))
+        else if(countAdjustment < 0)
             setAlert(itemTitle, (currentValue+countAdjustment))
+
+        else
+            setAlert(itemTitle, countAdjustment)
     }
     
     function setAlert(itemTitle, alert)
@@ -74,6 +78,7 @@
         // Set alert
         else
             menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert = alert
+
     }
 
 
