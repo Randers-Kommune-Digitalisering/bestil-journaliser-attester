@@ -1,68 +1,20 @@
-<script>
-    const attestTyper = [
-        {
-            "name": "Offentlig straffeattest",
-            "description": "Ansættelse i sociale servicefag",
-            "typeId": 0,
-            "subTypeId": 0,
-            "count": 0
-        },
-        {
-            "name": "Offentlig straffeattest",
-            "description": "Ansættelse i folkeskolen",
-            "typeId": 0,
-            "subTypeId": 1,
-            "count": 0
-        },
-        {
-            "name": "Offentlig straffeattest",
-            "description": "Ansættelse som personlig hjælper",
-            "typeId": 0,
-            "subTypeId": 2,
-            "count": 0
-        },
-        {
-            "name": "Offentlig straffeattest",
-            "description": "Ansættelse ved dagtilbud for børn/unge",
-            "typeId": 0,
-            "subTypeId": 3,
-            "count": 0
-        },
-        {
-            "name": "Privat straffeattest",
-            "description": "",
-            "typeId": 1,
-            "subTypeId": -1,
-            "count": 0
-        },
-        {
-            "name": "Børneattest",
-            "description": "Ansættelse i børnefagligt område",
-            "typeId": 2,
-            "subTypeId": 0,
-            "count": 1
-        },
-        {
-            "name": "Børneattest",
-            "description": "Pårørende til ansat i børnefagligt område",
-            "typeId": 2,
-            "subTypeId": 1,
-            "count": 0
-        }
-    ]
-</script>
+
 <script setup>
     import { ref } from 'vue'
+
     import Content from '@/components/Content.vue'
     import Attester from '@/components/Attester.vue'
+    import attestTyper from '@/assets/attestTypes.json'
 
     const selectedType = ref(null)
     const selectedSubType = ref(null)
+    const selectedTypeArray = ref([null, null])
 
     function setAttestType(typeUid, subTypeUid = -1)
     {
         selectedType.value = typeUid
         selectedSubType.value = subTypeUid
+        selectedTypeArray.value = [typeUid, subTypeUid]
     }
 </script>
 
@@ -95,10 +47,7 @@
     </Content>
 
     <Attester v-if="selectedType != null && selectedSubType != null"
-              :attestType="selectedType"
-              :attestSubType="selectedSubType"
-              :header="attestTyper[selectedType].name"
-              :description="attestTyper[selectedType].description"></Attester>
+              :attestTypes="selectedTypeArray"></Attester>
     
 </template>
 

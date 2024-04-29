@@ -1,41 +1,34 @@
 <script setup>
     import { ref, watch } from 'vue'
     import dayjs from 'dayjs'
+    import attestTyper from '@/assets/attestTypes.json'
 
     import Content from '@/components/Content.vue'
     import IconTable from '@/components/icons/IconTable.vue'
 
     const props = defineProps({
-        attestType: {
-            type: Number,
+        attestTypes: {
+            type: Array,
             required: true
-        },
-        attestSubType: {
-            type: Number,
-            required: false,
-            default: -1
-        },
-        header: {
-            type: String,
-            required: false
         }
     })
 
-    const attestType = ref(props.attestType)
-    const attestSubType = ref(props.attestSubType)
-    const typesChanged = ref([false, false])
+    const attestType = ref(props.attestTypes[0])
+    const attestSubType = ref(props.attestTypes[1])
 
-    watch( () => props.attestType, (current, previous) => {
-        typesChanged.value[0] = true
-        attestType.value = current
+    const header = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name)
+    const description = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription)
+
+    watch( () => props.attestTypes, (current, previous) => {        
+        attestType.value = current[0]
+        attestSubType.value = current[1]
+
+        header.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name
+        description.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription
+
         fetchOrders()
     })
 
-    watch( () => props.attestSubType, (current, previous) => {
-        typesChanged.value[1] = true
-        attestSubType.value = current
-        fetchOrders()
-    })
 
     // Events
 
@@ -52,19 +45,8 @@
 
     const orders = ref([])
 
-    function fetchOrders(force = false)
+    function fetchOrders()
     {
-        if(!force)
-        {
-            if(!(typesChanged.value[0] && typesChanged.value[1]))
-                return
-
-            else
-            {
-                typesChanged.value = [false, false]
-            }
-        }
-
         fetch('/api/orders/' + attestType.value + '/' + attestSubType.value)
             .then(response => response = response.json())
             .then(value => orders.value = value)
@@ -170,9 +152,9 @@
         <template #icon>
             <IconTable />
         </template>
-        <template #heading>{{ props.header }} {{ attestType }} ({{ attestSubType }})</template>
+        <template #heading>{{ header }}</template>
 
-        <span class="paragraph">Personer der søger ansættelse eller er ansat til at yde indsats i hendhold til §§ 83 og 85 i lov om social service, samt for personer der søger ansættelse eller er ansat ved tilbud, hvor der ydes en sådan indsats.</span>
+        <span class="paragraph">{{ description }}</span>
 
         <div class="paragraph">
             <table>
