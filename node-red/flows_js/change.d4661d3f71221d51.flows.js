@@ -1,5 +1,5 @@
 const Node = {
-  "id": "137343af221121bd",
+  "id": "d4661d3f71221d51",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "Parametre",
@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "req.params.type",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "subType",
+      "pt": "msg",
+      "to": "req.params.subtype",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -18,10 +25,10 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 450,
-  "y": 260,
+  "y": 380,
   "wires": [
     [
-      "54e25a536e5bf014"
+      "34e42e9b82583d3e"
     ]
   ]
 }

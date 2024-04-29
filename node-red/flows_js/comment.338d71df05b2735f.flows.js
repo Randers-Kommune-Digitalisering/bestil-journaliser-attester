@@ -4,8 +4,8 @@ const Node = {
   "z": "7d7cd8fb8a9dbe4e",
   "name": "Godtager kommaseparerede ids",
   "info": "",
-  "x": 490,
-  "y": 1220,
+  "x": 450,
+  "y": 1340,
   "wires": []
 }
 

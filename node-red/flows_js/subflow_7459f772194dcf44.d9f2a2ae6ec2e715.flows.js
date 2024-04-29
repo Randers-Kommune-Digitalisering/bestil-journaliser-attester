@@ -3,8 +3,8 @@ const Node = {
   "type": "subflow:7459f772194dcf44",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "",
-  "x": 640,
-  "y": 640,
+  "x": 600,
+  "y": 900,
   "wires": [
     [
       "d0b2d09523353b91"

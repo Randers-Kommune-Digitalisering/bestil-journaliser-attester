@@ -1,15 +1,15 @@
 const Node = {
-  "id": "137343af221121bd",
+  "id": "38225897963b6b14",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "Parametre",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "attestType",
+      "p": "payload",
       "pt": "msg",
-      "to": "req.params.type",
-      "tot": "msg"
+      "to": "{}",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -17,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 450,
-  "y": 260,
+  "x": 1120,
+  "y": 420,
   "wires": [
     [
-      "54e25a536e5bf014"
+      "77227cf1458eb901"
     ]
   ]
 }

@@ -4,8 +4,8 @@ const Node = {
   "z": "7d7cd8fb8a9dbe4e",
   "name": "Count(Orders)",
   "info": "",
-  "x": 150,
-  "y": 820,
+  "x": 110,
+  "y": 500,
   "wires": []
 }
 

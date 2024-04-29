@@ -5,8 +5,8 @@ const Node = {
   "name": "",
   "statusCode": "500",
   "headers": {},
-  "x": 1300,
-  "y": 1180,
+  "x": 1260,
+  "y": 1300,
   "wires": []
 }
 

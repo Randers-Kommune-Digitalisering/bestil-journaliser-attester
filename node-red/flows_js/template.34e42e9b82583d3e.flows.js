@@ -1,5 +1,5 @@
 const Node = {
-  "id": "fd809120d2a68701",
+  "id": "34e42e9b82583d3e",
   "type": "template",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "Forespørgsel ↓\\n Læs bestillinger \\n som afventer bestilling",
@@ -10,10 +10,10 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 660,
-  "y": 140,
+  "y": 380,
   "wires": [
     [
-      "7366dab72b2b7bcd"
+      "2dc88473a65b419a"
     ]
   ]
 }
@@ -26,6 +26,7 @@ FROM
 WHERE
     erBestilt = 0
 AND erAfvist = 0
+AND attestType = {{attestType}}
 `
 
 module.exports = Node;
