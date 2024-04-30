@@ -45,7 +45,6 @@ CREATE TABLE IF NOT EXISTS bestillinger (
     erAdviseringAfsendt BOOL DEFAULT False,
     adviseringAfsendt TIMESTAMP,
     
-    UNIQUE (rekvirentDQ, cpr, attestType, attestSubType),
     PRIMARY KEY (uid)
 );
 `
