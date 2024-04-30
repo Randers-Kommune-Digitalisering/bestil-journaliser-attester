@@ -27,6 +27,7 @@ WHERE
     erBestilt = 0
 AND erAfvist = 0
 AND attestType = {{attestType}}
+AND attestSubType = {{subType}}
 `
 
 module.exports = Node;

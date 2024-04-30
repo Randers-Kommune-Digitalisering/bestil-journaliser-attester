@@ -16,7 +16,7 @@ const Node = {
       "p": "subType",
       "pt": "msg",
       "to": "req.params.subtype",
-      "tot": "str"
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -28,8 +28,7 @@ const Node = {
   "y": 380,
   "wires": [
     [
-      "34e42e9b82583d3e",
-      "c1289a74e2150d4e"
+      "34e42e9b82583d3e"
     ]
   ]
 }

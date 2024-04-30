@@ -13,6 +13,7 @@
         }
     })
 
+    /* attestTypes array: [attestType, attestSubType] */
     const attestType = ref(props.attestTypes[0])
     const attestSubType = ref(props.attestTypes[1])
 
@@ -28,7 +29,6 @@
 
         fetchOrders()
     })
-
 
     // Events
 

@@ -9,6 +9,7 @@
     const selectedType = ref(null)
     const selectedSubType = ref(null)
     const selectedTypeArray = ref([null, null])
+    //const orderCount = ref(null)
 
     function setAttestType(typeUid, subTypeUid = -1)
     {
@@ -16,6 +17,28 @@
         selectedSubType.value = subTypeUid
         selectedTypeArray.value = [typeUid, subTypeUid]
     }
+
+    function fetchOrderCount()
+    {
+        console.log("Fetching order count")
+
+        fetch('/api/ordercount')
+            .then(response => response = response.json())
+            //.then(value => orderCount.value = value)
+            .then(value => {
+                value = Array.isArray(value) ? value : [value]
+
+                attestTyper.forEach(element => {
+                    var index = value.findIndex(x => x.attestType === element.typeId && x.attestSubType === element.subTypeId)
+                    element.count = index != -1 ? value[index].count : 0
+                })
+
+            })
+    }
+
+
+
+    fetchOrderCount()
 </script>
 
 <template>
@@ -27,7 +50,7 @@
 
         <button
             v-for="attestType in attestTyper"
-            :class="!(selectedType == attestType.typeId && selectedSubType == attestType.subTypeId) ? 'gray' : ''"
+            :class="!(selectedType == attestType.typeId && selectedSubType == attestType.subTypeId) ? attestType.count > 0 ? 'orange' : 'gray' : ''"
             @click="setAttestType(attestType.typeId, attestType.subTypeId)">
 
             <div class="content">
