@@ -2,10 +2,10 @@ const Node = {
   "id": "338d71df05b2735f",
   "type": "comment",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "Godtager kommaseparerede ids",
+  "name": "Godtager id array",
   "info": "",
-  "x": 450,
-  "y": 1340,
+  "x": 400,
+  "y": 1060,
   "wires": []
 }
 

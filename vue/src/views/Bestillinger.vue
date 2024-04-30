@@ -13,6 +13,19 @@
     const selectedTypeArray = ref([null, null])
     //const orderCount = ref(null)
 
+    const emit = defineEmits(['updateOrderCount', 'setOrderCount'])
+
+    const callUpdate = () => {
+        emit('updateOrderCount')
+    }
+    const callSetCount = (count) => {
+        console.log("Setting order count to " + count)
+        emit('setOrderCount', count)
+    }
+    const updateOrdersCount = () => {
+        fetchOrderCount()
+    }
+
     function setAttestType(typeUid, subTypeUid = -1)
     {
         selectedType.value = typeUid
@@ -35,11 +48,14 @@
                     element.count = index != -1 ? value[index].count : 0
                 })
 
+                currentAttestTypes.value = []
                 currentAttestTypes.value = attestTyper
             })
     }
 
+    callUpdate()
     fetchOrderCount()
+
 </script>
 
 <template>
@@ -72,7 +88,10 @@
     </Content>
 
     <Attester v-if="selectedType != null && selectedSubType != null"
-              :attestTypes="selectedTypeArray"></Attester>
+                @updateOrdersCount="updateOrdersCount"
+                @updateOrderCount="callUpdate"
+                @setOrderCount="callSetCount"
+                :attestTypes="selectedTypeArray"></Attester>
     
 </template>
 

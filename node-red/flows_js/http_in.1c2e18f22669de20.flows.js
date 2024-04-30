@@ -3,12 +3,12 @@ const Node = {
   "type": "http in",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "",
-  "url": "/data/orders/finished",
+  "url": "/history/completed",
   "method": "get",
   "upload": false,
   "swaggerDoc": "",
-  "x": 150,
-  "y": 900,
+  "x": 140,
+  "y": 740,
   "wires": [
     [
       "e04751f032eff419"

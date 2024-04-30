@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "attestType",
       "pt": "msg",
-      "to": "payload[0].erStraffeattest = 1 ?\t    \"straffeattest\"\t:\tpayload[0].erBorneattest = 1 ?\t    \"børneattest\"",
+      "to": "payload[0].attestType = 0 ?\t    \"offentlig straffeattest\"\t:\tpayload[0].attestType = 1 ?\t    \"privat straffeattest\"\t:\tpayload[0].attestType = 2 ?\t    \"børneattest\"",
       "tot": "jsonata"
     }
   ],
@@ -24,8 +24,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1080,
-  "y": 1180,
+  "x": 1100,
+  "y": 900,
   "wires": [
     [
       "0a543725b05530a5"

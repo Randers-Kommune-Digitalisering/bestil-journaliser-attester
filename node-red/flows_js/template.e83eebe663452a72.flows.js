@@ -10,7 +10,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 630,
-  "y": 1180,
+  "y": 900,
   "wires": [
     [
       "f24b9d89acaa4706"
@@ -19,7 +19,7 @@ const Node = {
 }
 
 Node.template = `
-SELECT rekvirentEmail, erBorneattest, erStraffeattest
+SELECT rekvirentEmail
 FROM bestillinger
 WHERE uid = {{id}}
 `

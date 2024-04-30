@@ -56,8 +56,9 @@
     // Get orders when starting
     //updateOrderCount();
 
-    function setOrderCount(itemTitle, countAdjustment = 0)
+    function setOrderCount(countAdjustment = 0)
     {
+        var itemTitle = "Bestillinger"
         var currentValue = menuItems.value[ menuItems.value.findIndex(x => x.title == itemTitle) ].alert
             currentValue = currentValue == undefined ? 0 : currentValue
 
@@ -146,6 +147,7 @@
     border-bottom: 0.1rem solid var(--color-border);
 
     overflow-x: auto;
+    z-index:100;
 }
     .header a
     {

@@ -11,19 +11,21 @@
             type: Array,
             required: true
         }
-    })
-
+    })  /* attestTypes array: [attestType, attestSubType] */
     
     // Events
 
-    const emit = defineEmits(['updateOrderCount', 'setOrderCount'])
+    const emit = defineEmits(['updateOrderCount', 'updateOrdersCount', 'setOrderCount'])
 
     const callUpdate = () => {
         emit('updateOrderCount')
     }
+    const callUpdateOrders = () => {
+        emit('updateOrdersCount')
+    }
     const callSetCount = (count) => {
         console.log("Setting order count to " + count)
-        emit('setOrderCount', "Bestillinger", count)
+        emit('setOrderCount', count)
     }
 
     // Initialization
@@ -31,15 +33,15 @@
     const orders = ref([])
     var flowStep = ref(0)
 
-    /* attestTypes array: [attestType, attestSubType] */
     const attestType = ref(props.attestTypes[0])
     const attestSubType = ref(props.attestTypes[1])
 
+    // Set text
     const header = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name)
     const description = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription)
 
     watch( () => props.attestTypes, (current, previous) => {
-
+        // Update on change type
         attestType.value = current[0]
         attestSubType.value = current[1]
         fetchOrders()
@@ -47,17 +49,18 @@
 
     fetchOrders()
 
-
     // Fetch orders
 
     function fetchOrders()
     {
+        // Set text
         header.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name
         description.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription
 
+        // Reset state
         flowStep.value = 0
-        callUpdate()
 
+        // Retrieve orders for type+subtype
         fetch('/api/orders/' + attestType.value + '/' + attestSubType.value)
             .then(response => response = response.json())
             .then(value => orders.value = value)
@@ -65,7 +68,6 @@
 
     // Functions
     // Notification
-
     const notification = ref(null)
 
     function ordersProcessedNotification( count )
@@ -136,12 +138,14 @@
     function reject(item)
     {
         // Perform POST request to backend
-        fetch('/api/data/orders/reject/' + item.uid)
-        .then(response => console.log(response.json()))
-
-        // Remove order from list
-        orders.value = orders.value.filter(x => x !== item)
-        callSetCount(-1)
+        fetch('/api/rejectorder/' + item.uid, {
+            method: "POST"
+        })
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .then(orders.value = orders.value.filter(x => x !== item))      // Remove order from list
+        .then(callSetCount(-1))
+        .then(callUpdateOrders())                                      // Update header count
     }
 
 </script>

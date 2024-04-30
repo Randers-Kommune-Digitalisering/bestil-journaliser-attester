@@ -22,7 +22,7 @@ const Node = {
       "t": "set",
       "p": "whereClause",
       "pt": "msg",
-      "to": "\"WHERE (\" &\t(\t    ( ids ~> $split(\",\") ) @ $id .\t    [\t        \"uid = \" & $id\t    ]\t    ~> $join(\" OR \")\t)\t& \")\"",
+      "to": "\"WHERE (\" &\t(\t    ids @ $id .\t    (\t        [\t            \"uid = \" & $id\t        ]\t        ~> $join(\" OR \")\t    )\t)\t& \")\"",
       "tot": "jsonata"
     }
   ],
@@ -32,7 +32,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 400,
-  "y": 1400,
+  "y": 1120,
   "wires": [
     [
       "08b29e20d21cff10"
