@@ -13,23 +13,7 @@
         }
     })
 
-    /* attestTypes array: [attestType, attestSubType] */
-    const attestType = ref(props.attestTypes[0])
-    const attestSubType = ref(props.attestTypes[1])
-
-    const header = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name)
-    const description = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription)
-
-    watch( () => props.attestTypes, (current, previous) => {        
-        attestType.value = current[0]
-        attestSubType.value = current[1]
-
-        header.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name
-        description.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription
-
-        fetchOrders()
-    })
-
+    
     // Events
 
     const emit = defineEmits(['updateOrderCount', 'setOrderCount'])
@@ -38,19 +22,45 @@
         emit('updateOrderCount')
     }
     const callSetCount = (count) => {
+        console.log("Setting order count to " + count)
         emit('setOrderCount', "Bestillinger", count)
     }
 
-    // Fetch orders
+    // Initialization
 
     const orders = ref([])
+    var flowStep = ref(0)
+
+    /* attestTypes array: [attestType, attestSubType] */
+    const attestType = ref(props.attestTypes[0])
+    const attestSubType = ref(props.attestTypes[1])
+
+    const header = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name)
+    const description = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription)
+
+    watch( () => props.attestTypes, (current, previous) => {
+
+        attestType.value = current[0]
+        attestSubType.value = current[1]
+        fetchOrders()
+    })
+
+    fetchOrders()
+
+
+    // Fetch orders
 
     function fetchOrders()
     {
+        header.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name
+        description.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription
+
+        flowStep.value = 0
+        callUpdate()
+
         fetch('/api/orders/' + attestType.value + '/' + attestSubType.value)
             .then(response => response = response.json())
             .then(value => orders.value = value)
-            .then(value => callSetCount(value.length))
     }
 
     // Functions
@@ -70,8 +80,6 @@
     }
 
     // Flow
-
-    var flowStep = ref(0)
 
     function copyOrderList()
     {

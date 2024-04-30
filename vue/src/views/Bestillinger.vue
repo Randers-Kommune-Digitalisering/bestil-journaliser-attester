@@ -6,6 +6,8 @@
     import Attester from '@/components/Attester.vue'
     import attestTyper from '@/assets/attestTypes.json'
 
+    const currentAttestTypes = ref(null)
+
     const selectedType = ref(null)
     const selectedSubType = ref(null)
     const selectedTypeArray = ref([null, null])
@@ -33,10 +35,9 @@
                     element.count = index != -1 ? value[index].count : 0
                 })
 
+                currentAttestTypes.value = attestTyper
             })
     }
-
-
 
     fetchOrderCount()
 </script>
@@ -49,7 +50,8 @@
     <div class="buttonArray">
 
         <button
-            v-for="attestType in attestTyper"
+            v-if="currentAttestTypes "
+            v-for="attestType in currentAttestTypes"
             :class="!(selectedType == attestType.typeId && selectedSubType == attestType.subTypeId) ? attestType.count > 0 ? 'orange' : 'gray' : ''"
             @click="setAttestType(attestType.typeId, attestType.subTypeId)">
 

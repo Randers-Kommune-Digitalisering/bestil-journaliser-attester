@@ -41,12 +41,16 @@
 
     function updateOrderCount()
     {
-        /*fetch('/api/data/orders/count')
+        fetch('/api/ordercount')
             .then(response => response = response.json())
             .then(response => {
-                setAlert("Straffeattester", response.staffeattestCount)
-                setAlert("Børneattester", response.borneattestCount)
-        })*/
+                var totalCount = 0
+                if(response.length > 0)
+                    response.forEach(element => {
+                        totalCount += element.count
+                    })
+                setAlert("Bestillinger", totalCount)
+        })
     }
 
     // Get orders when starting
@@ -61,7 +65,7 @@
         if(countAdjustment == 0)
             setAlert(itemTitle, "")
 
-        // Set relative
+        // Negative value = set relative
         else if(countAdjustment < 0)
             setAlert(itemTitle, (currentValue+countAdjustment))
 
