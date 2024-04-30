@@ -19,9 +19,13 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger
-SET erBestilt = 1, bestiltHosPoliti = NOW()
-{{{whereClause}}}
+UPDATE
+    bestillinger
+SET
+    erBestilt = 1,
+    bestiltHosPoliti = NOW()
+WHERE
+    {{{whereClause}}}
 `
 
 module.exports = Node;

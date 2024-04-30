@@ -63,7 +63,9 @@
                     <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
-                    <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}</td>
+                    <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
+                        <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
+                    </td>
                     <td>{{ dayjs(order.bestiltHosPoliti).format("DD-MM-YYYY") }}</td>
                 </tr>
                 <tr v-else>

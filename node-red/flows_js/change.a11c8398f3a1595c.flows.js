@@ -6,23 +6,16 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "type",
-      "pt": "msg",
-      "to": "req.params.type",
-      "tot": "msg"
-    },
-    {
-      "t": "set",
       "p": "ids",
       "pt": "msg",
-      "to": "req.params.ids",
+      "to": "payload",
       "tot": "msg"
     },
     {
       "t": "set",
       "p": "whereClause",
       "pt": "msg",
-      "to": "\"WHERE (\" &\t(\t    ids @ $id .\t    (\t        [\t            \"uid = \" & $id\t        ]\t        ~> $join(\" OR \")\t    )\t)\t& \")\"",
+      "to": "\"(\" &\t(\t    ids @ $id .\t    (\t        [\t            \"uid = \" & $id\t        ]\t        ~> $join(\" OR \")\t    )\t)\t& \")\"",
       "tot": "jsonata"
     }
   ],

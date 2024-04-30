@@ -115,21 +115,27 @@
         flowStep.value = 0
 
         // Obtain all ids from list
-        var ids = []
+        var idList = []
         orders.value.forEach(element => {
-            ids.push( element.uid )
+            idList.push( element.uid )
         })
         
-        var idCount = ids.length
-        var idList = ids.join()
+        var idCount = idList.length
 
         // Perform POST request to backend
-        fetch('/api/data/orders/accept/' + idList)
+        fetch('/api/processorders', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(idList),
+        })
         .then(response => console.log(response.json()))
+        .then(callUpdate())
+        .then(callUpdateOrders()) 
 
         // Set orders = []
-        orders.value = []
-        callUpdate()
+        .then(orders.value = [])
 
         // Set notification
         notification.value = ordersProcessedNotification(idCount)
@@ -152,7 +158,7 @@
 
 <template>
 
-    <div v-if="notification" class="message" id="msg" style="margin-bottom: 2rem;">
+    <div v-if="notification" class="message blue" id="msg" style="margin-bottom: 2rem;">
         <div class="header">
             {{ notification.title }}
             <span class="float-right close" @click="notification = null">x</span>
@@ -229,6 +235,12 @@
 </template>
 
 <style scoped>
+    .message
+    {
+        margin-top: 1rem;
+        color: var(--color-white)
+    }
+
     .buttons
     {
         display: flex;
