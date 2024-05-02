@@ -22,7 +22,7 @@ Node.template = `
 Ny {{attestType}} er modtaget fra Politiet.
 Attesten er uden registrerede forhold.
 
-Attesten er journaliseret i personalesag med sagsnummer {{payload.SagsNummer}}.
+Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}.
 `
 
 module.exports = Node;

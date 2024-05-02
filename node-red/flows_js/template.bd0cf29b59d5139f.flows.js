@@ -42,6 +42,10 @@ CREATE TABLE IF NOT EXISTS bestillinger (
     erAttestModtaget BOOL DEFAULT False,
     attestModtaget TIMESTAMP,
 
+    erJournaliseret BOOL DEFAULT False,
+    journaliseret TIMESTAMP,
+    sagsnummer VARCHAR(255),
+
     erAdviseringAfsendt BOOL DEFAULT False,
     adviseringAfsendt TIMESTAMP,
     

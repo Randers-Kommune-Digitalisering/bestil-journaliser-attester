@@ -6,7 +6,7 @@ const Node = {
   "name": "Kontrollér om mail er vedr. attest",
   "info": "",
   "x": 610,
-  "y": 120,
+  "y": 140,
   "wires": []
 }
 

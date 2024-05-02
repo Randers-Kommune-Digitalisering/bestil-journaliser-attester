@@ -1,19 +1,18 @@
 const Node = {
-  "id": "56abe7910cdc0b1a",
+  "id": "46b94b7e91ecee74",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
-  "name": "debug 3",
+  "name": "Attest-type",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "sql",
+  "complete": "attestType",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 880,
-  "y": 340,
+  "x": 1410,
+  "y": 560,
   "wires": []
 }
 

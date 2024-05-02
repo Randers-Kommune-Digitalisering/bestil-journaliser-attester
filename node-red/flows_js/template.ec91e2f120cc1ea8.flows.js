@@ -20,8 +20,10 @@ const Node = {
 
 Node.template = `
 UPDATE bestillinger
-SET erAfvist = 1, afvist = NOW()
-WHERE uid = {{id}}
+SET
+    erAfvist = 1,
+    afvist = NOW()
+WHERE uid = {{uid}}
 `
 
 module.exports = Node;

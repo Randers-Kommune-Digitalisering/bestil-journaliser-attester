@@ -5,7 +5,7 @@ const Node = {
   "name": "Godtager id array",
   "info": "",
   "x": 400,
-  "y": 1060,
+  "y": 1080,
   "wires": []
 }
 

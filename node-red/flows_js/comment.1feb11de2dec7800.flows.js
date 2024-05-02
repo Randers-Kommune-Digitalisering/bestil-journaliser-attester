@@ -2,9 +2,10 @@ const Node = {
   "id": "1feb11de2dec7800",
   "type": "comment",
   "z": "812b69015d6703b6",
-  "name": "Send til hovedpostkasse - Ved fejl",
+  "g": "c162852c69a50777",
+  "name": "Returnér mail",
   "info": "",
-  "x": 270,
+  "x": 210,
   "y": 1000,
   "wires": []
 }

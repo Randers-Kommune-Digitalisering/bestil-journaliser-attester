@@ -2,7 +2,7 @@ const Node = {
   "id": "70f0dd8ceb56e8a4",
   "type": "group",
   "z": "90c6b0b502e346fa",
-  "name": "Find personalesag samt delforløb",
+  "name": "Find SBYS personalesag samt delforløb",
   "style": {
     "stroke": "none",
     "fill": "#bfc7d7",
@@ -55,10 +55,14 @@ const Node = {
     "552a34cfdcf7d06f",
     "53240fb56adf0b72",
     "6548c473cadacab6",
-    "bef75301da50e293"
+    "bef75301da50e293",
+    "3a8eb673e461f00f",
+    "c9d747ee51ef7851",
+    "10ab8a697f1ec3f4",
+    "701e5cdd5b614757"
   ],
-  "x": 74,
-  "y": 1419,
+  "x": 94,
+  "y": 1279,
   "w": 1232,
   "h": 842
 }

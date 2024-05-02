@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 540,
-  "y": 1040,
+  "x": 580,
+  "y": 1140,
   "wires": [
     [
       "df7f1dd69541f5f0"
@@ -28,11 +28,7 @@ SET
     attestModtaget = NOW(),
     erAfvist = {{erAfvistValue}}
 WHERE
-    cpr = '{{rekvisitus}}'
-    AND erBestilt = 1
-    AND erAttestModtaget = 0
-    AND erAfvist = 0
-    {{{attestTypeClause}}}
+    uid = {{rekvisition.uid}}
 `
 
 module.exports = Node;

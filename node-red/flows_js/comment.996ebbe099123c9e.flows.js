@@ -2,11 +2,11 @@ const Node = {
   "id": "996ebbe099123c9e",
   "type": "comment",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
+  "g": "bab02435ebea55f1",
   "name": "Kontroller rekvirent mailadresse",
   "info": "",
   "x": 530,
-  "y": 520,
+  "y": 880,
   "wires": []
 }
 

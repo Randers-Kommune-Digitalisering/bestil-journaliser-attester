@@ -19,9 +19,12 @@ const Node = {
 }
 
 Node.template = `
-SELECT rekvirentEmail
-FROM bestillinger
-WHERE uid = {{id}}
+SELECT
+    rekvirentEmail
+FROM
+    bestillinger
+WHERE
+    uid = {{uid}}
 `
 
 module.exports = Node;

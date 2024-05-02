@@ -3,15 +3,8 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "2eb13e282655de1e",
-  "name": "AttestType + erAfvist \\n SQL-værdier",
+  "name": "SQL-værdier",
   "rules": [
-    {
-      "t": "set",
-      "p": "attestTypeClause",
-      "pt": "msg",
-      "to": "attestType = \"Straffeattest\" ?\t    \"AND erStraffeattest = 1\"\t:\tattestType = \"Borneattest\" ?\t    \"AND erBorneattest = 1\"",
-      "tot": "jsonata"
-    },
     {
       "t": "set",
       "p": "erAfvistValue",
@@ -32,8 +25,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 280,
-  "y": 1040,
+  "x": 330,
+  "y": 1140,
   "wires": [
     [
       "dfa3fc0ef74e839e"

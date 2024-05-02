@@ -19,8 +19,8 @@ const Node = {
   "topic": "Digitalpost (29189668): Straffeatt. ",
   "payload": "CPR: 000000-0000",
   "payloadType": "str",
-  "x": 490,
-  "y": 20,
+  "x": 630,
+  "y": 60,
   "wires": [
     [
       "34440912b7cbdbf0"

@@ -2,7 +2,7 @@ const Node = {
   "id": "a11c8398f3a1595c",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "set msg.type \\n & whereClause",
+  "name": "set SQL",
   "rules": [
     {
       "t": "set",
@@ -24,7 +24,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 400,
+  "x": 380,
   "y": 1120,
   "wires": [
     [

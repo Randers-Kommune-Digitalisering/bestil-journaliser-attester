@@ -2,6 +2,7 @@ const Node = {
   "id": "43603baca4c17b9e",
   "type": "change",
   "z": "812b69015d6703b6",
+  "g": "c162852c69a50777",
   "name": "Sæt modtager \\n og mail-krop",
   "rules": [
     {

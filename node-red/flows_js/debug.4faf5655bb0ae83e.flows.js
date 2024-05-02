@@ -2,7 +2,7 @@ const Node = {
   "id": "4faf5655bb0ae83e",
   "type": "debug",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
+  "g": "bab02435ebea55f1",
   "name": "DB response",
   "active": true,
   "tosidebar": true,
@@ -12,8 +12,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1170,
-  "y": 340,
+  "x": 1250,
+  "y": 760,
   "wires": []
 }
 

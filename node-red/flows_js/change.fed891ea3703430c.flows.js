@@ -2,7 +2,7 @@ const Node = {
   "id": "fed891ea3703430c",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
+  "g": "bab02435ebea55f1",
   "name": "Opdel mail",
   "rules": [
     {
@@ -26,8 +26,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 250,
-  "y": 380,
+  "x": 190,
+  "y": 780,
   "wires": [
     [
       "5dd8dcc0c8987f55"
