@@ -3,13 +3,14 @@
     import dayjs from 'dayjs'
 
     import Content from '@/components/Content.vue'
+    import attestTyper from '@/assets/attestTypes.json'
     import IconTable from '@/components/icons/IconTable.vue'
 
     // Get orders
 
     const orders = ref([])
 
-    fetch('/api/data/orders/ordered')
+    fetch('/api/history/ordered')
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => orders.value = value)
@@ -18,7 +19,7 @@
 
     const ordersFinished = ref([])
 
-    fetch('/api/data/orders/finished')
+    fetch('/api/history/completed')
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => ordersFinished.value = value)
@@ -62,7 +63,9 @@
                     <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
-                    <td>{{ order.erStraffeattest ? "Straffeattest" : "Børneattest" }}</td>
+                    <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
+                        <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
+                    </td>
                     <td>{{ dayjs(order.bestiltHosPoliti).format("DD-MM-YYYY") }}</td>
                 </tr>
                 <tr v-else>
@@ -97,7 +100,9 @@
                     <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
-                    <td>{{ order.erStraffeattest ? "Straffeattest" : "Børneattest" }}</td>
+                    <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
+                        <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
+                    </td>
                     <td><span :class="returnOrderStatusColor(order.erAfvist)">{{ order.erAfvist ? "Afvist" : "Færdigbehandlet" }}</span></td>
                 </tr>
                 <tr v-else>

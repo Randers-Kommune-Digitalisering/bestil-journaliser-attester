@@ -10,16 +10,32 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 310,
+  "x": 290,
   "y": 100,
   "wires": [
     [
-      "894558ccd508489d"
+      "d16cfa80317185c5",
+      "074b5c36544f29c4"
     ]
   ]
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
+  const newMsg = {
+  
+      "payload": msg.payload,
+      "filename": msg.filename,
+      "to": msg.to,
+      "topic": msg.topic,
+      "plaintext": msg.plaintext,
+      "description": msg.description
+  
+  }
+  
+  msg = newMsg;
+  return msg;
+  
+  /*
   const _msg = JSON.parse( JSON.stringify( msg ) );
   
   msg = {};
@@ -27,14 +43,12 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   msg.to = _msg.to;
   msg.topic = _msg.topic;
   
-  msg.payload = _msg.payload;
+  msg.payload = payload;
   msg.plaintext = _msg.plaintext;
   msg.description = _msg.description;
   
   msg.filename = _msg.filename;
-  
-  
-  return msg;
+  */
 }
 
 module.exports = Node;

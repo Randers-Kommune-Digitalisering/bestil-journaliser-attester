@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 420,
-  "y": 360,
+  "x": 640,
+  "y": 260,
   "wires": [
     [
       "7bbbc557d5af11ed"
@@ -19,10 +19,14 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger
-WHERE erBestilt = 0
+SELECT
+    *
+FROM
+    bestillinger
+WHERE
+    erBestilt = 0
 AND erAfvist = 0
-AND er{{type}} = 1
+AND attestType = {{attestType}}
 `
 
 module.exports = Node;

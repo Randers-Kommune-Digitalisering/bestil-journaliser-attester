@@ -2,7 +2,7 @@ const Node = {
   "id": "69ec28dbefd7b5ba",
   "type": "change",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "",
+  "name": "Set rekvisitionsdata",
   "rules": [
     {
       "t": "set",
@@ -15,7 +15,14 @@ const Node = {
       "t": "set",
       "p": "attestType",
       "pt": "msg",
-      "to": "payload[0].erStraffeattest = 1 ?\t    \"straffeattest\"\t:\tpayload[0].erBorneattest = 1 ?\t    \"børneattest\"",
+      "to": "payload[0].attestType = 0 ?\t    \"offentlig straffeattest\"\t:\tpayload[0].attestType = 1 ?\t    \"privat straffeattest\"\t:\tpayload[0].attestType = 2 ?\t    \"børneattest\"",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "rekvisition",
+      "pt": "msg",
+      "to": "{ \"uid\": $$.uid }",
       "tot": "jsonata"
     }
   ],
@@ -24,8 +31,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1120,
-  "y": 1060,
+  "x": 1110,
+  "y": 900,
   "wires": [
     [
       "0a543725b05530a5"

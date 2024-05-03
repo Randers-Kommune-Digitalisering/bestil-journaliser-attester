@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 670,
-  "y": 1060,
+  "x": 630,
+  "y": 900,
   "wires": [
     [
       "f24b9d89acaa4706"
@@ -19,9 +19,12 @@ const Node = {
 }
 
 Node.template = `
-SELECT rekvirentEmail, erBorneattest, erStraffeattest
-FROM bestillinger
-WHERE uid = {{id}}
+SELECT
+    rekvirentEmail
+FROM
+    bestillinger
+WHERE
+    uid = {{uid}}
 `
 
 module.exports = Node;

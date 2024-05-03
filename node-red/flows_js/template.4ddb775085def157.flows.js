@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 460,
-  "y": 860,
+  "x": 640,
+  "y": 500,
   "wires": [
     [
       "ed3a1fcc265871e6"
@@ -19,9 +19,18 @@ const Node = {
 }
 
 Node.template = `
-SELECT 
-    (SELECT COUNT(*) FROM bestillinger WHERE erBestilt = false AND erAfvist = false AND erStraffeattest = true) AS staffeattestCount,
-    (SELECT COUNT(*) FROM bestillinger WHERE erBestilt = false AND erAfvist = false AND erBorneattest = true) AS borneattestCount
+SELECT
+    attestType,
+    attestSubType,
+    COUNT(*) as count
+FROM
+    bestillinger
+WHERE
+    erBestilt = false
+AND erAfvist = false
+
+GROUP BY
+    attestType, attestSubType
 
 `
 

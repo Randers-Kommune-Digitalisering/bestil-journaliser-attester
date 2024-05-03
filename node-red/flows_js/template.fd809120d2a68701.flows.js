@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 420,
-  "y": 180,
+  "x": 640,
+  "y": 140,
   "wires": [
     [
       "7366dab72b2b7bcd"
@@ -19,8 +19,12 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger
-WHERE erBestilt = 0
+SELECT
+    *
+FROM
+    bestillinger
+WHERE
+    erBestilt = 0
 AND erAfvist = 0
 `
 

@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 670,
-  "y": 1140,
+  "x": 630,
+  "y": 980,
   "wires": [
     [
       "408ffbc0629943d3"
@@ -20,8 +20,10 @@ const Node = {
 
 Node.template = `
 UPDATE bestillinger
-SET erAfvist = 1, afvist = NOW()
-WHERE uid = {{id}}
+SET
+    erAfvist = 1,
+    afvist = NOW()
+WHERE uid = {{uid}}
 `
 
 module.exports = Node;

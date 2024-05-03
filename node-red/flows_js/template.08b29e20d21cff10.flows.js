@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 670,
-  "y": 1280,
+  "x": 630,
+  "y": 1120,
   "wires": [
     [
       "47f3a96b98097add"
@@ -19,9 +19,13 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger
-SET erBestilt = 1, bestiltHosPoliti = NOW()
-{{{whereClause}}}
+UPDATE
+    bestillinger
+SET
+    erBestilt = 1,
+    bestiltHosPoliti = NOW()
+WHERE
+    {{{whereClause}}}
 `
 
 module.exports = Node;

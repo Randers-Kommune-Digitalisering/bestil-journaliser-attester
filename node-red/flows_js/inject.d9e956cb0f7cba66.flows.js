@@ -8,12 +8,14 @@ const Node = {
   "repeat": "",
   "crontab": "",
   "once": true,
-  "onceDelay": "5",
+  "onceDelay": "1",
   "topic": "",
-  "x": 810,
+  "x": 730,
   "y": 80,
   "wires": [
     [
+      "95177c199a463199",
+      "f10306c90f7fcd7b",
       "bd0cf29b59d5139f"
     ]
   ]

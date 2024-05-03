@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 890,
-  "y": 140,
+  "x": 810,
+  "y": 280,
   "wires": [
     [
       "f55bc66f6a43e55d"
@@ -24,13 +24,14 @@ CREATE TABLE IF NOT EXISTS bestillinger (
 
     uid int NOT NULL AUTO_INCREMENT,
     bestillingModtaget TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
     rekvirentNavn VARCHAR(255),
     rekvirentDQ VARCHAR(255),
     rekvirentEmail VARCHAR(255),
 
     cpr VARCHAR (255),
-    erStraffeattest BOOL,
-    erBorneattest BOOL,
+    attestType SMALLINT,
+    attestSubType SMALLINT,
 
     erAfvist BOOL DEFAULT False,
     afvist TIMESTAMP,
@@ -40,6 +41,10 @@ CREATE TABLE IF NOT EXISTS bestillinger (
 
     erAttestModtaget BOOL DEFAULT False,
     attestModtaget TIMESTAMP,
+
+    erJournaliseret BOOL DEFAULT False,
+    journaliseret TIMESTAMP,
+    sagsnummer VARCHAR(255),
 
     erAdviseringAfsendt BOOL DEFAULT False,
     adviseringAfsendt TIMESTAMP,

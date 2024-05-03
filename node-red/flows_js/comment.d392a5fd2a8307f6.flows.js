@@ -3,10 +3,10 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "2eb13e282655de1e",
-  "name": "Opdater data i SQL",
+  "name": "Opdater rekvisition",
   "info": "",
-  "x": 270,
-  "y": 860,
+  "x": 350,
+  "y": 1100,
   "wires": []
 }
 

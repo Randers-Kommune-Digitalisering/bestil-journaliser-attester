@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 830,
-  "y": 240,
+  "y": 160,
   "wires": [
     [
       "c30c37a9b6ac155d"
@@ -20,9 +20,12 @@ const Node = {
 }
 
 Node.template = `
-UPDATE bestillinger
-SET erAdviseringAfsendt = 1, adviseringAfsendt = NOW()
-WHERE uid = '{{id}}'
+UPDATE
+    bestillinger
+SET
+    erAdviseringAfsendt = 1,
+    adviseringAfsendt = NOW()
+WHERE uid = '{{rekvisition.uid}}'
 `
 
 module.exports = Node;

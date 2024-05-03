@@ -2,7 +2,7 @@ const Node = {
   "id": "8999dd7c37c527b7",
   "type": "switch",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
+  "g": "bab02435ebea55f1",
   "name": "Rekvirent findes?",
   "property": "rekvirent",
   "propertyType": "msg",
@@ -17,8 +17,8 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 270,
-  "y": 560,
+  "x": 710,
+  "y": 920,
   "wires": [
     [
       "c6f8a509f9ba132c"

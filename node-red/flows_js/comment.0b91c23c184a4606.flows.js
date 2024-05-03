@@ -4,8 +4,8 @@ const Node = {
   "z": "7d7cd8fb8a9dbe4e",
   "name": "POST for Vue",
   "info": "",
-  "x": 150,
-  "y": 1040,
+  "x": 110,
+  "y": 880,
   "wires": []
 }
 

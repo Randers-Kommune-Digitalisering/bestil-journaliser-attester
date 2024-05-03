@@ -3,27 +3,20 @@ const Node = {
   "type": "switch",
   "z": "7459f772194dcf44",
   "g": "a3f24782e0a49572",
-  "name": "Is SELECT?",
-  "property": "sql",
+  "name": "Is error?",
+  "property": "error",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "regex",
-      "v": "^SELECT\\s+.*\\s+FROM",
-      "vt": "str",
-      "case": true
-    },
-    {
-      "t": "else"
+      "t": "nnull"
     }
   ],
   "checkall": "true",
   "repair": false,
-  "outputs": 2,
-  "x": 470,
+  "outputs": 1,
+  "x": 460,
   "y": 220,
   "wires": [
-    [],
     [
       "20fe6c8ef45ad2ff"
     ]

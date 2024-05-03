@@ -5,12 +5,12 @@ const Node = {
   "name": "",
   "filename": "filename",
   "filenameType": "msg",
-  "format": "utf8",
+  "format": "",
   "chunk": false,
   "sendError": false,
   "encoding": "none",
   "allProps": false,
-  "x": 880,
+  "x": 1080,
   "y": 500,
   "wires": [
     [

@@ -2,8 +2,8 @@ const Node = {
   "id": "b98d63c9e5e25a8b",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "9e73796625eb7a3f",
-  "name": "",
+  "g": "38c43765fdc8e29d",
+  "name": "Slet payload",
   "rules": [
     {
       "t": "set",
@@ -18,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 960,
-  "y": 700,
+  "x": 830,
+  "y": 400,
   "wires": [
     [
-      "ea4d57dbe04a4680"
+      "74b14bc578558a86"
     ]
   ]
 }
