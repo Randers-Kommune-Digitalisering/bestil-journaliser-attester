@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "bestilling",
       "pt": "msg",
-      "to": "{\t   \"rekvirentNavn\": (bestilling.sagsbehandler ~> $split(\"-\"))[0] ~> $trim(),\t   \"rekvirentDQ\": (bestilling.sagsbehandler ~> $split(\"-\"))[1] ~> $trim(),\t   \"rekvisitus\": bestilling.medarbejderCPR,\t   \"attestType\": $attestTypes := bestilling.attestType ~> $split(\", \") ~> $map($number),\t   \"attestSubType\": bestilling.attestSubType[attestType in $attestTypes] ~> | $ | { \"subType\": subType ~> $number } |\t}",
+      "to": "{\t   \"rekvirentNavn\": (bestilling.sagsbehandler ~> $split(\"-\"))[0] ~> $trim(),\t   \"rekvirentDQ\": (bestilling.sagsbehandler ~> $split(\"-\"))[1] ~> $trim(),\t   \"rekvisitus\": bestilling.medarbejderCPR,\t   \"attestType\": $attestTypes := bestilling.attestType ~> $split(\",\") ~> $map($number),\t   \"attestSubType\": bestilling.attestSubType[attestType in $attestTypes] ~> | $ | { \"subType\": subType ~> $number } |\t}",
       "tot": "jsonata"
     }
   ],
