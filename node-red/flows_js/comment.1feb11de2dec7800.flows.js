@@ -5,8 +5,8 @@ const Node = {
   "g": "c162852c69a50777",
   "name": "Send til hovedpostkasse - I tilfælde af forkert mailtype",
   "info": "",
-  "x": 340,
-  "y": 1000,
+  "x": 260,
+  "y": 1020,
   "wires": []
 }
 

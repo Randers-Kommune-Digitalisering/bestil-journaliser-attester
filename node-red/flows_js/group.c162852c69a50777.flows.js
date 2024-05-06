@@ -4,7 +4,10 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Fejl - Returneres til hovedpostkasse - Ingen advisering",
   "style": {
-    "label": true
+    "label": true,
+    "stroke": "#ff0000",
+    "fill": "#ffbfbf",
+    "fill-opacity": "0.6"
   },
   "nodes": [
     "1feb11de2dec7800",
@@ -13,8 +16,8 @@ const Node = {
     "43603baca4c17b9e",
     "5dec140724fb745d"
   ],
-  "x": 114,
-  "y": 959,
+  "x": 34,
+  "y": 979,
   "w": 552,
   "h": 182
 }

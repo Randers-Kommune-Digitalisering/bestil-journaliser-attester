@@ -2,6 +2,7 @@ const Node = {
   "id": "a0808b9ddfdd3d55",
   "type": "change",
   "z": "812b69015d6703b6",
+  "g": "7aebfedb0f520e44",
   "name": "Sæt modtager \\n og overskrift",
   "rules": [
     {
@@ -29,8 +30,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 320,
-  "y": 860,
+  "x": 240,
+  "y": 880,
   "wires": [
     [
       "908ccea6744adde3"

@@ -2,6 +2,7 @@ const Node = {
   "id": "323c55ddba1903d5",
   "type": "change",
   "z": "812b69015d6703b6",
+  "g": "4faa8cefca4c99e9",
   "name": "Sæt modtager",
   "rules": [
     {
@@ -22,8 +23,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 320,
-  "y": 500,
+  "x": 240,
+  "y": 680,
   "wires": [
     [
       "2b3d38992089c1f9"

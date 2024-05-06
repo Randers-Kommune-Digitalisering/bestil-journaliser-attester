@@ -2,12 +2,13 @@ const Node = {
   "id": "717001ae537e5dd1",
   "type": "link in",
   "z": "812b69015d6703b6",
+  "g": "5759209171ce76be",
   "name": "Mail IN: Advisering",
   "links": [
     "e62246bc7846a299"
   ],
-  "x": 155,
-  "y": 680,
+  "x": 75,
+  "y": 460,
   "wires": [
     [
       "901690ce94c558ce"

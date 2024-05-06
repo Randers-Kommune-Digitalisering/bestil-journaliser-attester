@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "name": "Mailafsendelse",
   "style": {
-    "stroke": "none",
+    "stroke": "#777777",
     "fill": "#e3f3d3",
     "fill-opacity": "0.6",
     "label": true
@@ -13,12 +13,13 @@ const Node = {
     "894558ccd508489d",
     "82aedc0490bd3d6d",
     "ce2c0ede9f3daf06",
-    "d16cfa80317185c5"
+    "d16cfa80317185c5",
+    "074b5c36544f29c4"
   ],
-  "x": 134,
-  "y": 59,
-  "w": 452,
-  "h": 82
+  "x": 34,
+  "y": 19,
+  "w": 572,
+  "h": 122
 }
 
 module.exports = Node;

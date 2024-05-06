@@ -6,7 +6,7 @@ const Node = {
   "name": "Opdater data i SQL",
   "info": "",
   "x": 810,
-  "y": 100,
+  "y": 60,
   "wires": []
 }
 

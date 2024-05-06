@@ -2,6 +2,7 @@ const Node = {
   "id": "3ee1f33c7c4955f2",
   "type": "template",
   "z": "812b69015d6703b6",
+  "g": "4faa8cefca4c99e9",
   "name": "Ja",
   "field": "description",
   "fieldType": "msg",
@@ -9,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 890,
-  "y": 500,
+  "x": 810,
+  "y": 680,
   "wires": [
     [
       "bc4f2a2fc08bf24c"

@@ -8,7 +8,7 @@ const Node = {
     "894558ccd508489d"
   ],
   "uncaught": false,
-  "x": 230,
+  "x": 130,
   "y": 240,
   "wires": [
     [

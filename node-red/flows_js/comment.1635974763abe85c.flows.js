@@ -2,10 +2,11 @@ const Node = {
   "id": "1635974763abe85c",
   "type": "comment",
   "z": "812b69015d6703b6",
+  "g": "7aebfedb0f520e44",
   "name": "Advisering - Rekvisition afvist af sagsbehandler",
   "info": "",
-  "x": 320,
-  "y": 800,
+  "x": 240,
+  "y": 820,
   "wires": []
 }
 
