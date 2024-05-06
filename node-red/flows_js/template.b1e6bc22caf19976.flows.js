@@ -1,28 +1,26 @@
 const Node = {
-  "id": "07f61b45165e495d",
+  "id": "b1e6bc22caf19976",
   "type": "template",
   "z": "812b69015d6703b6",
-  "name": "Nej",
+  "name": "Tekst",
   "field": "payload",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 890,
-  "y": 660,
+  "x": 690,
+  "y": 1300,
   "wires": [
     [
-      "b8eae3b4cf749d45",
-      "600171742f43ae95"
+      "32bf09d50173ed34",
+      "5d7e76ca05296ebb"
     ]
   ]
 }
 
 Node.template = `
-Ny {{attestType}} er modtaget fra Politiet.
-OBS: Attesten har registrerede forhold!
-
+En bestilling af en {{attestType}} er blevet modtaget, og har registrerede forhold!
 Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}.
 `
 

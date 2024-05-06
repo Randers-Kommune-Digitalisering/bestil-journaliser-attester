@@ -3,9 +3,9 @@ const Node = {
   "type": "comment",
   "z": "812b69015d6703b6",
   "g": "c162852c69a50777",
-  "name": "Returnér mail",
+  "name": "Send til hovedpostkasse - I tilfælde af forkert mailtype",
   "info": "",
-  "x": 210,
+  "x": 340,
   "y": 1000,
   "wires": []
 }

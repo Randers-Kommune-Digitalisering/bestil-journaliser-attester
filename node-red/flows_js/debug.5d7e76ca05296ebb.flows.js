@@ -1,19 +1,18 @@
 const Node = {
-  "id": "1bc301b2666dea69",
+  "id": "5d7e76ca05296ebb",
   "type": "debug",
   "z": "812b69015d6703b6",
-  "g": "c162852c69a50777",
-  "name": "FEJL",
+  "name": "HR advisering",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "error",
-  "targetType": "msg",
+  "complete": "{\t    \"uid\": rekvisition.uid,\t    \"status\": \"HR notificeret vedr. uren attest\"\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 560,
-  "y": 1100,
+  "x": 920,
+  "y": 1260,
   "wires": []
 }
 

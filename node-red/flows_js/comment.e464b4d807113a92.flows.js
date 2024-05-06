@@ -5,7 +5,7 @@ const Node = {
   "name": "Send til HR - Ved modtagelse uren attest",
   "info": "",
   "x": 300,
-  "y": 1220,
+  "y": 1240,
   "wires": []
 }
 

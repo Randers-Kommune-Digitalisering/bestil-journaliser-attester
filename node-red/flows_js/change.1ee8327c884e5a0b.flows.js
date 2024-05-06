@@ -1,29 +1,28 @@
 const Node = {
-  "id": "43603baca4c17b9e",
+  "id": "1ee8327c884e5a0b",
   "type": "change",
   "z": "812b69015d6703b6",
-  "g": "c162852c69a50777",
-  "name": "Sæt modtager \\n og mail-krop",
+  "name": "Sæt modtager \\n og overskrift",
   "rules": [
     {
       "t": "set",
       "p": "to",
       "pt": "msg",
-      "to": "MAIL_HOVEDPOST",
+      "to": "MAIL_HR",
       "tot": "env",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "topic",
+      "pt": "msg",
+      "to": "Vedr. attestrekvisition",
+      "tot": "str"
     },
     {
       "t": "delete",
       "p": "from",
       "pt": "msg"
-    },
-    {
-      "t": "set",
-      "p": "payload",
-      "pt": "msg",
-      "to": "mailbody",
-      "tot": "msg"
     }
   ],
   "action": "",
@@ -31,12 +30,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 320,
-  "y": 1060,
+  "x": 500,
+  "y": 1300,
   "wires": [
     [
-      "1bc301b2666dea69",
-      "5dec140724fb745d"
+      "b1e6bc22caf19976"
     ]
   ]
 }

@@ -7,10 +7,10 @@ const Node = {
   "propertyType": "msg",
   "rules": [
     {
-      "t": "true"
+      "t": "false"
     },
     {
-      "t": "false"
+      "t": "true"
     }
   ],
   "checkall": "true",
@@ -20,10 +20,10 @@ const Node = {
   "y": 680,
   "wires": [
     [
-      "3add1b775cbd9ecb"
+      "07f61b45165e495d"
     ],
     [
-      "07f61b45165e495d"
+      "3add1b775cbd9ecb"
     ]
   ]
 }

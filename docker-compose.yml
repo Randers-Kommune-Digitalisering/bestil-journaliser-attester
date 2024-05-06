@@ -25,6 +25,9 @@ services:
       CREDENTIAL_SECRET: ${CREDENTIAL_SECRET}
 
       DEV_ENV: "true"
+      
+      MAIL_HOVEDPOST: "randers@randers.dk"
+      MAIL_HR: "personalehr@randers.dk"
             
       # Miljøvariablen FLOWS fortæller Node-RED IDEet hvilket flow.json den skal åbne og gemme ændringer i ved deploy.
       FLOWS: "/data/flows.json"
