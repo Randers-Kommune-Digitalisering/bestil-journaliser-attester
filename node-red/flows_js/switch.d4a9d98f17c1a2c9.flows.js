@@ -10,8 +10,8 @@ const Node = {
   "rules": [
     {
       "t": "eq",
-      "v": "randers@randers.dk",
-      "vt": "str"
+      "v": "MAIL_HOVEDPOST",
+      "vt": "env"
     },
     {
       "t": "else"
