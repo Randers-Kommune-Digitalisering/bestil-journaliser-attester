@@ -6,7 +6,7 @@ const Node = {
   "name": "Modtag mail vedr. attest",
   "info": "",
   "x": 360,
-  "y": 120,
+  "y": 100,
   "wires": []
 }
 
