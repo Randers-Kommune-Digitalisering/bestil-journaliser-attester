@@ -15,14 +15,14 @@
 
     const emit = defineEmits(['updateOrderCount', 'setOrderCount'])
 
-    const callUpdate = () => {
+    const callUpdate = () => { // Updating order count in header
         emit('updateOrderCount')
     }
     const callSetCount = (count) => {
         console.log("Setting order count to " + count)
         emit('setOrderCount', count)
     }
-    const updateOrdersCount = () => {
+    const updateOrdersCount = () => { // Updating order count for individual types
         fetchOrderCount()
     }
 
@@ -35,7 +35,7 @@
 
     function fetchOrderCount()
     {
-        console.log("Fetching order count")
+        //console.log("Fetching order count")
 
         fetch('/api/ordercount')
             .then(response => response = response.json())
@@ -48,8 +48,8 @@
                     element.count = index != -1 ? value[index].count : 0
                 })
 
-                currentAttestTypes.value = []
-                currentAttestTypes.value = attestTyper
+                delete currentAttestTypes.value
+                currentAttestTypes.value = JSON.parse(JSON.stringify(attestTyper))
             })
     }
 

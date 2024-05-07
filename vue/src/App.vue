@@ -7,12 +7,12 @@ const currentComponent = ref(null)
 
 // Function to call from currentComponent
 const updateOrderCount = () => {
-    console.log(`Received update request`)
+    //console.log(`Received update request`)
     headerComponent.value.updateOrderCount()
 };
 
 const setOrderCount = (count) => {
-    console.log(`Received set order count request with value ` + count)
+    //console.log(`Received set order count request with value ` + count)
     headerComponent.value.setOrderCount(count)
 };
 

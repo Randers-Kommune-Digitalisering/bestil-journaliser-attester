@@ -17,14 +17,13 @@
 
     const emit = defineEmits(['updateOrderCount', 'updateOrdersCount', 'setOrderCount'])
 
-    const callUpdate = () => {
+    /*const callUpdate = () => {
         emit('updateOrderCount')
-    }
+    }*/
     const callUpdateOrders = () => {
         emit('updateOrdersCount')
     }
     const callSetCount = (count) => {
-        console.log("Setting order count to " + count)
         emit('setOrderCount', count)
     }
 
@@ -131,7 +130,8 @@
             body: JSON.stringify(idList),
         })
         .then(response => console.log(response.json()))
-        .then(callUpdate())
+        .then(callSetCount(-idCount))
+        //.then(callUpdate())
         .then(callUpdateOrders()) 
 
         // Set orders = []
