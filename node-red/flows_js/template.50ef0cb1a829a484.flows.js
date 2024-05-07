@@ -26,7 +26,7 @@ FROM
     bestillinger
 WHERE
     cpr = '{{rekvisitus}}'
-    {{attestTypeClause}}
+    {{{attestTypeClause}}}
 AND erBestilt = 1
 AND erAttestModtaget = 0
 ORDER BY
