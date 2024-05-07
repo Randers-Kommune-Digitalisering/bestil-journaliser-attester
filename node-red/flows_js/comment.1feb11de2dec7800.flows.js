@@ -3,7 +3,7 @@ const Node = {
   "type": "comment",
   "z": "812b69015d6703b6",
   "g": "c162852c69a50777",
-  "name": "Send til hovedpostkasse - I tilfælde af forkert mailtype",
+  "name": "Send til hovedpostkasse - Mail matcher ikke rekvisition",
   "info": "",
   "x": 260,
   "y": 1020,

@@ -20,7 +20,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "payload",
+      "p": "description",
       "pt": "msg",
       "to": "mailbody",
       "tot": "msg"
@@ -36,7 +36,7 @@ const Node = {
   "wires": [
     [
       "1bc301b2666dea69",
-      "5dec140724fb745d"
+      "7a230f0c71dff001"
     ]
   ]
 }

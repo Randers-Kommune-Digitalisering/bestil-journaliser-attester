@@ -1,20 +1,20 @@
 const Node = {
-  "id": "b6fa57ad2a26bb4e",
+  "id": "087fb8409aaa2d44",
   "type": "change",
-  "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "Flyt PDF til payload",
+  "z": "812b69015d6703b6",
+  "g": "c162852c69a50777",
+  "name": "",
   "rules": [
     {
-      "t": "move",
-      "p": "attachments[0].content",
+      "t": "set",
+      "p": "payload",
       "pt": "msg",
-      "to": "payload",
+      "to": "description",
       "tot": "msg"
     },
     {
       "t": "delete",
-      "p": "attachments",
+      "p": "description",
       "pt": "msg"
     }
   ],
@@ -23,11 +23,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 210,
-  "y": 400,
+  "x": 680,
+  "y": 1100,
   "wires": [
     [
-      "59e14b9f69d2fec6"
+      "5dec140724fb745d"
     ]
   ]
 }
