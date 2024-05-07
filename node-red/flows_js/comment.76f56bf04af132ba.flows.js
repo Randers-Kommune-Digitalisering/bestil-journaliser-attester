@@ -6,7 +6,7 @@ const Node = {
   "name": "Advisering - Automatisk journaliseret",
   "info": "",
   "x": 200,
-  "y": 400,
+  "y": 420,
   "wires": []
 }
 
