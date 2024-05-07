@@ -7,9 +7,9 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "mailbody",
+      "p": "payload",
       "pt": "msg",
-      "to": "payload",
+      "to": "mailbody",
       "tot": "msg",
       "dc": true
     },
