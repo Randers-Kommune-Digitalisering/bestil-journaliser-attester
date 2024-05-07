@@ -1,9 +1,9 @@
 const Node = {
-  "id": "087fb8409aaa2d44",
+  "id": "1c99994e4b91a792",
   "type": "change",
   "z": "812b69015d6703b6",
   "g": "c162852c69a50777",
-  "name": "",
+  "name": "Formatér HTML",
   "rules": [
     {
       "t": "set",
@@ -11,6 +11,21 @@ const Node = {
       "pt": "msg",
       "to": "description",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "plaintext",
+      "pt": "msg",
+      "to": "payload",
+      "tot": "msg",
+      "dc": true
+    },
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "payload ~> $replace(\"\\n\", \"<br>\")",
+      "tot": "jsonata"
     },
     {
       "t": "delete",
