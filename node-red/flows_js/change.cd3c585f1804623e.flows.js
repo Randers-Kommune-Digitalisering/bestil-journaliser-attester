@@ -1,17 +1,23 @@
 const Node = {
-  "id": "c8a478d18a8c50c0",
+  "id": "cd3c585f1804623e",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Gem mail-krop",
+  "name": "Sæt fejlbesked",
   "rules": [
     {
       "t": "set",
       "p": "mailbody",
       "pt": "msg",
       "to": "payload",
-      "tot": "msg",
-      "dc": true
+      "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "error",
+      "pt": "msg",
+      "to": "{\"error\":\"Ej en attest\",\"message\":\"Der blev modtaget en mail, men det er tilsyneladende ikke en attest.\"}",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -20,10 +26,10 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1060,
-  "y": 120,
+  "y": 160,
   "wires": [
     [
-      "7833514b3f270238"
+      "16245bab475b9515"
     ]
   ]
 }
