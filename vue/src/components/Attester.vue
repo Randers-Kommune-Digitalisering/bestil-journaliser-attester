@@ -71,19 +71,19 @@
 
     function ordersProcessedNotification( count, isRejected = false )
     {
-        var attesterne = count > 1 ? "Attesterne" : "Attesten"
-        var attester = count > 1 ? "attester" : "attest"
-
         if (isRejected)
             return {
                 "message": " Attestrekvisitionen er blevet afvist. Rekvirent er blevet notificeret på mail.",
                 "title": "Attestrekvisition afvist"
             }
-        else
-            return {
-                "message": attesterne + " er blevet markeret som bestilt i systemet. Vær opmærksom på, at det er dit ansvar at " + attesterne.toLowerCase() + " er blevet bestilt korrekt. Status på igangværende bestillinger kan findes under Historik.",
-                "title": count + " " + attester + " markeret som bestilt"
-            }
+
+        var attesterne = count > 1 ? "Attesterne" : "Attesten"
+        var attester = count > 1 ? "attester" : "attest"
+
+        return {
+            "message": attesterne + " er blevet markeret som bestilt i systemet. Vær opmærksom på, at det er dit ansvar at " + attesterne.toLowerCase() + " er blevet bestilt korrekt. Status på igangværende bestillinger kan findes under Historik.",
+            "title": count + " " + attester + " markeret som bestilt"
+        }
     }
 
     // Flow
@@ -167,7 +167,7 @@
 
 <template>
 
-    <div v-if="notification" class="message blue" id="msg" style="margin-bottom: 2rem;">
+    <div v-if="notification" class="message green" id="msg" style="margin-bottom: 2rem;">
         <div class="header">
             {{ notification.title }}
             <span class="float-right close" @click="notification = null">x</span>
