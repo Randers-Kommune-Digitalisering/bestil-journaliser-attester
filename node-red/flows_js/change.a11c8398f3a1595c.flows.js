@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "whereClause",
       "pt": "msg",
-      "to": "\"(\" &\t(\t    ids @ $id .\t    (\t        [\t            \"uid = \" & $id\t        ]\t        ~> $join(\" OR \")\t    )\t)\t& \")\"",
+      "to": "\"(\" &\t(\t    ids @ $id .\t    (\t        [\t            \"uid = \" & $id\t        ]\t    ) ~> $join(\" OR \")\t)\t& \")\"",
       "tot": "jsonata"
     }
   ],

@@ -6,7 +6,7 @@
     import Attester from '@/components/Attester.vue'
     import attestTyper from '@/assets/attestTypes.json'
 
-    const currentAttestTypes = ref(null)
+    const currentAttestTypes = ref(attestTyper)
 
     const selectedType = ref(null)
     const selectedSubType = ref(null)
