@@ -244,6 +244,24 @@
 </template>
 
 <style scoped>
+    td:not(:first-child, :last-child)
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    td:first-child
+    {
+        padding-right: 1rem;
+    }
+    td:last-child
+    {
+        padding-left: 1rem;
+    }
+    td[colspan="4"]
+    {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
     .message
     {
         margin-top: 1rem;
@@ -267,6 +285,7 @@
     {
         font-size: 0.6em;
         text-transform: uppercase;
+        color: var(--color-border-dark);
     }
     .displaynone
     {
