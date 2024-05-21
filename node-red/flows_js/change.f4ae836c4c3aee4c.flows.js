@@ -1,5 +1,5 @@
 const Node = {
-  "id": "4985cac5827ce15e",
+  "id": "f4ae836c4c3aee4c",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "38c43765fdc8e29d",
@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "attestType",
       "pt": "msg",
-      "to": "true\tin\tpayload.t @ $text . (\t    $text ~> $lowercase() ~> $contains(\"offentlig straffeattest\")\t) ?\t0\t:\t\ttrue\tin\tpayload.t @ $text . (\t    $text ~> $lowercase() ~> $contains(\"privat straffeattest\")\t) ?\t1\t:\t\ttrue\tin\tpayload.t @ $text . (\t    $text ~> $lowercase() ~> $contains(\"børneattest\")\t) ?\t2\t\t:\t-1",
+      "to": "true\tin\tpayload @ $text . (\t    $text ~> $lowercase() ~> $contains(\"offentlig straffeattest\")\t) ?\t0\t:\t\ttrue\tin\tpayload @ $text . (\t    $text ~> $lowercase() ~> $contains(\"privat straffeattest\")\t) ?\t1\t:\t\ttrue\tin\tpayload @ $text . (\t    $text ~> $lowercase() ~> $contains(\"børneattest\")\t) ?\t2\t\t:\t-1",
       "tot": "jsonata"
     },
     {
@@ -26,10 +26,10 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1110,
-  "y": 560,
+  "y": 580,
   "wires": [
     [
-      "6aa225f2de7cb9d4"
+      "62cadd55853415cc"
     ]
   ]
 }

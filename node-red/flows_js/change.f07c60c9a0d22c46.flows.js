@@ -1,5 +1,5 @@
 const Node = {
-  "id": "6aa225f2de7cb9d4",
+  "id": "f07c60c9a0d22c46",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "38c43765fdc8e29d",
@@ -7,10 +7,10 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "attestErRen",
       "pt": "msg",
-      "to": "{}",
-      "tot": "json"
+      "to": "true\tin\tpayload @ $text . (\t    $text ~> $contains(\"er ikke registreret med afgørelser\")\t)",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,15 +18,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1245,
-  "y": 560,
+  "x": 1080,
+  "y": 480,
   "wires": [
     [
-      "e26fcac284fa8259",
-      "46b94b7e91ecee74"
+      "7b9330c5b66eea61"
     ]
-  ],
-  "l": false
+  ]
 }
 
 module.exports = Node;
