@@ -20,7 +20,8 @@ const Node = {
 
 Node.template = `
 SELECT
-    rekvirentEmail
+    rekvirentEmail,
+    attestType
 FROM
     bestillinger
 WHERE
