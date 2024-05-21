@@ -4,8 +4,8 @@ const Node = {
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
   "name": "Fra hovedpostkasse?",
-  "property": "from",
-  "propertyType": "msg",
+  "property": "from ~> $lowercase()",
+  "propertyType": "jsonata",
   "rules": [
     {
       "t": "eq",
