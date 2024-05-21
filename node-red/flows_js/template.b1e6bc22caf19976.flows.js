@@ -21,7 +21,7 @@ const Node = {
 }
 
 Node.template = `
-En bestilling af en {{attestType}} er blevet modtaget, og har registrerede forhold!
+En bestilling af en {{attestTypeString}} er blevet modtaget, og har registrerede forhold!
 Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}.
 `
 

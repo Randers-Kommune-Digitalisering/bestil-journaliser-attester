@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-Rekvisition af {{attestType}} er blevet afvist af rekvisitus.
+Rekvisition af {{attestTypeString}} er blevet afvist af rekvisitus.
 Der er sandsynligvis ikke givet samtykke til indhentningen.
 
 Afvisningen er journaliseret i personalesag med sagsnummer {{sagsnummer}}.

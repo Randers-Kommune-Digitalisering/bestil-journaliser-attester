@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-Ny {{attestType}} er modtaget fra Politiet.
+Ny {{attestTypeString}} er modtaget fra Politiet.
 Attesten er uden registrerede forhold.
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
