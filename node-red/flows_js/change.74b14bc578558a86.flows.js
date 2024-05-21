@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "38c43765fdc8e29d",
-  "name": "erAfvist?",
+  "name": "Sæt erAfvist",
   "rules": [
     {
       "t": "set",
@@ -18,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1040,
+  "x": 410,
   "y": 400,
   "wires": [
     [
-      "ef3c2c1e44c49441"
+      "579e2b301cfbbe0c"
     ]
   ]
 }

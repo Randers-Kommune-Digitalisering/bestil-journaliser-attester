@@ -2,7 +2,7 @@ const Node = {
   "id": "958f6aed62b11b69",
   "type": "group",
   "z": "812b69015d6703b6",
-  "name": "",
+  "name": "Notifikation og videresendelse af vedhæftning til HR",
   "style": {
     "stroke": "#0070c0",
     "label": true,
@@ -17,12 +17,14 @@ const Node = {
     "5d7e76ca05296ebb",
     "b1e6bc22caf19976",
     "53883a9beafecfcc",
-    "066989e068dd5a78"
+    "f49ae88b1311775b",
+    "2d0c992bfe6f3fbd",
+    "d42a43b7da58a5ee"
   ],
   "x": 34,
   "y": 1179,
-  "w": 972,
-  "h": 154
+  "w": 1142,
+  "h": 162
 }
 
 module.exports = Node;

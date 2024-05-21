@@ -1,14 +1,14 @@
 const Node = {
-  "id": "59e14b9f69d2fec6",
+  "id": "9d477f1214dcf5e9",
   "type": "change",
   "z": "797d31130fc2a555",
-  "name": "Generér filnavn",
+  "name": "Sæt hasAttachment",
   "rules": [
     {
       "t": "set",
-      "p": "filename",
+      "p": "hasAttachment",
       "pt": "msg",
-      "to": "$millis() & \".pdf\"",
+      "to": "attachments[0].content ~> $exists()",
       "tot": "jsonata"
     }
   ],
@@ -17,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 460,
-  "y": 120,
+  "x": 230,
+  "y": 60,
   "wires": [
     [
-      "1e7ebc746cf38773"
+      "950bd8c844f5b8ec"
     ]
   ]
 }

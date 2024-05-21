@@ -6,7 +6,8 @@ const Node = {
   "name": "Mail IN: Fejl",
   "links": [
     "16245bab475b9515",
-    "461970279c8fa295"
+    "461970279c8fa295",
+    "e0df545cbff80ce9"
   ],
   "x": 75,
   "y": 1080,

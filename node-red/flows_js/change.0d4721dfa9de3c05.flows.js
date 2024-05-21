@@ -1,5 +1,5 @@
 const Node = {
-  "id": "cd3c585f1804623e",
+  "id": "0d4721dfa9de3c05",
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\"error\":\"Ej en attest\",\"message\":\"Der blev modtaget en mail, men det er tilsyneladende ikke en attest.\"}",
+      "to": "{\"error\":\"Ukendt afsender\",\"message\":\"Der blev modtaget en mail, men afsender er ikke hovedpostkasse.\"}",
       "tot": "json"
     }
   ],
@@ -26,7 +26,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 840,
-  "y": 200,
+  "y": 240,
   "wires": [
     [
       "e8e4d35dfa279f7a"

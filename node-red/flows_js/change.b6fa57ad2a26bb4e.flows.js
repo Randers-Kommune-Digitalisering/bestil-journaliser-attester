@@ -1,8 +1,7 @@
 const Node = {
   "id": "b6fa57ad2a26bb4e",
   "type": "change",
-  "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
+  "z": "797d31130fc2a555",
   "name": "Flyt PDF til payload",
   "rules": [
     {
@@ -23,8 +22,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 210,
-  "y": 400,
+  "x": 230,
+  "y": 120,
   "wires": [
     [
       "59e14b9f69d2fec6"

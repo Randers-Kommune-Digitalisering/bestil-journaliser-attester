@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "958f6aed62b11b69",
   "name": "Tekst",
-  "field": "payload",
+  "field": "description",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
@@ -14,8 +14,8 @@ const Node = {
   "y": 1280,
   "wires": [
     [
-      "5d7e76ca05296ebb",
-      "066989e068dd5a78"
+      "2d0c992bfe6f3fbd",
+      "5d7e76ca05296ebb"
     ]
   ]
 }

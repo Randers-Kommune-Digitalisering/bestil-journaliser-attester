@@ -1,10 +1,17 @@
 const Node = {
-  "id": "066989e068dd5a78",
+  "id": "1d535a73534947c9",
   "type": "change",
   "z": "812b69015d6703b6",
-  "g": "958f6aed62b11b69",
+  "g": "4faa8cefca4c99e9",
   "name": "Formatér HTML",
   "rules": [
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "description",
+      "tot": "msg"
+    },
     {
       "t": "set",
       "p": "plaintext",
@@ -31,11 +38,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 840,
-  "y": 1280,
+  "x": 1180,
+  "y": 700,
   "wires": [
     [
-      "32bf09d50173ed34"
+      "32ccc814026d8e07"
     ]
   ]
 }

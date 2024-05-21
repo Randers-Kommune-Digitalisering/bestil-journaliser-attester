@@ -1,8 +1,8 @@
 const Node = {
-  "id": "cd3c585f1804623e",
+  "id": "93d01421f25584ea",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "7927b0d68211546e",
+  "g": "38c43765fdc8e29d",
   "name": "Sæt fejlbesked",
   "rules": [
     {
@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\"error\":\"Ej en attest\",\"message\":\"Der blev modtaget en mail, men det er tilsyneladende ikke en attest.\"}",
+      "to": "{\"error\":\"Ingen attest vedhæftet\",\"message\":\"Der blev modtaget en mail som ligner en attestrekvisition, men der er ingen vedhæftet attest.\"}",
       "tot": "json"
     }
   ],
@@ -26,10 +26,10 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 840,
-  "y": 200,
+  "y": 380,
   "wires": [
     [
-      "e8e4d35dfa279f7a"
+      "e0df545cbff80ce9"
     ]
   ]
 }

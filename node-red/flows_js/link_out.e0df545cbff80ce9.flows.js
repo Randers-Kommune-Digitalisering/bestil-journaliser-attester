@@ -1,15 +1,15 @@
 const Node = {
-  "id": "461970279c8fa295",
+  "id": "e0df545cbff80ce9",
   "type": "link out",
   "z": "90c6b0b502e346fa",
-  "g": "bab02435ebea55f1",
-  "name": "Mail OUT: Ingen bestilling fundet",
+  "g": "38c43765fdc8e29d",
+  "name": "Mail OUT: Ingen attest vedhæftet",
   "mode": "link",
   "links": [
     "d5c94fde9dd94804"
   ],
-  "x": 1055,
-  "y": 940,
+  "x": 955,
+  "y": 380,
   "wires": []
 }
 
