@@ -54,7 +54,7 @@
     }
 
     callUpdate()
-    fetchOrderCount()
+    //fetchOrderCount()
 
 </script>
 
