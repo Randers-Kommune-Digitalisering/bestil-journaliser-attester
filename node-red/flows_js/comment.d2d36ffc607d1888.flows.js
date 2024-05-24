@@ -5,7 +5,7 @@ const Node = {
   "g": "e05f4fc731fc4c56",
   "name": "Opdater data i SQL",
   "info": "",
-  "x": 810,
+  "x": 1030,
   "y": 60,
   "wires": []
 }

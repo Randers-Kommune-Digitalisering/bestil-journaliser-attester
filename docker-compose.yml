@@ -26,6 +26,7 @@ services:
 
       DEV_ENV: "true"
       
+      MAIL_THIS: "attester@randers.dk"
       MAIL_HOVEDPOST: "randers@randers.dk"
       MAIL_HR: "personalehr@randers.dk"
             

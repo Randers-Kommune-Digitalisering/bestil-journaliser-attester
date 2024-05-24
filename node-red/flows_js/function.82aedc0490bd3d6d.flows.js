@@ -14,8 +14,8 @@ const Node = {
   "y": 100,
   "wires": [
     [
-      "d16cfa80317185c5",
-      "074b5c36544f29c4"
+      "074b5c36544f29c4",
+      "01f1965e25590870"
     ]
   ]
 }
@@ -28,8 +28,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
       "to": msg.to,
       "topic": msg.topic,
       "plaintext": msg.plaintext,
-      "description": msg.description,
-      "from": "attester@randers.dk"
+      "description": msg.description
   
   }
   
