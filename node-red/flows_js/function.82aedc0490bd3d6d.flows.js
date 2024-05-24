@@ -28,7 +28,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
       "to": msg.to,
       "topic": msg.topic,
       "plaintext": msg.plaintext,
-      "description": msg.description
+      "description": msg.description,
+      "from": "attester@randers.dk"
   
   }
   
