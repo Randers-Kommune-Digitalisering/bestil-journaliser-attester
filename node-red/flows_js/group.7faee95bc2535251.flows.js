@@ -1,8 +1,8 @@
 const Node = {
-  "id": "523d0378016cfbec",
+  "id": "7faee95bc2535251",
   "type": "group",
   "z": "812b69015d6703b6",
-  "name": "",
+  "name": "Metric: mail_out",
   "style": {
     "stroke": "none",
     "fill": "#dbcbe7",
@@ -10,14 +10,13 @@ const Node = {
     "label": true
   },
   "nodes": [
-    "661ce10ddc4321c7",
-    "383eba8fd5fb27ef",
-    "f6af64afec29fa67"
+    "e63ebff9474e85f6",
+    "7dd62b5ba74bb531"
   ],
-  "x": 634,
-  "y": 219,
-  "w": 342,
-  "h": 122
+  "x": 314,
+  "y": 159,
+  "w": 292,
+  "h": 82
 }
 
 module.exports = Node;

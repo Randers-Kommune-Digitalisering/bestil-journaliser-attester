@@ -1,23 +1,23 @@
 const Node = {
-  "id": "661ce10ddc4321c7",
+  "id": "e63ebff9474e85f6",
   "type": "change",
   "z": "812b69015d6703b6",
-  "g": "523d0378016cfbec",
-  "name": "Set metric is_available",
+  "g": "7faee95bc2535251",
+  "name": "Set metric mail_out",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "recipient",
       "pt": "msg",
-      "to": "0",
-      "tot": "num"
+      "to": "to",
+      "tot": "msg"
     },
     {
       "t": "set",
-      "p": "dependency_name",
+      "p": "status",
       "pt": "msg",
-      "to": "mail",
-      "tot": "str"
+      "to": "(error ~> $exists()) ? \"error\" : \"success\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -25,11 +25,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 760,
-  "y": 300,
+  "x": 430,
+  "y": 200,
   "wires": [
     [
-      "383eba8fd5fb27ef"
+      "7dd62b5ba74bb531"
     ]
   ]
 }

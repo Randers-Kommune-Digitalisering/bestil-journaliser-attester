@@ -1,16 +1,16 @@
 const Node = {
-  "id": "90fe6ceaa616a340",
+  "id": "183cdbc49f637e5f",
   "type": "link in",
   "z": "e32afdd69abf0697",
-  "name": "Metric: mail_out (recipient, status)",
+  "name": "Metric: mail_in (sender)",
   "links": [
-    "7dd62b5ba74bb531"
+    "6111d247cd5c7634"
   ],
   "x": 675,
-  "y": 680,
+  "y": 780,
   "wires": [
     [
-      "6c7576b71fa481d9"
+      "940928909ebdc7b9"
     ]
   ]
 }

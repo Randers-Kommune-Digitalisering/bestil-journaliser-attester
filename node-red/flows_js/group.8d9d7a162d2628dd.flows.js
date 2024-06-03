@@ -2,7 +2,7 @@ const Node = {
   "id": "8d9d7a162d2628dd",
   "type": "group",
   "z": "90c6b0b502e346fa",
-  "name": "",
+  "name": "Metric: is_ready, is_available",
   "style": {
     "stroke": "none",
     "fill": "#dbcbe7",
