@@ -1,18 +1,9 @@
 const Node = {
-  "id": "aafe94e046e69991",
+  "id": "ae732660875706ae",
   "type": "change",
-  "z": "c715449c21b1a61f",
-  "g": "d8880c2ab63ce3cd",
+  "z": "7d7cd8fb8a9dbe4e",
   "name": "",
   "rules": [
-    {
-      "t": "set",
-      "p": "bestilling",
-      "pt": "msg",
-      "to": "payload",
-      "tot": "msg",
-      "dc": true
-    },
     {
       "t": "set",
       "p": "tablename",
@@ -26,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 620,
-  "y": 1040,
+  "x": 410,
+  "y": 140,
   "wires": [
     [
-      "8af784daa6359b34"
+      "fd809120d2a68701"
     ]
   ]
 }

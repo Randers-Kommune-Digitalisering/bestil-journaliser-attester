@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "attestType != -1 ?\t    attestType ~> $type() = \"array\" ?\t        (\t            \"AND (\" & ( attestType @ $type . (\"attestType = \" & $type) ~> $join(\" OR \") ) & \")\"\t        )\t    :   \"AND attestType = \" & attestType",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "tablename",
+      "pt": "msg",
+      "to": "bestillinger",
+      "tot": "str"
     }
   ],
   "action": "",
