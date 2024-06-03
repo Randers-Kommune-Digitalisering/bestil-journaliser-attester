@@ -1,5 +1,5 @@
 const Node = {
-  "id": "f96da948e00ef29e",
+  "id": "4eafe0a69130be13",
   "type": "change",
   "z": "7459f772194dcf44",
   "g": "245f9dc8c4ef45d3",
@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"op\": \"inc\",\t    \"val\": 1,\t    \"labels\": {\t        \"status\": status,\t        \"table_name\": table_name\t    }\t}",
+      "to": "{\t    \"op\": \"set\",\t    \"val\": payload,\t    \"labels\": {\t        \"dependency_name\": dependency_name\t    }\t}",
       "tot": "jsonata"
     }
   ],
@@ -19,11 +19,11 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 390,
-  "y": 620,
+  "y": 880,
   "wires": [
     [
-      "1fb4079f2fbb2d77",
-      "1d37d0c5d4290f0c"
+      "fd54d4cc0ec3a65f",
+      "ca619a472204e4fa"
     ]
   ]
 }

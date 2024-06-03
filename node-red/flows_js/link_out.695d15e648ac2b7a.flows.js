@@ -1,15 +1,15 @@
 const Node = {
-  "id": "e10cdc4fca455992",
+  "id": "695d15e648ac2b7a",
   "type": "link out",
-  "z": "c715449c21b1a61f",
-  "g": "fca31927c1a07325",
+  "z": "7459f772194dcf44",
+  "g": "f5b369166b3bae03",
   "name": "Metric out: is_available",
   "mode": "link",
   "links": [
-    "28e74ab3af9b2ae2"
+    "bd287ffdd9c475e5"
   ],
-  "x": 1295,
-  "y": 340,
+  "x": 705,
+  "y": 480,
   "wires": []
 }
 

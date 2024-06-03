@@ -1,17 +1,17 @@
 const Node = {
-  "id": "4d6cfa236e920faa",
+  "id": "bd287ffdd9c475e5",
   "type": "link in",
   "z": "7459f772194dcf44",
   "g": "245f9dc8c4ef45d3",
-  "name": "Metric: db_write (status, table_name)",
+  "name": "Metric: is_available (dependency_name)",
   "links": [
-    "85e5e3756d66c633"
+    "695d15e648ac2b7a"
   ],
   "x": 295,
-  "y": 700,
+  "y": 880,
   "wires": [
     [
-      "75d4bd0207b4aca3"
+      "4eafe0a69130be13"
     ]
   ]
 }
