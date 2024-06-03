@@ -12,6 +12,13 @@ const Node = {
       "to": "payload",
       "tot": "msg",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "table_name",
+      "pt": "msg",
+      "to": "bestillinger",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -19,7 +26,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 610,
+  "x": 620,
   "y": 1040,
   "wires": [
     [

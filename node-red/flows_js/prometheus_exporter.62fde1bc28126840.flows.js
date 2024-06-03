@@ -3,9 +3,9 @@ const Node = {
   "type": "prometheus-exporter",
   "z": "e32afdd69abf0697",
   "name": "service status",
-  "metric": "d680cf58b049b867",
-  "x": 480,
-  "y": 240,
+  "metric": "557cc439d8cfa857",
+  "x": 380,
+  "y": 160,
   "wires": []
 }
 

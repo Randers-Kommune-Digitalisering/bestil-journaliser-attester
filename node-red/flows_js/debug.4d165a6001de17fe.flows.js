@@ -2,8 +2,8 @@ const Node = {
   "id": "4d165a6001de17fe",
   "type": "debug",
   "z": "e32afdd69abf0697",
-  "name": "Action",
-  "active": false,
+  "name": "is_ready",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 510,
-  "y": 280,
+  "x": 400,
+  "y": 200,
   "wires": []
 }
 

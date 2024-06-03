@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"op\": \"set\",\t    \"val\": actionTime,\t    \"labels\": {\t        \"description\": actionDescription\t    }\t}",
+      "to": "{\t    \"op\": \"set\",\t    \"val\": payload,\t    \"labels\": {\t        \"job_name\": job_name,\t        \"error_type\": error_type != null ? error_type\t    }\t}",
       "tot": "jsonata"
     }
   ],
@@ -17,8 +17,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 290,
-  "y": 240,
+  "x": 190,
+  "y": 160,
   "wires": [
     [
       "62fde1bc28126840",
