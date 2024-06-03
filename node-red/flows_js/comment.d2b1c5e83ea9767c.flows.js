@@ -6,7 +6,7 @@ const Node = {
   "name": "Læs PDF",
   "info": "",
   "x": 460,
-  "y": 500,
+  "y": 660,
   "wires": []
 }
 

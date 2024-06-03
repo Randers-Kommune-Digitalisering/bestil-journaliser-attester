@@ -1,7 +1,7 @@
 const Node = {
   "id": "fca31927c1a07325",
   "type": "group",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "name": "Metric: is_ready, is_available",
   "style": {
     "stroke": "none",
@@ -15,8 +15,8 @@ const Node = {
     "e24a344562b2a026",
     "e83c0d5e01dd1129"
   ],
-  "x": 994,
-  "y": 259,
+  "x": 414,
+  "y": 279,
   "w": 342,
   "h": 122
 }

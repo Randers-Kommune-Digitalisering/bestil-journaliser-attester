@@ -6,7 +6,7 @@ const Node = {
   "name": "Transformer data",
   "info": "",
   "x": 200,
-  "y": 300,
+  "y": 320,
   "wires": []
 }
 

@@ -1,7 +1,7 @@
 const Node = {
   "id": "e24a344562b2a026",
   "type": "change",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "g": "fca31927c1a07325",
   "name": "Set metric is_ready",
   "rules": [
@@ -32,8 +32,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1150,
-  "y": 340,
+  "x": 570,
+  "y": 360,
   "wires": [
     [
       "c37071d4867d8114"

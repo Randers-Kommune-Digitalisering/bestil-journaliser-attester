@@ -1,7 +1,7 @@
 const Node = {
   "id": "95177c199a463199",
   "type": "change",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "g": "23af5f5e18dfea7e",
   "name": "Sæt global.attestTyper",
   "rules": [
@@ -18,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1120,
-  "y": 80,
+  "x": 540,
+  "y": 100,
   "wires": [
     []
   ]

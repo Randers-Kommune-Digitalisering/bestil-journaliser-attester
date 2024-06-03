@@ -1,7 +1,7 @@
 const Node = {
   "id": "bd0cf29b59d5139f",
   "type": "template",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "g": "b33cb8b26af139f5",
   "name": "Forespørgsel ↓\\n Opret tabel til attestbestillinger",
   "field": "sql",
@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 810,
-  "y": 280,
+  "x": 230,
+  "y": 300,
   "wires": [
     [
       "f55bc66f6a43e55d"

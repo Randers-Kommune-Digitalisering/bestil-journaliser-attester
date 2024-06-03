@@ -6,8 +6,7 @@ const Node = {
   "name": "Metric out: db_write",
   "mode": "link",
   "links": [
-    "4d6cfa236e920faa",
-    "8603fb9cfeefeb3d"
+    "4d6cfa236e920faa"
   ],
   "x": 705,
   "y": 360,

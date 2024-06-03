@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "status",
       "pt": "msg",
-      "to": "error ~> $exists() ? \"dependency\"",
+      "to": "error ~> $exists() ? \"dependency\" : \"other\"",
       "tot": "jsonata"
     },
     {
@@ -32,8 +32,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1310,
-  "y": 2620,
+  "x": 350,
+  "y": 3040,
   "wires": [
     [
       "890d8cb9dedb8abb"

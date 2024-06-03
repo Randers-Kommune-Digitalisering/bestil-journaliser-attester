@@ -5,7 +5,6 @@ const Node = {
   "g": "245f9dc8c4ef45d3",
   "name": "Metric: db_write (status, table_name)",
   "links": [
-    "85e5e3756d66c633",
     "14cf0b2c0601eb64"
   ],
   "x": 295,

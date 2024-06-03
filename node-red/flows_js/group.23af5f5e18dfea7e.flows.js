@@ -1,7 +1,7 @@
 const Node = {
   "id": "23af5f5e18dfea7e",
   "type": "group",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "name": "Initialiser attest-typer",
   "style": {
     "stroke": "none",
@@ -13,8 +13,8 @@ const Node = {
   "nodes": [
     "95177c199a463199"
   ],
-  "x": 994,
-  "y": 39,
+  "x": 414,
+  "y": 59,
   "w": 252,
   "h": 82
 }

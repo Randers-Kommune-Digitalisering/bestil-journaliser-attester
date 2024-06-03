@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "1",
+      "to": "0",
       "tot": "num"
     },
     {
