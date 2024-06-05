@@ -6,7 +6,7 @@ const Node = {
   "name": "Hent mail fra AD",
   "info": "",
   "x": 260,
-  "y": 740,
+  "y": 780,
   "wires": []
 }
 

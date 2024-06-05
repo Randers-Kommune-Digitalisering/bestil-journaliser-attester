@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "erAfvist? \"afvist = NOW(),\"",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "tablename",
+      "pt": "msg",
+      "to": "bestillinger",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -26,7 +33,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 330,
-  "y": 1140,
+  "y": 1300,
   "wires": [
     [
       "dfa3fc0ef74e839e"

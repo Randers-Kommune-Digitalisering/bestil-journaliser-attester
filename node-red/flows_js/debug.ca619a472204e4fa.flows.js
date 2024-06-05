@@ -1,9 +1,10 @@
 const Node = {
-  "id": "666238a49a5ae1d8",
+  "id": "ca619a472204e4fa",
   "type": "debug",
-  "z": "c715449c21b1a61f",
-  "name": "Token",
-  "active": false,
+  "z": "7459f772194dcf44",
+  "g": "245f9dc8c4ef45d3",
+  "name": "is_available",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -11,8 +12,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1250,
-  "y": 680,
+  "x": 630,
+  "y": 920,
   "wires": []
 }
 

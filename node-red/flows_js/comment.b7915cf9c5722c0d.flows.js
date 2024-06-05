@@ -6,7 +6,7 @@ const Node = {
   "name": "Kontrollér om \\n rekvisition er afvist",
   "info": "",
   "x": 290,
-  "y": 500,
+  "y": 660,
   "wires": []
 }
 

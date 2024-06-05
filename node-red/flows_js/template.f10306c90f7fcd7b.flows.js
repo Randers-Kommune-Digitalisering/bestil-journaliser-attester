@@ -1,7 +1,7 @@
 const Node = {
   "id": "f10306c90f7fcd7b",
   "type": "template",
-  "z": "c715449c21b1a61f",
+  "z": "da53ba55e6b4ce3b",
   "d": true,
   "g": "b33cb8b26af139f5",
   "name": "Drop database",
@@ -11,7 +11,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 760,
+  "x": 180,
   "y": 160,
   "wires": [
     [

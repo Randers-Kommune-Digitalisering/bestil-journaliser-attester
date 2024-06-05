@@ -6,7 +6,7 @@ const Node = {
   "name": "Find alle personalesager",
   "info": "",
   "x": 290,
-  "y": 1540,
+  "y": 1700,
   "wires": []
 }
 

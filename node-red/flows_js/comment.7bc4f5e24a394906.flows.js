@@ -6,7 +6,7 @@ const Node = {
   "name": "Opdel attesttyper til separate bestillinger",
   "info": "",
   "x": 330,
-  "y": 1000,
+  "y": 1040,
   "wires": []
 }
 

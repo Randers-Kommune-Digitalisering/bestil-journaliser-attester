@@ -6,7 +6,7 @@ const Node = {
   "name": "Bestem attest-type",
   "info": "",
   "x": 1110,
-  "y": 540,
+  "y": 700,
   "wires": []
 }
 
