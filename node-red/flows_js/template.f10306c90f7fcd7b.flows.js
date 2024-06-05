@@ -3,7 +3,6 @@ const Node = {
   "type": "template",
   "z": "da53ba55e6b4ce3b",
   "d": true,
-  "g": "b33cb8b26af139f5",
   "name": "Drop database",
   "field": "sql",
   "fieldType": "msg",
@@ -11,7 +10,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 180,
+  "x": 520,
   "y": 160,
   "wires": [
     [

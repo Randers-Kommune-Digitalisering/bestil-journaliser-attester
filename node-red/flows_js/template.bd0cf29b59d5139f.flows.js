@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 230,
-  "y": 300,
+  "y": 240,
   "wires": [
     [
       "f55bc66f6a43e55d"
@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-CREATE TABLE IF NOT EXISTS bestillinger (
+CREATE TABLE IF NOT EXISTS {{tablename}} (
 
     uid int NOT NULL AUTO_INCREMENT,
     bestillingModtaget TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
