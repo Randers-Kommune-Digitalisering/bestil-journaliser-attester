@@ -3,10 +3,10 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Kontrollér om mail er vedr. attest",
+  "name": "Kontrollér om mail er vedr. attest eller SD",
   "info": "",
-  "x": 610,
-  "y": 100,
+  "x": 440,
+  "y": 120,
   "wires": []
 }
 

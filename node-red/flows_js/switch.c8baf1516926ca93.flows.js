@@ -1,15 +1,14 @@
 const Node = {
-  "id": "d4a9d98f17c1a2c9",
+  "id": "c8baf1516926ca93",
   "type": "switch",
-  "z": "90c6b0b502e346fa",
-  "g": "7927b0d68211546e",
-  "name": "Fra hovedpostkasse?",
+  "z": "dacda834ca49f9f0",
+  "name": "Fra SD?",
   "property": "from ~> $lowercase()",
   "propertyType": "jsonata",
   "rules": [
     {
       "t": "eq",
-      "v": "MAIL_HOVEDPOST",
+      "v": "MAIL_SD",
       "vt": "env"
     },
     {
@@ -19,15 +18,11 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 560,
-  "y": 160,
+  "x": 200,
+  "y": 80,
   "wires": [
-    [
-      "34440912b7cbdbf0"
-    ],
-    [
-      "0d4721dfa9de3c05"
-    ]
+    [],
+    []
   ]
 }
 
