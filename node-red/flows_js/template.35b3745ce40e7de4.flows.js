@@ -9,7 +9,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 550,
+  "x": 590,
   "y": 280,
   "wires": [
     [
