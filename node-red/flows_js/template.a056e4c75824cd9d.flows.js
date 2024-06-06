@@ -1,30 +1,25 @@
 const Node = {
-  "id": "35b3745ce40e7de4",
+  "id": "a056e4c75824cd9d",
   "type": "template",
   "z": "dacda834ca49f9f0",
-  "name": "Forespørgsel ↓\\n Indsæt roller i tabel",
+  "name": "Forespørgsel ↓\\n Slet nuværende roller",
   "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 550,
-  "y": 280,
+  "x": 560,
+  "y": 180,
   "wires": [
     [
-      "2d8d6aeaeff2e473"
+      "c35cd03d03336b9e"
     ]
   ]
 }
 
 Node.template = `
-INSERT INTO {{tablename}} (
-    brugerDQ,
-    rolle
-)
-VALUES
-{{{values}}};
+DELETE FROM {{tablename}}
 `
 
 module.exports = Node;

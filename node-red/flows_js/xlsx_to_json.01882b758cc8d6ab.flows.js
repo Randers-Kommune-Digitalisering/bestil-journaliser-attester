@@ -7,7 +7,7 @@ const Node = {
   "rangecell": "",
   "columnkey": "{\"A\": \"dq\", \"B\": \"rolle\"}",
   "sheet": "",
-  "x": 770,
+  "x": 790,
   "y": 80,
   "wires": [
     [
