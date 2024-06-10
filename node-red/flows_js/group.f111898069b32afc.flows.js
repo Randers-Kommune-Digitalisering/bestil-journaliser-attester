@@ -8,7 +8,7 @@ const Node = {
     "stroke": "none",
     "stroke-opacity": "0.6",
     "fill-opacity": "0.6",
-    "fill": "#ffbfbf"
+    "fill": "#ffffbf"
   },
   "nodes": [
     "8ba3ca77574d532f",

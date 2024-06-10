@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "7459f772194dcf44",
   "g": "245f9dc8c4ef45d3",
-  "name": "db_write",
+  "name": "db_read",
   "active": true,
   "tosidebar": true,
   "console": false,

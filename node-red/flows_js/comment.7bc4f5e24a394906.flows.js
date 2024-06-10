@@ -5,8 +5,8 @@ const Node = {
   "g": "d8880c2ab63ce3cd",
   "name": "Opdel attesttyper til separate bestillinger",
   "info": "",
-  "x": 330,
-  "y": 1040,
+  "x": 270,
+  "y": 1360,
   "wires": []
 }
 

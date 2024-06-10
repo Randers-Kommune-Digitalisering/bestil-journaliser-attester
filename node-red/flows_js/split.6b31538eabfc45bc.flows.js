@@ -10,8 +10,8 @@ const Node = {
   "arraySpltType": "len",
   "stream": false,
   "addname": "",
-  "x": 430,
-  "y": 1080,
+  "x": 370,
+  "y": 1400,
   "wires": [
     [
       "aafe94e046e69991"

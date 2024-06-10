@@ -9,8 +9,8 @@ const Node = {
   "format": "json",
   "syntax": "mustache",
   "template": "",
-  "output": "str",
-  "x": 420,
+  "output": "json",
+  "x": 780,
   "y": 40,
   "wires": [
     [

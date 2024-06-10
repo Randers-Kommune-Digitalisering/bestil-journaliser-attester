@@ -5,8 +5,8 @@ const Node = {
   "g": "d8880c2ab63ce3cd",
   "name": "Opbevar data i SQL",
   "info": "",
-  "x": 350,
-  "y": 1180,
+  "x": 290,
+  "y": 1500,
   "wires": []
 }
 

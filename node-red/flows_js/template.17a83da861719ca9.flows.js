@@ -22,12 +22,10 @@ const Node = {
 Node.template = `
 CREATE TABLE IF NOT EXISTS {{tablename}} (
 
-    uid int NOT NULL AUTO_INCREMENT,
-
     brugerDQ VARCHAR(255),
     rolle VARCHAR(255),
     
-    PRIMARY KEY (uid)
+    PRIMARY KEY (brugerDQ)
 );
 `
 
