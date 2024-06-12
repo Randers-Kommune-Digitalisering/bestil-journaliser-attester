@@ -1,15 +1,16 @@
 const Node = {
-  "id": "b8ead42179cce6e1",
+  "id": "e5ed5af5e55ac195",
   "type": "change",
   "z": "43d6b9b519cc6615",
+  "g": "af9be1f206f6f44b",
   "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "tablename",
+      "p": "status",
       "pt": "msg",
-      "to": "roller",
-      "tot": "str"
+      "to": "payload ~> $empty() = false ? 'success' : 'error'",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 450,
-  "y": 360,
+  "x": 1000,
+  "y": 120,
   "wires": [
     [
-      "35b3745ce40e7de4"
+      "2b4eca79ded14277"
     ]
   ]
 }

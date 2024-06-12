@@ -2,7 +2,6 @@ const Node = {
   "id": "b6692daacc41aa1b",
   "type": "inject",
   "z": "43d6b9b519cc6615",
-  "d": true,
   "name": "",
   "props": [
     {
@@ -15,7 +14,7 @@ const Node = {
   ],
   "repeat": "",
   "crontab": "00 03 * * *",
-  "once": true,
+  "once": false,
   "onceDelay": "30",
   "topic": "",
   "payload": "",
