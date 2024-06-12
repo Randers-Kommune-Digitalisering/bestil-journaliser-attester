@@ -5,7 +5,7 @@ const Node = {
   "g": "7927b0d68211546e",
   "name": "",
   "protocol": "IMAP",
-  "server": "mail.receive",
+  "server": "imap.randers.dk",
   "useSSL": false,
   "autotls": "required",
   "port": "143",
