@@ -1,7 +1,7 @@
 const Node = {
   "id": "6261479af3b4d2b8",
   "type": "template",
-  "z": "dacda834ca49f9f0",
+  "z": "43d6b9b519cc6615",
   "d": true,
   "name": "testdata",
   "field": "payload",
@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "json",
-  "x": 780,
-  "y": 40,
+  "x": 280,
+  "y": 140,
   "wires": [
     [
       "341087aba98a8a1e"

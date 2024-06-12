@@ -1,7 +1,7 @@
 const Node = {
   "id": "35b3745ce40e7de4",
   "type": "template",
-  "z": "dacda834ca49f9f0",
+  "z": "43d6b9b519cc6615",
   "name": "Forespørgsel ↓\\n Indsæt roller i tabel",
   "field": "sql",
   "fieldType": "msg",
@@ -9,8 +9,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 590,
-  "y": 280,
+  "x": 830,
+  "y": 360,
   "wires": [
     [
       "2d8d6aeaeff2e473"
@@ -24,7 +24,7 @@ INSERT INTO {{tablename}} (
     rolle
 )
 VALUES
-{{{values}}};
+    {{{values}}};
 `
 
 module.exports = Node;

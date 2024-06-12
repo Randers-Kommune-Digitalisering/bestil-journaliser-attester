@@ -1,7 +1,7 @@
 const Node = {
   "id": "0bd5073885901481",
   "type": "debug",
-  "z": "dacda834ca49f9f0",
+  "z": "43d6b9b519cc6615",
   "name": "New roles",
   "active": true,
   "tosidebar": true,
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1080,
-  "y": 280,
+  "x": 1320,
+  "y": 360,
   "wires": []
 }
 

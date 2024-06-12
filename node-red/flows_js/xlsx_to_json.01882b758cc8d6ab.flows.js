@@ -1,14 +1,14 @@
 const Node = {
   "id": "01882b758cc8d6ab",
   "type": "XLSX-to-json",
-  "z": "dacda834ca49f9f0",
+  "z": "43d6b9b519cc6615",
   "name": "xlsx to json",
-  "filepath": "",
+  "filepath": "roles.xls",
   "rangecell": "",
   "columnkey": "{\"A\": \"dq\", \"B\": \"rolle\"}",
   "sheet": "",
-  "x": 790,
-  "y": 80,
+  "x": 390,
+  "y": 260,
   "wires": [
     [
       "341087aba98a8a1e"

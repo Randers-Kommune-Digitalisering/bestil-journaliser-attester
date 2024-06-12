@@ -1,7 +1,7 @@
 const Node = {
   "id": "341087aba98a8a1e",
   "type": "change",
-  "z": "dacda834ca49f9f0",
+  "z": "43d6b9b519cc6615",
   "name": "Sæt msg.values \\n & msg.tablename",
   "rules": [
     {
@@ -24,8 +24,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1010,
-  "y": 80,
+  "x": 590,
+  "y": 260,
   "wires": [
     [
       "a056e4c75824cd9d"

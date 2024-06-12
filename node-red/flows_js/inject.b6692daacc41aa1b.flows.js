@@ -1,7 +1,8 @@
 const Node = {
-  "id": "104d2cfe12aed17d",
+  "id": "b6692daacc41aa1b",
   "type": "inject",
-  "z": "9f905819f05b7a1a",
+  "z": "43d6b9b519cc6615",
+  "d": true,
   "name": "",
   "props": [
     {
@@ -13,17 +14,17 @@ const Node = {
     }
   ],
   "repeat": "",
-  "crontab": "",
-  "once": false,
-  "onceDelay": 0.1,
+  "crontab": "00 03 * * *",
+  "once": true,
+  "onceDelay": "30",
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 110,
-  "y": 180,
+  "x": 190,
+  "y": 100,
   "wires": [
     [
-      "96cc49050645695d"
+      "08ad7ed358437850"
     ]
   ]
 }
