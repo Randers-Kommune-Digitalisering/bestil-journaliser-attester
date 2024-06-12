@@ -3,7 +3,7 @@ const Node = {
   "type": "e-mail",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "server": "ps.randers.dk",
+  "server": "smtp.randers.dk",
   "port": "25",
   "authtype": "NONE",
   "saslformat": true,
