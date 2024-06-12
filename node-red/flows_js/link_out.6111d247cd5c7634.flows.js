@@ -6,9 +6,10 @@ const Node = {
   "name": "Metric out: mail_in",
   "mode": "link",
   "links": [
-    "183cdbc49f637e5f"
+    "183cdbc49f637e5f",
+    "f49c087bc7b2bcb7"
   ],
-  "x": 675,
+  "x": 495,
   "y": 240,
   "wires": []
 }

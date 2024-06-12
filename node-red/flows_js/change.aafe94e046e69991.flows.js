@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "c715449c21b1a61f",
   "g": "d8880c2ab63ce3cd",
-  "name": "",
+  "name": "Sæt msg.bestilling \\n & msg.tablename",
   "rules": [
     {
       "t": "set",
@@ -26,8 +26,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 620,
-  "y": 1080,
+  "x": 550,
+  "y": 1400,
   "wires": [
     [
       "8af784daa6359b34"

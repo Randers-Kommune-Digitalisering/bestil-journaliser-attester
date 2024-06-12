@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 360,
-  "y": 1240,
+  "x": 300,
+  "y": 1560,
   "wires": [
     [
       "e7338a1d27de82bd"
@@ -26,7 +26,8 @@ INSERT INTO bestillinger (
     rekvirentEmail,
     cpr,
     attestType,
-    attestSubType
+    attestSubType,
+    erAfvist
 )
 VALUES
 (
@@ -35,7 +36,8 @@ VALUES
     "{{bestilling.rekvirentEmail}}",
     "{{bestilling.rekvisitus}}",
      {{bestilling.attestType}},
-     {{bestilling.attestSubType}}
+     {{bestilling.attestSubType}},
+     {{erAfvist}}
 )
 `
 

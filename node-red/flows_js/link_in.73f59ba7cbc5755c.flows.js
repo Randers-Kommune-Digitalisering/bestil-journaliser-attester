@@ -4,12 +4,9 @@ const Node = {
   "z": "e32afdd69abf0697",
   "name": "Metric: job_complete (job_name, status)",
   "links": [
-    "fc3b07fa23296d97",
-    "52a342247fc70c83",
     "185db8a976e690e3",
-    "514ba4c18ac0ee11",
-    "a9a915f93e5f9d2c",
-    "39987f2e4ca5bcc2"
+    "39987f2e4ca5bcc2",
+    "fc3b07fa23296d97"
   ],
   "x": 95,
   "y": 680,

@@ -6,7 +6,8 @@ const Node = {
   "name": "Metric out: mail_out",
   "mode": "link",
   "links": [
-    "90fe6ceaa616a340"
+    "90fe6ceaa616a340",
+    "699c4add680d4e4f"
   ],
   "x": 565,
   "y": 200,
