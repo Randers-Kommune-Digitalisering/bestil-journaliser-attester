@@ -4,11 +4,5 @@
         "module": "request",
         "builtin": false,
         "known": false
-    },
-    "btoa": {
-        "spec": "btoa",
-        "module": "btoa",
-        "builtin": false,
-        "known": false
     }
 }
