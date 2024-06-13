@@ -1,21 +1,16 @@
 const Node = {
-  "id": "323c55ddba1903d5",
+  "id": "923ad6b314d46ee1",
   "type": "change",
   "z": "812b69015d6703b6",
   "g": "4faa8cefca4c99e9",
-  "name": "Sæt modtager",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "to",
+      "p": "erJournaliseret",
       "pt": "msg",
-      "to": "rekvirent",
-      "tot": "msg"
-    },
-    {
-      "t": "delete",
-      "p": "from",
-      "pt": "msg"
+      "to": "false",
+      "tot": "bool"
     }
   ],
   "action": "",
@@ -23,13 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 200,
-  "y": 700,
+  "x": 1015,
+  "y": 660,
   "wires": [
     [
-      "d7173d27d932b505"
+      "dac6afa62d5cf0e1"
     ]
-  ]
+  ],
+  "l": false
 }
 
 module.exports = Node;

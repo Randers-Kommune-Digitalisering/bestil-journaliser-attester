@@ -14,10 +14,10 @@ const Node = {
   "once": false,
   "onceDelay": 0.1,
   "topic": "",
-  "payload": "{\"sagsbehandler\":\"Søren Langbo Slotø Thomassen - DQA8932\",\"medarbejderCPR\":\"000000-0000\",\"attestType\":\"0, 2\",\"attestSubType\":[{\"attestType\":0,\"subType\":\"1\"},{\"attestType\":2,\"subType\":\"0\"}],\"samtykke\":\"true\"}",
+  "payload": "{\"sagsbehandler\":\"Rekvirent Navn - DQA1234\",\"medarbejderCPR\":\"000000-0000\",\"attestType\":\"0, 2\",\"attestSubType\":[{\"attestType\":0,\"subType\":\"1\"},{\"attestType\":2,\"subType\":\"0\"}],\"samtykke\":\"true\"}",
   "payloadType": "json",
   "x": 140,
-  "y": 180,
+  "y": 160,
   "wires": [
     [
       "6a1f71dd644f3775",

@@ -10,21 +10,24 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 810,
+  "x": 890,
   "y": 440,
   "wires": [
     [
       "b8eae3b4cf749d45",
-      "600171742f43ae95"
+      "d33cf0f7a1a86cc2"
     ]
   ]
 }
 
 Node.template = `
-Ny {{attestTypeString}} er modtaget fra Politiet.
-OBS: Attesten har registrerede forhold!
+Ny {{attestTypeString}} på {{rekvisitus.navn}} er modtaget fra Politiet.
+Attesten har registrerede forhold!
 
-Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}.
+Personale og HR er blevet notificeret om attestmodtagelsen.
+Du bedes kontakte Jura på mail eller telefon.
+
+Attesten er journaliseret i {{rekvisitus.navn}}'s personalesag (tjenestenr. {{rekvisitus.tjenestenr}}).
 `
 
 module.exports = Node;

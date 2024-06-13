@@ -5,8 +5,8 @@ const Node = {
   "g": "012ee3cd0590380d",
   "name": "Advisering - Rekvisition automatisk afvist (manglende rolle)",
   "info": "",
-  "x": 1110,
-  "y": 820,
+  "x": 1190,
+  "y": 840,
   "wires": []
 }
 

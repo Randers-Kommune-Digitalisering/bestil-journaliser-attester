@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 450,
-  "y": 880,
+  "x": 550,
+  "y": 900,
   "wires": [
     [
       "a756faa2e4149fca",
@@ -22,8 +22,9 @@ const Node = {
 }
 
 Node.template = `
-Din bestilling af en {{attestType}} er blevet afvist af systemansvarlig.
-Kontakt HR hvis du mener der er tale om en fejl.
+Din bestilling af en {{attestType}} på {{rekvisitus.navn}} er blevet afvist af Personale og HR.
+
+Kontakt Personale og HR, hvis du mener der er tale om en fejl.
 `
 
 module.exports = Node;

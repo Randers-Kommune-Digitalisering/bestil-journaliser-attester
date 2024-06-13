@@ -20,6 +20,7 @@ const Node = {
 
 Node.template = `
 SELECT
+    cpr,
     rekvirentEmail,
     attestType
 FROM

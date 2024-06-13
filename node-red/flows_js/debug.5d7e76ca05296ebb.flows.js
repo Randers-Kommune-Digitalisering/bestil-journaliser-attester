@@ -8,12 +8,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"uid\": rekvisition.uid,\t    \"status\": \"HR notificeret vedr. uren attest\"\t}",
+  "complete": "{\t    \"uid\": rekvisition.uid,\t    \"rekvisitus\": rekvisitus,\t    \"rekvirent\": rekvirent,\t    \"rekvisitionAfvist\": erAfvist,\t    \"status\": \"HR notificeret vedr. uren attest\"\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 980,
-  "y": 1220,
+  "x": 920,
+  "y": 1260,
   "wires": []
 }
 

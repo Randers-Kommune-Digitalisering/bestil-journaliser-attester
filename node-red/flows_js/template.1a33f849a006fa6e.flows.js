@@ -1,30 +1,30 @@
 const Node = {
-  "id": "3ee1f33c7c4955f2",
+  "id": "1a33f849a006fa6e",
   "type": "template",
   "z": "812b69015d6703b6",
-  "g": "4faa8cefca4c99e9",
-  "name": "Ja",
+  "g": "958f6aed62b11b69",
+  "name": "Nej",
   "field": "description",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 890,
-  "y": 700,
+  "x": 710,
+  "y": 1320,
   "wires": [
     [
-      "64f9e9e1df775542"
+      "2d0c992bfe6f3fbd",
+      "5d7e76ca05296ebb"
     ]
   ]
 }
 
 Node.template = `
-Ny {{attestTypeString}} på {{rekvisitus.navn}} er modtaget fra Politiet.
-Attesten er uden registrerede forhold.
+En bestilling af en {{attestType}} på {{rekvisitus.navn}} er blevet modtaget, og har registrerede forhold!
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
-Vær opmærksom på at attesten derfor er vedhæftet denne mail, og at det er dit ansvar at journalisere den manuelt.
+Vær derfor opmærksom på at det er Personale og HR’s ansvar at journalisere attesten.
 `
 
 module.exports = Node;

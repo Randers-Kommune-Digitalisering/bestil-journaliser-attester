@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "e32afdd69abf0697",
   "name": "is_ready",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,

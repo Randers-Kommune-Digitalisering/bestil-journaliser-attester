@@ -3,10 +3,10 @@ const Node = {
   "type": "comment",
   "z": "812b69015d6703b6",
   "g": "5759209171ce76be",
-  "name": "Er rekvisition afvist?",
+  "name": "Er rekvisition\\n afvist?",
   "info": "",
-  "x": 470,
-  "y": 440,
+  "x": 570,
+  "y": 420,
   "wires": []
 }
 

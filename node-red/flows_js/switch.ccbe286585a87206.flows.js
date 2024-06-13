@@ -1,30 +1,30 @@
 const Node = {
-  "id": "2b3d38992089c1f9",
+  "id": "ccbe286585a87206",
   "type": "switch",
   "z": "812b69015d6703b6",
-  "g": "4faa8cefca4c99e9",
+  "g": "958f6aed62b11b69",
   "name": "",
-  "property": "erAfvist",
+  "property": "erJournaliseret",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "false"
+      "t": "true"
     },
     {
-      "t": "true"
+      "t": "false"
     }
   ],
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 570,
-  "y": 700,
+  "x": 530,
+  "y": 1300,
   "wires": [
     [
-      "a2c0c7488b911eb8"
+      "b1e6bc22caf19976"
     ],
     [
-      "4289d48fa270a58f"
+      "1a33f849a006fa6e"
     ]
   ]
 }

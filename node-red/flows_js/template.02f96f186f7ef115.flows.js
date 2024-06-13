@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 1290,
-  "y": 880,
+  "y": 900,
   "wires": [
     [
       "db9649769b13da4b",
@@ -22,8 +22,9 @@ const Node = {
 }
 
 Node.template = `
-Din bestilling af en {{attestType}} er blevet afvist automatisk pga. manglende rolle.
-Kontakt HR hvis du mener der er tale om en fejl.
+Din bestilling af en eller flere attester er blevet afvist pga. manglende rolle.
+
+Kontakt Personale og HR hvis du mener der er tale om en fejl.
 `
 
 module.exports = Node;

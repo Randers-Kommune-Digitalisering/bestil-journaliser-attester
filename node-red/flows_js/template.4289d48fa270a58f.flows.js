@@ -10,8 +10,8 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 810,
-  "y": 720,
+  "x": 890,
+  "y": 740,
   "wires": [
     [
       "64f9e9e1df775542"
@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-Rekvisition af {{attestTypeString}} er blevet afvist af rekvisitus.
+Rekvisition af {{attestTypeString}} på {{rekvisitus.navn}}  er blevet afvist.
 Der er sandsynligvis ikke givet samtykke til indhentningen.
 
 Afvisningen er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
