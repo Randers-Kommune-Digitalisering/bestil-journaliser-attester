@@ -6,13 +6,13 @@ const Node = {
   "name": "Mail out",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "topic",
-  "targetType": "msg",
+  "complete": "{\t    \"from\": from,\t    \"to\": to,\t    \"topic\": topic\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 380,
+  "x": 590,
   "y": 60,
   "wires": []
 }
