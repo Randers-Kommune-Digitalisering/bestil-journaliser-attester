@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"topic\": subject\t}",
+      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic\t}",
       "tot": "jsonata"
     }
   ],
@@ -29,8 +29,7 @@ const Node = {
   "y": 100,
   "wires": [
     [
-      "d16cfa80317185c5",
-      "074b5c36544f29c4"
+      "d16cfa80317185c5"
     ]
   ]
 }
