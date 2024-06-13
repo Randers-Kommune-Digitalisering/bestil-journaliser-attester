@@ -1,9 +1,9 @@
 const Node = {
-  "id": "01f1965e25590870",
+  "id": "40a982f694bdc29c",
   "type": "change",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "name": "",
+  "name": "Parameters",
   "rules": [
     {
       "t": "set",
@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "MAIL_THIS",
       "tot": "env"
+    },
+    {
+      "t": "set",
+      "p": "email",
+      "pt": "msg",
+      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"topic\": subject\t}",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,7 +25,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 390,
+  "x": 370,
   "y": 100,
   "wires": [
     [

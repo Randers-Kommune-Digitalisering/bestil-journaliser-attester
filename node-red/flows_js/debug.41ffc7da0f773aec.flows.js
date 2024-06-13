@@ -1,18 +1,18 @@
 const Node = {
-  "id": "074b5c36544f29c4",
+  "id": "41ffc7da0f773aec",
   "type": "debug",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "name": "Sending mail",
+  "name": "Mail log",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"from\": from,\t    \"to\": to,\t    \"topic\": topic\t}",
-  "targetType": "jsonata",
+  "complete": "payload",
+  "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 520,
+  "x": 730,
   "y": 60,
   "wires": []
 }
