@@ -29,10 +29,10 @@
         }
     ],
     "dependencies": {
+        "@yousolution/node-red-contrib-you-ftp-sftp": "~1.11.0",
         "btoa": "^1.2.1",
         "node-red": "3.0.2",
         "node-red-contrib-email": "~0.3.0",
-        "node-red-contrib-ftp-sftp-hubone": "~1.8.9",
         "node-red-contrib-js-storage": "1.0.3",
         "node-red-contrib-mysql-config": "1.0.4",
         "node-red-contrib-pdfjs-mac": "~1.0.14",

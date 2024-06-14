@@ -29,6 +29,10 @@ services:
       MAIL_THIS: "attester@randers.dk"
       MAIL_HOVEDPOST: "randers@randers.dk"
       MAIL_HR: "personalehr@randers.dk"
+
+      SFTP_URL: "sftp.randers.dk"
+      SFTP_USER: ${SFTP_USER}
+      SFTP_PASS: ${SFTP_PASS}
             
       # Miljøvariablen FLOWS fortæller Node-RED IDEet hvilket flow.json den skal åbne og gemme ændringer i ved deploy.
       FLOWS: "/data/flows.json"
