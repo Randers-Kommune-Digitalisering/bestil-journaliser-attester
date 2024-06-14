@@ -6,7 +6,7 @@ const Node = {
   "name": "Send til hovedpostkasse - Mail matcher ikke rekvisition",
   "info": "",
   "x": 260,
-  "y": 1020,
+  "y": 1040,
   "wires": []
 }
 

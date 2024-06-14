@@ -1,0 +1,8 @@
+{
+    "request": {
+        "spec": "request",
+        "module": "request",
+        "builtin": false,
+        "known": false
+    }
+}

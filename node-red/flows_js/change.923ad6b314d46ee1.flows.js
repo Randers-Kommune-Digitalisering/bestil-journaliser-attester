@@ -1,16 +1,16 @@
 const Node = {
-  "id": "01f1965e25590870",
+  "id": "923ad6b314d46ee1",
   "type": "change",
   "z": "812b69015d6703b6",
-  "g": "cf5fc001c060884c",
+  "g": "4faa8cefca4c99e9",
   "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "from",
+      "p": "erJournaliseret",
       "pt": "msg",
-      "to": "MAIL_THIS",
-      "tot": "env"
+      "to": "false",
+      "tot": "bool"
     }
   ],
   "action": "",
@@ -18,13 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 390,
-  "y": 100,
+  "x": 1015,
+  "y": 660,
   "wires": [
     [
-      "d16cfa80317185c5"
+      "dac6afa62d5cf0e1"
     ]
-  ]
+  ],
+  "l": false
 }
 
 module.exports = Node;

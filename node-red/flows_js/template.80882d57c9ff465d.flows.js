@@ -10,7 +10,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 810,
+  "x": 890,
   "y": 520,
   "wires": [
     [
@@ -20,10 +20,10 @@ const Node = {
 }
 
 Node.template = `
-Rekvisition af {{attestTypeString}} er blevet afvist af rekvisitus.
+Rekvisition af {{attestTypeString}} på {{rekvisitus.navn}} er blevet afvist.
 Der er sandsynligvis ikke givet samtykke til indhentningen.
 
-Afvisningen er journaliseret i personalesag med sagsnummer {{sagsnummer}}.
+Afvisningen er journaliseret i {{rekvisitus.navn}}'s personalesag (tjenestenr. {{rekvisitus.tjenestenr}}).
 `
 
 module.exports = Node;

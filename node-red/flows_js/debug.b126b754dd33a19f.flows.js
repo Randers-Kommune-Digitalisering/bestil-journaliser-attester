@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "e32afdd69abf0697",
   "name": "last_update_ms",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,

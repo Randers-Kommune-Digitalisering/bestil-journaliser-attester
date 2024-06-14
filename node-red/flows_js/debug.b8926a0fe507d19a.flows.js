@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Ny mail",
+  "name": "Mail in",
   "active": true,
   "tosidebar": true,
   "console": true,

@@ -10,22 +10,25 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 810,
-  "y": 640,
+  "x": 890,
+  "y": 660,
   "wires": [
     [
-      "dac6afa62d5cf0e1",
-      "64f9e9e1df775542"
+      "64f9e9e1df775542",
+      "923ad6b314d46ee1"
     ]
   ]
 }
 
 Node.template = `
-Ny {{attestTypeString}} er modtaget fra Politiet.
-OBS: Attesten har registrerede forhold!
+Ny {{attestTypeString}} på {{rekvisitus.navn}} er modtaget fra Politiet.
+Attesten har registrerede forhold!
+
+Personale og HR er blevet notificeret om attestmodtagelsen.
+Du bedes kontakte Jura på mail eller telefon.
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
-Vær opmærksom på at attesten derfor er vedhæftet denne mail, og skal journaliseres manuelt.
+Vær opmærksom på at attesten derfor er vedhæftet denne mail, og at det er dit ansvar at journalisere den manuelt.
 `
 
 module.exports = Node;
