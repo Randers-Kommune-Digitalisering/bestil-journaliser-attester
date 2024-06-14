@@ -20,7 +20,7 @@ const Node = {
   "payload": "",
   "payloadType": "date",
   "x": 110,
-  "y": 340,
+  "y": 320,
   "wires": [
     [
       "26ca2d0946c1d233"
