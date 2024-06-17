@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> $distinct()",
+      "to": "(payload.dq ~> $distinct()) @ $dq . \t{\t    \"dq\": $dq,\t    \"rolle\": ($.payload[dq = $dq].rolle)[0]\t}",
       "tot": "jsonata"
     },
     {
