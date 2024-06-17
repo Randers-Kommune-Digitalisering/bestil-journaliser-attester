@@ -8,14 +8,14 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> | $ |\t{\t    \"dq\": col1 ~> $replace(\"\\u0000\", \"\"),\t    \"rolle\": col5 ~> $replace(\"\\u0000\", \"\") ~> $replace(\"Stedfortraeder for Leder\", \"2\") ~> $replace(\"Leder\", \"1\") \t},\t[\"col1\", \"col2\", \"col3\", \"col4\", \"col5\", \"col6\", \"col7\", \"col8\"] |",
+      "to": "payload ~> | $ |\t{\t    \"dq\": col1 ~> $replace(\"\\u0000\", \"\") ~> $uppercase(),\t    \"rolle\": col5 ~> $replace(\"\\u0000\", \"\") ~> $replace(\"Stedfortraeder for Leder\", \"2\") ~> $replace(\"Leder\", \"1\") ~> $lowercase() \t},\t[\"col1\", \"col2\", \"col3\", \"col4\", \"col5\", \"col6\", \"col7\", \"col8\"] |",
       "tot": "jsonata"
     },
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> $distinct()",
+      "to": "(payload.dq ~> $distinct()) @ $dq . {\t    \"dq\": $dq,\t    \"rolle\": ($$.payload[dq = $dq].rolle)[0]\t}",
       "tot": "jsonata"
     }
   ],

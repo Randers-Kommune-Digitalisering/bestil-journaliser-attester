@@ -7,7 +7,7 @@ const Node = {
   "repeat": "",
   "crontab": "00 03 * * *",
   "once": true,
-  "onceDelay": "30",
+  "onceDelay": "5",
   "topic": "",
   "x": 110,
   "y": 80,
