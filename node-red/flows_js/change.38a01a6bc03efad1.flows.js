@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload.dq ~> $distinct()",
+      "to": "payload ~> $distinct()",
       "tot": "jsonata"
     }
   ],
