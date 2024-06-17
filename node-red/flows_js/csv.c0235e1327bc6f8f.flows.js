@@ -4,7 +4,7 @@ const Node = {
   "z": "43d6b9b519cc6615",
   "name": "",
   "sep": ";",
-  "hdrin": true,
+  "hdrin": false,
   "hdrout": "none",
   "multi": "mult",
   "ret": "\\n",
