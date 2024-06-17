@@ -23,9 +23,8 @@ Node.template = `
 CREATE TABLE IF NOT EXISTS {{tablename}} (
 
     brugerDQ VARCHAR(255),
-    rolle VARCHAR(255),
+    rolle VARCHAR(255)
     
-    PRIMARY KEY (brugerDQ)
 );
 `
 
