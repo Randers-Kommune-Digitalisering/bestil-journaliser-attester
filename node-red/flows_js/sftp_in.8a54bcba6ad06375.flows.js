@@ -4,7 +4,7 @@ const Node = {
   "z": "43d6b9b519cc6615",
   "sftp": "8cecb8b3eddbd445",
   "operation": "get",
-  "filename": "Brugeradministration-da.csv",
+  "filename": "",
   "localFilename": "",
   "fileContents": "",
   "fileExtension": ".txt",

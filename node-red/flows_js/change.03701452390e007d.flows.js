@@ -31,6 +31,20 @@ const Node = {
       "pt": "msg",
       "to": "22",
       "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "{}",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "payload.filename",
+      "pt": "msg",
+      "to": "Brugeradministration-da.csv",
+      "tot": "str"
     }
   ],
   "action": "",
