@@ -5,13 +5,13 @@ const Node = {
   "name": "Test mail ERROR",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "true",
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 730,
+  "x": 740,
   "y": 200,
   "wires": []
 }
