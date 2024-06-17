@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "status",
       "pt": "msg",
-      "to": "payload ~> $empty() = false ? 'success' : 'error'",
+      "to": "payload.filedata ~> $exists() ? 'success' : 'error'",
       "tot": "jsonata"
     }
   ],
