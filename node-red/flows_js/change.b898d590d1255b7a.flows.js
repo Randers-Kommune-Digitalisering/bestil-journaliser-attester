@@ -1,5 +1,5 @@
 const Node = {
-  "id": "f935a6b9b316d298",
+  "id": "b898d590d1255b7a",
   "type": "change",
   "z": "43d6b9b519cc6615",
   "name": "Sæt msg.values \\n & msg.tablename",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "values",
       "pt": "msg",
-      "to": "payload @ $item .\t( \"(\" &\t\t\"'\" & $item.'Lokalt brugernavn' & \"', '\" & $item.Rolle & \"'\"\t\t& \")\" ) ~> $join(\", \")",
+      "to": "payload @ $item .\t( \"(\" &\t\t\"'\" & $item.col1 & \"', '\" & $item.col5 & \"'\"\t\t& \")\" ) ~> $join(\", \")",
       "tot": "jsonata"
     },
     {
@@ -29,7 +29,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 530,
+  "x": 710,
   "y": 240,
   "wires": [
     [
