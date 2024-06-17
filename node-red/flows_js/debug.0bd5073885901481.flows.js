@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "{\t    \"rolesInserted\": payload.affectedRows,\t    \"message\": payload.message,\t    \"success\": error ~> $exists() ? false : true\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1180,
-  "y": 360,
+  "x": 730,
+  "y": 520,
   "wires": []
 }
 

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "341087aba98a8a1e",
+  "id": "b898d590d1255b7a",
   "type": "change",
   "z": "43d6b9b519cc6615",
   "name": "Sæt msg.values \\n & msg.tablename",
@@ -17,6 +17,11 @@ const Node = {
       "pt": "msg",
       "to": "roller",
       "tot": "str"
+    },
+    {
+      "t": "delete",
+      "p": "payload",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -24,8 +29,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 450,
-  "y": 260,
+  "x": 230,
+  "y": 340,
   "wires": [
     [
       "a056e4c75824cd9d"

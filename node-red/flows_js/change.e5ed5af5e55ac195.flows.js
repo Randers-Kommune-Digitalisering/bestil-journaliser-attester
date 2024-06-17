@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "status",
       "pt": "msg",
-      "to": "payload ~> $empty() = false ? 'success' : 'error'",
+      "to": "payload.filedata ~> $exists() ? 'success' : 'error'",
       "tot": "jsonata"
     }
   ],
@@ -18,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1000,
-  "y": 120,
+  "x": 880,
+  "y": 140,
   "wires": [
     [
       "2b4eca79ded14277"

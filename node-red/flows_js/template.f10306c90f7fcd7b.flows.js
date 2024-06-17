@@ -20,7 +20,7 @@ const Node = {
 }
 
 Node.template = `
-DROP TABLE bestillinger
+DROP TABLE roller
 `
 
 module.exports = Node;
