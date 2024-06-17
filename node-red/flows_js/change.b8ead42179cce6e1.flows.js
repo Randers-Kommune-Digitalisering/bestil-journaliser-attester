@@ -2,7 +2,7 @@ const Node = {
   "id": "b8ead42179cce6e1",
   "type": "change",
   "z": "43d6b9b519cc6615",
-  "name": "",
+  "name": "set msg.tablename",
   "rules": [
     {
       "t": "set",
@@ -10,6 +10,11 @@ const Node = {
       "pt": "msg",
       "to": "roller",
       "tot": "str"
+    },
+    {
+      "t": "delete",
+      "p": "error",
+      "pt": "msg"
     }
   ],
   "action": "",

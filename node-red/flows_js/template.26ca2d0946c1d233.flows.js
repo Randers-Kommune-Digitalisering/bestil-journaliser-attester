@@ -9,15 +9,15 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 100,
-  "y": 660,
+  "x": 140,
+  "y": 560,
   "wires": [
     []
   ]
 }
 
 Node.template = `
-Lokalt brugernavn;AfdelingsID;Navn;Email;Rolle;Niveau 09;Niveau 08;Niveau 05
+col1;col2;col3;col4;col5;col6;col7;col8
 DQA1234;Døgnafdeling (RG_BDM);Test navn 1;Test.Navn.1@randers.dk;Stedfortraeder for Leder;Børn og Skole (RG_BSK);Familie (RG_BFA);Familie- og rådgivningscenter (RG_BFY)
 DQA4321;Døgnafdeling (RG_BDM);Test navn 2;Test.Navn.2@randers.dk;Leder;Børn og Skole (RG_BSK);Familie (RG_BFA);Familie- og rådgivningscenter (RG_BFY)
 `
