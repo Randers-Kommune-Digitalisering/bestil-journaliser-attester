@@ -1,9 +1,9 @@
 const Node = {
-  "id": "ba92e0a75325c9ad",
+  "id": "b2d8635ce9c88da3",
   "type": "email-send",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "transport": "5cd237628a4e5175",
+  "transport": "7252dd3b38fd0a79",
   "from": "",
   "to": "",
   "cc": "",
@@ -11,7 +11,7 @@ const Node = {
   "subject": "",
   "contentType": "text",
   "name": "",
-  "x": 710,
+  "x": 730,
   "y": 100,
   "wires": [
     [

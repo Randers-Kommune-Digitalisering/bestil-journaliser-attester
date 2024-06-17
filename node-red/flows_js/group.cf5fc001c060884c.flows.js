@@ -15,8 +15,8 @@ const Node = {
     "d16cfa80317185c5",
     "074b5c36544f29c4",
     "40a982f694bdc29c",
-    "ba92e0a75325c9ad",
-    "41ffc7da0f773aec"
+    "41ffc7da0f773aec",
+    "b2d8635ce9c88da3"
   ],
   "x": 34,
   "y": 19,
