@@ -700,7 +700,6 @@
   "change.e5ed5af5e55ac195.flows.js",
   "link_out.2b4eca79ded14277.flows.js",
   "switch.635fe40038703180.flows.js",
-  "template.26ca2d0946c1d233.flows.js",
   "inject.e22510e0c0cb8d89.flows.js",
   "sftp_in.8a54bcba6ad06375.flows.js",
   "catch.65400d7df7ba79e4.flows.js",
@@ -708,5 +707,6 @@
   "function.805753a81a6ed3f6.flows.js",
   "function.4cc71e6031b201f1.flows.js",
   "change.38a01a6bc03efad1.flows.js",
-  "change.b898d590d1255b7a.flows.js"
+  "change.b898d590d1255b7a.flows.js",
+  "template.26ca2d0946c1d233.flows.js"
 ]
