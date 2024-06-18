@@ -1,8 +1,8 @@
 const Node = {
-  "id": "5cd237628a4e5175",
+  "id": "7252dd3b38fd0a79",
   "type": "email-transport",
   "name": "",
-  "host": "smtp.randers.dk",
+  "host": "${MAIL_SMTP_URL}",
   "port": "25",
   "secure": false,
   "authType": "none",
