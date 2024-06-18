@@ -15,11 +15,13 @@ const Node = {
     "d16cfa80317185c5",
     "074b5c36544f29c4",
     "40a982f694bdc29c",
-    "41ffc7da0f773aec",
-    "b2d8635ce9c88da3"
+    "b2d8635ce9c88da3",
+    "d108e2cfc5ad4eff"
   ],
   "x": 34,
-  "y": 19
+  "y": 19,
+  "w": 752,
+  "h": 122
 }
 
 module.exports = Node;

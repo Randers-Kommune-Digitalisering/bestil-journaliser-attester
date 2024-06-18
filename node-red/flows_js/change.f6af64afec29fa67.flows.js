@@ -9,8 +9,8 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "1",
-      "tot": "num"
+      "to": "error ~> $exists() ? 0 : 1",
+      "tot": "jsonata"
     },
     {
       "t": "set",
@@ -25,7 +25,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 760,
+  "x": 940,
   "y": 260,
   "wires": [
     [

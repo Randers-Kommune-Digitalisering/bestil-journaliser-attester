@@ -1,15 +1,14 @@
 const Node = {
-  "id": "310f915d8edfc229",
+  "id": "2efba45f63f3237b",
   "type": "switch",
-  "z": "78f25d49af5c6439",
+  "z": "812b69015d6703b6",
+  "g": "c027fd1f6d351463",
   "name": "",
-  "property": "config.currentRetryAttempt",
+  "property": "error",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "lte",
-      "v": "config.retryAttempts",
-      "vt": "msg"
+      "t": "nempty"
     },
     {
       "t": "else"
@@ -18,13 +17,15 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 630,
-  "y": 100,
+  "x": 290,
+  "y": 260,
   "wires": [
     [
-      "c32b4dfedaae3c54"
+      "e0f61bd5ff01bb1f"
     ],
-    []
+    [
+      "d8377030c58620ef"
+    ]
   ]
 }
 

@@ -11,12 +11,10 @@ const Node = {
   "subject": "",
   "contentType": "text",
   "name": "",
-  "x": 730,
+  "x": 690,
   "y": 100,
   "wires": [
-    [
-      "41ffc7da0f773aec"
-    ]
+    []
   ]
 }
 
