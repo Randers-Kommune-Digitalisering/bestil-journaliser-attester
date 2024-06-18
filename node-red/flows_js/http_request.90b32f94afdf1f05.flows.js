@@ -7,7 +7,7 @@ const Node = {
   "method": "POST",
   "ret": "obj",
   "paytoqs": "ignore",
-  "url": "https://sbsysapitest.randers.dk/api/sag/search",
+  "url": "https://sbsysapi.randers.dk/api/sag/search",
   "tls": "",
   "persist": false,
   "proxy": "",
