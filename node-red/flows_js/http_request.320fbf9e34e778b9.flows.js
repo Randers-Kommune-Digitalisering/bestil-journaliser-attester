@@ -7,7 +7,7 @@ const Node = {
   "method": "POST",
   "ret": "obj",
   "paytoqs": "ignore",
-  "url": "https://sbsip-web-test01.randers.dk:8543/auth/realms/sbsip/protocol/openid-connect/token",
+  "url": "",
   "tls": "",
   "persist": false,
   "proxy": "",

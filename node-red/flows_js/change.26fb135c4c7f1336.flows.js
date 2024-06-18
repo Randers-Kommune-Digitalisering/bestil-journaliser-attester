@@ -66,6 +66,13 @@ const Node = {
       "pt": "msg",
       "to": "{\t    \"username\": sbsip.user,\t    \"password\": sbsip.pass,\t    \"grant_type\": sbsip.granttype,\t    \"client_id\": sbsip.client,\t    \"client_secret\": sbsip.secret\t}",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "msg",
+      "to": "sbsip.url & \"/auth/realms/sbsip/protocol/openid-connect/token\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",

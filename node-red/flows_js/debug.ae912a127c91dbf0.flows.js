@@ -5,14 +5,14 @@ const Node = {
   "g": "70f0dd8ceb56e8a4",
   "name": "SBSIP Auth",
   "active": true,
-  "tosidebar": true,
-  "console": true,
+  "tosidebar": false,
+  "console": false,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 700,
+  "x": 690,
   "y": 1580,
   "wires": []
 }
