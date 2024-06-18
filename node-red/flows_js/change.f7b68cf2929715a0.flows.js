@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "'https://sbsysapi.randers.dk/api/sag/'\t& sagsId & '/delforloeb'",
+      "to": "sbsys.url\t& '/api/sag/'\t& sagsId\t& '/delforloeb'",
       "tot": "jsonata"
     }
   ],

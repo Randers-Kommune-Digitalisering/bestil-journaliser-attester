@@ -11,6 +11,27 @@ const Node = {
       "pt": "msg",
       "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": rekvisitus\t    },\t    \"SagsTyper\": [\t        {\t            \"Navn\": \"PersonaleSag\"\t        }\t    ]\t}",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "sbsys",
+      "pt": "msg",
+      "to": "{}",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "sbsys.url",
+      "pt": "msg",
+      "to": "SBSYS_URL",
+      "tot": "env"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "msg",
+      "to": "sbsys.url & \"/api/sag/search\"",
+      "tot": "str"
     }
   ],
   "action": "",

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "1e1a34f69be9ca8e",
+  "id": "7fd7f419f401469c",
   "type": "change",
   "z": "8de8949c7710fbab",
   "g": "b54dd860c113d0d4",
@@ -65,6 +65,13 @@ const Node = {
       "p": "payload",
       "pt": "msg",
       "to": "{\t    \"username\": sbsip.user,\t    \"password\": sbsip.pass,\t    \"grant_type\": sbsip.granttype,\t    \"client_id\": sbsip.client,\t    \"client_secret\": sbsip.secret\t}",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "msg",
+      "to": "sbsip.url & \"/auth/realms/sbsip/protocol/openid-connect/token\"",
       "tot": "jsonata"
     }
   ],

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "efae447e3bd73222",
+  "id": "2a7a4d16396a492b",
   "type": "change",
   "z": "8de8949c7710fbab",
   "g": "b54dd860c113d0d4",
@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "'https://sbsysapi.randers.dk/api/sag/'\t& sagsId & '/delforloeb'",
+      "to": "sbsys.url\t& '/api/sag/'\t& sagsId\t& '/delforloeb'",
       "tot": "jsonata"
     }
   ],

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "24eda956a0a26c5d",
+  "id": "492e201f4a837a17",
   "type": "change",
   "z": "8de8949c7710fbab",
   "g": "b54dd860c113d0d4",
@@ -11,6 +11,27 @@ const Node = {
       "pt": "msg",
       "to": "{\t    \"PrimaerPerson\": {\t        \"CprNummer\": rekvisitus\t    },\t    \"SagsTyper\": [\t        {\t            \"Navn\": \"PersonaleSag\"\t        }\t    ]\t}",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "sbsys",
+      "pt": "msg",
+      "to": "{}",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "sbsys.url",
+      "pt": "msg",
+      "to": "SBSYS_URL",
+      "tot": "env"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "msg",
+      "to": "sbsys.url & \"/api/sag/search\"",
+      "tot": "str"
     }
   ],
   "action": "",
