@@ -31,7 +31,7 @@ const Node = {
       "p": "url",
       "pt": "msg",
       "to": "sbsys.url & \"/api/sag/search\"",
-      "tot": "str"
+      "tot": "jsonata"
     }
   ],
   "action": "",
