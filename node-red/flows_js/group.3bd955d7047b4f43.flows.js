@@ -1,7 +1,7 @@
 const Node = {
-  "id": "a8e724864b221278",
+  "id": "3bd955d7047b4f43",
   "type": "group",
-  "z": "c715449c21b1a61f",
+  "z": "43d6b9b519cc6615",
   "name": "Metric: job_complete, job_duration_s",
   "style": {
     "stroke": "none",
@@ -10,14 +10,14 @@ const Node = {
     "label": true
   },
   "nodes": [
-    "a235bddc640cfd8d",
-    "fc3b07fa23296d97",
-    "19f8546f681e927e",
-    "2b2c5c30237d58de",
-    "ed482cc4717d37d7"
+    "c97cfe30f4c7dc24",
+    "230aa3bcdd8360e5",
+    "53bcbbaca27af5ed",
+    "15b2db9422a7db10",
+    "51e88ee4c4bd87b6"
   ],
-  "x": 914,
-  "y": 1539,
+  "x": 994,
+  "y": 519,
   "w": 362,
   "h": 122
 }

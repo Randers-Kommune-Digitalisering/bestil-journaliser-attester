@@ -1,20 +1,23 @@
 const Node = {
-  "id": "b8ead42179cce6e1",
+  "id": "432969e430ed5a83",
   "type": "change",
   "z": "43d6b9b519cc6615",
-  "name": "set msg.tablename",
+  "g": "451bfd75a97b1db5",
+  "name": "Set metric job_started",
   "rules": [
     {
       "t": "set",
-      "p": "tablename",
+      "p": "job_name",
       "pt": "msg",
-      "to": "roller",
+      "to": "sd_download",
       "tot": "str"
     },
     {
-      "t": "delete",
-      "p": "error",
-      "pt": "msg"
+      "t": "set",
+      "p": "job_started",
+      "pt": "flow",
+      "to": "",
+      "tot": "date"
     }
   ],
   "action": "",
@@ -22,11 +25,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 270,
-  "y": 580,
+  "x": 360,
+  "y": 120,
   "wires": [
     [
-      "35b3745ce40e7de4"
+      "509c897e0a2d5173"
     ]
   ]
 }
