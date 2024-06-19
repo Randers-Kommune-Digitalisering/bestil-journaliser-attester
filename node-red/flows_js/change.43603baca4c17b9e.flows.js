@@ -20,7 +20,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "description",
+      "p": "text",
       "pt": "msg",
       "to": "mailbody",
       "tot": "msg"
