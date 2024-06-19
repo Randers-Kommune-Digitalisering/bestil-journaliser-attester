@@ -24,7 +24,8 @@ const Node = {
       "p": "payload",
       "pt": "msg",
       "to": "body",
-      "tot": "msg"
+      "tot": "msg",
+      "dc": true
     }
   ],
   "action": "",
@@ -36,7 +37,8 @@ const Node = {
   "y": 100,
   "wires": [
     [
-      "d16cfa80317185c5"
+      "d16cfa80317185c5",
+      "6bcba448a1147f48"
     ]
   ]
 }
