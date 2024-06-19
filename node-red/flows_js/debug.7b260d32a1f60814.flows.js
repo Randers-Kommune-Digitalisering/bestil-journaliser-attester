@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"payload\": payload,\t    \"request\": req\t}",
+  "complete": "{\t    \"payload\": payload,\t    \"headers\": req.headers\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
