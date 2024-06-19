@@ -1,8 +1,8 @@
 const Node = {
-  "id": "44a8dba1b85a095b",
+  "id": "1e078f150926a7ed",
   "type": "file in",
   "z": "812b69015d6703b6",
-  "g": "4faa8cefca4c99e9",
+  "g": "cf5fc001c060884c",
   "name": "",
   "filename": "filename",
   "filenameType": "msg",
@@ -11,11 +11,11 @@ const Node = {
   "sendError": false,
   "encoding": "none",
   "allProps": false,
-  "x": 1240,
-  "y": 680,
+  "x": 380,
+  "y": 60,
   "wires": [
     [
-      "32ccc814026d8e07"
+      "59df13c90a39216b"
     ]
   ]
 }

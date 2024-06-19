@@ -1,9 +1,9 @@
 const Node = {
-  "id": "64f9e9e1df775542",
+  "id": "23100f679cf70dfb",
   "type": "switch",
   "z": "812b69015d6703b6",
-  "g": "4faa8cefca4c99e9",
-  "name": "",
+  "g": "cf5fc001c060884c",
+  "name": "Attachment?",
   "property": "filename",
   "propertyType": "msg",
   "rules": [
@@ -17,14 +17,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 1070,
-  "y": 700,
+  "x": 190,
+  "y": 80,
   "wires": [
     [
-      "44a8dba1b85a095b"
+      "1e078f150926a7ed"
     ],
     [
-      "1d535a73534947c9"
+      "d25a04fab1cd4d7a"
     ]
   ]
 }

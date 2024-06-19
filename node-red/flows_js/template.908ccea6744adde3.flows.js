@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "7aebfedb0f520e44",
   "name": "Tekst",
-  "field": "description",
+  "field": "body",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
@@ -16,7 +16,7 @@ const Node = {
     [
       "a756faa2e4149fca",
       "9c644f8443abd95d",
-      "3ce9ab77e2807013"
+      "c67d83041b426bb9"
     ]
   ]
 }

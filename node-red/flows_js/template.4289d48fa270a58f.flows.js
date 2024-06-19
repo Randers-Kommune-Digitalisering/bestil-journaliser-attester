@@ -4,7 +4,7 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "4faa8cefca4c99e9",
   "name": "Afvist",
-  "field": "description",
+  "field": "body",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
@@ -14,7 +14,7 @@ const Node = {
   "y": 740,
   "wires": [
     [
-      "64f9e9e1df775542"
+      "32ccc814026d8e07"
     ]
   ]
 }

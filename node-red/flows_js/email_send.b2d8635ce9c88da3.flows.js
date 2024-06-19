@@ -9,9 +9,9 @@ const Node = {
   "cc": "",
   "bcc": "",
   "subject": "",
-  "contentType": "text",
+  "contentType": "html",
   "name": "",
-  "x": 690,
+  "x": 1070,
   "y": 100,
   "wires": [
     []

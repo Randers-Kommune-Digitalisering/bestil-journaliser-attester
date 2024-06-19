@@ -10,7 +10,7 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 190,
+  "x": 630,
   "y": 60,
   "wires": [
     [
@@ -22,32 +22,15 @@ const Node = {
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   const newMsg = {
   
-      "payload": msg.payload,
-      "filename": msg.filename,
+      "body": Buffer.from(msg.body),
       "to": msg.to,
       "topic": msg.topic,
-      "plaintext": msg.plaintext,
-      "description": msg.description
-  
+      "filedata": msg.filedata,
+      "filename": msg.filename
   }
   
   msg = newMsg;
   return msg;
-  
-  /*
-  const _msg = JSON.parse( JSON.stringify( msg ) );
-  
-  msg = {};
-  
-  msg.to = _msg.to;
-  msg.topic = _msg.topic;
-  
-  msg.payload = payload;
-  msg.plaintext = _msg.plaintext;
-  msg.description = _msg.description;
-  
-  msg.filename = _msg.filename;
-  */
 }
 
 module.exports = Node;
