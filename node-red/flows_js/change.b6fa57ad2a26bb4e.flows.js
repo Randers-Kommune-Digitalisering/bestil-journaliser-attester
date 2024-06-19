@@ -19,6 +19,13 @@ const Node = {
       "tot": "msg"
     },
     {
+      "t": "set",
+      "p": "originalFilename",
+      "pt": "msg",
+      "to": "attachments[0].fileName",
+      "tot": "msg"
+    },
+    {
       "t": "delete",
       "p": "attachments",
       "pt": "msg"
