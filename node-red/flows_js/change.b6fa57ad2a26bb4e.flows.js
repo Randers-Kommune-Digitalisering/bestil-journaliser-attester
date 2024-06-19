@@ -6,6 +6,13 @@ const Node = {
   "rules": [
     {
       "t": "move",
+      "p": "payload",
+      "pt": "msg",
+      "to": "temp",
+      "tot": "msg"
+    },
+    {
+      "t": "move",
       "p": "attachments[0].content",
       "pt": "msg",
       "to": "payload",

@@ -22,7 +22,7 @@ const Node = {
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   const newMsg = {
   
-      "body": Buffer.from(msg.text.toString()),
+      "text": Buffer.from(msg.text.toString()),
       "to": msg.to,
       "topic": msg.topic,
       "filedata": msg.filedata,

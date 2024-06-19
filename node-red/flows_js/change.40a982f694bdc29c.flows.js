@@ -20,12 +20,11 @@ const Node = {
       "tot": "jsonata"
     },
     {
-      "t": "set",
-      "p": "payload",
+      "t": "move",
+      "p": "text",
       "pt": "msg",
-      "to": "body",
-      "tot": "msg",
-      "dc": true
+      "to": "payload",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -38,7 +37,8 @@ const Node = {
   "wires": [
     [
       "d16cfa80317185c5",
-      "6bcba448a1147f48"
+      "074b5c36544f29c4",
+      "b5b59fa8be49f612"
     ]
   ]
 }

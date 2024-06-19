@@ -6,7 +6,7 @@ const Node = {
   "name": "DB Update",
   "info": "",
   "x": 1240,
-  "y": 520,
+  "y": 540,
   "wires": []
 }
 

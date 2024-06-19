@@ -22,8 +22,8 @@ const Node = {
       "t": "set",
       "p": "text",
       "pt": "msg",
-      "to": "mailbody",
-      "tot": "msg"
+      "to": "html ~> $exists() ? html : payload",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -32,7 +32,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 200,
-  "y": 1280,
+  "y": 1300,
   "wires": [
     [
       "1bc301b2666dea69",

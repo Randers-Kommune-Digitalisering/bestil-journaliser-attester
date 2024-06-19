@@ -1,18 +1,18 @@
 const Node = {
-  "id": "0669dd4001cb60a8",
+  "id": "b5b59fa8be49f612",
   "type": "debug",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "name": "Text",
+  "name": "Mail debug",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "text",
-  "targetType": "msg",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 390,
+  "x": 620,
   "y": 140,
   "wires": []
 }

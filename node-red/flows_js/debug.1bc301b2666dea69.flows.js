@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "812b69015d6703b6",
   "g": "c162852c69a50777",
-  "name": "FEJL",
+  "name": "Advarsel",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -12,8 +12,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 400,
-  "y": 1320,
+  "x": 390,
+  "y": 1340,
   "wires": []
 }
 

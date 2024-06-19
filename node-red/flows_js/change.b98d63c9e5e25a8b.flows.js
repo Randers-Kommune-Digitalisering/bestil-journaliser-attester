@@ -8,8 +8,9 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{}",
-      "tot": "json"
+      "to": "temp",
+      "tot": "msg",
+      "dc": true
     }
   ],
   "action": "",
