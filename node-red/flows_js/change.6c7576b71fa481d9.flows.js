@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"op\": \"inc\",\t    \"val\": 1,\t    \"labels\": {\t        \"target\": target,\t        \"status_code\": status_code ~> $exists() ? status_code : statusCode\t    }\t}",
+      "to": "{\t    \"op\": \"inc\",\t    \"val\": 1,\t    \"labels\": {\t        \"target\": target,\t        \"status\": status ~> $exists() ? status : statusCode\t    }\t}",
       "tot": "jsonata"
     }
   ],
