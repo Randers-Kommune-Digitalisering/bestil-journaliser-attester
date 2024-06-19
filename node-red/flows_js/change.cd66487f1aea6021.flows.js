@@ -1,16 +1,16 @@
 const Node = {
-  "id": "b98d63c9e5e25a8b",
+  "id": "cd66487f1aea6021",
   "type": "change",
-  "z": "797d31130fc2a555",
-  "name": "Slet payload",
+  "z": "90c6b0b502e346fa",
+  "g": "38c43765fdc8e29d",
+  "name": "Sæt payload",
   "rules": [
     {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "temp",
-      "tot": "msg",
-      "dc": true
+      "to": "attachments[0].content",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,10 +18,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 850,
-  "y": 120,
+  "x": 470,
+  "y": 700,
   "wires": [
-    []
+    [
+      "8aba1f65ca56980f"
+    ]
   ]
 }
 

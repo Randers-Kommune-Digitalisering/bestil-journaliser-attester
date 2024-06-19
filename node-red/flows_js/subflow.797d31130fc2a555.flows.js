@@ -17,15 +17,15 @@ const Node = {
   ],
   "out": [
     {
-      "x": 1000,
-      "y": 80,
+      "x": 920,
+      "y": 60,
       "wires": [
         {
-          "id": "b98d63c9e5e25a8b",
+          "id": "b91ccf931f5907cb",
           "port": 0
         },
         {
-          "id": "b91ccf931f5907cb",
+          "id": "b6fa57ad2a26bb4e",
           "port": 0
         }
       ]

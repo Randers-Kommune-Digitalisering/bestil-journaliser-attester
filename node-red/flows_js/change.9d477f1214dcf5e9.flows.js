@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "hasAttachment",
       "pt": "msg",
-      "to": "attachments[0].content ~> $exists()",
+      "to": "attachments.content ~> $exists()",
       "tot": "jsonata"
     }
   ],

@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic,\t    \"attachments\": filedata ~> $exists() ? \t        [{\t            \"filename\": originalFilename,\t            \"content\": filedata\t        }]\t}",
+      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic,\t    \"attachments\": attachments\t}",
       "tot": "jsonata"
     },
     {
@@ -32,7 +32,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 630,
+  "x": 230,
   "y": 100,
   "wires": [
     [

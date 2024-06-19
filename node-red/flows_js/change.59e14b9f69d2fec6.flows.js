@@ -2,6 +2,7 @@ const Node = {
   "id": "59e14b9f69d2fec6",
   "type": "change",
   "z": "797d31130fc2a555",
+  "d": true,
   "name": "Generér filnavn",
   "rules": [
     {
@@ -17,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 460,
-  "y": 120,
+  "x": 440,
+  "y": 160,
   "wires": [
     [
       "1e7ebc746cf38773"

@@ -11,7 +11,7 @@ const Node = {
   "subject": "",
   "contentType": "html",
   "name": "",
-  "x": 1070,
+  "x": 690,
   "y": 100,
   "wires": [
     []

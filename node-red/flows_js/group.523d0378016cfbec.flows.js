@@ -2,7 +2,7 @@ const Node = {
   "id": "523d0378016cfbec",
   "type": "group",
   "z": "812b69015d6703b6",
-  "name": "",
+  "name": "Metric: is_available (mail)",
   "style": {
     "stroke": "none",
     "fill": "#dbcbe7",
@@ -13,8 +13,8 @@ const Node = {
     "383eba8fd5fb27ef",
     "f6af64afec29fa67"
   ],
-  "x": 744,
-  "y": 259,
+  "x": 634,
+  "y": 279,
   "w": 322,
   "h": 82
 }

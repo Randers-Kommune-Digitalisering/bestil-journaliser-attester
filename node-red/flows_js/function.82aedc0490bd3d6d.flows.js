@@ -10,7 +10,7 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 630,
+  "x": 230,
   "y": 60,
   "wires": [
     [
@@ -25,8 +25,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
       "text": Buffer.from(msg.text.toString()),
       "to": msg.to,
       "topic": msg.topic,
-      "filedata": msg.filedata,
-      "filename": msg.filename
+      "attachments": msg.attachments
   }
   
   msg = newMsg;
