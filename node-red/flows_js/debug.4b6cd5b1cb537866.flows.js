@@ -1,19 +1,18 @@
 const Node = {
-  "id": "6e07bc1123d7a2b6",
+  "id": "4b6cd5b1cb537866",
   "type": "debug",
-  "z": "c715449c21b1a61f",
-  "g": "3c5129bfe50adfad",
-  "name": "Response",
-  "active": false,
+  "z": "812b69015d6703b6",
+  "name": "text",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
+  "complete": "text",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 920,
-  "y": 780,
+  "x": 1300,
+  "y": 1380,
   "wires": []
 }
 
