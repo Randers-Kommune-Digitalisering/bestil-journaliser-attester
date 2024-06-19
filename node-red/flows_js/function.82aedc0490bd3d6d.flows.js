@@ -21,7 +21,7 @@ const Node = {
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   var text = msg.text ?? "";
-  text = text.replace("\n", "<br />");
+  text = text.replace("\r\n", "<br>").replace("\n", "<br>");
   text = Buffer.from(text);
   
   const newMsg = {
