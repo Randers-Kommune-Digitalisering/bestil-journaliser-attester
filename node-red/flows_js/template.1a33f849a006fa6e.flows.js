@@ -4,18 +4,17 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "958f6aed62b11b69",
   "name": "Nej",
-  "field": "description",
+  "field": "text",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 710,
-  "y": 1320,
+  "y": 1140,
   "wires": [
     [
-      "2d0c992bfe6f3fbd",
-      "5d7e76ca05296ebb"
+      "e0a4d2e8e5cc1198"
     ]
   ]
 }

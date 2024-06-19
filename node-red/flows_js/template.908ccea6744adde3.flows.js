@@ -4,19 +4,19 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "7aebfedb0f520e44",
   "name": "Tekst",
-  "field": "description",
+  "field": "text",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 550,
-  "y": 900,
+  "y": 920,
   "wires": [
     [
       "a756faa2e4149fca",
       "9c644f8443abd95d",
-      "3ce9ab77e2807013"
+      "c67d83041b426bb9"
     ]
   ]
 }

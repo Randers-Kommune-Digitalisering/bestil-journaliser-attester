@@ -16,8 +16,15 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic\t}",
+      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic,\t    \"attachments\": attachments\t}",
       "tot": "jsonata"
+    },
+    {
+      "t": "move",
+      "p": "text",
+      "pt": "msg",
+      "to": "payload",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -25,7 +32,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 190,
+  "x": 230,
   "y": 100,
   "wires": [
     [

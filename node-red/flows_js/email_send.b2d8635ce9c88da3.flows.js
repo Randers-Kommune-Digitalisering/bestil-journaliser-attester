@@ -9,7 +9,7 @@ const Node = {
   "cc": "",
   "bcc": "",
   "subject": "",
-  "contentType": "text",
+  "contentType": "html",
   "name": "",
   "x": 690,
   "y": 100,

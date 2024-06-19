@@ -6,7 +6,7 @@ const Node = {
   "name": "Advisering - Rekvisition afvist af sagsbehandler",
   "info": "",
   "x": 240,
-  "y": 840,
+  "y": 860,
   "wires": []
 }
 

@@ -7,13 +7,6 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "mailbody",
-      "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
-    },
-    {
-      "t": "set",
       "p": "error",
       "pt": "msg",
       "to": "{\"error\":\"Ukendt afsender\",\"message\":\"Der blev modtaget en mail, men afsender er ikke hovedpostkasse.\"}",

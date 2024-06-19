@@ -7,13 +7,6 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "mailbody",
-      "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
-    },
-    {
-      "t": "set",
       "p": "error",
       "pt": "msg",
       "to": "{\"error\":\"Ingen attest vedhæftet\",\"message\":\"Der blev modtaget en mail som ligner en attestrekvisition, men der er ingen vedhæftet attest.\"}",

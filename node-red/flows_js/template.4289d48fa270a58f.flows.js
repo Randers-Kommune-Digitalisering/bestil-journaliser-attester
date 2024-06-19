@@ -4,17 +4,17 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "4faa8cefca4c99e9",
   "name": "Afvist",
-  "field": "description",
+  "field": "text",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 890,
-  "y": 740,
+  "y": 760,
   "wires": [
     [
-      "64f9e9e1df775542"
+      "32ccc814026d8e07"
     ]
   ]
 }

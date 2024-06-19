@@ -1,35 +1,34 @@
 const Node = {
-  "id": "1c99994e4b91a792",
+  "id": "8845cb06b0eebc7f",
   "type": "change",
-  "z": "812b69015d6703b6",
-  "g": "c162852c69a50777",
-  "name": "Formatér HTML",
+  "z": "797d31130fc2a555",
+  "d": true,
+  "name": "Flyt PDF til payload",
   "rules": [
     {
-      "t": "set",
+      "t": "move",
       "p": "payload",
       "pt": "msg",
-      "to": "description",
+      "to": "temp",
+      "tot": "msg"
+    },
+    {
+      "t": "move",
+      "p": "attachments[0].content",
+      "pt": "msg",
+      "to": "payload",
       "tot": "msg"
     },
     {
       "t": "set",
-      "p": "plaintext",
+      "p": "originalFilename",
       "pt": "msg",
-      "to": "payload",
-      "tot": "msg",
-      "dc": true
-    },
-    {
-      "t": "set",
-      "p": "payload",
-      "pt": "msg",
-      "to": "payload ~> $replace(\"\\n\", \"<br>\")",
-      "tot": "jsonata"
+      "to": "attachments[0].filename",
+      "tot": "msg"
     },
     {
       "t": "delete",
-      "p": "description",
+      "p": "attachments",
       "pt": "msg"
     }
   ],
@@ -38,11 +37,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 600,
-  "y": 1120,
+  "x": 230,
+  "y": 160,
   "wires": [
     [
-      "5dec140724fb745d"
+      "59e14b9f69d2fec6"
     ]
   ]
 }

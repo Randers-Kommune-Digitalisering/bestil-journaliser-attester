@@ -20,10 +20,10 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "description",
+      "p": "text",
       "pt": "msg",
-      "to": "mailbody",
-      "tot": "msg"
+      "to": "html ~> $exists() ? html : payload",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -32,11 +32,11 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 200,
-  "y": 1100,
+  "y": 1300,
   "wires": [
     [
       "1bc301b2666dea69",
-      "7a230f0c71dff001"
+      "5dec140724fb745d"
     ]
   ]
 }

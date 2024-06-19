@@ -4,14 +4,14 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "5759209171ce76be",
   "name": "Ja",
-  "field": "payload",
+  "field": "text",
   "fieldType": "msg",
   "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 890,
-  "y": 480,
+  "y": 500,
   "wires": [
     [
       "b8eae3b4cf749d45"
