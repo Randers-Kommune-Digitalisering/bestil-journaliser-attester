@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "\"https://graph.microsoft.com/v1.0/users/?$filter=onPremisesSamAccountName eq '\" & dqUser & \"'&$count=true&$select=mail\"",
+      "to": "\"https://graph.microsoft.com/v1.0/users/?$filter=onPremisesSamAccountName eq '\"\t& dqUser & \"'&$count=true&$select=mail\"",
       "tot": "jsonata"
     }
   ],
@@ -22,7 +22,8 @@ const Node = {
   "y": 820,
   "wires": [
     [
-      "ebf6d264b651d3e0"
+      "ebf6d264b651d3e0",
+      "3266c68369504fbe"
     ]
   ]
 }
