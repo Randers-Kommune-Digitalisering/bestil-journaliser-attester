@@ -2,7 +2,7 @@ const Node = {
   "id": "56fbf568c8e8602c",
   "type": "template",
   "z": "c715449c21b1a61f",
-  "g": "ef51f47c59ef9c19",
+  "g": "cd103be25bfed5cd",
   "name": "Request body",
   "field": "payload",
   "fieldType": "msg",

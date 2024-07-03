@@ -1,14 +1,13 @@
 const Node = {
-  "id": "ef51f47c59ef9c19",
+  "id": "cd103be25bfed5cd",
   "type": "group",
   "z": "c715449c21b1a61f",
   "name": "Join (rekvisitus navn)",
   "style": {
     "stroke": "none",
-    "stroke-opacity": "0.6",
-    "label": true,
     "fill": "#ffefbf",
-    "fill-opacity": "0.6"
+    "fill-opacity": "0.6",
+    "label": true
   },
   "nodes": [
     "34bae3c54808bd77",
@@ -20,15 +19,14 @@ const Node = {
     "fa1857186bec16c8",
     "cd6e278c6db17e25",
     "7cfeee8da8767d44",
+    "abc632d58c60654b",
     "4be4923f45545097",
-    "792620438e3bbd9d",
-    "d2aad99abc129d46",
-    "abc632d58c60654b"
+    "792620438e3bbd9d"
   ],
-  "x": 34,
-  "y": 934,
-  "w": 1012,
-  "h": 267
+  "x": 94,
+  "y": 959,
+  "w": 952,
+  "h": 242
 }
 
 module.exports = Node;
