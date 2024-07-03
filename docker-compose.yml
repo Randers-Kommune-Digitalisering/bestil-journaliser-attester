@@ -33,6 +33,9 @@ services:
       SFTP_URL: "sftp.randers.dk"
       SFTP_USER: ${SFTP_USER}
       SFTP_PASS: ${SFTP_PASS}
+
+      SD_USER: ${SD_USER}
+      SD_PASS: ${SD_PASS}
             
       # Miljøvariablen FLOWS fortæller Node-RED IDEet hvilket flow.json den skal åbne og gemme ændringer i ved deploy.
       FLOWS: "/data/flows.json"
