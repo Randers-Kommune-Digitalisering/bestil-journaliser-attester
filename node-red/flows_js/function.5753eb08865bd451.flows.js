@@ -8,12 +8,7 @@ const Node = {
   "noerr": 0,
   "initialize": "",
   "finalize": "",
-  "libs": [
-    {
-      "var": "btoa",
-      "module": "btoa"
-    }
-  ],
+  "libs": [],
   "x": 570,
   "y": 80,
   "wires": [
@@ -23,8 +18,11 @@ const Node = {
   ]
 }
 
-Node.func = async function (node, msg, RED, context, flow, global, env, util, btoa) {
-  msg.auth = btoa(msg.sdUser + ":" + msg.sdPass);
+Node.func = async function (node, msg, RED, context, flow, global, env, util) {
+  const encodeBase64 = (data) => {
+      return Buffer.from(data).toString('base64');
+  }
+  msg.auth = encodeBase64(msg.sdUser + ":" + msg.sdPass);
   return msg;
 }
 
