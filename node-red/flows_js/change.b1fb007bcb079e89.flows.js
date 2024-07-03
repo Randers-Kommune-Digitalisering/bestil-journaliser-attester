@@ -1,15 +1,15 @@
 const Node = {
-  "id": "5b03a5ab2ef7fdaa",
+  "id": "b1fb007bcb079e89",
   "type": "change",
   "z": "c715449c21b1a61f",
   "g": "cd103be25bfed5cd",
-  "name": "Headers",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "headers",
+      "p": "rekvisitus",
       "pt": "msg",
-      "to": "{    \"authorization\": \"Basic \" & auth,    \"content-type\": \"text/xml; charset=utf-8\",    \"soapaction\": \"GetPersonOperation\"}",
+      "to": "bestilling.rekvisitus",
       "tot": "jsonata"
     }
   ],
@@ -18,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 840,
-  "y": 1040,
+  "x": 210,
+  "y": 1020,
   "wires": [
     [
-      "4be4923f45545097"
+      "2569883ec4d671f1"
     ]
   ]
 }

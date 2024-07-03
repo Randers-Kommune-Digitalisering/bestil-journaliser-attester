@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "$millis() ~> $fromMillis(\"[D01].[M01].[Y0001]\")",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "rekvisitus",
+      "pt": "msg",
+      "to": "rekvisitus ~> $replace(\"-\", \"\")",
+      "tot": "jsonata"
     }
   ],
   "action": "",

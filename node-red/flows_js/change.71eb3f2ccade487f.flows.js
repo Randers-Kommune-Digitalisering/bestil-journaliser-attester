@@ -1,23 +1,16 @@
 const Node = {
-  "id": "cd6e278c6db17e25",
+  "id": "71eb3f2ccade487f",
   "type": "change",
   "z": "c715449c21b1a61f",
   "g": "cd103be25bfed5cd",
-  "name": "SD Auth",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "sdUser",
+      "p": "bestilling.rekvisitusNavn",
       "pt": "msg",
-      "to": "SD_USER",
-      "tot": "env"
-    },
-    {
-      "t": "set",
-      "p": "sdPass",
-      "pt": "msg",
-      "to": "SD_PASS",
-      "tot": "env"
+      "to": "rekvisitus.navn",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -25,11 +18,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
-  "y": 1040,
+  "x": 690,
+  "y": 1020,
   "wires": [
     [
-      "fa1857186bec16c8"
+      "b474f11560c328eb",
+      "886d10828d07d93a"
     ]
   ]
 }
