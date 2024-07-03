@@ -7,7 +7,7 @@ const Node = {
   "method": "POST",
   "ret": "txt",
   "paytoqs": "ignore",
-  "url": "https://service.sd.dk/sdws/services/GetPerson",
+  "url": "",
   "tls": "",
   "persist": false,
   "proxy": "",
@@ -19,7 +19,8 @@ const Node = {
   "y": 1160,
   "wires": [
     [
-      "a52d784ca62df12b"
+      "a52d784ca62df12b",
+      "b501b04420a45f7a"
     ]
   ]
 }

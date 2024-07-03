@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "$millis() ~> $fromMillis(\"[D01].[M01].[Y0001]\")",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "msg",
+      "to": "https://service.sd.dk/sdws/services/GetPerson",
+      "tot": "str"
     }
   ],
   "action": "",
