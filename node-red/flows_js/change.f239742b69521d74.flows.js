@@ -9,8 +9,8 @@ const Node = {
       "t": "set",
       "p": "cpr",
       "pt": "msg",
-      "to": "bestilling.rekvisitus",
-      "tot": "msg"
+      "to": "bestilling.rekvisitus ~> $replace(\"-\", \"\")",
+      "tot": "jsonata"
     },
     {
       "t": "set",
