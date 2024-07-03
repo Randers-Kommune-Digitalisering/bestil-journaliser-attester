@@ -11,7 +11,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 300,
-  "y": 1560,
+  "y": 1860,
   "wires": [
     [
       "e7338a1d27de82bd"
@@ -25,6 +25,7 @@ INSERT INTO bestillinger (
     rekvirentDQ,
     rekvirentEmail,
     cpr,
+    navn,
     attestType,
     attestSubType,
     erAfvist
@@ -35,6 +36,7 @@ VALUES
     "{{bestilling.rekvirentDQ}}",
     "{{bestilling.rekvirentEmail}}",
     "{{bestilling.rekvisitus}}",
+    "{{bestilling.rekvisitusNavn}}",
      {{bestilling.attestType}},
      {{bestilling.attestSubType}},
      {{erAfvist}}

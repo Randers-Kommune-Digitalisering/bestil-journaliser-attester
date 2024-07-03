@@ -2,7 +2,7 @@ const Node = {
   "id": "3c5129bfe50adfad",
   "type": "group",
   "z": "c715449c21b1a61f",
-  "name": "Join",
+  "name": "Join (rekvirent mail-adresse)",
   "style": {
     "stroke": "none",
     "stroke-opacity": "0.6",
