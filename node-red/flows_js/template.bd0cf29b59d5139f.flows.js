@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS {{tablename}} (
     rekvirentEmail VARCHAR(255),
 
     cpr VARCHAR (255),
+    navn VARCHAR (255),
     attestType SMALLINT,
     attestSubType SMALLINT,
 
