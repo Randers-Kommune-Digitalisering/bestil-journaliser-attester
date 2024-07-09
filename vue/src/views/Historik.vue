@@ -8,20 +8,23 @@
 
     // Get orders
 
+    const allOrders = ref([])
     const orders = ref([])
 
     fetch('/api/history/ordered')
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
+    .then(value => allOrders.value = value)
     .then(value => orders.value = value)
 
-    
 
+    const allOrdersFinished = ref([])
     const ordersFinished = ref([])
 
     fetch('/api/history/completed')
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
+    .then(value => allOrdersFinished.value = value)
     .then(value => ordersFinished.value = value)
 
     function returnOrderStatusColor(erAfvist)
@@ -30,6 +33,24 @@
             return "red"
         else 
             return ""
+    }
+
+    function searchOrders(keyword)
+    {
+        orders.value = searchList(allOrders.value, keyword)
+    }
+    function searchFinishedOrders(keyword)
+    {
+        ordersFinished.value = searchList(allOrdersFinished.value, keyword)
+    }
+
+    function searchList(list, keyword)
+    {
+        return list.findAll(x => x.rekvirentNavn.contains(keyword) ||
+                                 x.rekvirentDQ.contains(keyword) ||
+                                 x.rekvirentEmail.contains(keyword) ||
+                                 x.cpr.contains(keyword) ||
+                                 x.navn.contains(keyword) )
     }
 
 
