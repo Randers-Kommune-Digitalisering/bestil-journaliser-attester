@@ -10,6 +10,8 @@
 
     const allOrders = ref([])
     const orders = ref([])
+    const isSearchingOrders = ref(false)
+    const searchKeyword = ref("")
 
     fetch('/api/history/ordered')
     .then(response => response = response.json())
@@ -20,6 +22,8 @@
 
     const allOrdersFinished = ref([])
     const ordersFinished = ref([])
+    const isSearchingFinishedOrders = ref(false)
+    const searchFinishedKeyword = ref("")
 
     fetch('/api/history/completed')
     .then(response => response = response.json())
@@ -35,9 +39,22 @@
             return ""
     }
 
+    function toggleSearchOrders()
+    {
+        isSearchingOrders.value = !isSearchingOrders.value
+        if(!isSearchingOrders.value)
+            searchOrders("")
+    }
     function searchOrders(keyword)
     {
+        console.log("Searching for " + keyword)
         orders.value = searchList(allOrders.value, keyword)
+    }
+    function toggleSearchFinishedOrders()
+    {
+        isSearchingFinishedOrders.value = !isSearchingFinishedOrders.value
+        if(!isSearchingFinishedOrders.value)
+            searchFinishedOrders("")
     }
     function searchFinishedOrders(keyword)
     {
@@ -46,11 +63,13 @@
 
     function searchList(list, keyword)
     {
-        return list.findAll(x => x.rekvirentNavn.contains(keyword) ||
-                                 x.rekvirentDQ.contains(keyword) ||
-                                 x.rekvirentEmail.contains(keyword) ||
-                                 x.cpr.contains(keyword) ||
-                                 x.navn.contains(keyword) )
+        keyword = keyword.toLowerCase()
+        return list.filter(x => x.rekvirentNavn.toLowerCase().includes(keyword) ||
+                                x.rekvirentDQ.toLowerCase().includes(keyword) ||
+                                x.rekvirentEmail.toLowerCase().includes(keyword) ||
+                                x.cpr.includes(keyword) ||
+                                x.cpr.replace("-", "").includes(keyword) ||
+                                x.navn.toLowerCase().includes(keyword) )
     }
 
 
@@ -66,11 +85,21 @@
         </template>
         <template #heading>Afventer modtagelse</template>
 
+        <div class="float-right searchButtonDiv">
+            <button :class="isSearchingOrders ? 'gray' : ''" @click="toggleSearchOrders()">
+                {{ isSearchingOrders ? 'Luk søgning' : 'Søg i historik'}}</button>
+        </div>
+
         <span class="paragraph">Herunder kan du se bestillinger som er bestilt, men afventer modtagelse fra Politiet.</span>
 
         <div class="paragraph">
             <table>
                 <thead>
+                    <tr v-if="isSearchingOrders">
+                        <th colspan="5">
+                            <input type="text" placeholder="Søg efter igangværende bestilling" v-model="searchKeyword" :onchange="searchOrders(searchKeyword)" />
+                        </th>
+                    </tr>
                     <tr>
                         <th>Dato <div class="text-small">Anmodet</div></th>
                         <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
@@ -103,11 +132,21 @@
         </template>
         <template #heading>Færdigbehandlet</template>
 
+        <div class="float-right searchButtonDiv">
+            <button :class="isSearchingFinishedOrders ? 'gray' : ''" @click="toggleSearchFinishedOrders()">
+                {{ isSearchingFinishedOrders ? 'Luk søgning' : 'Søg i historik'}}</button>
+        </div>
+
         <span class="paragraph">Herunder kan du se de seneste 10 bestillinger som er færdigbehandlet.</span>
 
         <div class="paragraph">
             <table>
                 <thead>
+                    <tr v-if="isSearchingFinishedOrders">
+                        <th colspan="5">
+                            <input type="text" placeholder="Søg efter færdigbehandlet bestilling" v-model="searchFinishedKeyword" :onchange="searchFinishedOrders(searchFinishedKeyword)" />
+                        </th>
+                    </tr>
                     <tr>
                         <th>Dato <div class="text-small">Behandlet</div></th>
                         <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
@@ -177,5 +216,17 @@
     .displaynone
     {
         display: none;
+    }
+    button.gray
+    {
+        background-color: var(--color-border-dark);
+    }
+    button.gray:hover
+    {
+        background-color: var(--color-border);
+    }
+    .searchButtonDiv 
+    {
+        transform: translateY(-0.8rem);
     }
 </style>
