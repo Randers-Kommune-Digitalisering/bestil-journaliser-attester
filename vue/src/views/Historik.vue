@@ -157,7 +157,7 @@
                 </thead>
                 
                 <tr v-if="ordersFinished.length > 0" v-for="order in ordersFinished">
-                    <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
+                    <td>{{ dayjs(order.adviseringAfsendt).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
                     <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}

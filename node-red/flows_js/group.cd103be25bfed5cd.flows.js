@@ -10,8 +10,6 @@ const Node = {
     "label": true
   },
   "nodes": [
-    "4be4923f45545097",
-    "792620438e3bbd9d",
     "2569883ec4d671f1",
     "71eb3f2ccade487f",
     "b1fb007bcb079e89",

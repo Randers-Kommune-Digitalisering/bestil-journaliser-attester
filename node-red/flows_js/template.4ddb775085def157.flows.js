@@ -31,7 +31,6 @@ AND erAfvist = false
 
 GROUP BY
     attestType, attestSubType
-
 `
 
 module.exports = Node;

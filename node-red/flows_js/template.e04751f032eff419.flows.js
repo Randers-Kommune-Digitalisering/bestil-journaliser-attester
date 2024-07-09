@@ -19,9 +19,17 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger
-WHERE erAfvist = 1
-OR erAttestModtaget = 1
+SELECT
+    *
+FROM
+    bestillinger
+WHERE
+    erAfvist = 1
+OR  erAttestModtaget = 1
+
+ORDER BY
+adviseringAfsendt DESC, attestType, attestSubType, rekvirentDQ
+
 LIMIT 10
 `
 
