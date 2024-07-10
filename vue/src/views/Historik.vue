@@ -29,7 +29,7 @@
     .then(response => response = response.json())
     //.then(value => value = filterByType(value))
     .then(value => allOrdersFinished.value = value)
-    .then(value => ordersFinished.value = value)
+    .then(value => ordersFinished.value = value.slice(0, 10))
 
     function returnOrderStatusColor(erAfvist)
     {
@@ -58,7 +58,10 @@
     }
     function searchFinishedOrders(keyword)
     {
-        ordersFinished.value = searchList(allOrdersFinished.value, keyword)
+        if(keyword == "")
+            ordersFinished.value = allOrdersFinished.value.slice(0, 10)
+        else
+            ordersFinished.value = searchList(allOrdersFinished.value, keyword)
     }
 
     function searchList(list, keyword)

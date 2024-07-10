@@ -30,7 +30,7 @@ OR  erAttestModtaget = 1
 ORDER BY
 adviseringAfsendt DESC, attestType, attestSubType, rekvirentDQ
 
-LIMIT 10
+LIMIT 100
 `
 
 module.exports = Node;
