@@ -14,7 +14,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "status",
+      "p": "error_type",
       "pt": "msg",
       "to": "error ~> $exists() ? \"dependency\" : \"other\"",
       "tot": "jsonata"
