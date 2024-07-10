@@ -28,7 +28,7 @@ WHERE
 OR  erAttestModtaget = 1
 
 ORDER BY
-adviseringAfsendt DESC, attestType, attestSubType, rekvirentDQ
+adviseringAfsendt DESC, afvist DESC, journaliseret DESC, attestType, attestSubType, rekvirentDQ
 
 LIMIT 100
 `
