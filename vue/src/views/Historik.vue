@@ -45,24 +45,22 @@
         if(!isSearchingOrders.value)
             searchOrders("")
     }
-    function searchOrders(keyword)
-    {
-        console.log("Searching for " + keyword)
-        orders.value = searchList(allOrders.value, keyword)
-    }
     function toggleSearchFinishedOrders()
     {
         isSearchingFinishedOrders.value = !isSearchingFinishedOrders.value
         if(!isSearchingFinishedOrders.value)
             searchFinishedOrders("")
     }
-    function searchFinishedOrders(keyword)
-    {
+    
+    const searchOrders = (keyword) => orders.value = searchList(orders.value, keyword)
+    
+    const searchFinishedOrders = (keyword) => {
         if(keyword == "")
             ordersFinished.value = allOrdersFinished.value.slice(0, 10)
         else
             ordersFinished.value = searchList(allOrdersFinished.value, keyword)
     }
+
 
     function searchList(list, keyword)
     {
@@ -74,6 +72,40 @@
                                 x.cpr.replace("-", "").includes(keyword) ||
                                 x.navn.toLowerCase().includes(keyword) )
     }
+
+
+    const currentSortColumn = ref("bestillingModtaget")
+    const currentSortDesc = ref(true)
+
+    function sortList(list, col)
+    {
+        console.log("Sorting list: ")
+        console.log(list)
+
+        if(col == currentSortColumn.value)
+            currentSortDesc.value = !currentSortDesc.value
+        else
+        {
+            currentSortColumn.value = col
+            currentSortDesc.value = true
+        }
+        
+        console.log("Sorting by " + col + " " + (currentSortDesc.value ? "desc" : "asc"))
+
+        return list.sort((a, b) =>
+        {
+            if(a[col] < b[col])
+                return currentSortDesc.value ? -1 : 1
+
+            if(a[col] > b[col])
+                return currentSortDesc.value ? 1 : -1
+
+            return 0
+        })
+    }
+
+    const sortOrders = (col) => orders.value = sortList(orders.value, col)
+    const sortFinishedOrders = (col) => ordersFinished.value = sortList(ordersFinished.value, col)
 
 
 </script>
@@ -104,7 +136,7 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>Dato <div class="text-small">Anmodet</div></th>
+                        <th @click="orders = sortOrders('bestillingModtaget')">Dato <div class="text-small">Anmodet</div></th>
                         <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
                         <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
                         <th>Attest <div class="text-small">Type</div></th>
@@ -151,7 +183,7 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>Dato <div class="text-small">Behandlet</div></th>
+                        <th @click="sortFinishedOrders('behandlet')">Dato <div class="text-small">Behandlet</div></th>
                         <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
                         <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
                         <th>Attest <div class="text-small">Type</div></th>
@@ -160,7 +192,7 @@
                 </thead>
                 
                 <tr v-if="ordersFinished.length > 0" v-for="order in ordersFinished">
-                    <td>{{ dayjs(order.erAfvist == 1 ? order.afvist : order.journaliseret).format("DD-MM-YYYY") }}</td>
+                    <td>{{ dayjs(order.behandlet).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
                     <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}

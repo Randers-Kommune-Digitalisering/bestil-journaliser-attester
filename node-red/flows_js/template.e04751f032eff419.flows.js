@@ -20,7 +20,12 @@ const Node = {
 
 Node.template = `
 SELECT
-    *
+    *,
+    CASE 
+        WHEN erAfvist = 1 THEN afvist
+        ELSE journaliseret
+    END AS behandlet
+
 FROM
     bestillinger
 WHERE
