@@ -142,10 +142,10 @@
                     </tr>
                     <tr>
                         <th @click="orders = sortOrders('bestillingModtaget')">Dato <div class="text-small">Anmodet</div></th>
-                        <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
-                        <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
-                        <th>Attest <div class="text-small">Type</div></th>
-                        <th>Dato <div class="text-small">Bestilt</div></th>
+                        <th @click="orders = sortOrders('rekvirentNavn')">Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
+                        <th @click="orders = sortOrders('cpr')">Rekvisitus <div class="text-small">CPR-nummer</div></th>
+                        <th @click="orders = sortOrders('attestType')">Attest <div class="text-small">Type</div></th>
+                        <th @click="orders = sortOrders('bestiltHosPoliti')">Dato <div class="text-small">Bestilt</div></th>
                     </tr>
                 </thead>
                 
@@ -189,10 +189,10 @@
                     </tr>
                     <tr>
                         <th @click="sortFinishedOrders('behandlet')">Dato <div class="text-small">Behandlet</div></th>
-                        <th>Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
-                        <th>Rekvisitus <div class="text-small">CPR-nummer</div></th>
-                        <th>Attest <div class="text-small">Type</div></th>
-                        <th>Status</th>
+                        <th @click="sortFinishedOrders('rekvirentNavn')">Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
+                        <th @click="sortFinishedOrders('cpr')">Rekvisitus <div class="text-small">CPR-nummer</div></th>
+                        <th @click="sortFinishedOrders('attestType')">Attest <div class="text-small">Type</div></th>
+                        <th @click="sortFinishedOrders('erAfvist')">Status</th>
                     </tr>
                 </thead>
                 
