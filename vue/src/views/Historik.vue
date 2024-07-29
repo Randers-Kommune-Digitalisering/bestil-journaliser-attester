@@ -52,7 +52,12 @@
             searchFinishedOrders("")
     }
     
-    const searchOrders = (keyword) => orders.value = searchList(orders.value, keyword)
+    const searchOrders = (keyword) => {
+        if(keyword == "")
+            orders.value = allOrders.value.slice(0, 10)
+        else
+            orders.value = searchList(allOrders.value, keyword)
+    }
     
     const searchFinishedOrders = (keyword) => {
         if(keyword == "")
