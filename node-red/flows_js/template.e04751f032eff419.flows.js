@@ -19,10 +19,23 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger
-WHERE erAfvist = 1
-OR erAttestModtaget = 1
-LIMIT 10
+SELECT
+    *,
+    CASE 
+        WHEN erAfvist = 1 THEN afvist
+        ELSE journaliseret
+    END AS behandlet
+
+FROM
+    bestillinger
+WHERE
+    erAfvist = 1
+OR  erAttestModtaget = 1
+
+ORDER BY
+adviseringAfsendt DESC, afvist DESC, journaliseret DESC, attestType, attestSubType, rekvirentDQ
+
+LIMIT 100
 `
 
 module.exports = Node;

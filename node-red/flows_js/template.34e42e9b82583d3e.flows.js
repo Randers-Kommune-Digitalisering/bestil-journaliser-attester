@@ -28,6 +28,9 @@ WHERE
 AND erAfvist = 0
 AND attestType = {{attestType}}
 AND attestSubType = {{subType}}
+
+ORDER BY
+    bestillingModtaget DESC, rekvirentDQ
 `
 
 module.exports = Node;

@@ -26,6 +26,9 @@ FROM
 WHERE
     erBestilt = 0
 AND erAfvist = 0
+
+ORDER BY
+    bestillingModtaget DESC, rekvirentDQ
 `
 
 module.exports = Node;

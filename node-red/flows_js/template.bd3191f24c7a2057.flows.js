@@ -28,7 +28,8 @@ INSERT INTO bestillinger (
     navn,
     attestType,
     attestSubType,
-    erAfvist
+    erAfvist,
+    afvist
 )
 VALUES
 (
@@ -39,7 +40,8 @@ VALUES
     "{{bestilling.rekvisitusNavn}}",
      {{bestilling.attestType}},
      {{bestilling.attestSubType}},
-     {{erAfvist}}
+     {{erAfvist}},
+     {{afvistAt}}
 )
 `
 

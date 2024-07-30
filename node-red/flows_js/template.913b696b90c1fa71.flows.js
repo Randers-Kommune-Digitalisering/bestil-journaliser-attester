@@ -19,10 +19,17 @@ const Node = {
 }
 
 Node.template = `
-SELECT * FROM bestillinger
-WHERE erBestilt = 1
+SELECT
+    *
+FROM
+    bestillinger
+WHERE
+    erBestilt = 1
 AND erAfvist = 0
 AND erAttestModtaget = 0
+
+ORDER BY
+    bestillingModtaget DESC, attestType, attestSubType, rekvirentDQ
 `
 
 module.exports = Node;
