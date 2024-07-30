@@ -28,7 +28,7 @@
         </template>
         <template #heading>Overblik</template>
         
-        Kontrollér om der er modtaget nye attestanmodninger i menubjælken under hhv. "Straffeattester", og "Børneattester".
+        Kontrollér om der er modtaget nye attestanmodninger i menubjælken under "Bestillinger". Du kan kontrollere status på igangværende bestilinger under "Historik".
     </Content>
 
 </template>
