@@ -60,6 +60,9 @@
     }
     
     const searchFinishedOrders = (keyword) => {
+        
+        console.log("Searching finished orders for " + keyword)
+
         if(keyword == "")
             ordersFinished.value = allOrdersFinished.value.slice(0, 10)
         else
@@ -69,7 +72,7 @@
 
     function searchList(list, keyword)
     {
-        keyword = keyword.toLowerCase()
+        keyword = keyword.toLowerCase().trim()
         return list.filter(x => x.rekvirentNavn.toLowerCase().includes(keyword) ||
                                 x.rekvirentDQ.toLowerCase().includes(keyword) ||
                                 x.rekvirentEmail.toLowerCase().includes(keyword) ||
@@ -109,8 +112,19 @@
         })
     }
 
-    const sortOrders = (col) => orders.value = sortList(orders.value, col)
-    const sortFinishedOrders = (col) => ordersFinished.value = sortList(ordersFinished.value, col)
+    const sortOrders = (col) => {
+        orders.value = allOrders.value = sortList(allOrdersorders.value, col)
+
+        if(!isSearchingOrders.value || searchKeyword.value == "")
+            orders.value = allOrders.value.slice(0, 10)
+            
+    }
+    const sortFinishedOrders = (col) => {
+        ordersFinished.value = allOrdersFinished.value = sortList(allOrdersFinished.value, col)
+
+        if(!isSearchingFinishedOrders.value || searchFinishedKeyword.value == "")
+            ordersFinished.value = allOrdersFinished.value.slice(0, 10)
+    }
 
 
 </script>
@@ -141,11 +155,11 @@
                         </th>
                     </tr>
                     <tr>
-                        <th @click="orders = sortOrders('bestillingModtaget')">Dato <div class="text-small">Anmodet</div></th>
-                        <th @click="orders = sortOrders('rekvirentNavn')">Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
-                        <th @click="orders = sortOrders('cpr')">Rekvisitus <div class="text-small">CPR-nummer</div></th>
-                        <th @click="orders = sortOrders('attestType')">Attest <div class="text-small">Type</div></th>
-                        <th @click="orders = sortOrders('bestiltHosPoliti')">Dato <div class="text-small">Bestilt</div></th>
+                        <th @click="sortOrders('bestillingModtaget')">Dato <div class="text-small">Anmodet</div></th>
+                        <th @click="sortOrders('rekvirentNavn')">Rekvirent <div class="text-small">Navn og mail-adresse</div></th>
+                        <th @click="sortOrders('cpr')">Rekvisitus <div class="text-small">CPR-nummer</div></th>
+                        <th @click="sortOrders('attestType')">Attest <div class="text-small">Type</div></th>
+                        <th @click="sortOrders('bestiltHosPoliti')">Dato <div class="text-small">Bestilt</div></th>
                     </tr>
                 </thead>
                 
