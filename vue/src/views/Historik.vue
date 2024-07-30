@@ -230,6 +230,12 @@
 </template>
 
 <style scoped>
+    th {
+        user-select: none;
+    }
+    th:hover {
+        cursor: pointer
+    }
     td:not(:first-child, :last-child)
     {
         padding-left: 1rem;
