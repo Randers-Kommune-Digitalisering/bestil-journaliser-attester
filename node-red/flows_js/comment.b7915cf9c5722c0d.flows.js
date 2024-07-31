@@ -5,8 +5,8 @@ const Node = {
   "g": "38c43765fdc8e29d",
   "name": "Kontrollér om \\n rekvisition er afvist",
   "info": "",
-  "x": 290,
-  "y": 660,
+  "x": 310,
+  "y": 640,
   "wires": []
 }
 

@@ -18,12 +18,11 @@ const Node = {
   "repeat": "300",
   "fetch": "trigger",
   "inputs": 1,
-  "x": 110,
-  "y": 180,
+  "x": 130,
+  "y": 300,
   "wires": [
     [
       "b8926a0fe507d19a",
-      "b51f28c621b2e8f3",
       "9893c0468d1b5d27",
       "d4a9d98f17c1a2c9"
     ]

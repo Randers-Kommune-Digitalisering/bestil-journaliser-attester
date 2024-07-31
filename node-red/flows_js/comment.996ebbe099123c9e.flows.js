@@ -5,8 +5,8 @@ const Node = {
   "g": "bab02435ebea55f1",
   "name": "Kontroller rekvirent mailadresse",
   "info": "",
-  "x": 530,
-  "y": 1040,
+  "x": 550,
+  "y": 1020,
   "wires": []
 }
 

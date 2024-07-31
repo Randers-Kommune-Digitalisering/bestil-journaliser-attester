@@ -5,8 +5,8 @@ const Node = {
   "g": "38c43765fdc8e29d",
   "name": "Send til hovedpostkasse",
   "info": "",
-  "x": 1090,
-  "y": 540,
+  "x": 1110,
+  "y": 520,
   "wires": []
 }
 
