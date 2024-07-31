@@ -5,8 +5,8 @@ const Node = {
   "g": "38c43765fdc8e29d",
   "name": "Bestem attest-type",
   "info": "",
-  "x": 1110,
-  "y": 700,
+  "x": 1130,
+  "y": 680,
   "wires": []
 }
 

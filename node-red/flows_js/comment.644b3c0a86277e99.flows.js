@@ -5,8 +5,8 @@ const Node = {
   "g": "bab02435ebea55f1",
   "name": "Sæt rekvisitionsdata",
   "info": "",
-  "x": 270,
-  "y": 1040,
+  "x": 290,
+  "y": 1020,
   "wires": []
 }
 

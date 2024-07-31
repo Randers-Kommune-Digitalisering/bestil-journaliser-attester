@@ -4,8 +4,8 @@ const Node = {
   "z": "90c6b0b502e346fa",
   "name": "Send til hovedpostkasse",
   "info": "",
-  "x": 930,
-  "y": 2980,
+  "x": 950,
+  "y": 2960,
   "wires": []
 }
 
