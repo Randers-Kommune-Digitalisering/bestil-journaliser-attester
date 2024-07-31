@@ -20,9 +20,16 @@ const Node = {
     },
     {
       "t": "set",
+      "p": "html",
+      "pt": "msg",
+      "to": "html ~> $exists() ? html",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
       "p": "text",
       "pt": "msg",
-      "to": "html ~> $exists() ? html : payload",
+      "to": "html ~> $exists() = false ? payload",
       "tot": "jsonata"
     }
   ],

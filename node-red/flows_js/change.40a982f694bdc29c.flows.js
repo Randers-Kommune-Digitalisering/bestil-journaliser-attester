@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
-  "name": "Parameters",
+  "name": "Sæt mail krop",
   "rules": [
     {
       "t": "set",
@@ -16,15 +16,25 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic,\t    \"attachments\": attachments\t}",
+      "to": "{\t    \"to\": to,\t    \"subject\": topic,\t    \"attachments\": attachments,\t    \"from\": from\t}",
       "tot": "jsonata"
     },
     {
-      "t": "move",
-      "p": "text",
+      "t": "set",
+      "p": "payload",
       "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
+      "to": "text ~> $exists() ? text ~> $replace(\"\\n\", \"<br />\") : html",
+      "tot": "jsonata"
+    },
+    {
+      "t": "delete",
+      "p": "text",
+      "pt": "msg"
+    },
+    {
+      "t": "delete",
+      "p": "html",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -32,7 +42,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 230,
+  "x": 240,
   "y": 100,
   "wires": [
     [
