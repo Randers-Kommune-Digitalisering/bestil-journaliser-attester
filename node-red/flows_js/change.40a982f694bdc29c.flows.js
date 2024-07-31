@@ -16,15 +16,15 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"from\": from,\t    \"subject\": topic,\t    \"attachments\": attachments\t}",
+      "to": "{\t    \"to\": to,\t    \"subject\": topic,\t    \"attachments\": attachments,\t    \"from\": from\t}",
       "tot": "jsonata"
     },
     {
-      "t": "move",
-      "p": "text",
+      "t": "set",
+      "p": "payload",
       "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
+      "to": "payload ~> $replace(\"\\n\", \"<br />\")",
+      "tot": "jsonata"
     }
   ],
   "action": "",
