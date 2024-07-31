@@ -8,7 +8,7 @@ const Node = {
   "repeat": "120",
   "crontab": "",
   "once": true,
-  "onceDelay": "10",
+  "onceDelay": "15",
   "topic": "",
   "x": 105,
   "y": 260,
