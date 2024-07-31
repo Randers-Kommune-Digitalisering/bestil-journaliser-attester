@@ -25,7 +25,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
       "topic": msg.topic,
       "attachments": msg.attachments,
   
-      "payload": msg.text
+      "text": msg.text,
+      "html": msg.html
   }
   
   msg = newMsg;
