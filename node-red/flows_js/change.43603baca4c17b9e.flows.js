@@ -30,7 +30,7 @@ const Node = {
       "p": "text",
       "pt": "msg",
       "to": "html ~> $exists() = false ? payload",
-      "tot": "str"
+      "tot": "jsonata"
     }
   ],
   "action": "",
