@@ -14,8 +14,7 @@ const Node = {
   "y": 920,
   "wires": [
     [
-      "2579a996a62d5d99",
-      "26ca0da970737c5f"
+      "2579a996a62d5d99"
     ]
   ]
 }
@@ -27,7 +26,7 @@ FROM
     bestillinger
 WHERE
     cpr = '{{rekvisitus}}'
-    {{{attestTypeClause}}}
+{{{attestTypeClause}}}
 AND erBestilt = 1
 AND erAttestModtaget = 0
 ORDER BY
