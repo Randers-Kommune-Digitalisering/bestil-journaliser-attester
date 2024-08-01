@@ -35,7 +35,6 @@ const Node = {
     "4e2a6dcffc50e52f",
     "2e4cf417b74aaa8c",
     "787d1e02ca06da8e",
-    "d05fc2222aed6f96",
     "0feb47a89c65c675",
     "b432e808d08e9484",
     "25352d7d7e445c40",
@@ -61,12 +60,7 @@ const Node = {
     "6dd82c4182549fde",
     "6fe01f03ea65f222",
     "830b0cd54d30e783",
-    "e6ced9217eb3a4af",
-    "0d27558852413c06",
-    "300899c673b677fb",
-    "de44c0d60efb8f34",
-    "626f511a6aee5629",
-    "c8aa6f8036304093"
+    "e6ced9217eb3a4af"
   ],
   "x": 114,
   "y": 1419,
