@@ -6,13 +6,13 @@ const Node = {
   "name": "SQL - Find rekvisition",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
   "complete": "sql",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1060,
+  "x": 1070,
   "y": 880,
   "wires": []
 }
