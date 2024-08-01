@@ -9,8 +9,8 @@ const Node = {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\"error\":\"Ingen rekvisition\",\"message\":\"Der blev modtaget en attest, men der findes ikke en tilsvarende rekvisition i systemet.\"}",
-      "tot": "json"
+      "to": "{\t   \"error\": \"Ingen rekvisition\",\t   \"message\": \"Der blev modtaget en attest, men der findes ikke en tilsvarende rekvisition i systemet.\",\t   \"attestType\": attestTypeString & \" (\" & attestType & \")\",\t   \"rekvisitus\": rekvisitus\t}",
+      "tot": "jsonata"
     }
   ],
   "action": "",

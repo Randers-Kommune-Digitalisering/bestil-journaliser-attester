@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "mailbody",
+      "to": "html",
       "tot": "msg",
       "dc": true
     },
@@ -17,7 +17,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> $split(\"\\n\")",
+      "to": "payload ~> $split(\"<br>\")",
       "tot": "jsonata"
     }
   ],

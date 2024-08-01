@@ -168,7 +168,7 @@
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
                     <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
-                        <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
+                        <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType && x.subTypeId == order.attestSubType)).description }}</div>
                     </td>
                     <td>{{ dayjs(order.bestiltHosPoliti).format("DD-MM-YYYY") }}</td>
                 </tr>

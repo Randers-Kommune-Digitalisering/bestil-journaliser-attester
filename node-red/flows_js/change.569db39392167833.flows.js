@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "afvistAt",
       "pt": "msg",
-      "to": "erAfvist = 1 ? 'CURRENT_TIMESTAMP' : '\"0000-00-00 00:00:00\"'",
+      "to": "erAfvist = 1 ? \"CURRENT_TIMESTAMP\" : \"\\\"0000-00-00 00:00:00\\\"\"",
       "tot": "jsonata"
     }
   ],

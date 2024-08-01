@@ -5,7 +5,7 @@ const Node = {
   "name": "Attest-type",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "attestType",
   "targetType": "msg",

@@ -41,7 +41,7 @@ VALUES
      {{bestilling.attestType}},
      {{bestilling.attestSubType}},
      {{erAfvist}},
-     {{afvistAt}}
+     {{{afvistAt}}}
 )
 `
 

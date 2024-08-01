@@ -18,7 +18,7 @@ const Node = {
   "repair": false,
   "outputs": 2,
   "x": 620,
-  "y": 540,
+  "y": 560,
   "wires": [
     [
       "93d01421f25584ea"
