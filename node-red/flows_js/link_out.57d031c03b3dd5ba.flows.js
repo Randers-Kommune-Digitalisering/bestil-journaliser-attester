@@ -1,15 +1,15 @@
 const Node = {
-  "id": "e0df545cbff80ce9",
+  "id": "57d031c03b3dd5ba",
   "type": "link out",
   "z": "90c6b0b502e346fa",
   "g": "38c43765fdc8e29d",
-  "name": "Mail OUT: Ingen attest vedhæftet",
+  "name": "Metrics out: Ingen attachment",
   "mode": "link",
   "links": [
-    "d5c94fde9dd94804"
+    "b49ab83af32f5501"
   ],
   "x": 975,
-  "y": 540,
+  "y": 500,
   "wires": []
 }
 

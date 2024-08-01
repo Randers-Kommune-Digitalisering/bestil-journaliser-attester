@@ -1,12 +1,12 @@
 const Node = {
-  "id": "8e158b78359e411e",
+  "id": "f67c3914f041e80d",
   "type": "comment",
   "z": "90c6b0b502e346fa",
-  "g": "38c43765fdc8e29d",
-  "name": "Kontroller afgørelser",
+  "g": "bab02435ebea55f1",
+  "name": "Metrics",
   "info": "",
-  "x": 1090,
-  "y": 600,
+  "x": 1150,
+  "y": 1120,
   "wires": []
 }
 

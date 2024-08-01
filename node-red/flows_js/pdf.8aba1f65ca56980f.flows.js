@@ -10,13 +10,14 @@ const Node = {
   "combineColumn": false,
   "combineRow": false,
   "x": 630,
-  "y": 680,
+  "y": 700,
   "wires": [
     [
       "501d38644a77ae23"
     ],
     [
-      "c91620cb6ea990e0"
+      "c91620cb6ea990e0",
+      "13056324a2f2f469"
     ]
   ]
 }
