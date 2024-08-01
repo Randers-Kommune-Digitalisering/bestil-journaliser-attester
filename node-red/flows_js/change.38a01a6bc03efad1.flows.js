@@ -17,20 +17,6 @@ const Node = {
       "pt": "msg",
       "to": "payload ~> $distinct()",
       "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "testDQ",
-      "pt": "msg",
-      "to": "TEST_DQ",
-      "tot": "env"
-    },
-    {
-      "t": "set",
-      "p": "payload",
-      "pt": "msg",
-      "to": "payload ~> $append({ \"dq\": testDQ, \"rolle\": \"2\"})",
-      "tot": "jsonata"
     }
   ],
   "action": "",
