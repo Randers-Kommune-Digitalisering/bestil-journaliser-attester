@@ -5,7 +5,7 @@ const Node = {
   "d": true,
   "name": "db_write_rows",
   "info": "",
-  "x": 730,
+  "x": 1120,
   "y": 320,
   "wires": []
 }

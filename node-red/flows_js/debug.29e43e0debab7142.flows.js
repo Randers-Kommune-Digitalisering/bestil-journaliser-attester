@@ -1,8 +1,8 @@
 const Node = {
-  "id": "8c1adfd0ed4f3523",
+  "id": "29e43e0debab7142",
   "type": "debug",
   "z": "e32afdd69abf0697",
-  "name": "mail_in",
+  "name": "file_journalize",
   "active": true,
   "tosidebar": true,
   "console": false,
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 920,
-  "y": 400,
+  "x": 900,
+  "y": 740,
   "wires": []
 }
 

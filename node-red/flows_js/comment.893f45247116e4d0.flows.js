@@ -4,8 +4,8 @@ const Node = {
   "z": "e32afdd69abf0697",
   "name": "api_call",
   "info": "",
-  "x": 710,
-  "y": 540,
+  "x": 650,
+  "y": 120,
   "wires": []
 }
 

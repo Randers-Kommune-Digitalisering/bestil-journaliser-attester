@@ -1,5 +1,5 @@
 const Node = {
-  "id": "5269862555fe2bb1",
+  "id": "1806a000eb993865",
   "type": "change",
   "z": "e32afdd69abf0697",
   "name": "Metric",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"op\": \"inc\",\t    \"val\": 1,\t    \"labels\": {\t        \"target\": target,\t        \"status_code\": status_code ~> $exists() ? status_code : statusCode\t    }\t}",
+      "to": "{\t    \"op\": \"inc\",\t    \"val\": 1\t}",
       "tot": "jsonata"
     }
   ],
@@ -18,11 +18,11 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 710,
-  "y": 160,
+  "y": 580,
   "wires": [
     [
-      "02ee8d084de24852",
-      "b34219ea06355d9a"
+      "c10b237e39073a49",
+      "f0e36b42914f0791"
     ]
   ]
 }

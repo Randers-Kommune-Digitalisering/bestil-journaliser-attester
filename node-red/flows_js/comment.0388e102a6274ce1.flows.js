@@ -1,12 +1,11 @@
 const Node = {
-  "id": "39877265831df107",
+  "id": "0388e102a6274ce1",
   "type": "comment",
   "z": "e32afdd69abf0697",
-  "d": true,
-  "name": "db_read",
+  "name": "Job specific metrics",
   "info": "",
-  "x": 1110,
-  "y": 120,
+  "x": 690,
+  "y": 480,
   "wires": []
 }
 

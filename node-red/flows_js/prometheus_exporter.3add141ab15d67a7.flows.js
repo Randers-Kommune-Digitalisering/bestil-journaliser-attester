@@ -4,8 +4,8 @@ const Node = {
   "z": "e32afdd69abf0697",
   "name": "service status",
   "metric": "ca34773034af8f02",
-  "x": 960,
-  "y": 780,
+  "x": 900,
+  "y": 360,
   "wires": []
 }
 

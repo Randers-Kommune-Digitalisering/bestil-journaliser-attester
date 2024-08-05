@@ -4,7 +4,7 @@ const Node = {
   "z": "e32afdd69abf0697",
   "name": "Database interactions (in DB Try Connect flow)",
   "info": "",
-  "x": 840,
+  "x": 1230,
   "y": 60,
   "wires": []
 }

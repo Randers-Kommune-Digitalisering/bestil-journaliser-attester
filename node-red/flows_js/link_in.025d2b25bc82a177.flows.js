@@ -5,7 +5,7 @@ const Node = {
   "d": true,
   "name": "Metric: db_read (status, table_name)",
   "links": [],
-  "x": 675,
+  "x": 1065,
   "y": 160,
   "wires": [
     [
