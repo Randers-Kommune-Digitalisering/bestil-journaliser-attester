@@ -1,12 +1,12 @@
 const Node = {
-  "id": "406844b22ca8fab0",
+  "id": "10fced621c22c457",
   "type": "comment",
   "z": "812b69015d6703b6",
   "g": "4faa8cefca4c99e9",
-  "name": "Er rekvisition\\n afvist?",
+  "name": "Tæl metric file_forward",
   "info": "",
-  "x": 570,
-  "y": 680,
+  "x": 260,
+  "y": 780,
   "wires": []
 }
 

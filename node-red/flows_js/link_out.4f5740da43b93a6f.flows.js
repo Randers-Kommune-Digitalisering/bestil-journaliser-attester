@@ -1,15 +1,15 @@
 const Node = {
-  "id": "dac6afa62d5cf0e1",
+  "id": "4f5740da43b93a6f",
   "type": "link out",
   "z": "812b69015d6703b6",
   "g": "4faa8cefca4c99e9",
-  "name": "HR notifikation OUT #1",
+  "name": "Metric out: file_forward",
   "mode": "link",
   "links": [
-    "497fad94d8a6a43c"
+    "eebb72cac0a7fbdc"
   ],
-  "x": 1035,
-  "y": 700,
+  "x": 135,
+  "y": 780,
   "wires": []
 }
 
