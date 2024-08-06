@@ -5,7 +5,7 @@ const Node = {
   "d": true,
   "name": "service status",
   "metric": "55bc3b24006c0dc7",
-  "x": 960,
+  "x": 1350,
   "y": 360,
   "wires": []
 }

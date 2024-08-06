@@ -5,7 +5,7 @@ const Node = {
   "d": true,
   "name": "db_read",
   "info": "",
-  "x": 720,
+  "x": 1110,
   "y": 120,
   "wires": []
 }

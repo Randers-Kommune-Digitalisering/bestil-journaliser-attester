@@ -6,7 +6,7 @@ const Node = {
   "name": "Advisering - Rekvisition automatisk afvist (manglende rolle)",
   "info": "",
   "x": 1130,
-  "y": 860,
+  "y": 880,
   "wires": []
 }
 
