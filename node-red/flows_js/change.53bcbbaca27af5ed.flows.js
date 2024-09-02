@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "job_name",
       "pt": "msg",
-      "to": "bestil",
+      "to": "sd_download",
       "tot": "str"
     },
     {
