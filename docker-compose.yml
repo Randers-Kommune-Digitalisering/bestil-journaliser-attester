@@ -27,7 +27,8 @@ services:
       DEV_ENV: "true"
       
       MAIL_THIS: "attester@randers.dk"
-      MAIL_HOVEDPOST: "randers@randers.dk"
+      MAIL_HOVEDPOST: "randers.kommune@randers.dk"
+      MAIL_SIGNFLOW: "signflow@randers.dk"
       MAIL_HR: "personalehr@randers.dk"
 
       SFTP_URL: "sftp.randers.dk"

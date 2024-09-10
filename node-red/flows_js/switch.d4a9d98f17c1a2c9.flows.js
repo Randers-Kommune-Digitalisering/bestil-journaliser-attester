@@ -9,7 +9,7 @@ const Node = {
   "rules": [
     {
       "t": "eq",
-      "v": "MAIL_HOVEDPOST",
+      "v": "MAIL_SIGNFLOW",
       "vt": "env"
     },
     {
