@@ -113,7 +113,7 @@
     }
 
     const sortOrders = (col) => {
-        orders.value = allOrders.value = sortList(allOrdersorders.value, col)
+        orders.value = allOrders.value = sortList(allOrders.value, col)
 
         if(!isSearchingOrders.value || searchKeyword.value == "")
             orders.value = allOrders.value.slice(0, 10)
