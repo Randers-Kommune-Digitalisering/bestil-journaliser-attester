@@ -38,6 +38,7 @@
     // Set text
     const header = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name)
     const description = ref(attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription)
+    const url = ref(attestTyper.find(x => x.typeId == attestType.value).url)
 
     watch( () => props.attestTypes, (current, previous) => {
         // Update on change type
@@ -55,6 +56,7 @@
         // Set text
         header.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).name
         description.value = attestTyper.find(x => x.typeId == attestType.value && x.subTypeId == attestSubType.value).longDescription
+        url.value = attestTyper.find(x => x.typeId == attestType.value).url
 
         // Reset state
         flowStep.value = 0
@@ -109,7 +111,7 @@
         flowStep.value = 2
 
         if(!skip)
-            window.open("https://dsa.politi.dk/RequestPublic?style=PolitiDK", "_blank")
+            window.open(url.value, "_blank")
     }
 
     // Back-end interactions 

@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "erAfvist = 1 ? \"CURRENT_TIMESTAMP\" : \"\\\"0000-00-00 00:00:00\\\"\"",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "erAfvist",
+      "pt": "msg",
+      "to": "0",
+      "tot": "num"
     }
   ],
   "action": "",
