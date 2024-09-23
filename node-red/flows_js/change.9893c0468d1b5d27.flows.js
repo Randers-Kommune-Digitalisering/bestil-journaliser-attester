@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "a8f253aaafd8ccd1",
-  "name": "Set metric mail_in",
+  "name": "Set metric",
   "rules": [
     {
       "t": "set",
@@ -18,7 +18,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 390,
+  "x": 340,
   "y": 360,
   "wires": [
     [
