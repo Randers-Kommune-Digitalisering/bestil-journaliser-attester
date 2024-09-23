@@ -4,15 +4,15 @@ const Node = {
   "z": "812b69015d6703b6",
   "g": "cf5fc001c060884c",
   "name": "Sending mail",
-  "active": true,
+  "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"from\": from,\t    \"to\": to,\t    \"topic\": topic\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 660,
+  "x": 670,
   "y": 60,
   "wires": []
 }
