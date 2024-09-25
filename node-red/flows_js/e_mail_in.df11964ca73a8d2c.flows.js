@@ -13,7 +13,7 @@ const Node = {
   "saslformat": true,
   "token": "oauth2Response.access_token",
   "box": "INBOX",
-  "disposition": "None",
+  "disposition": "Read",
   "criteria": "UNSEEN",
   "repeat": "300",
   "fetch": "trigger",
