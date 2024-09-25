@@ -374,5 +374,6 @@
         .afvisDialog > textarea
         {
             height: 10rem;
+            resize: vertical;
         }
 </style>
