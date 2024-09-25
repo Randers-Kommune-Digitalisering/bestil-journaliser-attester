@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "{\t    \"SagID\": sagsId,\t    \"DokumentNavn\": \"Straffeattest \" & ( $millis() ~> $fromMillis(\"[D01]-[M01]-[Y0001]\") ),\t    \"Beskrivelse\": \"Automatisk journaliseret af robot\",\t    \"OmfattetAfAktindsigt\": true\t}",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "filename",
+      "pt": "msg",
+      "to": "attachments ~> $type() = \"array\" ?\tattachments[0].filename : attachments.filename",
+      "tot": "jsonata"
     }
   ],
   "action": "",
