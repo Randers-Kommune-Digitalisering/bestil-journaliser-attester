@@ -13,7 +13,7 @@ const Node = {
   "saslformat": true,
   "token": "oauth2Response.access_token",
   "box": "INBOX",
-  "disposition": "Read",
+  "disposition": "None",
   "criteria": "UNSEEN",
   "repeat": "300",
   "fetch": "trigger",
@@ -23,8 +23,7 @@ const Node = {
   "wires": [
     [
       "b8926a0fe507d19a",
-      "9893c0468d1b5d27",
-      "d4a9d98f17c1a2c9"
+      "9893c0468d1b5d27"
     ]
   ]
 }

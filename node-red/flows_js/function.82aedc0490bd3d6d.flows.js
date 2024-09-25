@@ -20,17 +20,19 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  const newMsg = {
-      "to": msg.to,
-      "topic": msg.topic,
-      "attachments": msg.attachments,
   
-      "text": msg.text,
-      "html": msg.html
-  }
+    const newMsg = {
+        "to": msg.to,
+        "topic": msg.topic,
+        "attachments": msg.attachments,
+    
+        "text": msg.text,
+        "html": msg.html
+    }
+    
+    msg = newMsg;
+    return msg;
   
-  msg = newMsg;
-  return msg;
 }
 
 module.exports = Node;

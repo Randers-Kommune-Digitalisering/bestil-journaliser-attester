@@ -5,7 +5,7 @@ const Node = {
   "g": "70f0dd8ceb56e8a4",
   "name": "SBSIP Auth",
   "active": true,
-  "tosidebar": false,
+  "tosidebar": true,
   "console": false,
   "tostatus": false,
   "complete": "payload",
