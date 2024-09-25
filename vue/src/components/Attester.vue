@@ -269,7 +269,7 @@
                 <option value="duplicate">Duplikat bestilling</option>
                 <option value="other">Andet</option>
             </select>
-            <textarea :disabled="rejectionReason !== 'other'" v-model="reasonDescription[rejectionReason]" placeholder="Angiv anden årsag"></textarea>
+            <textarea :disabled="rejectionReason !== 'other'" v-model="reasonDescription[rejectionReason]" placeholder="Angiv en årsag til afvisningen ..."></textarea>
             <button class="float-right red" @click="reject(isRejectingOrder)">Send afvisning</button>
     </div>
     
