@@ -149,11 +149,25 @@
         notification.value = ordersProcessedNotification(idCount)
     }
 
+    // Reject order
+
+    const isRejectingOrder = ref(false)
+    const rejectionReason = ref("")
+    const reasonDescription = {
+        "incorrect": "Fejl i CPR-nummer. CPR-nummeret findes ikke i CPR-registeret. Kontroller CPR-nummeret og prøv at bestille attesten igen.",
+        "duplicate": "Duplikat bestilling. Bestillingen er en duplikat af en anden bestilling. Kontroller bestillingerne og prøv evt. at bestille attesten igen, hvis du mener der er tale om en fejl.",
+        "other": ""
+    }
+
     function reject(item)
     {
         // Perform POST request to backend
         fetch('/api/rejectorder/' + item.uid, {
-            method: "POST"
+            method: "POST",
+            body: JSON.stringify({
+                "reason": rejectionReason.value,
+                "description": reasonDescription[rejectionReason.value]
+            }),
         })
         .then(response => response.json())
         .then(response => console.log(response))
@@ -161,6 +175,10 @@
         .then(callSetCount(-1))
         .then(callUpdateOrders())         
         
+        isRejectingOrder.value = false
+        rejectionReason.value = ""
+        reasonDescription["other"] = ""
+
         // Set notification
         notification.value = ordersProcessedNotification(1, true)
     }
@@ -200,7 +218,7 @@
                     <td>{{ dayjs(order.bestillingModtaget).format("DD-MM-YYYY") }}</td>
                     <td>{{ order.rekvirentNavn }} <div class="text-small">{{ order.rekvirentEmail }}</div></td>
                     <td>{{ order.cpr }}</td>
-                    <td><button class="red" @click="reject(order)">Afvis</button></td>
+                    <td><button class="red" @click="isRejectingOrder = order">Afvis</button></td>
                 </tr>
                 <tr v-else>
                     <td colspan="4">Der er ingen bestillinger at vise.</td>
@@ -241,6 +259,19 @@
 
         </div>
     </Content>
+
+    <div v-if="isRejectingOrder" @click="isRejectingOrder = false" class="fadeBackground"></div>
+        <div v-if="isRejectingOrder" class="afvisDialog">
+            <div>Angiv årsag til afvisning</div>
+            <select v-model="rejectionReason">
+                <option disabled value="">Vælg årsag</option>
+                <option value="incorrect">Fejl i CPR-nummer</option>
+                <option value="duplicate">Duplikat bestilling</option>
+                <option value="other">Andet</option>
+            </select>
+            <textarea :disabled="rejectionReason !== 'other'" v-model="reasonDescription[rejectionReason]" placeholder="Angiv en årsag til afvisningen ..."></textarea>
+            <button class="float-right red" @click="reject(isRejectingOrder)">Send afvisning</button>
+    </div>
     
 
 </template>
@@ -307,4 +338,42 @@
         opacity: 0;
         overflow: hidden;
     }
+    .fadeBackground {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        transform: translateY(-2rem);
+    }
+    .afvisDialog
+    {
+        z-index: 1001;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 45rem;
+        background-color: var(--color-bg-light);
+        border: 0.1rem solid;
+        border-color: var(--color-red);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+        .afvisDialog > div
+        {
+            font-size: 1em;
+            margin-bottom: 1rem;
+        }
+        .afvisDialog > *:last-child
+        {
+            margin-bottom: 0;
+        }
+        .afvisDialog > textarea
+        {
+            height: 10rem;
+            resize: vertical;
+        }
 </style>

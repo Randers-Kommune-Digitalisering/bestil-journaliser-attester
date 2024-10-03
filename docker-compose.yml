@@ -22,11 +22,22 @@ services:
       AZURE_TENANTID: ${AZURE_TENANTID}
       AZURE_CLIENTSECRET: ${AZURE_CLIENTSECRET}
 
+      SBSIP_URL: ${SBSIP_URL}
+      SBSYS_URL: ${SBSYS_URL}
+      SBSIP_USER: ${SBSIP_USER}
+      SBSIP_PASS: ${SBSIP_PASS}
+      SBSIP_CLIENT: ${SBSIP_CLIENT}
+      SBSIP_SECRET: ${SBSIP_SECRET}
+      SBSIP_GRANTTYPE: ${SBSIP_GRANTTYPE}
+
       CREDENTIAL_SECRET: ${CREDENTIAL_SECRET}
 
       DEV_ENV: "true"
       
       MAIL_THIS: "attester@randers.dk"
+      MAIL_USER: ${MAIL_PASS}
+      MAIL_PASS: ${MAIL_PASS}
+
       MAIL_HOVEDPOST: "randers.kommune@randers.dk"
       MAIL_SIGNFLOW: "signflow@randers.dk"
       MAIL_HR: "personalehr@randers.dk"

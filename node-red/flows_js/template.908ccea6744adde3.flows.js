@@ -16,13 +16,16 @@ const Node = {
     [
       "a756faa2e4149fca",
       "9c644f8443abd95d",
-      "c67d83041b426bb9"
+      "c67d83041b426bb9",
+      "8df8c615ba293db5"
     ]
   ]
 }
 
 Node.template = `
 Din bestilling af en {{attestType}} på {{rekvisitus.navn}} er blevet afvist af Personale og HR.
+
+Afvisningen er sket på følgende grundlag: {{beskrivelse}}
 
 Kontakt Personale og HR, hvis du mener der er tale om en fejl.
 `
