@@ -16,14 +16,14 @@ const Node = {
       "t": "set",
       "p": "attestType",
       "pt": "msg",
-      "to": "attestType ~> $exists() ? attestType :\t\t    topic ~> $contains(\"Straffeatt.\") ? \t        [0, 1]\t        :\t    topic ~> $contains(\"Børneatt.\") ? \t        2",
+      "to": "attestType ~> $exists() and attestType != -1 ? attestType :\t\t    topic ~> $contains(\"Straffeatt.\") ? \t        [0, 1]\t        :\t    topic ~> $contains(\"Børneatt.\") ? \t        2",
       "tot": "jsonata"
     },
     {
       "t": "set",
       "p": "attestTypeString",
       "pt": "msg",
-      "to": "($globalContext(\"attestTyper\"))[id = $$.attestType].name ~> $lowercase()",
+      "to": "(\t    $attestTypeString := ($globalContext(\"attestTyper\"))[id in $$.attestType].name;\t    $attestTypeString ~> $type() = \"array\" ? \"straffeattest\" : ($attestTypeString ~> $lowercase())\t)",
       "tot": "jsonata"
     }
   ],
