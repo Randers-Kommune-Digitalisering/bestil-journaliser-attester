@@ -35,7 +35,7 @@ services:
       DEV_ENV: "true"
       
       MAIL_THIS: "attester@randers.dk"
-      MAIL_USER: ${MAIL_PASS}
+      MAIL_USER: ${MAIL_USER}
       MAIL_PASS: ${MAIL_PASS}
       MAIL_IMAP_URL: ${MAIL_IMAP_URL}
       MAIL_SMTP_URL: ${MAIL_SMTP_URL}
