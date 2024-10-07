@@ -37,6 +37,8 @@ services:
       MAIL_THIS: "attester@randers.dk"
       MAIL_USER: ${MAIL_PASS}
       MAIL_PASS: ${MAIL_PASS}
+      MAIL_IMAP_URL: ${MAIL_IMAP_URL}
+      MAIL_SMTP_URL: ${MAIL_SMTP_URL}
 
       MAIL_HOVEDPOST: "randers.kommune@randers.dk"
       MAIL_SIGNFLOW: "signflow@randers.dk"
