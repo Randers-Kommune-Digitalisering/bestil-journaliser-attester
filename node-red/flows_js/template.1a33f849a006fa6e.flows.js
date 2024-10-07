@@ -21,6 +21,7 @@ const Node = {
 
 Node.template = `
 En bestilling af en {{attestType}} på {{rekvisitus.navn}} er blevet modtaget, og har registrerede forhold!
+Attesten blev rekvireret af {{rekvirentNavn}} ({{rekvirent}}).
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
 Vær derfor opmærksom på at det er Personale og HR’s ansvar at journalisere attesten.

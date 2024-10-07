@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "",
+  "name": "Sæt rekvisition",
   "rules": [
     {
       "t": "set",
@@ -19,7 +19,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 290,
+  "x": 280,
   "y": 1060,
   "wires": [
     [

@@ -21,6 +21,7 @@ const Node = {
 
 Node.template = `
 En bestilling af en {{attestType}} på {{rekvisitus.navn}} er blevet modtaget, og har registrerede forhold!
+Attesten blev rekvireret af {{rekvirentNavn}} ({{rekvirent}}).
 
 Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}, og vedhæftet til denne mail
 `

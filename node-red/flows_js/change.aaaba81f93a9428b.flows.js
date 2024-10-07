@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "",
+  "name": "Sæt rekvirent",
   "rules": [
     {
       "t": "set",
@@ -12,6 +12,13 @@ const Node = {
       "to": "rekvisition.rekvirentEmail",
       "tot": "msg",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "rekvirentNavn",
+      "pt": "msg",
+      "to": "rekvisition.rekvirentNavn",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -19,7 +26,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 510,
+  "x": 490,
   "y": 1060,
   "wires": [
     [

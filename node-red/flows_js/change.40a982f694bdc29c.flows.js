@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "email",
       "pt": "msg",
-      "to": "{\t    \"to\": to,\t    \"subject\": topic,\t    \"attachments\": attachments,\t    \"from\": from\t}",
+      "to": "{\t    \"to\": to,\t    \"subject\": topic,\t    \"attachments\": attestErRen or to = $env(\"MAIL_HR\") ? attachments,\t    \"from\": from\t}",
       "tot": "jsonata"
     },
     {
