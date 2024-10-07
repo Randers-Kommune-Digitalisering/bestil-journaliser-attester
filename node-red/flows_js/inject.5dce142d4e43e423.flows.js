@@ -5,7 +5,7 @@ const Node = {
   "g": "7927b0d68211546e",
   "name": "",
   "props": [],
-  "repeat": "120",
+  "repeat": "300",
   "crontab": "",
   "once": true,
   "onceDelay": "15",
