@@ -25,7 +25,7 @@ FROM
     bestillinger
 WHERE
     erBestilt = 1
-AND erAfvist = 1
+AND erAfvist = 0
 AND bestiltHosPoliti < '{{time}}'
 AND erAttestModtaget = 0
 `
