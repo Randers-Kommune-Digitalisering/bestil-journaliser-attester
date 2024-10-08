@@ -18,7 +18,7 @@ const Node = {
       "p": "rekvirentNavn",
       "pt": "msg",
       "to": "rekvisition.rekvirentNavn",
-      "tot": "str"
+      "tot": "msg"
     }
   ],
   "action": "",
