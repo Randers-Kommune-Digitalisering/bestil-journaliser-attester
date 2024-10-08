@@ -26,7 +26,6 @@ SET
 WHERE
     erBestilt = 1
 AND erAfvist = 0
-AND bestiltHosPoliti < '{{time}}'
 AND erAttestModtaget = 0
 {{#uids}}
 AND uid = {{.}}

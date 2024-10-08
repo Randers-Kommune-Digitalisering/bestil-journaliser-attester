@@ -26,8 +26,8 @@ FROM
 WHERE
     erBestilt = 1
 AND erAfvist = 0
-AND bestiltHosPoliti < '{{time}}'
 AND erAttestModtaget = 0
+AND bestiltHosPoliti < '{{time}}'
 `
 
 module.exports = Node;
