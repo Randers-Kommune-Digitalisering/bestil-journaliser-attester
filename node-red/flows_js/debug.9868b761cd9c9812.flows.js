@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"from\": from,\t    \"to\": to,\t    \"topic\": topic,\t    \"body\": payload,\t    \"isSent\": error ~> $exists() ? false : true,\t    \"error\": error\t}",
+  "complete": "{\t    \"to\": to,\t    \"topic\": topic,\t    \"isSent\": error ~> $exists() ? false : true,\t    \"error\": error\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",

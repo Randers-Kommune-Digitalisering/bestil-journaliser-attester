@@ -29,7 +29,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
     
             msg.rekvisitus = {
                 "cpr": msg.rekvisitus ?? "Fejl! Ingen CPR",
-                "navn": name ?? "",
+                "navn": name ?? "en person",
                 "tjenestenr": e_id ?? "Ingen tjenestenr"
             }
     
@@ -38,7 +38,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
         {
             msg.rekvisitus = {
                 "cpr": msg.rekvisitus ?? "Fejl! Ingen CPR",
-                "navn": "person"
+                "navn": "en person"
             }
     
             msg.error = msg.payload["soapenv:Envelope"]["soapenv:Body"][0]["soapenv:Fault"][0].detail;
