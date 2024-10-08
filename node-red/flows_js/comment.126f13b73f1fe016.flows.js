@@ -1,12 +1,12 @@
 const Node = {
-  "id": "d2d36ffc607d1888",
+  "id": "126f13b73f1fe016",
   "type": "comment",
   "z": "812b69015d6703b6",
-  "g": "e05f4fc731fc4c56",
-  "name": "Opdater data i SQL",
+  "g": "9160d58a4a4565ba",
+  "name": "Send",
   "info": "",
-  "x": 1010,
-  "y": 60,
+  "x": 1090,
+  "y": 1320,
   "wires": []
 }
 
