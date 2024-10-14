@@ -4,15 +4,15 @@ const Node = {
   "z": "c715449c21b1a61f",
   "g": "0477132fb9f28020",
   "name": "Ny XFlow formular",
-  "active": true,
+  "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"payload\": payload,\t    \"headers\": req.headers\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 440,
+  "x": 430,
   "y": 80,
   "wires": []
 }

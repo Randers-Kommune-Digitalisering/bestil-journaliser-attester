@@ -28,7 +28,7 @@ Personale og HR er blevet notificeret om attestmodtagelsen.
 Du bedes kontakte Jura på mail eller telefon.
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
-Vær opmærksom på at attesten derfor er vedhæftet denne mail, og at det er dit ansvar at journalisere den manuelt.
+Vær opmærksom på at attesten er sendt til Personale og HR, som har til ansvar at journalisere attesten.
 `
 
 module.exports = Node;
