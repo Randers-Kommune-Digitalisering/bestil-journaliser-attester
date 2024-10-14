@@ -5,7 +5,6 @@ const Node = {
   "g": "9160d58a4a4565ba",
   "name": "Mail IN: Afvis (timeout)",
   "links": [
-    "d4755d4f704973f4",
     "fd92ef0c7c9c9653"
   ],
   "x": 575,

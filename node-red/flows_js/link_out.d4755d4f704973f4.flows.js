@@ -6,8 +6,7 @@ const Node = {
   "name": "Mail OUT: Afvist (rolle)",
   "mode": "link",
   "links": [
-    "e5f4be5735ad0bc2",
-    "642f5036f75d3675"
+    "e5f4be5735ad0bc2"
   ],
   "x": 675,
   "y": 1400,
