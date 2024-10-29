@@ -24,8 +24,8 @@ Node.template = `
 Ny {{attestTypeString}} på {{rekvisitus.navn}} er modtaget fra Politiet.
 Attesten har registrerede forhold!
 
-Personale og HR er blevet notificeret om attestmodtagelsen.
-Du bedes kontakte Jura på mail eller telefon.
+Personale og HR er blevet notificeret om attestmodtagelsen, og varetager det videre forløb.
+Du bliver kontaktet i denne forbindelse.
 
 Attesten er journaliseret i {{rekvisitus.navn}}'s personalesag (tjenestenr. {{rekvisitus.tjenestenr}}).
 `

@@ -24,8 +24,8 @@ Node.template = `
 Ny {{attestTypeString}} på {{rekvisitus.navn}} er modtaget fra Politiet.
 Attesten har registrerede forhold!
 
-Personale og HR er blevet notificeret om attestmodtagelsen.
-Du bedes kontakte Jura på mail eller telefon.
+Personale og HR er blevet notificeret om attestmodtagelsen, og varetager det videre forløb.
+Du bliver kontaktet i denne forbindelse.
 
 Attesten er IKKE journaliseret, da der ikke blev fundet en identificerbar personalesag.
 Vær opmærksom på at attesten er sendt til Personale og HR, som har til ansvar at journalisere attesten.
