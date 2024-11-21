@@ -1,12 +1,12 @@
 const Node = {
-  "id": "2e6b0606eab4568c",
+  "id": "bc4af2689a055a99",
   "type": "http response",
   "z": "7d7cd8fb8a9dbe4e",
   "name": "",
-  "statusCode": "",
+  "statusCode": "200",
   "headers": {},
-  "x": 770,
-  "y": 1780,
+  "x": 590,
+  "y": 1340,
   "wires": []
 }
 

@@ -38,3 +38,4 @@ USER node-red
 
 # Copy entrypoint script
 COPY entrypoint.sh .
+# COPY ./entrypoint.sh /entrypoint.sh

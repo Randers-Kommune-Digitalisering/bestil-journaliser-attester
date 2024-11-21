@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "erAfvist",
       "pt": "msg",
-      "to": "dqUser in payload.brugerDQ = false ? 1 : 0",
+      "to": "0",
       "tot": "jsonata"
     },
     {
@@ -25,7 +25,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 890,
+  "x": 430,
   "y": 1280,
   "wires": [
     [
