@@ -1,18 +1,17 @@
 const Node = {
-  "id": "e5d804484c22b07d",
+  "id": "c83669b57829b570",
   "type": "debug",
-  "z": "d35ec07551c9897c",
-  "name": "Rekvisitus er undefined",
+  "z": "90c6b0b502e346fa",
+  "name": "debug 1",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "false",
   "statusVal": "",
   "statusType": "auto",
-  "x": 430,
-  "y": 200,
+  "x": 1060,
+  "y": 1240,
   "wires": []
 }
 

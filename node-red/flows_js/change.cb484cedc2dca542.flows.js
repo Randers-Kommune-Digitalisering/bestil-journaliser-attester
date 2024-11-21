@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "erAfvistValue",
       "pt": "msg",
-      "to": "erAfvist ? 1 : 0",
+      "to": "0",
       "tot": "jsonata"
     },
     {

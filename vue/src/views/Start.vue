@@ -45,6 +45,18 @@
             body: JSON.stringify(sampleData.value)
         })
         .then(response => response.json())
+        .then(callUpdate())
+    }
+
+    const recieveDataSample = () => {
+        fetch('/api/recievedemoorder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(sampleData.value)
+        })
+        .then(response => response.json())
     }
 
     
@@ -125,7 +137,7 @@
                 </div>
 
                 <button @click="addDataSample()">Indsæt bestilling</button>
-                <button class="blue">Modtag attest</button>
+                <button @click="recieveDataSample()" class="blue">Modtag attest</button>
                 
             </fieldset>
         </form>

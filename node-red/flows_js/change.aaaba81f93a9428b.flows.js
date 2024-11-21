@@ -7,18 +7,17 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "rekvirent",
+      "p": "rekvirentNavn",
       "pt": "msg",
-      "to": "rekvisition.rekvirentEmail",
-      "tot": "msg",
-      "dc": true
+      "to": "DEMO_NAME",
+      "tot": "jsonata"
     },
     {
       "t": "set",
-      "p": "rekvirentNavn",
+      "p": "rekvirent",
       "pt": "msg",
-      "to": "rekvisition.rekvirentNavn",
-      "tot": "msg"
+      "to": "DEMO_MAIL",
+      "tot": "env"
     }
   ],
   "action": "",

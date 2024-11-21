@@ -5,9 +5,7 @@ const Node = {
   "x": 1200,
   "y": 940,
   "wires": [
-    [
-      "d2aad99abc129d46"
-    ]
+    []
   ]
 }
 

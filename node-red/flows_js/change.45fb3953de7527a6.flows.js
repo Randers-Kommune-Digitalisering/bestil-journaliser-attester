@@ -7,9 +7,16 @@ const Node = {
   "rules": [
     {
       "t": "set",
+      "p": "erAfvist",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
+    },
+    {
+      "t": "set",
       "p": "erAfvistValue",
       "pt": "msg",
-      "to": "erAfvist ? 1 : 0",
+      "to": "0",
       "tot": "jsonata"
     },
     {
@@ -25,6 +32,13 @@ const Node = {
       "pt": "msg",
       "to": "bestillinger",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "attestErRen",
+      "pt": "msg",
+      "to": "true",
+      "tot": "bool"
     }
   ],
   "action": "",

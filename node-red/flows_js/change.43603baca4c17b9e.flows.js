@@ -29,7 +29,7 @@ const Node = {
       "t": "set",
       "p": "text",
       "pt": "msg",
-      "to": "html ~> $exists() = false ? payload",
+      "to": "html ~> $exists() = false ? payload = [] ? \"Demo videresendelse af mail\" : payload",
       "tot": "jsonata"
     }
   ],
