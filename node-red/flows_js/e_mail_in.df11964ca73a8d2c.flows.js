@@ -2,6 +2,7 @@ const Node = {
   "id": "df11964ca73a8d2c",
   "type": "e-mail in",
   "z": "90c6b0b502e346fa",
+  "d": true,
   "g": "7927b0d68211546e",
   "name": "",
   "protocol": "IMAP",
