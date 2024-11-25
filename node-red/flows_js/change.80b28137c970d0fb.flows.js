@@ -2,7 +2,6 @@ const Node = {
   "id": "80b28137c970d0fb",
   "type": "change",
   "z": "3f3959fd24bb612e",
-  "d": true,
   "name": "Sæt rekvisition + rekvirent",
   "rules": [
     {
