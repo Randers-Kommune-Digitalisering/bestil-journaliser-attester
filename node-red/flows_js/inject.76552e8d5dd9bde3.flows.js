@@ -11,7 +11,7 @@ const Node = {
     },
     {
       "p": "time",
-      "v": "($millis() - (days * 86400000)) ~> $fromMillis()",
+      "v": "($millis() - (days * 86400000)) ~> $fromMillis(\"[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]\")",
       "vt": "jsonata"
     }
   ],
