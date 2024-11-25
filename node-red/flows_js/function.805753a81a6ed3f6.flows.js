@@ -20,8 +20,10 @@ const Node = {
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   
-    msg.payload = (msg.payload.filedata).toString('utf-8');
-    return msg;
+    
+      msg.payload = (msg.payload.filedata).toString('utf-8');
+      return msg;
+    
   
 }
 
