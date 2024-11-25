@@ -28,8 +28,9 @@ WHERE
     erBestilt = 1
 AND erAfvist = 0
 AND erAttestModtaget = 0
+AND uid = null
 {{#uids}}
-AND uid = {{.}}
+OR uid = {{.}}
 {{/uids}}
 `
 
