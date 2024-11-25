@@ -1,17 +1,16 @@
 const Node = {
-  "id": "b8348b6c73f3a3b7",
+  "id": "6dd63d804bfab9e6",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "bab02435ebea55f1",
-  "name": "Sæt rekvisition",
+  "g": "8ed53d646c31a084",
+  "name": "URL",
   "rules": [
     {
       "t": "set",
-      "p": "rekvisition",
+      "p": "url",
       "pt": "msg",
-      "to": "payload[0]",
-      "tot": "msg",
-      "dc": true
+      "to": "\"https://login.microsoftonline.com/\" &\tad.tenantId &\t\"/oauth2/v2.0/token\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -19,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 280,
-  "y": 1060,
+  "x": 2130,
+  "y": 1000,
   "wires": [
     [
-      "8999dd7c37c527b7"
+      "643ce3a444679564"
     ]
   ]
 }

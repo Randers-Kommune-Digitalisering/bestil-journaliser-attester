@@ -1,14 +1,14 @@
 const Node = {
-  "id": "8999dd7c37c527b7",
+  "id": "169823d6acac242b",
   "type": "switch",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Rekvisition findes?",
-  "property": "rekvisition",
+  "name": "Email findes?",
+  "property": "rekvisition.rekvirentEmail",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "nempty"
+      "t": "empty"
     },
     {
       "t": "else"
@@ -17,14 +17,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 510,
-  "y": 1060,
+  "x": 780,
+  "y": 1040,
   "wires": [
     [
-      "169823d6acac242b"
+      "9b9fc6f6a2a9a45a"
     ],
     [
-      "a4f8c8bcfc105b7b"
+      "79f0b064603f1cef"
     ]
   ]
 }

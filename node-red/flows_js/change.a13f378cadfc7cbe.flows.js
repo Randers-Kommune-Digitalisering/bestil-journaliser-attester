@@ -1,17 +1,16 @@
 const Node = {
-  "id": "b8348b6c73f3a3b7",
+  "id": "a13f378cadfc7cbe",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "bab02435ebea55f1",
-  "name": "Sæt rekvisition",
+  "g": "8ed53d646c31a084",
+  "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "rekvisition",
+      "p": "dqUser",
       "pt": "msg",
-      "to": "payload[0]",
-      "tot": "msg",
-      "dc": true
+      "to": "rekvisition.rekvirentDQ",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -19,11 +18,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 280,
-  "y": 1060,
+  "x": 1800,
+  "y": 1140,
   "wires": [
     [
-      "8999dd7c37c527b7"
+      "1bb4c5a26edc1813"
     ]
   ]
 }

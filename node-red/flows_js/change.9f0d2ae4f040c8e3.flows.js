@@ -1,16 +1,16 @@
 const Node = {
-  "id": "b8348b6c73f3a3b7",
+  "id": "9f0d2ae4f040c8e3",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "bab02435ebea55f1",
-  "name": "Sæt rekvisition",
+  "g": "8ed53d646c31a084",
+  "name": "Retrieve token",
   "rules": [
     {
       "t": "set",
-      "p": "rekvisition",
+      "p": "payload",
       "pt": "msg",
-      "to": "payload[0]",
-      "tot": "msg",
+      "to": "token",
+      "tot": "flow",
       "dc": true
     }
   ],
@@ -19,11 +19,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 280,
-  "y": 1060,
+  "x": 1920,
+  "y": 920,
   "wires": [
     [
-      "8999dd7c37c527b7"
+      "280574e2b4cfed66"
     ]
   ]
 }
