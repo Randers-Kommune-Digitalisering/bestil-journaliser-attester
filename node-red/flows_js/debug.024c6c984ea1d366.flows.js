@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "bestilling.rekvirentEmail ~> $exists() ?\t{\t    \"azure\": \"Mail hentning succesfuld\",\t    \"rekvirent\": {\t        \"dq\": bestilling.rekvirentDQ,\t        \"navn\": bestilling.rekvirentNavn,\t        \"mail\": bestilling.rekvirentEmail\t    }\t}\t:\t{\t    \"azure\": \"Fejl ved mail hentning\",\t    \"rekvirent\": {\t        \"dq\": bestilling.rekvirentDQ,\t        \"navn\": bestilling.rekvirentNavn\t    },\t    \"message\": error.message,\t    \"statusCode\": statusCode = null ? payload.statusCode : statusCode\t}",
+  "complete": "rekvisition.rekvirentEmail ~> $exists() ?\t{\t    \"azure\": \"Mail hentning succesfuld\",\t    \"rekvirent\": {\t        \"dq\": rekvisition.rekvirentDQ,\t        \"navn\": rekvisition.rekvirentNavn,\t        \"mail\": rekvisition.rekvirentEmail\t    }\t}\t:\t{\t    \"azure\": \"Fejl ved mail hentning\",\t    \"rekvirent\": {\t        \"dq\": rekvisition.rekvirentDQ,\t        \"navn\": rekvisition.rekvirentNavn\t    },\t    \"message\": error.message,\t    \"statusCode\": statusCode = null ? payload.statusCode : statusCode\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",

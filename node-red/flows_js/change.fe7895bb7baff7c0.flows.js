@@ -9,8 +9,8 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "token",
-      "tot": "flow",
+      "to": "azure_token",
+      "tot": "global",
       "dc": true
     }
   ],

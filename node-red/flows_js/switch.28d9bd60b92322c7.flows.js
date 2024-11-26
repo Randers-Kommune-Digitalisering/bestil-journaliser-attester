@@ -4,8 +4,8 @@ const Node = {
   "z": "c715449c21b1a61f",
   "g": "3c5129bfe50adfad",
   "name": "",
-  "property": "token.expires_at",
-  "propertyType": "flow",
+  "property": "azure_token.expires_at",
+  "propertyType": "global",
   "rules": [
     {
       "t": "gt",
