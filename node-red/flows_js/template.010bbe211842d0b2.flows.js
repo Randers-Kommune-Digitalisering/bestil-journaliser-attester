@@ -22,7 +22,7 @@ const Node = {
 }
 
 Node.template = `
-Din bestilling af en eller flere attester på {{rekvisition.navn}} ({{rekvisition.cpr}}) er udløbet, da den har overskredet den maksimale behandlingstid på 19 dage.
+Din bestilling af en eller flere attester på {{rekvisition.navn}} ({{rekvisition.cpr}}-XXXX) er udløbet, da den har overskredet den maksimale behandlingstid på 19 dage.
 
 Genbestil attesten hvis du stadig har behov for denne.
 `

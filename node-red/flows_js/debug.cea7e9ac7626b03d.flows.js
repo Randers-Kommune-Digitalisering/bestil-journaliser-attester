@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "text",
+  "complete": "{\t   \"uid\": rekvisition.uid,\t   \"rekvisitus\": rekvisitus,\t   \"rekvirent\": rekvirent,\t   \"rekvisitionAfvist\": erAfvist,\t   \"status\": \"afvist\"\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
