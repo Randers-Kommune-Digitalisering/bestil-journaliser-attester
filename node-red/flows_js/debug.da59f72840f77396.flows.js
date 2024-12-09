@@ -5,7 +5,7 @@ const Node = {
   "name": "Rekvisitus",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "rekvisitus",
   "targetType": "msg",

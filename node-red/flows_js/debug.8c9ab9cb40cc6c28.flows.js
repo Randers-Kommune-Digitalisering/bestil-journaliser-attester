@@ -5,13 +5,13 @@ const Node = {
   "name": "Rekvirent",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "rekvirent",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1510,
+  "x": 1500,
   "y": 1100,
   "wires": []
 }
