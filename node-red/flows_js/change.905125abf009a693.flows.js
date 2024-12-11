@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "payload.value[0].mail",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "rekvirent",
+      "pt": "msg",
+      "to": "rekvisition.rekvirentEmail",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -18,7 +25,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 2540,
+  "x": 2480,
   "y": 1140,
   "wires": [
     [

@@ -11,15 +11,21 @@ const Node = {
       "t": "empty"
     },
     {
+      "t": "null"
+    },
+    {
       "t": "else"
     }
   ],
   "checkall": "true",
   "repair": false,
-  "outputs": 2,
+  "outputs": 3,
   "x": 780,
   "y": 1040,
   "wires": [
+    [
+      "9b9fc6f6a2a9a45a"
+    ],
     [
       "9b9fc6f6a2a9a45a"
     ],
