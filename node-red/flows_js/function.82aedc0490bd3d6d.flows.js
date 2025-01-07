@@ -10,13 +10,14 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 230,
-  "y": 60,
+  "x": 155,
+  "y": 100,
   "wires": [
     [
       "40a982f694bdc29c"
     ]
-  ]
+  ],
+  "l": false
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {

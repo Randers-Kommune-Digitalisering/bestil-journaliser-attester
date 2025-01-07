@@ -5,8 +5,8 @@ const Node = {
   "g": "958f6aed62b11b69",
   "name": "Mail IN: HR notifikation",
   "links": [
-    "dac6afa62d5cf0e1",
-    "600171742f43ae95"
+    "600171742f43ae95",
+    "dac6afa62d5cf0e1"
   ],
   "x": 75,
   "y": 1140,

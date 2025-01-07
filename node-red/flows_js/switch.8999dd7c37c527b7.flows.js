@@ -3,8 +3,8 @@ const Node = {
   "type": "switch",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Rekvirent findes?",
-  "property": "rekvirent",
+  "name": "Rekvisition findes?",
+  "property": "rekvisition",
   "propertyType": "msg",
   "rules": [
     {
@@ -17,11 +17,11 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 750,
+  "x": 510,
   "y": 1060,
   "wires": [
     [
-      "c6f8a509f9ba132c"
+      "169823d6acac242b"
     ],
     [
       "a4f8c8bcfc105b7b"

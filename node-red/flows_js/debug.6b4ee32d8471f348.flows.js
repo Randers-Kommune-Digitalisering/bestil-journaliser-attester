@@ -6,13 +6,13 @@ const Node = {
   "name": "SBSYS Response",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"statusCode\": statusCode,\t    \"response\": payload,\t    \"error\": error\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1260,
+  "x": 1250,
   "y": 2380,
   "wires": []
 }

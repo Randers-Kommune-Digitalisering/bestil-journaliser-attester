@@ -1,23 +1,22 @@
 const Node = {
-  "id": "aaaba81f93a9428b",
+  "id": "905125abf009a693",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "g": "bab02435ebea55f1",
-  "name": "Sæt rekvirent",
+  "g": "8ed53d646c31a084",
+  "name": "",
   "rules": [
+    {
+      "t": "set",
+      "p": "rekvisition.rekvirentEmail",
+      "pt": "msg",
+      "to": "payload.value[0].mail",
+      "tot": "msg"
+    },
     {
       "t": "set",
       "p": "rekvirent",
       "pt": "msg",
       "to": "rekvisition.rekvirentEmail",
-      "tot": "msg",
-      "dc": true
-    },
-    {
-      "t": "set",
-      "p": "rekvirentNavn",
-      "pt": "msg",
-      "to": "rekvisition.rekvirentNavn",
       "tot": "msg"
     }
   ],
@@ -26,11 +25,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 490,
-  "y": 1060,
+  "x": 2480,
+  "y": 1140,
   "wires": [
     [
-      "8999dd7c37c527b7"
+      "024c6c984ea1d366",
+      "34842afb9216188b"
     ]
   ]
 }

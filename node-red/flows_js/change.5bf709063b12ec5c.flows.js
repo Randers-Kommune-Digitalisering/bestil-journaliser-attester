@@ -14,8 +14,8 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "token",
-      "pt": "flow",
+      "p": "azure_token",
+      "pt": "global",
       "to": "payload",
       "tot": "msg",
       "dc": true
