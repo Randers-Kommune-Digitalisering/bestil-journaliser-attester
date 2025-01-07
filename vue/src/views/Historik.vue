@@ -60,9 +60,6 @@
     }
     
     const searchFinishedOrders = (keyword) => {
-        
-        console.log("Searching finished orders for " + keyword)
-
         if(keyword == "")
             ordersFinished.value = allOrdersFinished.value.slice(0, 10)
         else
@@ -87,9 +84,6 @@
 
     function sortList(list, col)
     {
-        console.log("Sorting list: ")
-        console.log(list)
-
         if(col == currentSortColumn.value)
             currentSortDesc.value = !currentSortDesc.value
         else
@@ -97,8 +91,6 @@
             currentSortColumn.value = col
             currentSortDesc.value = true
         }
-        
-        console.log("Sorting by " + col + " " + (currentSortDesc.value ? "desc" : "asc"))
 
         return list.sort((a, b) =>
         {
