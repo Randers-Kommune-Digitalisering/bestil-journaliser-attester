@@ -63,7 +63,7 @@ main
     .content
     {
         /* Set width of main content */
-        width: 85rem;
+        width: 100rem;
 
         border-left: 0.1rem solid var(--color-border);
         border-right: 0.1rem solid var(--color-border);
