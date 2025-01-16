@@ -3,9 +3,9 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Læs rekvisitus fra mail",
+  "name": "Læs data fra mail",
   "info": "",
-  "x": 240,
+  "x": 220,
   "y": 880,
   "wires": []
 }
