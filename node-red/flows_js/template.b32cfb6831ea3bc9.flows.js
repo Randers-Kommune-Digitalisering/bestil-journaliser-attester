@@ -10,7 +10,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 570,
+  "x": 520,
   "y": 1300,
   "wires": [
     [
@@ -23,14 +23,22 @@ Node.template = `
 INSERT INTO 
     bestillinger
     (cpr,
+    rekvirentDQ,
+    rekvirentEmail,
+    rekvirentNavn,
     attestType,
+    attestSubType,
     erBestilt,
-    attestErModtaget,
+    erAttestModtaget,
     erDublikat,
-    bestillingModtaget)
+    attestModtaget)
 VALUES 
     ('{{rekvisitus}}',
+    '{{payload.rekvirentDQ}}',
+    '{{payload.rekvirentEmail}}',
+    '{{payload.rekvirentNavn}}',
     {{{attestType}}},
+    {{payload.attestSubType}},
     1,
     1,
     1,

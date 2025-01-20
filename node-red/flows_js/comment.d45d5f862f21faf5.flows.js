@@ -5,7 +5,7 @@ const Node = {
   "g": "bab02435ebea55f1",
   "name": "Fejl",
   "info": "",
-  "x": 990,
+  "x": 940,
   "y": 1320,
   "wires": []
 }
