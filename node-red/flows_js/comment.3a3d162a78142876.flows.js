@@ -1,12 +1,12 @@
 const Node = {
-  "id": "bc4fee4498687288",
+  "id": "3a3d162a78142876",
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Add dummy order",
+  "name": "Fejl",
   "info": "",
-  "x": 970,
-  "y": 1180,
+  "x": 750,
+  "y": 1220,
   "wires": []
 }
 

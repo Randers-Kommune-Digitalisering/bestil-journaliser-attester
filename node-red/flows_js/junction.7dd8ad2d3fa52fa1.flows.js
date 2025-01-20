@@ -3,7 +3,7 @@ const Node = {
   "type": "junction",
   "z": "90c6b0b502e346fa",
   "x": 1600,
-  "y": 2660,
+  "y": 2780,
   "wires": [
     [
       "1017731aca54b902"

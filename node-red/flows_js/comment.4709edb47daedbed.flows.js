@@ -2,6 +2,7 @@ const Node = {
   "id": "4709edb47daedbed",
   "type": "comment",
   "z": "812b69015d6703b6",
+  "g": "137efd87510b6da9",
   "name": "Tjek at rekvirent findes / Generhverv",
   "info": "",
   "x": 1680,

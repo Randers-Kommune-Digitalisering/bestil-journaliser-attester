@@ -6,7 +6,7 @@ const Node = {
   "name": "Træk token fra SBSIP",
   "info": "",
   "x": 240,
-  "y": 1580,
+  "y": 1700,
   "wires": []
 }
 
