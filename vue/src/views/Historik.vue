@@ -209,7 +209,16 @@
                     <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
                         <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
                     </td>
-                    <td><span :class="returnOrderStatusColor(order.erAfvist)">{{ order.erAfvist ? "Afvist" : order.erJournaliseret == 1 ? "Journaliseret" : order.erAdviseringAfsendt == 1 ? 'Sendt til rekvirent' : 'Modtaget'}}</span>
+                    <td><span :class="returnOrderStatusColor(order.erAfvist)">{{
+                        order.erAfvist ?
+                            "Afvist" :
+                            order.erJournaliseret == 1 ?
+                                "Journaliseret" :
+                                    order.erAdviseringAfsendt == 1 ?
+                                    'Sendt til rekvirent' : 
+                                        order.erDublikat  == 1 ? 
+                                            'Dublikat' : 'Modtaget'
+                        }}</span>
                         <div class="text-small"><span :class="returnOrderStatusColor(order.erAdviseringAfsendt == 1 ? 0 : 1)">{{ order.erAdviseringAfsendt == 1 ? 'Adviseret' : 'Ikke adviseret' }}</span></div></td>
                 </tr>
                 <tr v-else>
