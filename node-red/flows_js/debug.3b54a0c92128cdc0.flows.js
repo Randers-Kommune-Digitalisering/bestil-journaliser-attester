@@ -5,13 +5,13 @@ const Node = {
   "name": "Ny bestilling",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "bestilling",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 700,
+  "x": 690,
   "y": 380,
   "wires": []
 }

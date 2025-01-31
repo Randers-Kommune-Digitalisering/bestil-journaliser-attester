@@ -1,12 +1,12 @@
 const Node = {
-  "id": "34d5846b76428813",
+  "id": "92b8383ab91f9187",
   "type": "comment",
   "z": "90c6b0b502e346fa",
-  "g": "f58662076006e952",
-  "name": "Advisering",
+  "g": "d774a29ec2b63a5e",
+  "name": "Manuel behandling",
   "info": "",
-  "x": 960,
-  "y": 2900,
+  "x": 1290,
+  "y": 2700,
   "wires": []
 }
 
