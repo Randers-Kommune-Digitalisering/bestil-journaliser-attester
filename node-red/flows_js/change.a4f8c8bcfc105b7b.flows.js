@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\t   \"error\": \"Ingen rekvisition\",\t   \"message\": \"Der blev modtaget en attest, men der findes ikke en tilsvarende rekvisition i systemet.\",\t   \"attestType\": attestTypeString & \" (\" & attestType & \")\",\t   \"rekvisitus\": rekvisitus\t}",
+      "to": "{\t   \"warning\": \"Ingen rekvisition\",\t   \"message\": \"Der blev modtaget en attest, men der findes ikke en tilsvarende rekvisition i systemet.\",\t   \"attestType\": attestTypeString & \" (\" & attestType & \")\",\t   \"rekvisitus\": rekvisitus\t}",
       "tot": "jsonata"
     }
   ],
@@ -18,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 780,
-  "y": 1100,
+  "x": 1220,
+  "y": 1280,
   "wires": [
     [
       "461970279c8fa295"

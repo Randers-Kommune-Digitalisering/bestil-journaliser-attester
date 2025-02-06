@@ -25,6 +25,8 @@ FROM
     bestillinger
 WHERE
     rekvirentEmail = ''
+AND erAfvist = 0
+AND erAttestModtaget = 0
 `
 
 module.exports = Node;

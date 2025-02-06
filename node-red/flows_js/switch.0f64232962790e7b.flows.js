@@ -2,6 +2,7 @@ const Node = {
   "id": "0f64232962790e7b",
   "type": "switch",
   "z": "812b69015d6703b6",
+  "g": "137efd87510b6da9",
   "name": "",
   "property": "to",
   "propertyType": "msg",
