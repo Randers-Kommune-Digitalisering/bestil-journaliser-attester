@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\"error\":\"Ingen attest vedhæftet\",\"message\":\"Der blev modtaget en mail som ligner en attestrekvisition, men der er ingen vedhæftet attest.\"}",
+      "to": "{\"warning\":\"Ingen attest vedhæftet\",\"message\":\"Der blev modtaget en mail som ligner en attestrekvisition, men der er ingen vedhæftet attest.\"}",
       "tot": "json"
     }
   ],

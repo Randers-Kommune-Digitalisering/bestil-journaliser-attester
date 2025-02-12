@@ -6,14 +6,14 @@ const Node = {
   "name": "Aktive sager?",
   "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"sager\": payload @ $sag .  {\t        \"id\": $sag.Id,\t        \"titel\": $sag.SagsTitel,\t        \"status\": $sag.SagsStatus.Navn\t    }\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 580,
-  "y": 1840,
+  "y": 2080,
   "wires": []
 }
 

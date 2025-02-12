@@ -49,6 +49,8 @@ CREATE TABLE IF NOT EXISTS {{tablename}} (
 
     erAdviseringAfsendt BOOL DEFAULT False,
     adviseringAfsendt TIMESTAMP,
+
+    erDublikat BOOL DEFAULT False,
     
     PRIMARY KEY (uid)
 );

@@ -6,14 +6,14 @@ const Node = {
   "name": "DelforloebID",
   "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "delforloebId",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1160,
-  "y": 2220,
+  "x": 1150,
+  "y": 2460,
   "wires": []
 }
 

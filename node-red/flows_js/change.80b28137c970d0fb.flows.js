@@ -27,6 +27,13 @@ const Node = {
       "pt": "msg",
       "to": "rekvisition.rekvirentEmail",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "rekvisition.cpr",
+      "pt": "msg",
+      "to": "rekvisition.cpr ~> $substring(0, 6)",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -34,11 +41,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 670,
+  "x": 850,
   "y": 480,
   "wires": [
     [
-      "fd92ef0c7c9c9653"
+      "34a10f4966b99eea"
     ]
   ]
 }

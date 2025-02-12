@@ -2,7 +2,6 @@ const Node = {
   "id": "1a2aa96596f99911",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "d": true,
   "g": "bab02435ebea55f1",
   "name": "Find Randers-mail",
   "rules": [
@@ -20,9 +19,11 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 450,
-  "y": 880,
+  "y": 920,
   "wires": [
-    []
+    [
+      "8ef59cc3770c0d4c"
+    ]
   ]
 }
 

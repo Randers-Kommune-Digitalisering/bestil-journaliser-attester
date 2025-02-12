@@ -6,14 +6,14 @@ const Node = {
   "name": "SagsID",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "sagsId",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
   "x": 1080,
-  "y": 1900,
+  "y": 2140,
   "wires": []
 }
 

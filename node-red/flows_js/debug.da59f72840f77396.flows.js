@@ -5,13 +5,13 @@ const Node = {
   "name": "Rekvisitus",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "rekvisitus",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1510,
+  "x": 1470,
   "y": 1060,
   "wires": []
 }

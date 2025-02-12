@@ -6,14 +6,14 @@ const Node = {
   "name": "Delforløb?",
   "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"delforlob\": payload.Titel\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1170,
-  "y": 2060,
+  "y": 2300,
   "wires": []
 }
 

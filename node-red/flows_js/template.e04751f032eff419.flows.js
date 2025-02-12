@@ -23,7 +23,9 @@ SELECT
     *,
     CASE 
         WHEN erAfvist = 1 THEN afvist
-        ELSE journaliseret
+        WHEN erJournaliseret = 1 THEN journaliseret
+        WHEN erAdviseringAfsendt = 1 THEN adviseringAfsendt
+        ELSE attestModtaget
     END AS behandlet
 
 FROM
@@ -35,7 +37,7 @@ OR  erAttestModtaget = 1
 ORDER BY
 adviseringAfsendt DESC, afvist DESC, journaliseret DESC, attestType, attestSubType, rekvirentDQ
 
-LIMIT 100
+LIMIT 1000
 `
 
 module.exports = Node;

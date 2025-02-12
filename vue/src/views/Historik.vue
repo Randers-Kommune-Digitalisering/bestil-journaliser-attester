@@ -60,9 +60,6 @@
     }
     
     const searchFinishedOrders = (keyword) => {
-        
-        console.log("Searching finished orders for " + keyword)
-
         if(keyword == "")
             ordersFinished.value = allOrdersFinished.value.slice(0, 10)
         else
@@ -87,9 +84,6 @@
 
     function sortList(list, col)
     {
-        console.log("Sorting list: ")
-        console.log(list)
-
         if(col == currentSortColumn.value)
             currentSortDesc.value = !currentSortDesc.value
         else
@@ -97,8 +91,6 @@
             currentSortColumn.value = col
             currentSortDesc.value = true
         }
-        
-        console.log("Sorting by " + col + " " + (currentSortDesc.value ? "desc" : "asc"))
 
         return list.sort((a, b) =>
         {
@@ -217,7 +209,23 @@
                     <td>{{ (attestTyper.find(x => x.typeId == order.attestType)).name }}
                         <div class="text-small">{{ (attestTyper.find(x => x.typeId == order.attestType)).description }}</div>
                     </td>
-                    <td><span :class="returnOrderStatusColor(order.erAfvist)">{{ order.erAfvist ? "Afvist" : "Færdigbehandlet" }}</span></td>
+                    <td><span :class="returnOrderStatusColor(order.erAfvist)">
+                            {{
+                            order.erAfvist ?
+                                "Afvist" :
+                                order.erJournaliseret == 1 ?
+                                    "Journaliseret" :
+                                        order.erAdviseringAfsendt == 1 ?
+                                        'Sendt til rekvirent' : 
+                                            order.erDublikat  == 1 ? 
+                                                'Dublikat' : 'Modtaget'
+                            }}
+                        </span>
+                        <div class="text-small">
+                            <span :class="returnOrderStatusColor(order.erAdviseringAfsendt == 1 ? 0 : order.erDublikat ? 0 : 1)">
+                                {{ order.erAdviseringAfsendt == 1 ? 'Adviseret' : order.erDublikat  == 1 ? 'Ignoreret' : 'Ikke adviseret' }}
+                            </span>
+                        </div></td>
                 </tr>
                 <tr v-else>
                     <td colspan="5">Der er ingen bestillinger at vise.</td>

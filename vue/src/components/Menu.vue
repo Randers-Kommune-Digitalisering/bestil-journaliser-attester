@@ -217,7 +217,7 @@
         padding-right: 0rem;
 
         right: 50%;
-        transform: translateX(-42.5rem);
+        transform: translateX(-50rem);
         width: auto;
         height: 100vh;
 

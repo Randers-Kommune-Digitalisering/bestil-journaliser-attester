@@ -6,13 +6,13 @@ const Node = {
   "name": "Sending mail",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"to\": to,\t    \"topic\": topic,\t    \"hasAttachment\": attachments ~> $exists()\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 680,
+  "x": 670,
   "y": 60,
   "wires": []
 }
