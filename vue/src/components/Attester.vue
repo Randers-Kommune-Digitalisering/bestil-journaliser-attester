@@ -98,7 +98,7 @@
         // Join CPR to string
         var text = ""
         orders.value.forEach(element => {
-            text += element.cpr + " " + element.navn + "\n"
+            text += element.cpr + " " + (element.navn == "en person" ? "" : element.navn) + "\n"
         })
         
         // Then copy string to clipboard
