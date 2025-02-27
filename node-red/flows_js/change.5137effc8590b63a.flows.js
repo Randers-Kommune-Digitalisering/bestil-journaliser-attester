@@ -36,7 +36,7 @@ const Node = {
       "t": "set",
       "p": "mail.body",
       "pt": "msg",
-      "to": "payload",
+      "to": "mailbody",
       "tot": "msg"
     },
     {

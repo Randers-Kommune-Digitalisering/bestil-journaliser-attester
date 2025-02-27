@@ -3,7 +3,7 @@ const Node = {
   "type": "switch",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Fra signflow?",
+  "name": "Fra\\n signflow?",
   "property": "from ~> $lowercase()",
   "propertyType": "jsonata",
   "rules": [
@@ -24,7 +24,7 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 3,
-  "x": 370,
+  "x": 400,
   "y": 320,
   "wires": [
     [
