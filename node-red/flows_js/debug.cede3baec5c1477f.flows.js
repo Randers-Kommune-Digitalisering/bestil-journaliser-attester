@@ -2,7 +2,7 @@ const Node = {
   "id": "cede3baec5c1477f",
   "type": "debug",
   "z": "7599a14e87e1d5c4",
-  "name": "ADVIS - 2",
+  "name": "ADVIS - Timeout",
   "active": true,
   "tosidebar": true,
   "console": false,
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 180,
-  "y": 700,
+  "x": 210,
+  "y": 680,
   "wires": []
 }
 

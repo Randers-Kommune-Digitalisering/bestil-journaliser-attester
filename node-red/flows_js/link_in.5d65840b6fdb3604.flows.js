@@ -6,7 +6,7 @@ const Node = {
   "name": "Opdater DB erAdviseringAfsendt",
   "links": [],
   "x": 75,
-  "y": 1580,
+  "y": 1520,
   "wires": [
     [
       "766b0de0b1803825"

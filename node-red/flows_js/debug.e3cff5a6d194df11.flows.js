@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "HR Mail\\n(ignored)",
+  "name": "HR Mail\\n (ignored)",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -12,8 +12,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 580,
-  "y": 280,
+  "x": 570,
+  "y": 320,
   "wires": []
 }
 

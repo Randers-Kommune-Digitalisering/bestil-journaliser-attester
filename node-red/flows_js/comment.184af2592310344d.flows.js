@@ -5,7 +5,7 @@ const Node = {
   "name": "Advisering - Rekvisition automatisk afvist (timeout)",
   "info": "",
   "x": 230,
-  "y": 620,
+  "y": 600,
   "wires": []
 }
 

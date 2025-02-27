@@ -6,7 +6,7 @@ const Node = {
   "name": "Find alle delforløb",
   "info": "",
   "x": 290,
-  "y": 2240,
+  "y": 2480,
   "wires": []
 }
 

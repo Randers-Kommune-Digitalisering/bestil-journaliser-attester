@@ -2,7 +2,7 @@ const Node = {
   "id": "b38b6731fed207c5",
   "type": "debug",
   "z": "7599a14e87e1d5c4",
-  "name": "ADVIS - 1",
+  "name": "ADVIS - Afvist af sagsbehandler",
   "active": true,
   "tosidebar": true,
   "console": false,
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 180,
-  "y": 560,
+  "x": 250,
+  "y": 520,
   "wires": []
 }
 

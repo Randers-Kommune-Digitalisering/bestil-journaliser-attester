@@ -1,23 +1,23 @@
 const Node = {
-  "id": "eedb4af6e848f410",
+  "id": "718a74878f69c1eb",
   "type": "switch",
   "z": "7599a14e87e1d5c4",
   "name": "",
-  "property": "ok",
+  "property": "error",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "true"
+      "t": "nempty"
     }
   ],
   "checkall": "true",
   "repair": false,
   "outputs": 1,
-  "x": 390,
-  "y": 1020,
+  "x": 770,
+  "y": 280,
   "wires": [
     [
-      "3a257d378b5843c0"
+      "e82742247a89732c"
     ]
   ]
 }

@@ -3,13 +3,15 @@ const Node = {
   "type": "link in",
   "z": "7599a14e87e1d5c4",
   "name": "Adviser HR: Uren attest modtaget",
-  "links": [],
+  "links": [
+    "bd4e074388a54a71"
+  ],
   "x": 55,
   "y": 1240,
   "wires": [
     [
-      "ae9e81bd50800d0e",
-      "dddd8a7bc6d1aa7f"
+      "dddd8a7bc6d1aa7f",
+      "0895376141b614f0"
     ]
   ]
 }

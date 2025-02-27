@@ -5,7 +5,7 @@ const Node = {
   "name": "Adviser: Afvisning (sagsbehandler)",
   "links": [],
   "x": 55,
-  "y": 520,
+  "y": 480,
   "wires": [
     [
       "cad6222087cd99c0",

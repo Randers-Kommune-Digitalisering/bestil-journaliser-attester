@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Sæt fejlbesked",
+  "name": "Sæt fejlbesked \\n Ej en attest",
   "rules": [
     {
       "t": "set",
@@ -18,8 +18,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 740,
-  "y": 320,
+  "x": 760,
+  "y": 300,
   "wires": [
     [
       "e8e4d35dfa279f7a"

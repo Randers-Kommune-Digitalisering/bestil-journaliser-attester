@@ -6,7 +6,7 @@ const Node = {
   "name": "Send til rekvirent",
   "info": "",
   "x": 1220,
-  "y": 2260,
+  "y": 2460,
   "wires": []
 }
 

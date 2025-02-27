@@ -19,7 +19,7 @@ const Node = {
   "fetch": "trigger",
   "inputs": 1,
   "x": 130,
-  "y": 300,
+  "y": 320,
   "wires": [
     [
       "b8926a0fe507d19a",

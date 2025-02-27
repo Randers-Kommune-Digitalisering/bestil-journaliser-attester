@@ -39,7 +39,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 560,
-  "y": 520,
+  "y": 480,
   "wires": [
     [
       "21451db13d0e2ffc"

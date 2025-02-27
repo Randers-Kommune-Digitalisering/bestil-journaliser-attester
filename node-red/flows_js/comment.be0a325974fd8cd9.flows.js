@@ -5,8 +5,8 @@ const Node = {
   "g": "8ed53d646c31a084",
   "name": "Hent Azure token",
   "info": "",
-  "x": 1740,
-  "y": 880,
+  "x": 1800,
+  "y": 1040,
   "wires": []
 }
 
