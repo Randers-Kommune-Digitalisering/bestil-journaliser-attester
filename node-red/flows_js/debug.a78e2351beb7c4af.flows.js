@@ -2,7 +2,7 @@ const Node = {
   "id": "a78e2351beb7c4af",
   "type": "debug",
   "z": "7599a14e87e1d5c4",
-  "name": "stdout (missing  \\n mail property)",
+  "name": "stdout (missing\\n mail property)",
   "active": true,
   "tosidebar": true,
   "console": true,

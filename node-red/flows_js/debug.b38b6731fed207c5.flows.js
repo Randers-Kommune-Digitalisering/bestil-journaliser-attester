@@ -5,13 +5,13 @@ const Node = {
   "name": "ADVIS - Afvist af sagsbehandler",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "true",
+  "complete": "{\t    \"rekvisition\": rekvisition,\t    \"attestErRen\": attestErRen,\t    \"erAfvist\": erAfvist,\t    \"erJournaliseret\": erJournaliseret,\t    \"attestTypeString\": attestTypeString\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 250,
+  "x": 260,
   "y": 520,
   "wires": []
 }
