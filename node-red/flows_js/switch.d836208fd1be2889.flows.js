@@ -7,7 +7,7 @@ const Node = {
   "propertyType": "msg",
   "rules": [
     {
-      "t": "nempty"
+      "t": "nnull"
     },
     {
       "t": "else"
