@@ -3,7 +3,7 @@ const Node = {
   "type": "switch",
   "z": "bb3c27172f633c4a",
   "name": "",
-  "property": "rekvisitus.cpr",
+  "property": "rekvisition.cpr",
   "propertyType": "msg",
   "rules": [
     {

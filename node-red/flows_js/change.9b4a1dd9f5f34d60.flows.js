@@ -3,13 +3,13 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Sæt fejlbesked",
+  "name": "Sæt fejlbesked\\n Ingen email",
   "rules": [
     {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\t   \"warning\": \"Ingen rekvisition\",\t   \"message\": \"Der blev ikke fundet en email på rekvirenten\",\t   \"attestType\": attestTypeString & \" (\" & attestType & \")\",\t   \"rekvisitus\": rekvisitus\t}",
+      "to": "{\t   \"warning\": \"Ingen rekvirent email\",\t   \"message\": \"Der blev ikke fundet en email på rekvirenten\",\t   \"attestType\": attestTypeString & \" (\" & attestType & \")\",\t   \"rekvisitus\": rekvisitus\t}",
       "tot": "jsonata"
     }
   ],

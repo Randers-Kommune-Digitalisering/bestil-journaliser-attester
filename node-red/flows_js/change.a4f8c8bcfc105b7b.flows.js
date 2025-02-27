@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "bab02435ebea55f1",
-  "name": "Sæt fejlbesked",
+  "name": "Sæt fejlbesked\\n Ingen rekvisition",
   "rules": [
     {
       "t": "set",

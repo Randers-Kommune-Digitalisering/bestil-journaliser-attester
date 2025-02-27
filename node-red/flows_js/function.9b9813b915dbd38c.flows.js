@@ -33,7 +33,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
                   msg.rekvisitus = {
                       "cpr": msg.rekvisitus ?? "Fejl! Ingen CPR",
                       "navn": name ?? "en person",
-                      "tjenestenr": e_id ?? "Ingen tjenestenr"
+                      "tjenestenr": e_id ?? "Ukendt tjenestenr"
                   }
           
               }

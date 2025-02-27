@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "rekvisitus",
       "pt": "msg",
-      "to": "{\t   \"cpr\": rekvisitus ~> $exists() ? rekvisitus.cpr : null,\t   \"navn\": null\t}",
+      "to": "{\t   \"cpr\": rekvisition ~> $exists() ? rekvisition.cpr : null,\t   \"navn\": null\t}",
       "tot": "jsonata"
     }
   ],

@@ -2,14 +2,14 @@ const Node = {
   "id": "446c11c46f27d670",
   "type": "change",
   "z": "90c6b0b502e346fa",
-  "name": "Sæt fejlbesked",
+  "name": "Sæt fejlbesked\\n Teknisk fejl",
   "rules": [
     {
       "t": "set",
       "p": "error",
       "pt": "msg",
-      "to": "{\"error\":\"Database fejl\",\"message\":\"Der opstod en fejl ved kommunikation med databasen.\"}",
-      "tot": "json"
+      "to": "{    \"error\": \"Teknisk fejl\",    \"message\": \"Der opstod en teknisk fejl i flowet.\",    \"details\": error}",
+      "tot": "jsonata"
     }
   ],
   "action": "",
