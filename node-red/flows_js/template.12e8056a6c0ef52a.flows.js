@@ -9,7 +9,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 1120,
+  "x": 1260,
   "y": 1240,
   "wires": [
     [
@@ -20,7 +20,7 @@ const Node = {
 
 Node.template = `
 
-Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}}, og vedhæftet til denne mail.
+Attesten er journaliseret i personalesag med sagsnummer {{sagsnummer}} (tjenestenr. {{rekvisitus.tjenestenr}}), og vedhæftet til denne mail.
 `
 
 module.exports = Node;

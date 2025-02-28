@@ -20,7 +20,7 @@ const Node = {
 
 Node.template = `
 
-Afvisningen er journaliseret i {{rekvisition.navn}}'s personalesag (tjenestenr. {{rekvisitus.tjenestenr}}).
+Afvisningen er journaliseret i {{rekvisition.navn}}'s personalesag med sagsnummer {{sagsnummer}} (tjenestenr. {{rekvisitus.tjenestenr}}).
 `
 
 module.exports = Node;

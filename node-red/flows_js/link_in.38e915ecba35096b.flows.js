@@ -3,7 +3,9 @@ const Node = {
   "type": "link in",
   "z": "7599a14e87e1d5c4",
   "name": "Adviser: Afvisning (sagsbehandler)",
-  "links": [],
+  "links": [
+    "0a543725b05530a5"
+  ],
   "x": 55,
   "y": 480,
   "wires": [

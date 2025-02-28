@@ -6,10 +6,9 @@ const Node = {
   "name": "Opdater DB erAdviseringAfsendt",
   "links": [
     "1eb59539f52d8571",
-    "a01d3f292d42930d",
     "789bc12cf2d6fd5f",
-    "e0ca0335fdb418c8",
-    "d85b824ac8b334cd"
+    "d85b824ac8b334cd",
+    "e0ca0335fdb418c8"
   ],
   "x": 75,
   "y": 1520,
