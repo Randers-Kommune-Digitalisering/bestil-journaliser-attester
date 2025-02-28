@@ -7,7 +7,7 @@ const Node = {
   "wires": [
     [
       "a1a5d79ba82c290e",
-      "3e2ab1a0dfb80637"
+      "1938956569e40fbd"
     ]
   ]
 }

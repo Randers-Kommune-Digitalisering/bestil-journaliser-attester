@@ -4,12 +4,18 @@ const Node = {
   "z": "7599a14e87e1d5c4",
   "g": "5e3a8b5e70753001",
   "name": "Opdater DB erAdviseringAfsendt",
-  "links": [],
+  "links": [
+    "1eb59539f52d8571",
+    "a01d3f292d42930d",
+    "789bc12cf2d6fd5f",
+    "e0ca0335fdb418c8",
+    "d85b824ac8b334cd"
+  ],
   "x": 75,
   "y": 1520,
   "wires": [
     [
-      "766b0de0b1803825"
+      "978f26559d94c2e7"
     ]
   ]
 }

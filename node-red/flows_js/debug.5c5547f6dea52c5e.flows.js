@@ -5,14 +5,14 @@ const Node = {
   "name": "Mail status",
   "active": true,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 610,
-  "y": 140,
+  "x": 1130,
+  "y": 80,
   "wires": []
 }
 

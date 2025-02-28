@@ -10,18 +10,18 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 250,
-  "y": 1520,
+  "x": 630,
+  "y": 1500,
   "wires": [
     [
-      "8a636d46dfdaa0d8"
+      "a679b11f368fcdf4"
     ]
   ]
 }
 
 Node.template = `
 UPDATE
-    bestillinger
+    {{tablename}}
 SET
     erAdviseringAfsendt = 1,
     adviseringAfsendt = NOW()

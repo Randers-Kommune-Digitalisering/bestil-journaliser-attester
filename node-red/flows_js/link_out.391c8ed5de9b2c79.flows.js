@@ -6,7 +6,8 @@ const Node = {
   "name": "Metrics out",
   "mode": "link",
   "links": [
-    "b8d0484c7d60ed0f"
+    "b8d0484c7d60ed0f",
+    "b92328149d19c8a6"
   ],
   "x": 355,
   "y": 1300,

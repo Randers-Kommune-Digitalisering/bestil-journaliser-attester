@@ -1,18 +1,18 @@
 const Node = {
-  "id": "6c3e8a9cc8c7fb81",
+  "id": "b1d7300cf13eb38b",
   "type": "debug",
   "z": "7599a14e87e1d5c4",
-  "name": "Mail out",
+  "name": "Error (Adviser flow)",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"to\": mail.to,\t    \"title\": mail.title,\t    \"success\": payload.success\t}",
-  "targetType": "jsonata",
+  "complete": "error",
+  "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1590,
-  "y": 1240,
+  "x": 450,
+  "y": 1660,
   "wires": []
 }
 

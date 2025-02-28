@@ -6,13 +6,6 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "bestilling.rekvisitusCpr",
-      "pt": "msg",
-      "to": "(bestilling.rekvisitus.cpr ~> $substring(0, 6))",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
       "p": "mail",
       "pt": "msg",
       "to": "{}",
@@ -45,7 +38,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
+  "x": 260,
   "y": 260,
   "wires": [
     [

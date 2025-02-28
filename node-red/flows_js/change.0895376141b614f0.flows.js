@@ -36,7 +36,7 @@ const Node = {
       "t": "set",
       "p": "mail.attachments",
       "pt": "msg",
-      "to": "erJournaliseret ? [] : attachments",
+      "to": "attachments",
       "tot": "jsonata"
     }
   ],
