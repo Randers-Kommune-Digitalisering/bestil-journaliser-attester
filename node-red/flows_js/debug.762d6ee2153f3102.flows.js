@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"sbsys\": \"attest journaliseret\",\t    \"sagsnummer\": sagsnummer,\t    \"cpr\": rekvisitus,\t    \"error\": error ~> $exists() ? error\t}",
+  "complete": "{\t    \"sbsys\": \"attest journaliseret\",\t    \"sagsnummer\": sagsnummer,\t    \"cpr\": (rekvisitus ~> $split(\"-\"))[0] & \"-XXXX\",\t    \"error\": error ~> $exists() ? error\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
