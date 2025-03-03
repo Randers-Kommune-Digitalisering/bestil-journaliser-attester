@@ -24,7 +24,7 @@ UPDATE
 SET
     navn = '{{{rekvisitusNavn}}}'
 WHERE
-    cpr = '{{{payload}}}'
+    cpr = '{{{rekvisition.cpr}}}'
 `
 
 module.exports = Node;

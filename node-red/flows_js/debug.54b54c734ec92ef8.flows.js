@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload.affectedRows > 0 ?\t{\t    \"azure\": \"Mail opdatering succesfuld\",\t    \"rekvirent\": {\t        \"dq\": dqUser,\t        \"mail\": rekvirentEmail,\t        \"ordersUpdated\": payload.affectedRows\t    }\t}\t:\t{\t    \"azure\": \"Fejl ved opdatering af mail\",\t    \"rekvirent\": {\t        \"dq\": dqUser,\t        \"mail\": rekvirentEmail\t    },\t    \"message\": error.message,\t    \"statusCode\": statusCode = null ? payload.statusCode : statusCode\t}",
+  "complete": "payload.affectedRows > 0 ?\t{\t    \"cpr\": \"Navn opdatering succesfuld\",\t    \"rekvisitus\": {\t        \"cpr\": (rekvisition.cpr ~> $substring(0, 6)) & \"-XXXX\",\t        \"navn\": rekvisitusNavn,\t        \"ordersUpdated\": payload.affectedRows\t    }\t}\t:\t{\t    \"cpr\": \"Fejl ved opdatering af navn\",\t    \"rekvisitus\": {\t        \"cpr\": (rekvisition.cpr ~> $substring(0, 6)) & \"-XXXX\",\t        \"navn\": rekvisitusNavn,\t        \"ordersUpdated\": payload.affectedRows\t    },\t    \"message\": error.message,\t    \"statusCode\": statusCode = null ? payload.statusCode : statusCode\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
