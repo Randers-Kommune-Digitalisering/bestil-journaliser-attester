@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "{ \"cpr\": payload }",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "rekvisitus",
+      "pt": "msg",
+      "to": "{}",
+      "tot": "json"
     }
   ],
   "action": "",
