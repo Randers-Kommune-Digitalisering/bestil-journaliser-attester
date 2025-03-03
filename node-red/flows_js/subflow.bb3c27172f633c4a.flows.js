@@ -1,7 +1,7 @@
 const Node = {
   "id": "bb3c27172f633c4a",
   "type": "subflow",
-  "name": "SD Data (2)",
+  "name": "SD Data",
   "info": "",
   "category": "",
   "in": [
@@ -35,8 +35,7 @@ const Node = {
   "meta": {},
   "color": "#DDAA99",
   "outputLabels": [
-    "Success",
-    "Error"
+    "Success"
   ]
 }
 
