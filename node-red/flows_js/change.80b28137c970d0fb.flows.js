@@ -27,6 +27,34 @@ const Node = {
       "pt": "msg",
       "to": "rekvisition.rekvirentEmail",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "attestErRen",
+      "pt": "msg",
+      "to": "true",
+      "tot": "bool"
+    },
+    {
+      "t": "set",
+      "p": "erAfvist",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
+    },
+    {
+      "t": "set",
+      "p": "attestTypeString",
+      "pt": "msg",
+      "to": "rekvisition.attestType = 2 ? 'børneattest' : 'straffeattest'",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "erJournaliseret",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
     }
   ],
   "action": "",
