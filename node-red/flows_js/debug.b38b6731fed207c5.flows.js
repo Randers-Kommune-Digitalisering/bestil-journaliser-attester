@@ -3,15 +3,15 @@ const Node = {
   "type": "debug",
   "z": "7599a14e87e1d5c4",
   "name": "ADVIS - Afvist af sagsbehandler",
-  "active": true,
+  "active": false,
   "tosidebar": true,
-  "console": true,
+  "console": false,
   "tostatus": false,
   "complete": "{\t    \"rekvisition\": rekvisition,\t    \"attestErRen\": attestErRen,\t    \"erAfvist\": erAfvist,\t    \"erJournaliseret\": erJournaliseret,\t    \"attestTypeString\": attestTypeString\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 180,
+  "x": 170,
   "y": 520,
   "wires": []
 }
