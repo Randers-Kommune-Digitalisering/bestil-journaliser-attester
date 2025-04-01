@@ -22,11 +22,13 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   
     
       
-        const encodeBase64 = (data) => {
-            return Buffer.from(data).toString('base64');
-        }
-        msg.auth = encodeBase64(msg.sdUser + ":" + msg.sdPass);
-        return msg;
+        
+          const encodeBase64 = (data) => {
+              return Buffer.from(data).toString('base64');
+          }
+          msg.auth = encodeBase64(msg.sdUser + ":" + msg.sdPass);
+          return msg;
+        
       
     
   
