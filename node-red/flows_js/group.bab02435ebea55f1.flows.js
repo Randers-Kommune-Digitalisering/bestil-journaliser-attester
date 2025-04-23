@@ -13,7 +13,6 @@ const Node = {
     "39f68be46830a408",
     "996ebbe099123c9e",
     "8999dd7c37c527b7",
-    "461970279c8fa295",
     "cf221c3882f8b263",
     "1a2aa96596f99911",
     "50ef0cb1a829a484",
@@ -24,7 +23,6 @@ const Node = {
     "fed891ea3703430c",
     "8ef59cc3770c0d4c",
     "8459f927e0b6c84c",
-    "f0141e1b42899ebb",
     "e48986fff111ac0f",
     "e4d4dec6e961ad14",
     "efcd890235d0a8a1",
@@ -35,7 +33,6 @@ const Node = {
     "169823d6acac242b",
     "9b9fc6f6a2a9a45a",
     "79f0b064603f1cef",
-    "0261a4cd88a37602",
     "4520538c98d91b37",
     "d4a51132d71c761d",
     "74a7e7478107c335",
@@ -53,10 +50,20 @@ const Node = {
     "9f379219ea0204de",
     "a32f3c3786f18953",
     "6ac6b62cb528435f",
-    "b9fca6dd71a50371"
+    "b9fca6dd71a50371",
+    "1dc7dcb5e4826e60",
+    "dc5d37b34bddefea",
+    "1cf08bbc710649e2",
+    "8c9ab9cb40cc6c28",
+    "da59f72840f77396",
+    "9b4a1dd9f5f34d60",
+    "ea86e708a04b93fe",
+    "e29c287ebb12c979"
   ],
   "x": 114,
-  "y": 839
+  "y": 999,
+  "w": 1532,
+  "h": 547
 }
 
 module.exports = Node;

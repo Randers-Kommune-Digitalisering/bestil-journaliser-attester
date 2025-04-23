@@ -30,10 +30,31 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "rekvisition.cpr",
+      "p": "attestErRen",
       "pt": "msg",
-      "to": "rekvisition.cpr ~> $substring(0, 6)",
+      "to": "true",
+      "tot": "bool"
+    },
+    {
+      "t": "set",
+      "p": "erAfvist",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
+    },
+    {
+      "t": "set",
+      "p": "attestTypeString",
+      "pt": "msg",
+      "to": "rekvisition.attestType = 2 ? 'børneattest' : 'straffeattest'",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "erJournaliseret",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
     }
   ],
   "action": "",

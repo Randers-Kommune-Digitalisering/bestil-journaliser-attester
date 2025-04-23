@@ -3,14 +3,14 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "7927b0d68211546e",
-  "name": "Gem mail-krop",
+  "name": "Gem\\n mail-krop",
   "rules": [
     {
       "t": "set",
       "p": "mailbody",
       "pt": "msg",
-      "to": "payload",
-      "tot": "msg",
+      "to": "html ~> $exists() ? html = \"\" ? payload : html : payload",
+      "tot": "jsonata",
       "dc": true
     }
   ],
@@ -19,11 +19,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 960,
-  "y": 240,
+  "x": 260,
+  "y": 320,
   "wires": [
     [
-      "7833514b3f270238"
+      "d4a9d98f17c1a2c9"
     ]
   ]
 }

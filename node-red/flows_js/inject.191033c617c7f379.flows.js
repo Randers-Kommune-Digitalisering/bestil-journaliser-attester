@@ -15,7 +15,7 @@ const Node = {
       "vt": "jsonata"
     }
   ],
-  "repeat": "21600",
+  "repeat": "3600",
   "crontab": "",
   "once": true,
   "onceDelay": "120",

@@ -6,7 +6,7 @@ const Node = {
   "name": "Upload attest til sag",
   "info": "",
   "x": 230,
-  "y": 2620,
+  "y": 2880,
   "wires": []
 }
 

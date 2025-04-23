@@ -466,6 +466,7 @@ module.exports = {
          *    global.get("os")
          */
         functionGlobalContext: {
+            request: require('request')
             // os:require('os'),
         },
     
