@@ -25,6 +25,8 @@ FROM
     bestillinger
 WHERE
     navn = ''
+AND erBestilt = 0
+AND erAfvist = 0
 `
 
 module.exports = Node;
