@@ -1,5 +1,5 @@
 const Node = {
-  "id": "07e6265263459be6",
+  "id": "ecdcce8f0407182e",
   "type": "template",
   "z": "da7be20cd0c704b6",
   "name": "SQL",
@@ -9,22 +9,24 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 750,
-  "y": 700,
+  "x": 270,
+  "y": 800,
   "wires": [
     [
-      "63396a04b071dd90"
+      "fdb515e96e91caed"
     ]
   ]
 }
 
 Node.template = `
-UPDATE
+SELECT
+    rekvirentEmail
+FROM
     bestillinger
-SET
-    rekvirentEmail = '{{{rekvirentEmail}}}'
 WHERE
-    rekvirentDQ = '{{{dqUser}}}'
+    rekvirentEmail != ''
+AND rekvirentDQ = '{{dqUser}}'
+LIMIT 1
 `
 
 module.exports = Node;

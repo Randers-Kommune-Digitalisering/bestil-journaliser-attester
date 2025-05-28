@@ -1,9 +1,9 @@
 const Node = {
-  "id": "8beb99cb14497038",
+  "id": "0be359cb0b52be69",
   "type": "switch",
   "z": "da7be20cd0c704b6",
   "name": "",
-  "property": "rekvirentEmail",
+  "property": "payload[0].rekvirentEmail",
   "propertyType": "msg",
   "rules": [
     {
@@ -16,14 +16,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 270,
-  "y": 700,
+  "x": 590,
+  "y": 780,
   "wires": [
     [
-      "6abb10770cedd892"
+      "ed191ae35c73f1f0"
     ],
     [
-      "3e0987c8d49c2c83"
+      "ce189cc1ff5a88ef"
     ]
   ]
 }

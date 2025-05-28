@@ -1,11 +1,11 @@
 const Node = {
-  "id": "edd137ac11256ac7",
+  "id": "10b0dfd6c8adf4f5",
   "type": "comment",
   "z": "da7be20cd0c704b6",
-  "name": "Opdater manglende mail-adresser",
+  "name": "Hent mail fra tidligere bestilling",
   "info": "",
-  "x": 840,
-  "y": 660,
+  "x": 350,
+  "y": 760,
   "wires": []
 }
 
