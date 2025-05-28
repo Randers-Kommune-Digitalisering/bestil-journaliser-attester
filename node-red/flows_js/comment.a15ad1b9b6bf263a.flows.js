@@ -5,7 +5,7 @@ const Node = {
   "name": "Opdater manglende mail-adresser",
   "info": "",
   "x": 320,
-  "y": 1260,
+  "y": 1540,
   "wires": []
 }
 

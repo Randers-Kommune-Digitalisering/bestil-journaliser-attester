@@ -5,7 +5,7 @@ const Node = {
   "name": "Hent manglende rekvisitus navne fra bestillinger",
   "info": "",
   "x": 240,
-  "y": 840,
+  "y": 1120,
   "wires": []
 }
 
