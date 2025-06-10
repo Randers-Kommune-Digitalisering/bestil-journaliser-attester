@@ -27,7 +27,6 @@ WHERE
     rekvirentEmail = ''
 AND erAfvist = 0
 AND erAttestModtaget = 0
-AND erBestilt = 0
 `
 
 module.exports = Node;
