@@ -1,5 +1,5 @@
 const Node = {
-  "id": "063090b5332b9a8c",
+  "id": "c4218a60608a1abf",
   "type": "change",
   "z": "ed8da944366aaffa",
   "name": "",
@@ -8,8 +8,8 @@ const Node = {
       "t": "set",
       "p": "rekvisitus.navn",
       "pt": "msg",
-      "to": "payload.personadresseringsnavn",
-      "tot": "msg"
+      "to": "null",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,8 +17,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 830,
-  "y": 300,
+  "x": 1150,
+  "y": 340,
   "wires": [
     []
   ]

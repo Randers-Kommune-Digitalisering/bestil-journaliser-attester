@@ -1,5 +1,5 @@
 const Node = {
-  "id": "ac0757e81d5c8b81",
+  "id": "438daf9a9dd47adc",
   "type": "debug",
   "z": "ed8da944366aaffa",
   "name": "CPR response",
@@ -11,8 +11,8 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 800,
-  "y": 340,
+  "x": 1020,
+  "y": 300,
   "wires": []
 }
 
