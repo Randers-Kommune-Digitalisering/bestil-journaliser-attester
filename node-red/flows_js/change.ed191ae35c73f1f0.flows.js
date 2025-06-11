@@ -1,15 +1,14 @@
 const Node = {
-  "id": "f2d141f53bce2c4e",
+  "id": "ed191ae35c73f1f0",
   "type": "change",
   "z": "da7be20cd0c704b6",
-  "g": "31e203737d08a57a",
   "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "rekvisitusNavn",
+      "p": "rekvirentEmail",
       "pt": "msg",
-      "to": "rekvisitus.navn",
+      "to": "payload[0].rekvirentEmail",
       "tot": "msg"
     }
   ],
@@ -18,11 +17,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 730,
-  "y": 1380,
+  "x": 800,
+  "y": 760,
   "wires": [
     [
-      "843ff882ba595efb"
+      "07e6265263459be6"
     ]
   ]
 }

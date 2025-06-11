@@ -10,7 +10,7 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 230,
-  "y": 880,
+  "y": 1160,
   "wires": [
     [
       "b92615edc8a7450b"
@@ -25,6 +25,8 @@ FROM
     bestillinger
 WHERE
     navn = ''
+AND erBestilt = 0
+AND erAfvist = 0
 `
 
 module.exports = Node;

@@ -1,5 +1,5 @@
 const Node = {
-  "id": "b167731cf99135a5",
+  "id": "5b9783e20250a4e1",
   "type": "debug",
   "z": "da7be20cd0c704b6",
   "name": "stdout",
@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"action\": \"attempting to retrieve missing e-mails\",\t    \"dqs\": dqs,\t    \"count\": rekvisition ~> $count()\t}",
+  "complete": "{\t    \"action\": \"attempting to retrieve missing names\",\t    \"count\": 0\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 960,
-  "y": 80,
+  "x": 540,
+  "y": 1200,
   "wires": []
 }
 

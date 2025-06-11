@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"action\": \"attempting to retrieve missing names\",\t    \"cprs\": cprs @$cpr . (($cpr ~> $substring(0, 6)) & \"-XXXX\"),\t    \"orderCount\": rekvisition ~> $count()\t}",
+  "complete": "{\t    \"action\": \"attempting to retrieve missing names\",\t    \"cprs\": cprs @$cpr . (($cpr ~> $substring(0, 6)) & \"-XXXX\"),\t    \"count\": rekvisition ~> $count()\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 960,
-  "y": 840,
+  "y": 1120,
   "wires": []
 }
 

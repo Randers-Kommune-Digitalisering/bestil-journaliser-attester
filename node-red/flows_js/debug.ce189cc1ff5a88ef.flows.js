@@ -1,5 +1,5 @@
 const Node = {
-  "id": "b167731cf99135a5",
+  "id": "ce189cc1ff5a88ef",
   "type": "debug",
   "z": "da7be20cd0c704b6",
   "name": "stdout",
@@ -7,12 +7,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"action\": \"attempting to retrieve missing e-mails\",\t    \"dqs\": dqs,\t    \"count\": rekvisition ~> $count()\t}",
+  "complete": "{\t    \"azure\": \"Kunne ikke opdatere manglende mail\",\t    \"rekvirent\": {\t        \"dq\": dqUser\t    },\t    \"error\": error\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 960,
-  "y": 80,
+  "x": 760,
+  "y": 820,
   "wires": []
 }
 

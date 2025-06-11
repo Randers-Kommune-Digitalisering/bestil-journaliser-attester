@@ -1,15 +1,13 @@
 const Node = {
-  "id": "68b3d4e53cac0332",
+  "id": "0be359cb0b52be69",
   "type": "switch",
   "z": "da7be20cd0c704b6",
   "name": "",
-  "property": "payload",
+  "property": "payload[0].rekvirentEmail",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "istype",
-      "v": "array",
-      "vt": "array"
+      "t": "nempty"
     },
     {
       "t": "else"
@@ -18,14 +16,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 950,
-  "y": 1160,
+  "x": 590,
+  "y": 780,
   "wires": [
     [
-      "1a09c117ed693fe9"
+      "ed191ae35c73f1f0"
     ],
     [
-      "6626825df172f274"
+      "ce189cc1ff5a88ef"
     ]
   ]
 }
