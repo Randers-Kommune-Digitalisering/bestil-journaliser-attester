@@ -8,16 +8,22 @@ const Node = {
   "rules": [
     {
       "t": "nempty"
+    },
+    {
+      "t": "else"
     }
   ],
   "checkall": "true",
   "repair": false,
-  "outputs": 1,
+  "outputs": 2,
   "x": 270,
   "y": 700,
   "wires": [
     [
-      "07e6265263459be6"
+      "6abb10770cedd892"
+    ],
+    [
+      "3e0987c8d49c2c83"
     ]
   ]
 }

@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "90c6b0b502e346fa",
   "g": "d774a29ec2b63a5e",
-  "name": "",
+  "name": "set msg.sagsnummer \\n & msg.erJournaliseret",
   "rules": [
     {
       "t": "set",
@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "payload.SagsNummer",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "erJournaliseret",
+      "pt": "msg",
+      "to": "true",
+      "tot": "bool"
     }
   ],
   "action": "",
@@ -19,7 +26,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1420,
-  "y": 2660,
+  "y": 2920,
   "wires": [
     [
       "7dd8ad2d3fa52fa1",

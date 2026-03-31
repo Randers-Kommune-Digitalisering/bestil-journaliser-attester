@@ -2,10 +2,10 @@ const Node = {
   "id": "0a543725b05530a5",
   "type": "link out",
   "z": "7d7cd8fb8a9dbe4e",
-  "name": "Link OUT: Afvis",
+  "name": "Mail OUT: Afvis",
   "mode": "link",
   "links": [
-    "89d0aa99d64e7c29"
+    "38e915ecba35096b"
   ],
   "x": 1325,
   "y": 900,

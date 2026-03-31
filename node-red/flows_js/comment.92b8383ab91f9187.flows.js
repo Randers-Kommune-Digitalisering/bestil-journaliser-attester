@@ -3,10 +3,10 @@ const Node = {
   "type": "comment",
   "z": "90c6b0b502e346fa",
   "g": "d774a29ec2b63a5e",
-  "name": "Manuel behandling",
+  "name": "Send til rekvirent",
   "info": "",
-  "x": 1290,
-  "y": 2700,
+  "x": 1280,
+  "y": 2960,
   "wires": []
 }
 

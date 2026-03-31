@@ -7,7 +7,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"action\": \"attempting to retrieve missing e-mails\",\t    \"dqs\": dqs,\t    \"orderCount\": rekvisition ~> $count()\t}",
+  "complete": "{\t    \"action\": \"attempting to retrieve missing e-mails\",\t    \"dqs\": dqs,\t    \"count\": rekvisition ~> $count()\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",

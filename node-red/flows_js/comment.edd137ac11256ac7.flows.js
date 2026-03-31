@@ -4,7 +4,7 @@ const Node = {
   "z": "da7be20cd0c704b6",
   "name": "Opdater manglende mail-adresser",
   "info": "",
-  "x": 360,
+  "x": 840,
   "y": 660,
   "wires": []
 }
